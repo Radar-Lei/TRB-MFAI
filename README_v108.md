@@ -36,3 +36,9 @@ v108 为 v107 外部评审（82/100 综合，六项实质修改清单）后的�
 - **tab:totalerror 口径统一**（major）：改为主协议逐查询归一（表值 8.74/4.76/11.35/34.3/19.7 与 5.75/4.75/8.68/33.0/17.2，段数按 distinct chains 去重 117/117）；"摘要项主导"结论改为"flow 下模型项主导、response 后两项相当"。
 - 图 fig_screenlines_v108 重导出（图内 Upstream/Downstream → Screenline A/B，视觉 QA PASS）；fig3_screenlines_v108.py 入 scripts/。
 - 检查点可用性声明改写（脚本+种子可再生、索取可得）。
+
+## 公开归档（2026-10-31 已发布）
+
+- GitHub：https://github.com/Radar-Lei/TRB-MFAI（public，分批推送完整内容）
+- Zenodo DOI：10.5281/zenodo.23831225（https://zenodo.org/record/23831225，tarball 153,884,826 字节，MD5 ab3f545f20bf01d700e29a96fb33068d）
+- 论文 Code and data availability 段已更新为上述地址（v108 终版）。
