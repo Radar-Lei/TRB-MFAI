@@ -1,0 +1,154 @@
+{
+  "seconds": 235.05326509475708,
+  "selected_step": 1100,
+  "original_validation": {
+    "K_mse": 0.34925671806032677,
+    "flow_relative": 0.0005068379148496573
+  },
+  "logs": [
+    {
+      "step": 100,
+      "flow_loss": 0.0036447267141085497,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0015733839193050817,
+      "validation": {
+        "K_mse": 0.16512762574443643,
+        "flow_relative": 0.0005997003509789857
+      },
+      "elapsed_seconds": 27.081109285354614
+    },
+    {
+      "step": 200,
+      "flow_loss": 0.0036691499756774573,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0030838386435727582,
+      "validation": {
+        "K_mse": 0.1317937988988844,
+        "flow_relative": 0.0005987122545449037
+      },
+      "elapsed_seconds": 44.21037292480469
+    },
+    {
+      "step": 300,
+      "flow_loss": 0.003575790278025586,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0018126727754477962,
+      "validation": {
+        "K_mse": 0.11187479901307862,
+        "flow_relative": 0.0005942811612929718
+      },
+      "elapsed_seconds": 62.835628509521484
+    },
+    {
+      "step": 400,
+      "flow_loss": 0.0032225316192058544,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0014243093152107437,
+      "validation": {
+        "K_mse": 0.12554856221197117,
+        "flow_relative": 0.0005886341826507848
+      },
+      "elapsed_seconds": 85.16673588752747
+    },
+    {
+      "step": 500,
+      "flow_loss": 0.0036777138994754707,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0022643150992009715,
+      "validation": {
+        "K_mse": 0.11188163273008893,
+        "flow_relative": 0.0005807363408819459
+      },
+      "elapsed_seconds": 102.2540454864502
+    },
+    {
+      "step": 600,
+      "flow_loss": 0.0034666531973450783,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.001847936913346475,
+      "validation": {
+        "K_mse": 0.100927717916606,
+        "flow_relative": 0.0005927512016934584
+      },
+      "elapsed_seconds": 115.97510170936584
+    },
+    {
+      "step": 700,
+      "flow_loss": 0.0036366698522995156,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0012037920203594816,
+      "validation": {
+        "K_mse": 0.07752202569130225,
+        "flow_relative": 0.0006000774823990295
+      },
+      "elapsed_seconds": 131.09705018997192
+    },
+    {
+      "step": 800,
+      "flow_loss": 0.0030548315023740157,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.001828822873370747,
+      "validation": {
+        "K_mse": 0.07457975459636164,
+        "flow_relative": 0.0005852616849461011
+      },
+      "elapsed_seconds": 151.37008261680603
+    },
+    {
+      "step": 900,
+      "flow_loss": 0.0035553789665243862,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.001149736798456576,
+      "validation": {
+        "K_mse": 0.07046282449905333,
+        "flow_relative": 0.0005827823787575968
+      },
+      "elapsed_seconds": 172.0961241722107
+    },
+    {
+      "step": 1000,
+      "flow_loss": 0.003574732957146593,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.001166164135005441,
+      "validation": {
+        "K_mse": 0.0716390578323713,
+        "flow_relative": 0.0005637721989784391
+      },
+      "elapsed_seconds": 191.54488825798035
+    },
+    {
+      "step": 1100,
+      "flow_loss": 0.0029970963002923694,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0015082679424818634,
+      "validation": {
+        "K_mse": 0.06299229378643727,
+        "flow_relative": 0.0005246775059365194
+      },
+      "elapsed_seconds": 215.39343190193176
+    },
+    {
+      "step": 1200,
+      "flow_loss": 0.0024759901245158702,
+      "edge_loss": 0.0,
+      "cut_loss": 0.0,
+      "response_loss": 0.0008472805680923483,
+      "validation": {
+        "K_mse": 0.06579100850175514,
+        "flow_relative": 0.0004553882561732782
+      },
+      "elapsed_seconds": 235.00329065322876
+    }
+  ]
+}

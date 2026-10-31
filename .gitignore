@@ -1,0 +1,9 @@
+# OS junk
+.DS_Store
+Thumbs.db
+# large regenerable artifacts stay in the project
+*.pt
+setup.pkl
+flows_*.npz
+centers_*.npz
+paths_*.npz

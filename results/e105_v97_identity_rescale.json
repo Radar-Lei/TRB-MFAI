@@ -1,0 +1,63 @@
+{
+  "protocol": {
+    "purpose": "re-summarized endpoint-identity metrics with separated scopes: relative column error vs absolute max per-edge error; pure frozen-artifact re-summarization of E97 (no solves, no retraining)",
+    "focal_ods": [
+      "1->19",
+      "1->15",
+      "7->12",
+      "6->8"
+    ],
+    "source_artifacts": [
+      "e97_v91_singleod_identity.json",
+      "e97_v91_singleod_identity.npz"
+    ],
+    "metric_definitions": {
+      "r2_relative_column": "||C~_{:,j} - dg_j||_2 / ||dg_j||_2, dg_j = g(F1) - g(F0) per edge (Eq. 15 object)",
+      "a_inf_tstt": "||C~_{:,j} - dg_j||_inf, TSTT units"
+    },
+    "claims_supported": "the v96 sentence conflated the E97 reproducibility gate (recomputed vs frozen column, <=1e-9) with the identity error; the identity error is r2 in 7.7e-08--1.1e-06 relative l2, consistent with the published a_inf/max|dg| <= 8.1e-7 via r2 >= that/sqrt(76) (rounded values are never stated as bounds; raw max 8.0434e-7)"
+  },
+  "per_od": {
+    "1->19": {
+      "r2_relative_column": 7.658783691862721e-08,
+      "a_inf_tstt": 0.000537974896360538,
+      "resid_l2_tstt": 0.001091294189097176,
+      "norm_dg_l2_tstt": 14248.922975284582,
+      "a_inf_over_max_dg": 5.8274614424998834e-08,
+      "resid_sum": 0.0016960564943699907,
+      "completeness_gap": 0.001696055849606637,
+      "sum_vs_gap_rel": 3.801545532644034e-07
+    },
+    "1->15": {
+      "r2_relative_column": 1.392648578640946e-07,
+      "a_inf_tstt": 0.0015627407628926449,
+      "resid_l2_tstt": 0.0033055798487840815,
+      "norm_dg_l2_tstt": 23735.92232442388,
+      "a_inf_over_max_dg": 9.643391048542843e-08,
+      "resid_sum": 0.00572242183973426,
+      "completeness_gap": 0.005722423389670439,
+      "sum_vs_gap_rel": 2.708531113232814e-07
+    },
+    "7->12": {
+      "r2_relative_column": 1.097740680937674e-06,
+      "a_inf_tstt": 0.01634025062639921,
+      "resid_l2_tstt": 0.034193850253033,
+      "norm_dg_l2_tstt": 31149.296775468974,
+      "a_inf_over_max_dg": 8.043360041288223e-07,
+      "resid_sum": 0.02234849587407528,
+      "completeness_gap": 0.02234849460364785,
+      "sum_vs_gap_rel": 5.6846219508453283e-08
+    },
+    "6->8": {
+      "r2_relative_column": 6.275423001197212e-07,
+      "a_inf_tstt": 0.009077620830566957,
+      "resid_l2_tstt": 0.025142519274563936,
+      "norm_dg_l2_tstt": 40065.05899246521,
+      "a_inf_over_max_dg": 2.6574999847082925e-07,
+      "resid_sum": 0.010613632929595385,
+      "completeness_gap": 0.01061363346525468,
+      "sum_vs_gap_rel": 5.0468983732261146e-08
+    }
+  },
+  "elapsed_seconds": 0.008959293365478516
+}

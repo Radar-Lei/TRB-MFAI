@@ -1,0 +1,66 @@
+{
+  "sioux_falls": {
+    "fa0.05_tau0.0": {
+      "median_segments": 123.0,
+      "median_max_rel_small": 0.0,
+      "max_max_rel_small": 13.979439263685661
+    },
+    "fa0.05_tau0.05": {
+      "median_segments": 97.5,
+      "median_max_rel_small": 0.0,
+      "max_max_rel_small": 13.330467300501377
+    },
+    "fa0.05_tau0.1": {
+      "median_segments": 80.0,
+      "median_max_rel_small": 0.0,
+      "max_max_rel_small": 12.681495337317095
+    },
+    "fa0.025_tau0.05": {
+      "median_segments": 121.5,
+      "median_max_rel_small": 0.0,
+      "max_max_rel_small": 13.330467300501379
+    },
+    "fa0.025_tau0.1": {
+      "median_segments": 100.5,
+      "median_max_rel_small": 0.0,
+      "max_max_rel_small": 12.681495337317095
+    },
+    "fa0.01_tau0.1": {
+      "median_segments": 116.0,
+      "median_max_rel_small": 0.0,
+      "max_max_rel_small": 6.713048422144287
+    }
+  },
+  "anaheim": {
+    "fa0.05_tau0.0": {
+      "median_segments": 10.0,
+      "median_max_rel_small": 0.5492005124925277,
+      "max_max_rel_small": 0.9411693852677017
+    },
+    "fa0.05_tau0.05": {
+      "median_segments": 9.5,
+      "median_max_rel_small": 0.6713812358305529,
+      "max_max_rel_small": 1.0514026389137476
+    },
+    "fa0.05_tau0.1": {
+      "median_segments": 9.5,
+      "median_max_rel_small": 1.4308630908382813,
+      "max_max_rel_small": 2.2607510203374424
+    },
+    "fa0.025_tau0.05": {
+      "median_segments": 10.0,
+      "median_max_rel_small": 0.40506016724611177,
+      "max_max_rel_small": 0.5344941171858791
+    },
+    "fa0.025_tau0.1": {
+      "median_segments": 9.5,
+      "median_max_rel_small": 0.3516795841189898,
+      "max_max_rel_small": 0.5063628478603064
+    },
+    "fa0.01_tau0.1": {
+      "median_segments": 12.0,
+      "median_max_rel_small": 0.2778665365213626,
+      "max_max_rel_small": 0.450339173501565
+    }
+  }
+}

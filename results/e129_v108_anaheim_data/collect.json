@@ -1,0 +1,52 @@
+{
+  "conservation_max": {
+    "flows": 9.094947017729282e-12,
+    "centers": 9.094947017729282e-12,
+    "paths": 9.094947017729282e-12
+  },
+  "reference_completeness_relative": 1.2018290784629652e-05,
+  "families": [
+    {
+      "query": [
+        4,
+        2
+      ],
+      "regions": 211
+    },
+    {
+      "query": [
+        1,
+        2
+      ],
+      "regions": 83
+    },
+    {
+      "query": [
+        2,
+        4
+      ],
+      "regions": 211
+    },
+    {
+      "query": [
+        3,
+        2
+      ],
+      "regions": 157
+    },
+    {
+      "query": [
+        25,
+        4
+      ],
+      "regions": 164
+    },
+    {
+      "query": [
+        25,
+        2
+      ],
+      "regions": 84
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "protocol": {
+    "purpose": "unified-sample flow-vs-sensitivity error comparison (review round 57, item A1); no new training, no new equilibrium solves",
+    "setting": "A: zero background; direct fixed-path logit SUE (theta=1, ten paths per study OD, implicit sensitivities) vs the five frozen surrogate seeds",
+    "demand_states": "the 41 zero-background quadrature points of the published attribution path (0.2->1.6 q_base)",
+    "flow_units": "seed x quadrature point (5x41 = 205)",
+    "jacobian_units": "seed x quadrature point x OD (5x41x8 = 1640)",
+    "definitions": {
+      "E_F": "||f_learned(q)-F_SUE(q)||_2 / ||F_SUE(q)||_2",
+      "E_J": "||J_learned-J_SUE||_2 / ||J_SUE||_2 (per OD column, identical to the published Jacobian definition)"
+    }
+  },
+  "gates": {
+    "learned_J_vs_e83_stored_relative_l2": 0.0,
+    "learned_flow_conservation_max_abs": 6.366462912410498e-12,
+    "jacobian_median_matches_published_0p516": true,
+    "jacobian_max_matches_published_9p56": true
+  },
+  "flow_error_same_path": {
+    "n_samples": 205,
+    "median_pct": 0.13627195972723002,
+    "p95_pct": 0.6818497484446173,
+    "max_pct": 1.3310387484858717,
+    "min_pct": 0.04001458606930052
+  },
+  "jacobian_error_same_path": {
+    "n_samples": 1640,
+    "median_pct": 0.5157430938193822,
+    "p95_pct": 3.902677358829808,
+    "max_pct": 9.562448277248988,
+    "min_pct": 0.012602604319632662
+  },
+  "per_seed": {
+    "flow_error_max_pct": [
+      0.8432763469700992,
+      1.3310387484858717,
+      0.767057267960782,
+      1.0295573815378294,
+      0.6836415711023521
+    ],
+    "flow_error_median_pct": [
+      0.1589019316423322,
+      0.12188909124921994,
+      0.12023045688358967,
+      0.12795094171875618,
+      0.14644222574442334
+    ],
+    "jacobian_error_max_pct": [
+      4.498936017940487,
+      6.340782360060808,
+      6.084000359747433,
+      9.562448277248988,
+      6.686855609569084
+    ]
+  },
+  "max_locations": {
+    "flow": {
+      "seed": 1,
+      "quadrature_point_1idx": 1
+    },
+    "jacobian": "published localization (e85 part 2): seed 3, (16,10), quadrature point 38 of 41 (t=0.925)"
+  },
+  "elapsed_seconds": 0.22631382942199707
+}

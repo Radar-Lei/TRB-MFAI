@@ -1,0 +1,79 @@
+{
+  "tolerance": 0.05,
+  "tolerance_definition": "5% of the largest learned account magnitude in the family",
+  "summary_path_level_median": {
+    "flow": {
+      "E_model": 144.60250562804993,
+      "E_summary": 236.40459645926086,
+      "E_total": 348.9325525284626,
+      "E_single": 1940.9452815046757,
+      "E_equal": 860.0202366332333,
+      "segments": 124.9
+    },
+    "response": {
+      "E_model": 86.54540325276682,
+      "E_summary": 239.1467434669505,
+      "E_total": 301.55014064886,
+      "E_single": 1909.2078842981496,
+      "E_equal": 812.4019197193345,
+      "segments": 125.03333333333333
+    }
+  },
+  "table_unified_normalized": {
+    "flow": {
+      "E_model": 8.74245445620291,
+      "E_summary": 4.761737815390265,
+      "E_total": 11.349857134113055,
+      "E_single": 34.34332424631787,
+      "E_equal": 19.68554142499852,
+      "segments_distinct_chains": 116.96666666666667
+    },
+    "response": {
+      "E_model": 5.747915220342689,
+      "E_summary": 4.754572509368215,
+      "E_total": 8.684097195350606,
+      "E_single": 32.98935542006055,
+      "E_equal": 17.226861092062986,
+      "segments_distinct_chains": 117.16666666666667
+    }
+  },
+  "table_note": "tab:totalerror values: per-row E/fam_scale_reference, mean within path, median over the 96 paths; segments summed over distinct direction chains (duplicates of the same nested chain removed)",
+  "paired_E_total_difference": {
+    "median": -28.342896388137348,
+    "improved_share": 0.9305555555555556,
+    "n": 288
+  },
+  "response_dominant_share_rows": 1.0,
+  "max_decomposition_closure": 6.366462912410498e-12,
+  "dedup_directions_per_query": {
+    "0": {
+      "directions": 32,
+      "distinct_chains": 23
+    },
+    "1": {
+      "directions": 36,
+      "distinct_chains": 35
+    },
+    "2": {
+      "directions": 36,
+      "distinct_chains": 25
+    },
+    "3": {
+      "directions": 36,
+      "distinct_chains": 35
+    },
+    "4": {
+      "directions": 30,
+      "distinct_chains": 18
+    },
+    "5": {
+      "directions": 36,
+      "distinct_chains": 35
+    }
+  },
+  "gates": {
+    "e122_E_geo_match": "asserted per row",
+    "E_summary_leq_eps": "asserted per row",
+    "E_total_leq_budget": "asserted per row"
+  }
+}

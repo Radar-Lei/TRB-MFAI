@@ -1,0 +1,153 @@
+{
+  "protocol": {
+    "purpose": "scalar system contribution C_j = sum_e Ctilde_ej for the six pre-specified queries (review round 57, item A2); re-summarization of published columns, no new solves",
+    "columns": "e87 published 41-point columns; e86 cross-check; e87 81-point refinement stability",
+    "completeness_denominator_dT_81": 322446.87049820926
+  },
+  "gates": {
+    "e87_vs_e86_C41_max_relative_l2": 0.0,
+    "phi_s_from_BC41_matches_published": true,
+    "completeness_relative_81": 1.0669940279815197e-07,
+    "completeness_relative_41": 4.267975335696055e-07,
+    "straddling_queries_both_families": [
+      "1->15",
+      "1->19",
+      "7->12"
+    ]
+  },
+  "per_od": {
+    "7->18": {
+      "od_1idx": [
+        7,
+        18
+      ],
+      "C_j_41": 672.8907903522312,
+      "C_j_81": 672.8909206287067,
+      "C_j_change_pct": 1.936071609698331e-05,
+      "phi_s_41": 671.2016992866315,
+      "interval_41": {
+        "unrestricted": {
+          "min": 595.2155377009301,
+          "max": 726.579090246653,
+          "straddles_zero": false
+        },
+        "connected": {
+          "min": 633.9636168293008,
+          "max": 710.0351972571997,
+          "straddles_zero": false
+        }
+      }
+    },
+    "1->19": {
+      "od_1idx": [
+        1,
+        19
+      ],
+      "C_j_41": 50097.71019860236,
+      "C_j_81": 50097.69608479852,
+      "C_j_change_pct": 2.817255277953734e-05,
+      "phi_s_41": 1771.559983071581,
+      "interval_41": {
+        "unrestricted": {
+          "min": -19116.33351287901,
+          "max": 26695.753362099218,
+          "straddles_zero": true
+        },
+        "connected": {
+          "min": -13501.557636357411,
+          "max": 24259.646690610327,
+          "straddles_zero": true
+        }
+      }
+    },
+    "4->5": {
+      "od_1idx": [
+        4,
+        5
+      ],
+      "C_j_41": 2825.992855199194,
+      "C_j_81": 2825.9918415879797,
+      "C_j_change_pct": 3.586743725358943e-05,
+      "phi_s_41": 2659.419539961977,
+      "interval_41": {
+        "unrestricted": {
+          "min": 2163.0938412228925,
+          "max": 3613.265251458514,
+          "straddles_zero": false
+        },
+        "connected": {
+          "min": 2396.048848910099,
+          "max": 3452.4485331740775,
+          "straddles_zero": false
+        }
+      }
+    },
+    "1->15": {
+      "od_1idx": [
+        1,
+        15
+      ],
+      "C_j_41": 77403.23151461112,
+      "C_j_81": 77403.20857356337,
+      "C_j_change_pct": 2.9638359144712467e-05,
+      "phi_s_41": 2948.1396071973504,
+      "interval_41": {
+        "unrestricted": {
+          "min": -16239.954818017668,
+          "max": 44136.591401858655,
+          "straddles_zero": true
+        },
+        "connected": {
+          "min": -8286.004454306018,
+          "max": 40539.74499411164,
+          "straddles_zero": true
+        }
+      }
+    },
+    "6->8": {
+      "od_1idx": [
+        6,
+        8
+      ],
+      "C_j_41": 73964.85150169354,
+      "C_j_81": 73964.80718209317,
+      "C_j_change_pct": 5.991981255615286e-05,
+      "phi_s_41": 48126.7886405302,
+      "interval_41": {
+        "unrestricted": {
+          "min": 26146.962685805687,
+          "max": 74153.51312592732,
+          "straddles_zero": false
+        },
+        "connected": {
+          "min": 35306.50984623485,
+          "max": 66694.58116447707,
+          "straddles_zero": false
+        }
+      }
+    },
+    "7->12": {
+      "od_1idx": [
+        7,
+        12
+      ],
+      "C_j_41": 117482.33125727983,
+      "C_j_81": 117482.310300426,
+      "C_j_change_pct": 1.783830266832709e-05,
+      "phi_s_41": 9473.760946276467,
+      "interval_41": {
+        "unrestricted": {
+          "min": -45241.09792239405,
+          "max": 61650.1450435826,
+          "straddles_zero": true
+        },
+        "connected": {
+          "min": -17616.15519689441,
+          "max": 60028.704711095445,
+          "straddles_zero": true
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 0.014480352401733398
+}

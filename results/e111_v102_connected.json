@@ -1,0 +1,170 @@
+{
+  "purpose": "fixed structural outcome, not TSTT",
+  "response_check": "particular solution and complete circulation basis",
+  "records": [
+    {
+      "scenario": "first_query",
+      "query_0based": [
+        0,
+        4
+      ],
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "all": {
+        "boundary_count": 512,
+        "particular_min": 0.9999999999999734,
+        "particular_max": 1.000000000000025,
+        "witness_min": -0.9999999999999796,
+        "witness_max": 2.9999999999999782,
+        "max_cycle_coefficient": 0.7570524970554311,
+        "universal_common_account": false
+      },
+      "connected": {
+        "boundary_count": 5,
+        "particular_min": 0.999999999999999,
+        "particular_max": 0.9999999999999998,
+        "witness_min": 0.999999999999999,
+        "witness_max": 0.9999999999999998,
+        "max_cycle_coefficient": 2.5673907444456745e-16,
+        "universal_common_account": true
+      }
+    },
+    {
+      "scenario": "first_query",
+      "query_0based": [
+        4,
+        8
+      ],
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "all": {
+        "boundary_count": 512,
+        "particular_min": 0.9999999999999573,
+        "particular_max": 2.0000000000000426,
+        "witness_min": -1.0000000000000413,
+        "witness_max": 4.000000000000041,
+        "max_cycle_coefficient": 0.7570524970554311,
+        "universal_common_account": false
+      },
+      "connected": {
+        "boundary_count": 5,
+        "particular_min": 0.999999999999999,
+        "particular_max": 2.0000000000000004,
+        "witness_min": 0.999999999999999,
+        "witness_max": 2.0000000000000004,
+        "max_cycle_coefficient": 4.996003610813204e-16,
+        "universal_common_account": false
+      }
+    },
+    {
+      "scenario": "merge_new_query",
+      "query_0based": [
+        0,
+        4
+      ],
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "all": {
+        "boundary_count": 512,
+        "particular_min": 0.9999999999999738,
+        "particular_max": 1.0000000000000246,
+        "witness_min": -0.9999999999999787,
+        "witness_max": 2.9999999999999774,
+        "max_cycle_coefficient": 0.7570524970554311,
+        "universal_common_account": false
+      },
+      "connected": {
+        "boundary_count": 5,
+        "particular_min": 0.999999999999999,
+        "particular_max": 0.9999999999999998,
+        "witness_min": 0.999999999999999,
+        "witness_max": 0.9999999999999998,
+        "max_cycle_coefficient": 2.5673907444456745e-16,
+        "universal_common_account": true
+      }
+    },
+    {
+      "scenario": "merge_new_query",
+      "query_0based": [
+        4,
+        8
+      ],
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        3.0,
+        4.0,
+        5.0
+      ],
+      "all": {
+        "boundary_count": 512,
+        "particular_min": 0.9999999999999573,
+        "particular_max": 1.0000000000000422,
+        "witness_min": -1.0000000000000413,
+        "witness_max": 3.000000000000041,
+        "max_cycle_coefficient": 0.7570524970554311,
+        "universal_common_account": false
+      },
+      "connected": {
+        "boundary_count": 5,
+        "particular_min": 0.999999999999999,
+        "particular_max": 1.0000000000000002,
+        "witness_min": 0.999999999999999,
+        "witness_max": 1.0000000000000002,
+        "max_cycle_coefficient": 4.2327252813834093e-16,
+        "universal_common_account": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "path": 0,
+    "completeness_relative": 1.2500694758399887e-09,
+    "single_od_endpoint_column_relative": 1.1193944286023744e-09
+  },
+  {
+    "path": 1,
+    "completeness_relative": 4.59270923280486e-10,
+    "single_od_endpoint_column_relative": 1.0451565600216218e-09
+  },
+  {
+    "path": 2,
+    "completeness_relative": 7.817495898225516e-09,
+    "single_od_endpoint_column_relative": 7.2379317171019e-09
+  },
+  {
+    "path": 3,
+    "completeness_relative": 3.4190955598723817e-09,
+    "single_od_endpoint_column_relative": 6.584112932326406e-09
+  },
+  {
+    "path": 4,
+    "completeness_relative": 9.866217036848925e-10,
+    "single_od_endpoint_column_relative": 9.949385624555676e-09
+  },
+  {
+    "path": 5,
+    "completeness_relative": 8.586731188971876e-09,
+    "single_od_endpoint_column_relative": 3.855844229852e-08
+  },
+  {
+    "path": 6,
+    "completeness_relative": 1.441451094832094e-09
+  },
+  {
+    "path": 7,
+    "completeness_relative": 4.02286916119899e-10
+  },
+  {
+    "path": 8,
+    "completeness_relative": 2.1209480714830042e-09
+  },
+  {
+    "path": 9,
+    "completeness_relative": 3.376939252808567e-08
+  },
+  {
+    "path": 10,
+    "completeness_relative": 1.986133639268331e-09
+  },
+  {
+    "path": 11,
+    "completeness_relative": 6.2434461798348885e-09
+  },
+  {
+    "path": 12,
+    "completeness_relative": 1.0440620349859225e-09
+  },
+  {
+    "path": 13,
+    "completeness_relative": 4.659122491764605e-09
+  },
+  {
+    "path": 14,
+    "completeness_relative": 1.04212945509324e-08
+  },
+  {
+    "path": 15,
+    "completeness_relative": 2.2779621918160247e-08
+  },
+  {
+    "path": 16,
+    "completeness_relative": 4.701999872936204e-09
+  },
+  {
+    "path": 17,
+    "completeness_relative": 7.407626431315383e-09
+  },
+  {
+    "path": 18,
+    "completeness_relative": 1.2683226662383741e-08
+  },
+  {
+    "path": 19,
+    "completeness_relative": 2.9321590670522744e-08
+  },
+  {
+    "path": 20,
+    "completeness_relative": 1.2433290006423515e-08
+  },
+  {
+    "path": 21,
+    "completeness_relative": 2.941349723817304e-08
+  },
+  {
+    "path": 22,
+    "completeness_relative": 1.1656583324835323e-08
+  },
+  {
+    "path": 23,
+    "completeness_relative": 2.1860804720512966e-08
+  }
+]

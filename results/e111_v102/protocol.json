@@ -1,0 +1,63 @@
+{
+  "pair_seed": 102111,
+  "test_seed": 102112,
+  "train_pairs_per_query": 64,
+  "validation_pairs_per_query": 16,
+  "pair_halfwidth_fraction": [
+    0.025,
+    0.15
+  ],
+  "train_domain_centers": [
+    0.65,
+    1.3
+  ],
+  "steps": 1200,
+  "budget_points": [
+    300,
+    600,
+    1200
+  ],
+  "validation_every": 100,
+  "methods": [
+    "flow",
+    "edge",
+    "cut",
+    "response"
+  ],
+  "lambda_edge": 1.0,
+  "lambda_cut": 0.01,
+  "selection": "Minimum validation K MSE among states with validation flow error <= 1.1 times original checkpoint; fallback minimum validation flow error, common for all four methods. Test paths never used.",
+  "pair_reference_seconds": 63.961501598358154,
+  "response_reference_seconds": 53.06952118873596,
+  "test_reference_seconds": 74.39781665802002,
+  "pair_endpoint_solves": 960,
+  "response_center_solves_and_sensitivities": 480,
+  "test_solves_and_sensitivities": 984,
+  "max_solver_residual": 2.1286723494995385e-08,
+  "query_ods_1based": [
+    [
+      7,
+      18
+    ],
+    [
+      1,
+      19
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      1,
+      15
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      12
+    ]
+  ]
+}

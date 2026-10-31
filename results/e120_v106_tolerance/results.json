@@ -1,0 +1,3220 @@
+{
+  "tolerances": [
+    0.025,
+    0.05,
+    0.075,
+    0.1
+  ],
+  "sioux_levels": {
+    "0.7": {
+      "queries": 18,
+      "tau25": {
+        "single_value_queries": 2,
+        "median_segments": 42.0,
+        "median_compression": 0.5113636363636364,
+        "median_equal_over_greedy": 9.367430136215972,
+        "median_equal_over_tau": 8.813079270323094
+      },
+      "tau50": {
+        "single_value_queries": 2,
+        "median_segments": 29.5,
+        "median_compression": 0.6399190512048193,
+        "median_equal_over_greedy": 5.149079348916992,
+        "median_equal_over_tau": 4.989203273918127
+      },
+      "tau75": {
+        "single_value_queries": 2,
+        "median_segments": 22.5,
+        "median_compression": 0.7455086580086581,
+        "median_equal_over_greedy": 3.7620764178237778,
+        "median_equal_over_tau": 3.6855134097317634
+      },
+      "tau100": {
+        "single_value_queries": 2,
+        "median_segments": 18.0,
+        "median_compression": 0.7864493448386065,
+        "median_equal_over_greedy": 2.8065983684405627,
+        "median_equal_over_tau": 2.6571264902450844
+      }
+    },
+    "1.0": {
+      "queries": 18,
+      "tau25": {
+        "single_value_queries": 1,
+        "median_segments": 50.5,
+        "median_compression": 0.3526366251198466,
+        "median_equal_over_greedy": 10.340812082281179,
+        "median_equal_over_tau": 9.705699928736848
+      },
+      "tau50": {
+        "single_value_queries": 1,
+        "median_segments": 38.0,
+        "median_compression": 0.5669975186104218,
+        "median_equal_over_greedy": 5.506080596434412,
+        "median_equal_over_tau": 5.263682719623388
+      },
+      "tau75": {
+        "single_value_queries": 1,
+        "median_segments": 26.5,
+        "median_compression": 0.6826007326007326,
+        "median_equal_over_greedy": 3.8098968907146293,
+        "median_equal_over_tau": 3.6788754650341833
+      },
+      "tau100": {
+        "single_value_queries": 2,
+        "median_segments": 21.0,
+        "median_compression": 0.7524623027978733,
+        "median_equal_over_greedy": 3.3337051915473985,
+        "median_equal_over_tau": 3.257795962107529
+      }
+    },
+    "1.3": {
+      "queries": 18,
+      "tau25": {
+        "single_value_queries": 0,
+        "median_segments": 52.5,
+        "median_compression": 0.3561789772727273,
+        "median_equal_over_greedy": 11.264306170811075,
+        "median_equal_over_tau": 10.44934950608475
+      },
+      "tau50": {
+        "single_value_queries": 0,
+        "median_segments": 38.5,
+        "median_compression": 0.5362762237762237,
+        "median_equal_over_greedy": 5.625449531201653,
+        "median_equal_over_tau": 5.272676957656097
+      },
+      "tau75": {
+        "single_value_queries": 1,
+        "median_segments": 29.0,
+        "median_compression": 0.6559139784946237,
+        "median_equal_over_greedy": 3.698044273217059,
+        "median_equal_over_tau": 3.52651472395186
+      },
+      "tau100": {
+        "single_value_queries": 1,
+        "median_segments": 22.0,
+        "median_compression": 0.7424698795180723,
+        "median_equal_over_greedy": 2.89039052321609,
+        "median_equal_over_tau": 2.7882809093438845
+      }
+    }
+  },
+  "sioux_rows": [
+    {
+      "od": [
+        4,
+        3
+      ],
+      "level": 1.0,
+      "regions": 33,
+      "relative_error": 0.09901855412697688,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 12,
+          "compression": 0.6363636363636364,
+          "greedy_worst_epsilon": 13.245975073590671,
+          "equal_count_worst_epsilon": 29.71174377481657,
+          "equal_over_greedy": 2.243077131713371,
+          "equal_over_tau": 2.2214417138925873
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 6,
+          "compression": 0.8181818181818181,
+          "greedy_worst_epsilon": 23.859085084394792,
+          "equal_count_worst_epsilon": 52.97485665772092,
+          "equal_over_greedy": 2.220322215639757,
+          "equal_over_tau": 1.9803710825395375
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.9090909090909091,
+          "greedy_worst_epsilon": 38.08529371709301,
+          "equal_count_worst_epsilon": 52.97485665772092,
+          "equal_over_greedy": 1.390953081555082,
+          "equal_over_tau": 1.3202473883596917
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9696969696969697,
+          "greedy_worst_epsilon": 52.97485665772092,
+          "equal_count_worst_epsilon": 52.97485665772092,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.9901855412697688
+        }
+      ]
+    },
+    {
+      "od": [
+        12,
+        3
+      ],
+      "level": 1.0,
+      "regions": 36,
+      "relative_error": 0.014002021143415467,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 4.764000192893036,
+          "equal_count_worst_epsilon": 4.764000192893036,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.5600808457366186
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 4.764000192893036,
+          "equal_count_worst_epsilon": 4.764000192893036,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.2800404228683093
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 4.764000192893036,
+          "equal_count_worst_epsilon": 4.764000192893036,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.18669361524553957
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 4.764000192893036,
+          "equal_count_worst_epsilon": 4.764000192893036,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.14002021143415466
+        }
+      ]
+    },
+    {
+      "od": [
+        6,
+        1
+      ],
+      "level": 1.0,
+      "regions": 56,
+      "relative_error": 0.35629836311188107,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 16,
+          "compression": 0.7142857142857143,
+          "greedy_worst_epsilon": 49.237321921456896,
+          "equal_count_worst_epsilon": 813.4694360669032,
+          "equal_over_greedy": 16.521398896644808,
+          "equal_over_tau": 14.206667889755256
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 10,
+          "compression": 0.8214285714285714,
+          "greedy_worst_epsilon": 106.23101686990958,
+          "equal_count_worst_epsilon": 813.4694360669032,
+          "equal_over_greedy": 7.657551062163673,
+          "equal_over_tau": 7.103333944877628
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 10,
+          "compression": 0.8214285714285714,
+          "greedy_worst_epsilon": 106.23101686990958,
+          "equal_count_worst_epsilon": 813.4694360669032,
+          "equal_over_greedy": 7.657551062163673,
+          "equal_over_tau": 4.735555963251753
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.8392857142857143,
+          "greedy_worst_epsilon": 201.98590897668873,
+          "equal_count_worst_epsilon": 813.4694360669032,
+          "equal_over_greedy": 4.0273573547191654,
+          "equal_over_tau": 3.551666972438814
+        }
+      ]
+    },
+    {
+      "od": [
+        15,
+        6
+      ],
+      "level": 1.0,
+      "regions": 105,
+      "relative_error": 0.4531523686017634,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 69,
+          "compression": 0.34285714285714286,
+          "greedy_worst_epsilon": 107.33839473042099,
+          "equal_count_worst_epsilon": 974.7935083407201,
+          "equal_over_greedy": 9.08149885033125,
+          "equal_over_tau": 8.794754355563622
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 39,
+          "compression": 0.6285714285714286,
+          "greedy_worst_epsilon": 218.82080252594642,
+          "equal_count_worst_epsilon": 801.4835231682318,
+          "equal_over_greedy": 3.6627391633535247,
+          "equal_over_tau": 3.6155609603385335
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 33,
+          "compression": 0.6857142857142857,
+          "greedy_worst_epsilon": 304.58027561363633,
+          "equal_count_worst_epsilon": 1089.773276392576,
+          "equal_over_greedy": 3.577950916870816,
+          "equal_over_tau": 3.27737385306853
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 27,
+          "compression": 0.7428571428571429,
+          "greedy_worst_epsilon": 428.347460493309,
+          "equal_count_worst_epsilon": 801.4835231682318,
+          "equal_over_greedy": 1.8711060461177906,
+          "equal_over_tau": 1.8077804801692667
+        }
+      ]
+    },
+    {
+      "od": [
+        6,
+        21
+      ],
+      "level": 1.0,
+      "regions": 149,
+      "relative_error": 0.5007279673562354,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 95,
+          "compression": 0.36241610738255037,
+          "greedy_worst_epsilon": 55.997931554493334,
+          "equal_count_worst_epsilon": 593.9758739317567,
+          "equal_over_greedy": 10.607103824071435,
+          "equal_over_tau": 10.112980307124674
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 72,
+          "compression": 0.5167785234899329,
+          "greedy_worst_epsilon": 109.30816872574906,
+          "equal_count_worst_epsilon": 775.2923142060445,
+          "equal_over_greedy": 7.09272072932838,
+          "equal_over_tau": 6.600028932094015
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 49,
+          "compression": 0.6711409395973154,
+          "greedy_worst_epsilon": 173.97632396448444,
+          "equal_count_worst_epsilon": 921.6717814263448,
+          "equal_over_greedy": 5.29768511268519,
+          "equal_over_tau": 5.230767210290226
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 37,
+          "compression": 0.7516778523489933,
+          "greedy_worst_epsilon": 234.85121370105662,
+          "equal_count_worst_epsilon": 789.8918252826952,
+          "equal_over_greedy": 3.3633712716858803,
+          "equal_over_tau": 3.3621569597456578
+        }
+      ]
+    },
+    {
+      "od": [
+        18,
+        14
+      ],
+      "level": 1.0,
+      "regions": 134,
+      "relative_error": 0.46093707480295226,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 106,
+          "compression": 0.20895522388059706,
+          "greedy_worst_epsilon": 40.71879645877016,
+          "equal_count_worst_epsilon": 485.3742332001093,
+          "equal_over_greedy": 11.92015175820767,
+          "equal_over_tau": 10.06128774147397
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 70,
+          "compression": 0.4776119402985075,
+          "greedy_worst_epsilon": 93.97513492149847,
+          "equal_count_worst_epsilon": 506.5667520544539,
+          "equal_over_greedy": 5.390433889534835,
+          "equal_over_tau": 5.250292974022064
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 66,
+          "compression": 0.5074626865671642,
+          "greedy_worst_epsilon": 136.60872991926317,
+          "equal_count_worst_epsilon": 506.5667520544539,
+          "equal_over_greedy": 3.7081579804880613,
+          "equal_over_tau": 3.5001953160147092
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 49,
+          "compression": 0.6343283582089552,
+          "greedy_worst_epsilon": 192.73432105888787,
+          "equal_count_worst_epsilon": 529.5768109262026,
+          "equal_over_greedy": 2.747703719901533,
+          "equal_over_tau": 2.7443899528881506
+        }
+      ]
+    },
+    {
+      "od": [
+        8,
+        4
+      ],
+      "level": 1.0,
+      "regions": 77,
+      "relative_error": 0.4596368046002749,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 52,
+          "compression": 0.3246753246753247,
+          "greedy_worst_epsilon": 362.1598160044741,
+          "equal_count_worst_epsilon": 5659.478765034001,
+          "equal_over_greedy": 15.62702021298819,
+          "equal_over_tau": 14.381214780454414
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 38,
+          "compression": 0.5064935064935066,
+          "greedy_worst_epsilon": 779.837510053515,
+          "equal_count_worst_epsilon": 5659.478765034001,
+          "equal_over_greedy": 7.257253840797719,
+          "equal_over_tau": 7.190607390227207
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 25,
+          "compression": 0.6753246753246753,
+          "greedy_worst_epsilon": 1174.0796794236085,
+          "equal_count_worst_epsilon": 5659.478765034001,
+          "equal_over_greedy": 4.820353221522761,
+          "equal_over_tau": 4.793738260151472
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 19,
+          "compression": 0.7532467532467533,
+          "greedy_worst_epsilon": 1430.7746950980227,
+          "equal_count_worst_epsilon": 7064.977186933991,
+          "equal_over_greedy": 4.937868422707859,
+          "equal_over_tau": 4.488176321644787
+        }
+      ]
+    },
+    {
+      "od": [
+        19,
+        8
+      ],
+      "level": 1.0,
+      "regions": 85,
+      "relative_error": 0.4495482499248491,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 56,
+          "compression": 0.3411764705882353,
+          "greedy_worst_epsilon": 160.75181782352956,
+          "equal_count_worst_epsilon": 2342.8037072601337,
+          "equal_over_greedy": 14.574041768112515,
+          "equal_over_tau": 12.896599604381825
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 38,
+          "compression": 0.5529411764705883,
+          "greedy_worst_epsilon": 333.0482278769732,
+          "equal_count_worst_epsilon": 1917.272042904744,
+          "equal_over_greedy": 5.756739962636814,
+          "equal_over_tau": 5.277072465224712
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 34,
+          "compression": 0.6,
+          "greedy_worst_epsilon": 523.2653729398126,
+          "equal_count_worst_epsilon": 2440.5374158445566,
+          "equal_over_greedy": 4.664052968254167,
+          "equal_over_tau": 4.478200453317671
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 22,
+          "compression": 0.7411764705882353,
+          "greedy_worst_epsilon": 699.1515521351776,
+          "equal_count_worst_epsilon": 2552.427814596932,
+          "equal_over_greedy": 3.6507504085515246,
+          "equal_over_tau": 3.5126331158192228
+        }
+      ]
+    },
+    {
+      "od": [
+        11,
+        6
+      ],
+      "level": 1.0,
+      "regions": 95,
+      "relative_error": 0.39875753835612493,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 49,
+          "compression": 0.4842105263157894,
+          "greedy_worst_epsilon": 147.43240431034246,
+          "equal_count_worst_epsilon": 1073.388494877895,
+          "equal_over_greedy": 7.280546633550331,
+          "equal_over_tau": 7.031278524393725
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 31,
+          "compression": 0.6736842105263158,
+          "greedy_worst_epsilon": 301.7137190865142,
+          "equal_count_worst_epsilon": 1279.0322650330045,
+          "equal_over_greedy": 4.239224748895994,
+          "equal_over_tau": 4.189178540690557
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 20,
+          "compression": 0.7894736842105263,
+          "greedy_worst_epsilon": 442.8190713303002,
+          "equal_count_worst_epsilon": 1656.4586317843805,
+          "equal_over_greedy": 3.740712040265363,
+          "equal_over_tau": 3.6169016964471483
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.8105263157894737,
+          "greedy_worst_epsilon": 599.3932569146427,
+          "equal_count_worst_epsilon": 1656.4586317843805,
+          "equal_over_greedy": 2.7635590035012196,
+          "equal_over_tau": 2.712676272335361
+        }
+      ]
+    },
+    {
+      "od": [
+        16,
+        2
+      ],
+      "level": 1.0,
+      "regions": 78,
+      "relative_error": 0.45345869992114535,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 47,
+          "compression": 0.39743589743589747,
+          "greedy_worst_epsilon": 221.99448536399905,
+          "equal_count_worst_epsilon": 2671.185352546967,
+          "equal_over_greedy": 12.032665352777066,
+          "equal_over_tau": 11.096929460050655
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 34,
+          "compression": 0.5641025641025641,
+          "greedy_worst_epsilon": 444.93558544223197,
+          "equal_count_worst_epsilon": 2671.185352546967,
+          "equal_over_greedy": 6.003532735849871,
+          "equal_over_tau": 5.548464730025327
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 25,
+          "compression": 0.6794871794871795,
+          "greedy_worst_epsilon": 672.6531237079589,
+          "equal_count_worst_epsilon": 2671.185352546967,
+          "equal_over_greedy": 3.97111863217437,
+          "equal_over_tau": 3.6989764866835517
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 21,
+          "compression": 0.7307692307692308,
+          "greedy_worst_epsilon": 905.2805077990879,
+          "equal_count_worst_epsilon": 2344.147643786272,
+          "equal_over_greedy": 2.589415792774936,
+          "equal_over_tau": 2.4345784374563384
+        }
+      ]
+    },
+    {
+      "od": [
+        8,
+        21
+      ],
+      "level": 1.0,
+      "regions": 128,
+      "relative_error": 0.4107073047130014,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 86,
+          "compression": 0.328125,
+          "greedy_worst_epsilon": 102.25428308907067,
+          "equal_count_worst_epsilon": 995.8415945594516,
+          "equal_over_greedy": 9.73887415250864,
+          "equal_over_tau": 9.452578327578733
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 61,
+          "compression": 0.5234375,
+          "greedy_worst_epsilon": 205.7250853104615,
+          "equal_count_worst_epsilon": 1021.9544261676338,
+          "equal_over_greedy": 4.967573228249698,
+          "equal_over_tau": 4.850221316995125
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 39,
+          "compression": 0.6953125,
+          "greedy_worst_epsilon": 311.6411582659148,
+          "equal_count_worst_epsilon": 1404.8130228279697,
+          "equal_over_greedy": 4.5077904043383175,
+          "equal_over_tau": 4.444851874177356
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 32,
+          "compression": 0.75,
+          "greedy_worst_epsilon": 416.0690437852545,
+          "equal_count_worst_epsilon": 1439.4619823362336,
+          "equal_over_greedy": 3.4596709460538055,
+          "equal_over_tau": 3.415861320701415
+        }
+      ]
+    },
+    {
+      "od": [
+        14,
+        8
+      ],
+      "level": 1.0,
+      "regions": 119,
+      "relative_error": 0.4408599925711385,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 89,
+          "compression": 0.25210084033613445,
+          "greedy_worst_epsilon": 125.01992776101906,
+          "equal_count_worst_epsilon": 1635.1999391412355,
+          "equal_over_greedy": 13.079514349640244,
+          "equal_over_tau": 8.689622837236673
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 65,
+          "compression": 0.45378151260504207,
+          "greedy_worst_epsilon": 339.1555630167004,
+          "equal_count_worst_epsilon": 1551.981579638712,
+          "equal_over_greedy": 4.576016875071251,
+          "equal_over_tau": 4.123695902435566
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 49,
+          "compression": 0.5882352941176471,
+          "greedy_worst_epsilon": 557.1295635397519,
+          "equal_count_worst_epsilon": 2057.75055102459,
+          "equal_over_greedy": 3.6934865526621206,
+          "equal_over_tau": 3.6450336038438427
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 38,
+          "compression": 0.680672268907563,
+          "greedy_worst_epsilon": 745.652635403816,
+          "equal_count_worst_epsilon": 2511.6529274329987,
+          "equal_over_greedy": 3.3683954272793346,
+          "equal_over_tau": 3.3367963322112493
+        }
+      ]
+    },
+    {
+      "od": [
+        11,
+        15
+      ],
+      "level": 1.0,
+      "regions": 62,
+      "relative_error": 0.18222180515258798,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 46,
+          "compression": 0.25806451612903225,
+          "greedy_worst_epsilon": 526.6739322560989,
+          "equal_count_worst_epsilon": 4142.562176277272,
+          "equal_over_greedy": 7.865515877218169,
+          "equal_over_tau": 5.973895638684304
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 26,
+          "compression": 0.5806451612903225,
+          "greedy_worst_epsilon": 1297.2320468227972,
+          "equal_count_worst_epsilon": 2627.832619974375,
+          "equal_over_greedy": 2.025722866167628,
+          "equal_over_tau": 1.894769125923499
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 21,
+          "compression": 0.6612903225806452,
+          "greedy_worst_epsilon": 2018.1019582848821,
+          "equal_count_worst_epsilon": 4142.562176277272,
+          "equal_over_greedy": 2.0527021240284102,
+          "equal_over_tau": 1.9912985462281017
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 11,
+          "compression": 0.8225806451612903,
+          "greedy_worst_epsilon": 2748.9040551108046,
+          "equal_count_worst_epsilon": 4142.562176277272,
+          "equal_over_greedy": 1.5069868184651103,
+          "equal_over_tau": 1.493473909671076
+        }
+      ]
+    },
+    {
+      "od": [
+        17,
+        9
+      ],
+      "level": 1.0,
+      "regions": 68,
+      "relative_error": 0.3519851785982904,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 19,
+          "compression": 0.7205882352941176,
+          "greedy_worst_epsilon": 449.1329861054619,
+          "equal_count_worst_epsilon": 863.6209146886122,
+          "equal_over_greedy": 1.9228623623868577,
+          "equal_over_tau": 1.865337966202457
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.8676470588235294,
+          "greedy_worst_epsilon": 919.0338854779038,
+          "equal_count_worst_epsilon": 5272.126184160306,
+          "equal_over_greedy": 5.736596079282501,
+          "equal_over_tau": 5.693642295283092
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 6,
+          "compression": 0.9117647058823529,
+          "greedy_worst_epsilon": 1333.2149045479637,
+          "equal_count_worst_epsilon": 5081.857854212074,
+          "equal_over_greedy": 3.8117319547482222,
+          "equal_over_tau": 3.6587744433848144
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.9558823529411765,
+          "greedy_worst_epsilon": 1686.65253081017,
+          "equal_count_worst_epsilon": 6182.599947693525,
+          "equal_over_greedy": 3.6656038127330013,
+          "equal_over_tau": 3.3384550490050007
+        }
+      ]
+    },
+    {
+      "od": [
+        10,
+        12
+      ],
+      "level": 1.0,
+      "regions": 83,
+      "relative_error": 0.35228915325672544,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 40,
+          "compression": 0.5180722891566265,
+          "greedy_worst_epsilon": 762.8725833827893,
+          "equal_count_worst_epsilon": 4975.107898147504,
+          "equal_over_greedy": 6.521545021432663,
+          "equal_over_tau": 5.985348723902986
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 32,
+          "compression": 0.6144578313253012,
+          "greedy_worst_epsilon": 1629.6723007829569,
+          "equal_count_worst_epsilon": 9161.573268798667,
+          "equal_over_greedy": 5.621727303333988,
+          "equal_over_tau": 5.510956947663976
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 21,
+          "compression": 0.7469879518072289,
+          "greedy_worst_epsilon": 2435.08105508476,
+          "equal_count_worst_epsilon": 9272.939210742457,
+          "equal_over_greedy": 3.808061826681037,
+          "equal_over_tau": 3.7186312342769208
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 14,
+          "compression": 0.8313253012048193,
+          "greedy_worst_epsilon": 3202.4177658547706,
+          "equal_count_worst_epsilon": 11248.730434658133,
+          "equal_over_greedy": 3.5125743288698277,
+          "equal_over_tau": 3.3832218180473714
+        }
+      ]
+    },
+    {
+      "od": [
+        13,
+        10
+      ],
+      "level": 1.0,
+      "regions": 93,
+      "relative_error": 0.4534407205973671,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 48,
+          "compression": 0.4838709677419355,
+          "greedy_worst_epsilon": 774.6302663199767,
+          "equal_count_worst_epsilon": 7804.028374400507,
+          "equal_over_greedy": 10.074520340490924,
+          "equal_over_tau": 9.958821529894964
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 40,
+          "compression": 0.5698924731182795,
+          "greedy_worst_epsilon": 1439.9842261791437,
+          "equal_count_worst_epsilon": 11012.360643024003,
+          "equal_over_greedy": 7.647556440423114,
+          "equal_over_tau": 7.026507913942591
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 28,
+          "compression": 0.6989247311827957,
+          "greedy_worst_epsilon": 2319.460654604034,
+          "equal_count_worst_epsilon": 7996.059347334324,
+          "equal_over_greedy": 3.447378739304103,
+          "equal_over_tau": 3.401291579263728
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 21,
+          "compression": 0.7741935483870968,
+          "greedy_worst_epsilon": 3047.8425810751332,
+          "equal_count_worst_epsilon": 11327.164480233714,
+          "equal_over_greedy": 3.7164532546946805,
+          "equal_over_tau": 3.613685268894173
+        }
+      ]
+    },
+    {
+      "od": [
+        1,
+        10
+      ],
+      "level": 1.0,
+      "regions": 88,
+      "relative_error": 0.4476691070806668,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 62,
+          "compression": 0.2954545454545454,
+          "greedy_worst_epsilon": 448.9560606736841,
+          "equal_count_worst_epsilon": 6629.82483795047,
+          "equal_over_greedy": 14.767202001910926,
+          "equal_over_tau": 12.715182368015235
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 45,
+          "compression": 0.48863636363636365,
+          "greedy_worst_epsilon": 1039.8468749687227,
+          "equal_count_worst_epsilon": 3787.432129440499,
+          "equal_over_greedy": 3.642297938871452,
+          "equal_over_tau": 3.6319127133382647
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 34,
+          "compression": 0.6136363636363636,
+          "greedy_worst_epsilon": 1488.8029356424067,
+          "equal_count_worst_epsilon": 6804.054203068164,
+          "equal_over_greedy": 4.570150985182111,
+          "equal_over_tau": 4.349777565697964
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 29,
+          "compression": 0.6704545454545454,
+          "greedy_worst_epsilon": 2006.581827393491,
+          "equal_count_worst_epsilon": 6629.82483795047,
+          "equal_over_greedy": 3.3040391114089167,
+          "equal_over_tau": 3.1787955920038087
+        }
+      ]
+    },
+    {
+      "od": [
+        10,
+        1
+      ],
+      "level": 1.0,
+      "regions": 88,
+      "relative_error": 0.44812764911636876,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 59,
+          "compression": 0.3295454545454546,
+          "greedy_worst_epsilon": 487.643470294759,
+          "equal_count_worst_epsilon": 6105.7429565678885,
+          "equal_over_greedy": 12.520916055488728,
+          "equal_over_tau": 11.608134054900193
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 46,
+          "compression": 0.4772727272727273,
+          "greedy_worst_epsilon": 950.8978345216574,
+          "equal_count_worst_epsilon": 6105.7429565678885,
+          "equal_over_greedy": 6.421029404951101,
+          "equal_over_tau": 5.804067027450096
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 31,
+          "compression": 0.6477272727272727,
+          "greedy_worst_epsilon": 1472.9213711184793,
+          "equal_count_worst_epsilon": 7647.224492201014,
+          "equal_over_greedy": 5.191875576083202,
+          "equal_over_tau": 4.846257459839313
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 25,
+          "compression": 0.7159090909090908,
+          "greedy_worst_epsilon": 2011.354515190531,
+          "equal_count_worst_epsilon": 5052.345506217692,
+          "equal_over_greedy": 2.51191198173192,
+          "equal_over_tau": 2.401358210828386
+        }
+      ]
+    },
+    {
+      "od": [
+        4,
+        3
+      ],
+      "level": 0.7,
+      "regions": 33,
+      "relative_error": 0.011774665838935208,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9696969696969697,
+          "greedy_worst_epsilon": 2.8095741771526264,
+          "equal_count_worst_epsilon": 2.8095741771526264,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.47098663355740833
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9696969696969697,
+          "greedy_worst_epsilon": 2.8095741771526264,
+          "equal_count_worst_epsilon": 2.8095741771526264,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.23549331677870416
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9696969696969697,
+          "greedy_worst_epsilon": 2.8095741771526264,
+          "equal_count_worst_epsilon": 2.8095741771526264,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.1569955445191361
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9696969696969697,
+          "greedy_worst_epsilon": 2.8095741771526264,
+          "equal_count_worst_epsilon": 2.8095741771526264,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.11774665838935208
+        }
+      ]
+    },
+    {
+      "od": [
+        12,
+        3
+      ],
+      "level": 0.7,
+      "regions": 36,
+      "relative_error": 0.0011271121100055793,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 0.2537817104794158,
+          "equal_count_worst_epsilon": 0.2537817104794158,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.04508448440022316
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 0.2537817104794158,
+          "equal_count_worst_epsilon": 0.2537817104794158,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.02254224220011158
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 0.2537817104794158,
+          "equal_count_worst_epsilon": 0.2537817104794158,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.015028161466741057
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 0.2537817104794158,
+          "equal_count_worst_epsilon": 0.2537817104794158,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.01127112110005579
+        }
+      ]
+    },
+    {
+      "od": [
+        6,
+        1
+      ],
+      "level": 0.7,
+      "regions": 56,
+      "relative_error": 0.13444360222969265,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 10,
+          "compression": 0.8214285714285714,
+          "greedy_worst_epsilon": 10.103302985475239,
+          "equal_count_worst_epsilon": 80.32001425050794,
+          "equal_over_greedy": 7.949876824042395,
+          "equal_over_tau": 4.875639867966969
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.8392857142857143,
+          "greedy_worst_epsilon": 19.248902327843552,
+          "equal_count_worst_epsilon": 85.14659303883536,
+          "equal_over_greedy": 4.423451872144977,
+          "equal_over_tau": 2.5843130601727897
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 7,
+          "compression": 0.875,
+          "greedy_worst_epsilon": 47.035019909023504,
+          "equal_count_worst_epsilon": 83.75375283916719,
+          "equal_over_greedy": 1.7806679576444555,
+          "equal_over_tau": 1.6946923306101254
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 6,
+          "compression": 0.8928571428571429,
+          "greedy_worst_epsilon": 55.98974712047584,
+          "equal_count_worst_epsilon": 85.14659303883536,
+          "equal_over_greedy": 1.5207533060583633,
+          "equal_over_tau": 1.2921565300863949
+        }
+      ]
+    },
+    {
+      "od": [
+        15,
+        6
+      ],
+      "level": 0.7,
+      "regions": 105,
+      "relative_error": 0.388653651659418,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 56,
+          "compression": 0.4666666666666667,
+          "greedy_worst_epsilon": 24.066682745858543,
+          "equal_count_worst_epsilon": 186.86659670616928,
+          "equal_over_greedy": 7.764534841775224,
+          "equal_over_tau": 7.510509047298162
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 42,
+          "compression": 0.6,
+          "greedy_worst_epsilon": 47.123889706868795,
+          "equal_count_worst_epsilon": 206.55018317931308,
+          "equal_over_greedy": 4.383131028956768,
+          "equal_over_tau": 4.150814128457096
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 26,
+          "compression": 0.7523809523809524,
+          "greedy_worst_epsilon": 73.14555178756609,
+          "equal_count_worst_epsilon": 270.70176215080346,
+          "equal_over_greedy": 3.7008643114347204,
+          "equal_over_tau": 3.626665706248974
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 23,
+          "compression": 0.780952380952381,
+          "greedy_worst_epsilon": 94.67869080776927,
+          "equal_count_worst_epsilon": 286.1282539859135,
+          "equal_over_greedy": 3.0220977027117275,
+          "equal_over_tau": 2.8750039842967325
+        }
+      ]
+    },
+    {
+      "od": [
+        6,
+        21
+      ],
+      "level": 0.7,
+      "regions": 149,
+      "relative_error": 0.45944129075075346,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 88,
+          "compression": 0.4093959731543624,
+          "greedy_worst_epsilon": 13.83352293871576,
+          "equal_count_worst_epsilon": 219.16904744781777,
+          "equal_over_greedy": 15.843328443431519,
+          "equal_over_tau": 15.411700455596263
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 60,
+          "compression": 0.5973154362416108,
+          "greedy_worst_epsilon": 28.403557486567934,
+          "equal_count_worst_epsilon": 219.16904744781777,
+          "equal_over_greedy": 7.716253414786616,
+          "equal_over_tau": 7.705850227798131
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 40,
+          "compression": 0.7315436241610738,
+          "greedy_worst_epsilon": 42.51785136257831,
+          "equal_count_worst_epsilon": 219.16904744781777,
+          "equal_over_greedy": 5.154753601700516,
+          "equal_over_tau": 5.137233485198755
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 31,
+          "compression": 0.7919463087248322,
+          "greedy_worst_epsilon": 53.215637640890236,
+          "equal_count_worst_epsilon": 219.16904744781777,
+          "equal_over_greedy": 4.11850834010135,
+          "equal_over_tau": 3.8529251138990657
+        }
+      ]
+    },
+    {
+      "od": [
+        18,
+        14
+      ],
+      "level": 0.7,
+      "regions": 134,
+      "relative_error": 0.41019974363712197,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 91,
+          "compression": 0.32089552238805974,
+          "greedy_worst_epsilon": 10.853174718100945,
+          "equal_count_worst_epsilon": 69.1978348421253,
+          "equal_over_greedy": 6.375815062362999,
+          "equal_over_tau": 6.014138895819899
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 67,
+          "compression": 0.5,
+          "greedy_worst_epsilon": 22.934745474802185,
+          "equal_count_worst_epsilon": 103.99103302086405,
+          "equal_over_greedy": 4.534213520490835,
+          "equal_over_tau": 4.519046859877598
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 55,
+          "compression": 0.5895522388059702,
+          "greedy_worst_epsilon": 34.254950557205575,
+          "equal_count_worst_epsilon": 111.4281464633923,
+          "equal_over_greedy": 3.2529063580841524,
+          "equal_over_tau": 3.2281566384436586
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 48,
+          "compression": 0.6417910447761195,
+          "greedy_worst_epsilon": 44.50099649667118,
+          "equal_count_worst_epsilon": 118.50723371181357,
+          "equal_over_greedy": 2.663024270044791,
+          "equal_over_tau": 2.5749323130134916
+        }
+      ]
+    },
+    {
+      "od": [
+        8,
+        4
+      ],
+      "level": 0.7,
+      "regions": 77,
+      "relative_error": 0.4186855863869601,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 54,
+          "compression": 0.2987012987012987,
+          "greedy_worst_epsilon": 78.98562202946323,
+          "equal_count_worst_epsilon": 1338.4111326796778,
+          "equal_over_greedy": 16.944997055039,
+          "equal_over_tau": 14.639997751871611
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 31,
+          "compression": 0.5974025974025974,
+          "greedy_worst_epsilon": 180.9111442546082,
+          "equal_count_worst_epsilon": 1504.1354085227085,
+          "equal_over_greedy": 8.314221960841945,
+          "equal_over_tau": 8.226373220310444
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 24,
+          "compression": 0.6883116883116883,
+          "greedy_worst_epsilon": 265.40151846200206,
+          "equal_count_worst_epsilon": 1504.1354085227085,
+          "equal_over_greedy": 5.667395639780628,
+          "equal_over_tau": 5.4842488135402965
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.7662337662337663,
+          "greedy_worst_epsilon": 358.0137316102191,
+          "equal_count_worst_epsilon": 1338.4111326796778,
+          "equal_over_greedy": 3.7384351897900063,
+          "equal_over_tau": 3.659999437967903
+        }
+      ]
+    },
+    {
+      "od": [
+        19,
+        8
+      ],
+      "level": 0.7,
+      "regions": 85,
+      "relative_error": 0.3423913140774727,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 62,
+          "compression": 0.2705882352941177,
+          "greedy_worst_epsilon": 34.01418462832498,
+          "equal_count_worst_epsilon": 427.8487212778873,
+          "equal_over_greedy": 12.578538217305978,
+          "equal_over_tau": 9.518291215040412
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 51,
+          "compression": 0.4,
+          "greedy_worst_epsilon": 89.03445999211772,
+          "equal_count_worst_epsilon": 427.8487212778873,
+          "equal_over_greedy": 4.805428384872162,
+          "equal_over_tau": 4.759145607520206
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 28,
+          "compression": 0.6705882352941177,
+          "greedy_worst_epsilon": 131.3884318877781,
+          "equal_count_worst_epsilon": 427.8487212778873,
+          "equal_over_greedy": 3.2563652304133046,
+          "equal_over_tau": 3.172763738346804
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 27,
+          "compression": 0.6823529411764706,
+          "greedy_worst_epsilon": 142.51539838097824,
+          "equal_count_worst_epsilon": 400.6917219513475,
+          "equal_over_greedy": 2.8115679182975115,
+          "equal_over_tau": 2.228533303545742
+        }
+      ]
+    },
+    {
+      "od": [
+        11,
+        6
+      ],
+      "level": 0.7,
+      "regions": 95,
+      "relative_error": 0.4028129310290082,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 27,
+          "compression": 0.7157894736842105,
+          "greedy_worst_epsilon": 53.777446252104255,
+          "equal_count_worst_epsilon": 539.9340042494491,
+          "equal_over_greedy": 10.040157015234282,
+          "equal_over_tau": 9.369732624361122
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 20,
+          "compression": 0.7894736842105263,
+          "greedy_worst_epsilon": 110.1274466253899,
+          "equal_count_worst_epsilon": 737.0196564030894,
+          "equal_over_greedy": 6.692424813136178,
+          "equal_over_tau": 6.394927032790689
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 19,
+          "compression": 0.8,
+          "greedy_worst_epsilon": 124.65884365636248,
+          "equal_count_worst_epsilon": 737.0196564030894,
+          "equal_over_greedy": 5.912293382367441,
+          "equal_over_tau": 4.2632846885271265
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.8105263157894737,
+          "greedy_worst_epsilon": 214.69326947353147,
+          "equal_count_worst_epsilon": 737.0196564030894,
+          "equal_over_greedy": 3.432895955287285,
+          "equal_over_tau": 3.1974635163953447
+        }
+      ]
+    },
+    {
+      "od": [
+        16,
+        2
+      ],
+      "level": 0.7,
+      "regions": 78,
+      "relative_error": 0.3474861300511845,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 32,
+          "compression": 0.5897435897435898,
+          "greedy_worst_epsilon": 57.70806076766985,
+          "equal_count_worst_epsilon": 654.7380165178474,
+          "equal_over_greedy": 11.345694306966825,
+          "equal_over_tau": 11.23522133537611
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 23,
+          "compression": 0.7051282051282051,
+          "greedy_worst_epsilon": 109.25564159855139,
+          "equal_count_worst_epsilon": 654.7380165178474,
+          "equal_over_greedy": 5.992715862889853,
+          "equal_over_tau": 5.617610667688055
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 22,
+          "compression": 0.717948717948718,
+          "greedy_worst_epsilon": 164.07035383604943,
+          "equal_count_worst_epsilon": 654.7380165178474,
+          "equal_over_greedy": 3.99059306699678,
+          "equal_over_tau": 3.7450737784587043
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.7692307692307692,
+          "greedy_worst_epsilon": 228.9689224788408,
+          "equal_count_worst_epsilon": 583.1542488011232,
+          "equal_over_greedy": 2.546870738997398,
+          "equal_over_tau": 2.5017132397439656
+        }
+      ]
+    },
+    {
+      "od": [
+        8,
+        21
+      ],
+      "level": 0.7,
+      "regions": 128,
+      "relative_error": 0.3735921900001808,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 74,
+          "compression": 0.421875,
+          "greedy_worst_epsilon": 24.78401068005678,
+          "equal_count_worst_epsilon": 348.0683978275956,
+          "equal_over_greedy": 14.04407068415604,
+          "equal_over_tau": 13.080649709576393
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 49,
+          "compression": 0.6171875,
+          "greedy_worst_epsilon": 48.22257100843581,
+          "equal_count_worst_epsilon": 305.9000141894571,
+          "equal_over_greedy": 6.34350279946593,
+          "equal_over_tau": 5.747966429501431
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 41,
+          "compression": 0.6796875,
+          "greedy_worst_epsilon": 77.78747171732402,
+          "equal_count_worst_epsilon": 345.8223953236861,
+          "equal_over_greedy": 4.445733839767775,
+          "equal_over_tau": 4.332081130403185
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 30,
+          "compression": 0.765625,
+          "greedy_worst_epsilon": 105.17897684164836,
+          "equal_count_worst_epsilon": 349.8405664667862,
+          "equal_over_greedy": 3.3261453664213407,
+          "equal_over_tau": 3.2868122563790254
+        }
+      ]
+    },
+    {
+      "od": [
+        14,
+        8
+      ],
+      "level": 0.7,
+      "regions": 119,
+      "relative_error": 0.3989933225219779,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 82,
+          "compression": 0.31092436974789917,
+          "greedy_worst_epsilon": 43.061999367182125,
+          "equal_count_worst_epsilon": 384.07304459720626,
+          "equal_over_greedy": 8.919071344604385,
+          "equal_over_tau": 8.39588197529038
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 53,
+          "compression": 0.5546218487394958,
+          "greedy_worst_epsilon": 91.03058935361423,
+          "equal_count_worst_epsilon": 461.5192125565709,
+          "equal_over_greedy": 5.069935456132988,
+          "equal_over_tau": 5.044432162660171
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 47,
+          "compression": 0.6050420168067228,
+          "greedy_worst_epsilon": 132.98632297090262,
+          "equal_count_worst_epsilon": 513.861977951623,
+          "equal_over_greedy": 3.864021250245831,
+          "equal_over_tau": 3.7443611132145533
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 41,
+          "compression": 0.6554621848739496,
+          "greedy_worst_epsilon": 178.91212444876055,
+          "equal_count_worst_epsilon": 501.2453638496654,
+          "equal_over_greedy": 2.8016288185836133,
+          "equal_over_tau": 2.739320667476677
+        }
+      ]
+    },
+    {
+      "od": [
+        11,
+        15
+      ],
+      "level": 0.7,
+      "regions": 62,
+      "relative_error": 0.12468636224518118,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 31,
+          "compression": 0.5,
+          "greedy_worst_epsilon": 152.44046657988838,
+          "equal_count_worst_epsilon": 263.5493422207501,
+          "equal_over_greedy": 1.7288673285622205,
+          "equal_over_tau": 1.6084541963497636
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 14,
+          "compression": 0.7741935483870968,
+          "greedy_worst_epsilon": 304.079280536635,
+          "equal_count_worst_epsilon": 592.480471689918,
+          "equal_over_greedy": 1.9484407837466482,
+          "equal_over_tau": 1.8079682781881459
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.8548387096774194,
+          "greedy_worst_epsilon": 470.497329014906,
+          "equal_count_worst_epsilon": 617.5071333229089,
+          "equal_over_greedy": 1.3124561931431187,
+          "equal_over_tau": 1.2562251550315138
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 2,
+          "compression": 0.967741935483871,
+          "greedy_worst_epsilon": 631.6838256857363,
+          "equal_count_worst_epsilon": 817.2072000108092,
+          "equal_over_greedy": 1.2936965722110654,
+          "equal_over_tau": 1.2468636224518117
+        }
+      ]
+    },
+    {
+      "od": [
+        17,
+        9
+      ],
+      "level": 0.7,
+      "regions": 68,
+      "relative_error": 0.33072313724763963,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 21,
+          "compression": 0.6911764705882353,
+          "greedy_worst_epsilon": 107.51667465022092,
+          "equal_count_worst_epsilon": 1159.344721793882,
+          "equal_over_greedy": 10.782929490383934,
+          "equal_over_tau": 10.7271901641844
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 8,
+          "compression": 0.8823529411764706,
+          "greedy_worst_epsilon": 202.85002860563145,
+          "equal_count_worst_epsilon": 1237.6944842001426,
+          "equal_over_greedy": 6.101524819631118,
+          "equal_over_tau": 5.726072602734266
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 5,
+          "compression": 0.9264705882352942,
+          "greedy_worst_epsilon": 313.1869522844845,
+          "equal_count_worst_epsilon": 1389.6749710297254,
+          "equal_over_greedy": 4.437205831510532,
+          "equal_over_tau": 4.286130317241299
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.9558823529411765,
+          "greedy_worst_epsilon": 370.422044491786,
+          "equal_count_worst_epsilon": 1389.6749710297254,
+          "equal_over_greedy": 3.751598998208491,
+          "equal_over_tau": 3.2145977379309745
+        }
+      ]
+    },
+    {
+      "od": [
+        10,
+        12
+      ],
+      "level": 0.7,
+      "regions": 83,
+      "relative_error": 0.1864978191765912,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 34,
+          "compression": 0.5903614457831325,
+          "greedy_worst_epsilon": 223.68963509554214,
+          "equal_count_worst_epsilon": 820.521104481204,
+          "equal_over_greedy": 3.6681230407959835,
+          "equal_over_tau": 3.5734106626718503
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 28,
+          "compression": 0.6626506024096386,
+          "greedy_worst_epsilon": 423.2051183689364,
+          "equal_count_worst_epsilon": 820.521104481204,
+          "equal_over_greedy": 1.9388260417160186,
+          "equal_over_tau": 1.7867053313359251
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 15,
+          "compression": 0.8192771084337349,
+          "greedy_worst_epsilon": 684.6043452886611,
+          "equal_count_worst_epsilon": 1257.368839732942,
+          "equal_over_greedy": 1.8366357858899898,
+          "equal_over_tau": 1.825301504240977
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 8,
+          "compression": 0.9036144578313253,
+          "greedy_worst_epsilon": 873.364397064971,
+          "equal_count_worst_epsilon": 1330.3522209909975,
+          "equal_over_greedy": 1.5232498891204864,
+          "equal_over_tau": 1.4484377018566095
+        }
+      ]
+    },
+    {
+      "od": [
+        13,
+        10
+      ],
+      "level": 0.7,
+      "regions": 93,
+      "relative_error": 0.4316650162342617,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 42,
+          "compression": 0.5483870967741935,
+          "greedy_worst_epsilon": 200.7871188041654,
+          "equal_count_worst_epsilon": 2624.5033008237997,
+          "equal_over_greedy": 13.071074063190121,
+          "equal_over_tau": 12.001436998503545
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 39,
+          "compression": 0.5806451612903225,
+          "greedy_worst_epsilon": 428.62059162586274,
+          "equal_count_worst_epsilon": 2826.7076622548147,
+          "equal_over_greedy": 6.59489468653949,
+          "equal_over_tau": 6.46304272337739
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 28,
+          "compression": 0.6989247311827957,
+          "greedy_worst_epsilon": 636.6037829241868,
+          "equal_count_worst_epsilon": 2914.394366794189,
+          "equal_over_greedy": 4.578034948845512,
+          "equal_over_tau": 4.442354275936742
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 25,
+          "compression": 0.7311827956989247,
+          "greedy_worst_epsilon": 730.5011630585013,
+          "equal_count_worst_epsilon": 2894.86040236595,
+          "equal_over_greedy": 3.962841606227694,
+          "equal_over_tau": 3.309434277292805
+        }
+      ]
+    },
+    {
+      "od": [
+        1,
+        10
+      ],
+      "level": 0.7,
+      "regions": 88,
+      "relative_error": 0.3124110891716871,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 51,
+          "compression": 0.4204545454545454,
+          "greedy_worst_epsilon": 86.08017688668042,
+          "equal_count_worst_epsilon": 796.4170966654792,
+          "equal_over_greedy": 9.252038337629305,
+          "equal_over_tau": 8.701406414600498
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 35,
+          "compression": 0.6022727272727273,
+          "greedy_worst_epsilon": 172.75231805190833,
+          "equal_count_worst_epsilon": 903.1876842967094,
+          "equal_over_greedy": 5.228223241700995,
+          "equal_over_tau": 4.933974385176082
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 23,
+          "compression": 0.7386363636363636,
+          "greedy_worst_epsilon": 260.92976842214557,
+          "equal_count_worst_epsilon": 921.9046676226872,
+          "equal_over_greedy": 3.5331525153204537,
+          "equal_over_tau": 3.3574815767972863
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 20,
+          "compression": 0.7727272727272727,
+          "greedy_worst_epsilon": 359.9015637353741,
+          "equal_count_worst_epsilon": 921.9046676226872,
+          "equal_over_greedy": 2.5615467130910794,
+          "equal_over_tau": 2.518111182597965
+        }
+      ]
+    },
+    {
+      "od": [
+        10,
+        1
+      ],
+      "level": 0.7,
+      "regions": 88,
+      "relative_error": 0.3129971358081607,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 42,
+          "compression": 0.5227272727272727,
+          "greedy_worst_epsilon": 86.4669356173099,
+          "equal_count_worst_epsilon": 819.950553706994,
+          "equal_over_greedy": 9.48282193480264,
+          "equal_over_tau": 8.92475212604569
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 27,
+          "compression": 0.6931818181818181,
+          "greedy_worst_epsilon": 179.6529778366994,
+          "equal_count_worst_epsilon": 975.2074547471957,
+          "equal_over_greedy": 5.428284387435191,
+          "equal_over_tau": 5.307322963404446
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 17,
+          "compression": 0.8068181818181819,
+          "greedy_worst_epsilon": 272.90054999560834,
+          "equal_count_worst_epsilon": 1043.3775410495805,
+          "equal_over_greedy": 3.823288524212835,
+          "equal_over_tau": 3.7855477527075903
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 15,
+          "compression": 0.8295454545454546,
+          "greedy_worst_epsilon": 353.4000516947117,
+          "equal_count_worst_epsilon": 1043.3775410495805,
+          "equal_over_greedy": 2.9523978167125824,
+          "equal_over_tau": 2.839160814530693
+        }
+      ]
+    },
+    {
+      "od": [
+        4,
+        3
+      ],
+      "level": 1.3,
+      "regions": 33,
+      "relative_error": 0.1594471453649368,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.4545454545454546,
+          "greedy_worst_epsilon": 33.65814190873789,
+          "equal_count_worst_epsilon": 133.2467547997985,
+          "equal_over_greedy": 3.9588268170325445,
+          "equal_over_tau": 3.298433143064928
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 11,
+          "compression": 0.6666666666666667,
+          "greedy_worst_epsilon": 72.6239254172906,
+          "equal_count_worst_epsilon": 115.06214999545955,
+          "equal_over_greedy": 1.5843559726952614,
+          "equal_over_tau": 1.4241427854192878
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 6,
+          "compression": 0.8181818181818181,
+          "greedy_worst_epsilon": 115.06214999545955,
+          "equal_count_worst_epsilon": 257.64735873624886,
+          "equal_over_greedy": 2.2392016727170128,
+          "equal_over_tau": 2.1259619381991572
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 4,
+          "compression": 0.8787878787878788,
+          "greedy_worst_epsilon": 158.65757840051083,
+          "equal_count_worst_epsilon": 257.64735873624886,
+          "equal_over_greedy": 1.6239209077416457,
+          "equal_over_tau": 1.5944714536493676
+        }
+      ]
+    },
+    {
+      "od": [
+        12,
+        3
+      ],
+      "level": 1.3,
+      "regions": 36,
+      "relative_error": 0.053085908868094195,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 5,
+          "compression": 0.8611111111111112,
+          "greedy_worst_epsilon": 13.234195632638148,
+          "equal_count_worst_epsilon": 20.587943795730098,
+          "equal_over_greedy": 1.5556626460134948,
+          "equal_over_tau": 1.4430916626818233
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 2,
+          "compression": 0.9444444444444444,
+          "greedy_worst_epsilon": 23.57899016986994,
+          "equal_count_worst_epsilon": 23.57899016986994,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.8263730576060015
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 30.29411745309335,
+          "equal_count_worst_epsilon": 30.29411745309335,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.707812118241256
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": true,
+          "segments": 1,
+          "compression": 0.9722222222222222,
+          "greedy_worst_epsilon": 30.29411745309335,
+          "equal_count_worst_epsilon": 30.29411745309335,
+          "equal_over_greedy": 1.0,
+          "equal_over_tau": 0.5308590886809419
+        }
+      ]
+    },
+    {
+      "od": [
+        6,
+        1
+      ],
+      "level": 1.3,
+      "regions": 56,
+      "relative_error": 0.4410524099818469,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 20,
+          "compression": 0.6428571428571428,
+          "greedy_worst_epsilon": 169.105835694063,
+          "equal_count_worst_epsilon": 2284.3016282121825,
+          "equal_over_greedy": 13.508118267099995,
+          "equal_over_tau": 12.906525288303913
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 12,
+          "compression": 0.7857142857142857,
+          "greedy_worst_epsilon": 340.67199325111505,
+          "equal_count_worst_epsilon": 3122.441449555594,
+          "equal_over_greedy": 9.16553609164458,
+          "equal_over_tau": 8.821048199636937
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 10,
+          "compression": 0.8214285714285714,
+          "greedy_worst_epsilon": 426.4159309868119,
+          "equal_count_worst_epsilon": 3122.441449555594,
+          "equal_over_greedy": 7.322525315434719,
+          "equal_over_tau": 5.88069879975796
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 10,
+          "compression": 0.8214285714285714,
+          "greedy_worst_epsilon": 426.4159309868119,
+          "equal_count_worst_epsilon": 3122.441449555594,
+          "equal_over_greedy": 7.322525315434719,
+          "equal_over_tau": 4.410524099818469
+        }
+      ]
+    },
+    {
+      "od": [
+        15,
+        6
+      ],
+      "level": 1.3,
+      "regions": 105,
+      "relative_error": 0.5143700809502143,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 74,
+          "compression": 0.2952380952380952,
+          "greedy_worst_epsilon": 385.1068673623522,
+          "equal_count_worst_epsilon": 4457.660365586902,
+          "equal_over_greedy": 11.575125616735964,
+          "equal_over_tau": 11.361647728545785
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 43,
+          "compression": 0.5904761904761905,
+          "greedy_worst_epsilon": 756.475877655459,
+          "equal_count_worst_epsilon": 6412.874477224896,
+          "equal_over_greedy": 8.477302008757077,
+          "equal_over_tau": 8.172540611224708
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 35,
+          "compression": 0.6666666666666667,
+          "greedy_worst_epsilon": 1149.4871719761886,
+          "equal_count_worst_epsilon": 4457.660365586902,
+          "equal_over_greedy": 3.8779557304004797,
+          "equal_over_tau": 3.787215909515262
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 28,
+          "compression": 0.7333333333333334,
+          "greedy_worst_epsilon": 1457.7155844757817,
+          "equal_count_worst_epsilon": 4231.261065076407,
+          "equal_over_greedy": 2.9026657258370725,
+          "equal_over_tau": 2.6961507677907215
+        }
+      ]
+    },
+    {
+      "od": [
+        6,
+        21
+      ],
+      "level": 1.3,
+      "regions": 149,
+      "relative_error": 0.5198326307288431,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 105,
+          "compression": 0.2953020134228188,
+          "greedy_worst_epsilon": 159.02402736610566,
+          "equal_count_worst_epsilon": 2927.9673123632656,
+          "equal_over_greedy": 18.412106402150723,
+          "equal_over_tau": 14.451516708549466
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 75,
+          "compression": 0.49664429530201337,
+          "greedy_worst_epsilon": 398.2715260184741,
+          "equal_count_worst_epsilon": 2927.9673123632656,
+          "equal_over_greedy": 7.351686277033648,
+          "equal_over_tau": 7.225758354274733
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 54,
+          "compression": 0.6375838926174497,
+          "greedy_worst_epsilon": 596.2876506866796,
+          "equal_count_worst_epsilon": 2694.1792951638836,
+          "equal_over_greedy": 4.518254389574042,
+          "equal_over_tau": 4.432537769517549
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 47,
+          "compression": 0.6845637583892618,
+          "greedy_worst_epsilon": 799.7752093634226,
+          "equal_count_worst_epsilon": 3056.7033666061307,
+          "equal_over_greedy": 3.821953132354652,
+          "equal_over_tau": 3.77172924617911
+        }
+      ]
+    },
+    {
+      "od": [
+        18,
+        14
+      ],
+      "level": 1.3,
+      "regions": 134,
+      "relative_error": 0.4699871189366956,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 109,
+          "compression": 0.18656716417910446,
+          "greedy_worst_epsilon": 145.51721433520288,
+          "equal_count_worst_epsilon": 1170.3995317454992,
+          "equal_over_greedy": 8.043031452275137,
+          "equal_over_tau": 7.1743793592328355
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 78,
+          "compression": 0.417910447761194,
+          "greedy_worst_epsilon": 316.53188160118407,
+          "equal_count_worst_epsilon": 1649.3640584373534,
+          "equal_over_greedy": 5.210735961553086,
+          "equal_over_tau": 5.055181216223582
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 63,
+          "compression": 0.5298507462686567,
+          "greedy_worst_epsilon": 472.58290717330965,
+          "equal_count_worst_epsilon": 1582.2009049239987,
+          "equal_over_greedy": 3.3479858896880508,
+          "equal_over_tau": 3.2328873478834597
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 50,
+          "compression": 0.6268656716417911,
+          "greedy_worst_epsilon": 615.9059033992435,
+          "equal_count_worst_epsilon": 1662.3365218531908,
+          "equal_over_greedy": 2.6990105350161393,
+          "equal_over_tau": 2.547470437871759
+        }
+      ]
+    },
+    {
+      "od": [
+        8,
+        4
+      ],
+      "level": 1.3,
+      "regions": 77,
+      "relative_error": 0.4739611850274332,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 52,
+          "compression": 0.3246753246753247,
+          "greedy_worst_epsilon": 1401.2347711475904,
+          "equal_count_worst_epsilon": 21448.40374128768,
+          "equal_over_greedy": 15.306788114972164,
+          "equal_over_tau": 15.195331214415658
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 38,
+          "compression": 0.5064935064935066,
+          "greedy_worst_epsilon": 2822.8279487132386,
+          "equal_count_worst_epsilon": 21448.40374128768,
+          "equal_over_greedy": 7.598197315236568,
+          "equal_over_tau": 7.597665607207829
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 25,
+          "compression": 0.6753246753246753,
+          "greedy_worst_epsilon": 4201.514062563896,
+          "equal_count_worst_epsilon": 21448.40374128768,
+          "equal_over_greedy": 5.104922516479497,
+          "equal_over_tau": 5.06511040480522
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 22,
+          "compression": 0.7142857142857143,
+          "greedy_worst_epsilon": 5019.876456887903,
+          "equal_count_worst_epsilon": 25995.936702349223,
+          "equal_over_greedy": 5.178600892992002,
+          "equal_over_tau": 4.604268844268145
+        }
+      ]
+    },
+    {
+      "od": [
+        19,
+        8
+      ],
+      "level": 1.3,
+      "regions": 85,
+      "relative_error": 0.4631328575765745,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 63,
+          "compression": 0.2588235294117647,
+          "greedy_worst_epsilon": 621.5817347710763,
+          "equal_count_worst_epsilon": 7037.19080263606,
+          "equal_over_greedy": 11.321424696026183,
+          "equal_over_tau": 10.555858323664966
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 42,
+          "compression": 0.5058823529411764,
+          "greedy_worst_epsilon": 1297.0432798750408,
+          "equal_count_worst_epsilon": 7037.19080263606,
+          "equal_over_greedy": 5.425563596701287,
+          "equal_over_tau": 5.277929161832483
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 27,
+          "compression": 0.6823529411764706,
+          "greedy_worst_epsilon": 1937.6831437706314,
+          "equal_count_worst_epsilon": 9596.53646547392,
+          "equal_over_greedy": 4.952582932005877,
+          "equal_over_tau": 4.798301015678086
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 15,
+          "compression": 0.8235294117647058,
+          "greedy_worst_epsilon": 2654.610346300886,
+          "equal_count_worst_epsilon": 8203.658399145705,
+          "equal_over_greedy": 3.090343714879752,
+          "equal_over_tau": 3.0763929182042347
+        }
+      ]
+    },
+    {
+      "od": [
+        11,
+        6
+      ],
+      "level": 1.3,
+      "regions": 95,
+      "relative_error": 0.4017203562383395,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 53,
+          "compression": 0.4421052631578948,
+          "greedy_worst_epsilon": 422.0921175614276,
+          "equal_count_worst_epsilon": 2701.363392968846,
+          "equal_over_greedy": 6.399938024371453,
+          "equal_over_tau": 6.285126863453105
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 39,
+          "compression": 0.5894736842105264,
+          "greedy_worst_epsilon": 847.3229772807681,
+          "equal_count_worst_epsilon": 3912.3341919685936,
+          "equal_over_greedy": 4.617287972673738,
+          "equal_over_tau": 4.551315974879557
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 30,
+          "compression": 0.6842105263157895,
+          "greedy_worst_epsilon": 1288.4364260246075,
+          "equal_count_worst_epsilon": 2981.823322056738,
+          "equal_over_greedy": 2.3142960427290724,
+          "equal_over_tau": 2.31255297631183
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 19,
+          "compression": 0.8,
+          "greedy_worst_epsilon": 1709.9490443320192,
+          "equal_count_worst_epsilon": 3912.3341919685936,
+          "equal_over_greedy": 2.287982910915876,
+          "equal_over_tau": 2.2756579874397787
+        }
+      ]
+    },
+    {
+      "od": [
+        16,
+        2
+      ],
+      "level": 1.3,
+      "regions": 78,
+      "relative_error": 0.5036069270173975,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 46,
+          "compression": 0.41025641025641024,
+          "greedy_worst_epsilon": 787.2146133657661,
+          "equal_count_worst_epsilon": 8822.46188934542,
+          "equal_over_greedy": 11.207187645595969,
+          "equal_over_tau": 10.599982457446263
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 36,
+          "compression": 0.5384615384615384,
+          "greedy_worst_epsilon": 1505.1924809111915,
+          "equal_count_worst_epsilon": 8768.251141759974,
+          "equal_over_greedy": 5.82533546570202,
+          "equal_over_tau": 5.267424753479712
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 28,
+          "compression": 0.641025641025641,
+          "greedy_worst_epsilon": 2391.9265271065487,
+          "equal_count_worst_epsilon": 8822.46188934542,
+          "equal_over_greedy": 3.6884334821177487,
+          "equal_over_tau": 3.533327485815422
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 23,
+          "compression": 0.7051282051282051,
+          "greedy_worst_epsilon": 3194.5760622536764,
+          "equal_count_worst_epsilon": 8822.46188934542,
+          "equal_over_greedy": 2.7617003688187163,
+          "equal_over_tau": 2.6499956143615657
+        }
+      ]
+    },
+    {
+      "od": [
+        8,
+        21
+      ],
+      "level": 1.3,
+      "regions": 128,
+      "relative_error": 0.4418119969033146,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 79,
+          "compression": 0.3828125,
+          "greedy_worst_epsilon": 349.0281844826968,
+          "equal_count_worst_epsilon": 3955.783196525983,
+          "equal_over_greedy": 11.333707054027586,
+          "equal_over_tau": 10.342840688504538
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 64,
+          "compression": 0.5,
+          "greedy_worst_epsilon": 762.463577996692,
+          "equal_count_worst_epsilon": 5645.5715269766115,
+          "equal_over_greedy": 7.404381913966132,
+          "equal_over_tau": 7.380491295675189
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 46,
+          "compression": 0.640625,
+          "greedy_worst_epsilon": 1143.02200793466,
+          "equal_count_worst_epsilon": 5645.5715269766115,
+          "equal_over_greedy": 4.939162577610961,
+          "equal_over_tau": 4.920327530450128
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 32,
+          "compression": 0.75,
+          "greedy_worst_epsilon": 1498.0759715774057,
+          "equal_count_worst_epsilon": 5645.5715269766115,
+          "equal_over_greedy": 3.7685482139013833,
+          "equal_over_tau": 3.6902456478375947
+        }
+      ]
+    },
+    {
+      "od": [
+        14,
+        8
+      ],
+      "level": 1.3,
+      "regions": 119,
+      "relative_error": 0.43900821866032264,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 90,
+          "compression": 0.24369747899159666,
+          "greedy_worst_epsilon": 563.7366369214287,
+          "equal_count_worst_epsilon": 2934.725973247718,
+          "equal_over_greedy": 5.20584574611699,
+          "equal_over_tau": 4.477194787199002
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 62,
+          "compression": 0.4789915966386554,
+          "greedy_worst_epsilon": 1263.7430995557224,
+          "equal_count_worst_epsilon": 6279.441312766314,
+          "equal_over_greedy": 4.968922334748173,
+          "equal_over_tau": 4.789933058200779
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 46,
+          "compression": 0.6134453781512605,
+          "greedy_worst_epsilon": 1943.4039920231553,
+          "equal_count_worst_epsilon": 6291.967220305438,
+          "equal_over_greedy": 3.2376012636236626,
+          "equal_over_tau": 3.199658514034247
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 36,
+          "compression": 0.6974789915966386,
+          "greedy_worst_epsilon": 2619.6962848350104,
+          "equal_count_worst_epsilon": 7316.088928071571,
+          "equal_over_greedy": 2.792724091881644,
+          "equal_over_tau": 2.7903418845608097
+        }
+      ]
+    },
+    {
+      "od": [
+        11,
+        15
+      ],
+      "level": 1.3,
+      "regions": 62,
+      "relative_error": 0.21836747709460533,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 44,
+          "compression": 0.29032258064516125,
+          "greedy_worst_epsilon": 2193.577732001526,
+          "equal_count_worst_epsilon": 13355.913140753102,
+          "equal_over_greedy": 6.088643655479911,
+          "equal_over_tau": 5.468289777677062
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 30,
+          "compression": 0.5161290322580645,
+          "greedy_worst_epsilon": 4289.2223645451595,
+          "equal_count_worst_epsilon": 13355.913140753102,
+          "equal_over_greedy": 3.113830901180009,
+          "equal_over_tau": 2.734144888838531
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 22,
+          "compression": 0.6451612903225806,
+          "greedy_worst_epsilon": 7308.953363898632,
+          "equal_count_worst_epsilon": 13355.913140753102,
+          "equal_over_greedy": 1.8273359365955772,
+          "equal_over_tau": 1.8227632592256875
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 15,
+          "compression": 0.7580645161290323,
+          "greedy_worst_epsilon": 9483.754629585965,
+          "equal_count_worst_epsilon": 18410.17733384634,
+          "equal_over_greedy": 1.9412329876621954,
+          "equal_over_tau": 1.8844122348458396
+        }
+      ]
+    },
+    {
+      "od": [
+        17,
+        9
+      ],
+      "level": 1.3,
+      "regions": 68,
+      "relative_error": 0.3673369324772208,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 20,
+          "compression": 0.7058823529411764,
+          "greedy_worst_epsilon": 1574.3426535185317,
+          "equal_count_worst_epsilon": 16583.086282766504,
+          "equal_over_greedy": 10.533339896308224,
+          "equal_over_tau": 10.267270678225053
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.7352941176470589,
+          "greedy_worst_epsilon": 2964.517638592635,
+          "equal_count_worst_epsilon": 9007.960800921675,
+          "equal_over_greedy": 3.0385924116808707,
+          "equal_over_tau": 2.7885994869971342
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 14,
+          "compression": 0.7941176470588236,
+          "greedy_worst_epsilon": 4552.741523697605,
+          "equal_count_worst_epsilon": 16879.99516686085,
+          "equal_over_greedy": 3.7076550643163695,
+          "equal_over_tau": 3.4836997261360203
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 8,
+          "compression": 0.8823529411764706,
+          "greedy_worst_epsilon": 6254.2832188534885,
+          "equal_count_worst_epsilon": 18000.548351523106,
+          "equal_over_greedy": 2.878115320595107,
+          "equal_over_tau": 2.7862199341269593
+        }
+      ]
+    },
+    {
+      "od": [
+        10,
+        12
+      ],
+      "level": 1.3,
+      "regions": 83,
+      "relative_error": 0.4025718911252834,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 45,
+          "compression": 0.45783132530120485,
+          "greedy_worst_epsilon": 2806.9648869833036,
+          "equal_count_worst_epsilon": 29129.020983270275,
+          "equal_over_greedy": 10.377408395220707,
+          "equal_over_tau": 9.78430361383859
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 34,
+          "compression": 0.5903614457831325,
+          "greedy_worst_epsilon": 5784.112707864366,
+          "equal_count_worst_epsilon": 36893.946219007456,
+          "equal_over_greedy": 6.378497114837445,
+          "equal_over_tau": 6.196253068833388
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 30,
+          "compression": 0.6385542168674698,
+          "greedy_worst_epsilon": 8871.877384258642,
+          "equal_count_worst_epsilon": 31435.698345517103,
+          "equal_over_greedy": 3.5432972057631695,
+          "equal_over_tau": 3.519701962088298
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 22,
+          "compression": 0.7349397590361446,
+          "greedy_worst_epsilon": 11694.589006044713,
+          "equal_count_worst_epsilon": 47250.71795426273,
+          "equal_over_greedy": 4.040391494719457,
+          "equal_over_tau": 3.9678244825142186
+        }
+      ]
+    },
+    {
+      "od": [
+        13,
+        10
+      ],
+      "level": 1.3,
+      "regions": 93,
+      "relative_error": 0.47896101574824396,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 52,
+          "compression": 0.4408602150537635,
+          "greedy_worst_epsilon": 2507.901515740781,
+          "equal_count_worst_epsilon": 39052.31186630261,
+          "equal_over_greedy": 15.571708705940704,
+          "equal_over_tau": 13.916107365952337
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 35,
+          "compression": 0.6236559139784946,
+          "greedy_worst_epsilon": 5557.47195293519,
+          "equal_count_worst_epsilon": 40825.362186596394,
+          "equal_over_greedy": 7.346031168908445,
+          "equal_over_tau": 7.273962747552382
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 25,
+          "compression": 0.7311827956989247,
+          "greedy_worst_epsilon": 8331.894541754002,
+          "equal_count_worst_epsilon": 40825.362186596394,
+          "equal_over_greedy": 4.899889452753681,
+          "equal_over_tau": 4.849308498368255
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.8064516129032258,
+          "greedy_worst_epsilon": 11110.32621483934,
+          "equal_count_worst_epsilon": 29741.55394446911,
+          "equal_over_greedy": 2.6769289550423143,
+          "equal_over_tau": 2.6495656604047886
+        }
+      ]
+    },
+    {
+      "od": [
+        1,
+        10
+      ],
+      "level": 1.3,
+      "regions": 88,
+      "relative_error": 0.4804397298686816,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 63,
+          "compression": 0.28409090909090906,
+          "greedy_worst_epsilon": 1796.7638234544975,
+          "equal_count_worst_epsilon": 25696.680489125076,
+          "equal_over_greedy": 14.301646189491992,
+          "equal_over_tau": 13.396064094011265
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 46,
+          "compression": 0.4772727272727273,
+          "greedy_worst_epsilon": 3736.2939464660267,
+          "equal_count_worst_epsilon": 15386.430656791948,
+          "equal_over_greedy": 4.1180996134806795,
+          "equal_over_tau": 4.010588280919679
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 39,
+          "compression": 0.5568181818181819,
+          "greedy_worst_epsilon": 5563.3995320705435,
+          "equal_count_worst_epsilon": 13644.421870900733,
+          "equal_over_greedy": 2.452533166501284,
+          "equal_over_tau": 2.3710137707691996
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 32,
+          "compression": 0.6363636363636364,
+          "greedy_worst_epsilon": 7471.87943612225,
+          "equal_count_worst_epsilon": 25696.680489125076,
+          "equal_over_greedy": 3.4391187262600047,
+          "equal_over_tau": 3.3490160235028164
+        }
+      ]
+    },
+    {
+      "od": [
+        10,
+        1
+      ],
+      "level": 1.3,
+      "regions": 88,
+      "relative_error": 0.48061479914987565,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 59,
+          "compression": 0.3295454545454546,
+          "greedy_worst_epsilon": 1784.8819268190782,
+          "equal_count_worst_epsilon": 22097.39235254242,
+          "equal_over_greedy": 12.38031043987499,
+          "equal_over_tau": 11.423633886319697
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 41,
+          "compression": 0.5340909090909092,
+          "greedy_worst_epsilon": 3754.6937702421346,
+          "equal_count_worst_epsilon": 22097.39235254242,
+          "equal_over_greedy": 5.885271530710584,
+          "equal_over_tau": 5.711816943159849
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 33,
+          "compression": 0.625,
+          "greedy_worst_epsilon": 5539.575697061209,
+          "equal_count_worst_epsilon": 22097.39235254242,
+          "equal_over_greedy": 3.98900449438127,
+          "equal_over_tau": 3.807877962106566
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 29,
+          "compression": 0.6704545454545454,
+          "greedy_worst_epsilon": 7611.19107017155,
+          "equal_count_worst_epsilon": 22097.39235254242,
+          "equal_over_greedy": 2.9032765238469262,
+          "equal_over_tau": 2.8559084715799243
+        }
+      ]
+    }
+  ],
+  "anaheim": {
+    "tau25": {
+      "single_value_queries": 0,
+      "segments_per_query": [
+        12,
+        9,
+        21,
+        9,
+        18,
+        6
+      ],
+      "median_compression": 0.9145226811103588,
+      "median_equal_over_greedy": 20.491560043999165,
+      "median_equal_over_tau": 18.76967151771207
+    },
+    "tau50": {
+      "single_value_queries": 0,
+      "segments_per_query": [
+        12,
+        8,
+        14,
+        8,
+        13,
+        4
+      ],
+      "median_compression": 0.938388625592417,
+      "median_equal_over_greedy": 9.781338439423365,
+      "median_equal_over_tau": 9.384835758856035
+    },
+    "tau75": {
+      "single_value_queries": 0,
+      "segments_per_query": [
+        9,
+        4,
+        12,
+        5,
+        11,
+        3
+      ],
+      "median_compression": 0.9545766002398218,
+      "median_equal_over_greedy": 7.015471282197897,
+      "median_equal_over_tau": 6.25655717257069
+    },
+    "tau100": {
+      "single_value_queries": 0,
+      "segments_per_query": [
+        6,
+        3,
+        12,
+        3,
+        9,
+        3
+      ],
+      "median_compression": 0.9640705679862307,
+      "median_equal_over_greedy": 5.970346415678829,
+      "median_equal_over_tau": 4.706021144410305
+    }
+  },
+  "anaheim_rows": [
+    {
+      "query": [
+        4,
+        2
+      ],
+      "regions": 211,
+      "relative_error": 0.4843640273958287,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 12,
+          "compression": 0.943127962085308,
+          "greedy_worst_epsilon": 222.0076856137888,
+          "equal_count_worst_epsilon": 4611.269586601679,
+          "equal_over_greedy": 20.77076554288117,
+          "equal_over_tau": 18.760005182817522
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 12,
+          "compression": 0.943127962085308,
+          "greedy_worst_epsilon": 489.4038700359035,
+          "equal_count_worst_epsilon": 4611.269586601679,
+          "equal_over_greedy": 9.422217250271006,
+          "equal_over_tau": 9.380002591408761
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.957345971563981,
+          "greedy_worst_epsilon": 650.779754348918,
+          "equal_count_worst_epsilon": 4611.269586601679,
+          "equal_over_greedy": 7.085760667547334,
+          "equal_over_tau": 6.2533350609391745
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 6,
+          "compression": 0.9715639810426541,
+          "greedy_worst_epsilon": 936.2936362815703,
+          "equal_count_worst_epsilon": 4751.808594252656,
+          "equal_over_greedy": 5.075126445507156,
+          "equal_over_tau": 4.832939832608669
+        }
+      ]
+    },
+    {
+      "query": [
+        1,
+        2
+      ],
+      "regions": 83,
+      "relative_error": 0.48645208897087416,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.891566265060241,
+          "greedy_worst_epsilon": 138.37021426810037,
+          "equal_count_worst_epsilon": 3007.10622964808,
+          "equal_over_greedy": 21.732323286149114,
+          "equal_over_tau": 18.868831302675822
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 8,
+          "compression": 0.9036144578313253,
+          "greedy_worst_epsilon": 211.9018849306671,
+          "equal_count_worst_epsilon": 3007.10622964808,
+          "equal_over_greedy": 14.191031054924242,
+          "equal_over_tau": 9.434415651337911
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 4,
+          "compression": 0.9518072289156626,
+          "greedy_worst_epsilon": 447.72430658631777,
+          "equal_count_worst_epsilon": 3007.10622964808,
+          "equal_over_greedy": 6.71642389169312,
+          "equal_over_tau": 6.289610434225276
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.963855421686747,
+          "greedy_worst_epsilon": 532.1388280674363,
+          "equal_count_worst_epsilon": 3007.10622964808,
+          "equal_over_greedy": 5.650980667148383,
+          "equal_over_tau": 4.717207825668956
+        }
+      ]
+    },
+    {
+      "query": [
+        2,
+        4
+      ],
+      "regions": 211,
+      "relative_error": 0.47411245864255686,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 21,
+          "compression": 0.9004739336492891,
+          "greedy_worst_epsilon": 42.88139170859668,
+          "equal_count_worst_epsilon": 809.5430898434734,
+          "equal_over_greedy": 18.878657095478072,
+          "equal_over_tau": 16.990060045066162
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 14,
+          "compression": 0.933649289099526,
+          "greedy_worst_epsilon": 90.72425671757907,
+          "equal_count_worst_epsilon": 824.6586552921411,
+          "equal_over_greedy": 9.089726222384716,
+          "equal_over_tau": 8.653646881728093
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 12,
+          "compression": 0.943127962085308,
+          "greedy_worst_epsilon": 107.44456770134104,
+          "equal_count_worst_epsilon": 824.6586552921411,
+          "equal_over_greedy": 7.6752010169970495,
+          "equal_over_tau": 5.769097921152062
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 12,
+          "compression": 0.943127962085308,
+          "greedy_worst_epsilon": 107.44456770134104,
+          "equal_count_worst_epsilon": 824.6586552921411,
+          "equal_over_greedy": 7.6752010169970495,
+          "equal_over_tau": 4.326823440864047
+        }
+      ]
+    },
+    {
+      "query": [
+        3,
+        2
+      ],
+      "regions": 157,
+      "relative_error": 0.48244628023847363,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.9426751592356688,
+          "greedy_worst_epsilon": 115.0494790803915,
+          "equal_count_worst_epsilon": 2762.0377154765006,
+          "equal_over_greedy": 24.007390016485953,
+          "equal_over_tau": 19.123138831561686
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 8,
+          "compression": 0.9490445859872612,
+          "greedy_worst_epsilon": 154.19234163432026,
+          "equal_count_worst_epsilon": 2786.4431568919636,
+          "equal_over_greedy": 18.071216296203875,
+          "equal_over_tau": 9.646055706793152
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 5,
+          "compression": 0.9681528662420382,
+          "greedy_worst_epsilon": 429.7272137210877,
+          "equal_count_worst_epsilon": 2786.4431568919636,
+          "equal_over_greedy": 6.484213863868744,
+          "equal_over_tau": 6.430703804528768
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.9808917197452229,
+          "greedy_worst_epsilon": 443.0160052073333,
+          "equal_count_worst_epsilon": 2786.4431568919636,
+          "equal_over_greedy": 6.289712164209274,
+          "equal_over_tau": 4.823027853396576
+        }
+      ]
+    },
+    {
+      "query": [
+        25,
+        4
+      ],
+      "regions": 164,
+      "relative_error": 0.4600661344877298,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 18,
+          "compression": 0.8902439024390244,
+          "greedy_worst_epsilon": 29.7491710201989,
+          "equal_count_worst_epsilon": 557.6807389896494,
+          "equal_over_greedy": 18.74609341588036,
+          "equal_over_tau": 18.40264537950919
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 13,
+          "compression": 0.9207317073170732,
+          "greedy_worst_epsilon": 56.386763015153974,
+          "equal_count_worst_epsilon": 557.6807389896494,
+          "equal_over_greedy": 9.890277596530455,
+          "equal_over_tau": 9.201322689754596
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 11,
+          "compression": 0.9329268292682926,
+          "greedy_worst_epsilon": 76.77944075313934,
+          "equal_count_worst_epsilon": 557.6807389896494,
+          "equal_over_greedy": 7.263412360383038,
+          "equal_over_tau": 6.134215126503064
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 9,
+          "compression": 0.9451219512195121,
+          "greedy_worst_epsilon": 114.04399840250233,
+          "equal_count_worst_epsilon": 557.6807389896494,
+          "equal_over_greedy": 4.8900489881229285,
+          "equal_over_tau": 4.600661344877298
+        }
+      ]
+    },
+    {
+      "query": [
+        25,
+        2
+      ],
+      "regions": 84,
+      "relative_error": 0.4885434157559754,
+      "tolerance_sweep": [
+        {
+          "tau": 0.025,
+          "single_value_ok": false,
+          "segments": 6,
+          "compression": 0.9285714285714286,
+          "greedy_worst_epsilon": 133.5871485362717,
+          "equal_count_worst_epsilon": 2700.1108088863534,
+          "equal_over_greedy": 20.212354545117165,
+          "equal_over_tau": 18.779337852606616
+        },
+        {
+          "tau": 0.05,
+          "single_value_ok": false,
+          "segments": 4,
+          "compression": 0.9523809523809523,
+          "greedy_worst_epsilon": 279.15626000085376,
+          "equal_count_worst_epsilon": 2700.1108088863534,
+          "equal_over_greedy": 9.672399282316276,
+          "equal_over_tau": 9.389668926303308
+        },
+        {
+          "tau": 0.075,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.9642857142857143,
+          "greedy_worst_epsilon": 388.7746712741379,
+          "equal_count_worst_epsilon": 2700.1108088863534,
+          "equal_over_greedy": 6.945181896848459,
+          "equal_over_tau": 6.259779284202206
+        },
+        {
+          "tau": 0.1,
+          "single_value_ok": false,
+          "segments": 3,
+          "compression": 0.9642857142857143,
+          "greedy_worst_epsilon": 388.7746712741379,
+          "equal_count_worst_epsilon": 2700.1108088863534,
+          "equal_over_greedy": 6.945181896848459,
+          "equal_over_tau": 4.694834463151654
+        }
+      ]
+    }
+  ],
+  "data_sources": "e114_v103 (level 1.0, halfwidth 0.2), e116_v105_loadlevels (0.7, 1.3), v105_anaheim_profile; ordering identical to e118; no new solves"
+}

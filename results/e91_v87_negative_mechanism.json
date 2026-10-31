@@ -1,0 +1,376 @@
+{
+  "protocol": {
+    "purpose": "negative-account mechanism extraction (P1) + eight-query setting-C scalar contributions C_j (T2); re-summation of published frozen arrays, no new equilibrium solves",
+    "part_a_basis": "e87 published 41-point columns (81-chain even nodes)",
+    "part_b_basis": "e84 setting-C 41-point columns (C_k10_theta1)",
+    "crossing_queries": [
+      "1->19",
+      "1->15",
+      "7->12"
+    ]
+  },
+  "gates": {
+    "C_additivity_max_abs": 7.275957614183426e-11,
+    "BC_additivity_max_abs": 1.2005330063402653e-10,
+    "baseline_enum_matches_e87": true,
+    "phi_recompute_max_abs_dev": 3.637978807091713e-12,
+    "interior_identity_max_abs_dev": 0.0,
+    "part_B_columns_match_e84": true
+  },
+  "mechanism": {
+    "1->19": {
+      "phi_s": 1771.559983071581,
+      "phi_U_minus": -13501.557636357411,
+      "phi_U_plus": 24259.646690610327,
+      "U_minus_size": 13,
+      "U_minus_nodes_1idx": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "U_plus_size": 13,
+      "U_plus_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        22,
+        23
+      ],
+      "interior_divergence_sum": 15273.117619428991,
+      "interior_sum_study": 19421.437382927823,
+      "interior_sum_background": -4148.319763498829,
+      "positive_mass_inside": 19938.04352709778,
+      "negative_mass_inside": -4664.925907668789,
+      "positive_mass_all_interior": 20887.89349595059,
+      "positive_share_captured": 0.9545262920343331,
+      "n_interior_nodes_in_U": 12,
+      "largest_nodes_in_U": [
+        {
+          "node": 15,
+          "total": 10528.371300378312,
+          "study": 14462.23841344487,
+          "background": -3933.8671130665643
+        },
+        {
+          "node": 8,
+          "total": 2552.002078687059,
+          "study": 45.95641760494847,
+          "background": 2506.0456610821225
+        },
+        {
+          "node": 6,
+          "total": -2465.289920321219,
+          "study": -51.88814972148334,
+          "background": -2413.4017705997453
+        },
+        {
+          "node": 24,
+          "total": 2284.1815298459414,
+          "study": 1.903747147832763,
+          "background": 2282.277782698109
+        },
+        {
+          "node": 9,
+          "total": 2034.1661276589675,
+          "study": 4983.218058542813,
+          "background": -2949.0519308838475
+        },
+        {
+          "node": 20,
+          "total": -1669.9549152296595,
+          "study": -25.84469727485802,
+          "background": -1644.1102179547986
+        },
+        {
+          "node": 16,
+          "total": 1052.51729782409,
+          "study": -0.5138397075650804,
+          "background": 1053.0311375316542
+        },
+        {
+          "node": 21,
+          "total": 757.5895452620504,
+          "study": 1.6595970733924514,
+          "background": 755.9299481886537
+        }
+      ],
+      "largest_positive_nodes_excluded": [
+        {
+          "node": 14,
+          "total": 605.1638492011457
+        },
+        {
+          "node": 17,
+          "total": 344.6861196516634
+        }
+      ]
+    },
+    "1->15": {
+      "phi_s": 2948.1396071973504,
+      "phi_U_minus": -8286.004454306018,
+      "phi_U_plus": 40539.744994111636,
+      "U_minus_size": 13,
+      "U_minus_nodes_1idx": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24
+      ],
+      "U_plus_size": 13,
+      "U_plus_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        22,
+        23
+      ],
+      "interior_divergence_sum": 11234.144061503368,
+      "interior_sum_study": 7830.170286157516,
+      "interior_sum_background": 3403.9737753458544,
+      "positive_mass_inside": 18194.242343997703,
+      "negative_mass_inside": -6960.098282494337,
+      "positive_mass_all_interior": 19188.09442521502,
+      "positive_share_captured": 0.9482047534688334,
+      "n_interior_nodes_in_U": 12,
+      "largest_nodes_in_U": [
+        {
+          "node": 8,
+          "total": 3991.032736280239,
+          "study": 8.061770933004315,
+          "background": 3982.9709653472523
+        },
+        {
+          "node": 6,
+          "total": -3928.2952300009856,
+          "study": -12.799873051307333,
+          "background": -3915.4953569496915
+        },
+        {
+          "node": 24,
+          "total": 3892.3067576236376,
+          "study": 3.1521005429756683,
+          "background": 3889.1546570806627
+        },
+        {
+          "node": 9,
+          "total": 3445.2619568738864,
+          "study": 7829.018094975862,
+          "background": -4383.756138101971
+        },
+        {
+          "node": 19,
+          "total": 2574.457705537958,
+          "study": 6.548076411388006,
+          "background": 2567.909629126567
+        },
+        {
+          "node": 20,
+          "total": -2350.829942079347,
+          "study": -5.658899740766082,
+          "background": -2345.1710423385766
+        },
+        {
+          "node": 16,
+          "total": 1543.2661552448699,
+          "study": -0.01692188984884583,
+          "background": 1543.2830771347153
+        },
+        {
+          "node": 21,
+          "total": 1235.9556032315745,
+          "study": 2.6220683081060816,
+          "background": 1233.3335349234621
+        }
+      ],
+      "largest_positive_nodes_excluded": [
+        {
+          "node": 14,
+          "total": 993.8520812173165
+        }
+      ]
+    },
+    "7->12": {
+      "phi_s": 9473.760946276467,
+      "phi_U_minus": -17616.155196894415,
+      "phi_U_plus": 60028.704711095445,
+      "U_minus_size": 15,
+      "U_minus_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        19,
+        23
+      ],
+      "U_plus_size": 10,
+      "U_plus_nodes_1idx": [
+        7,
+        8,
+        9,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "interior_divergence_sum": 27089.91614317088,
+      "interior_sum_study": 13999.070897591928,
+      "interior_sum_background": 13090.84524557895,
+      "positive_mass_inside": 46901.43299190133,
+      "negative_mass_inside": -19811.51684873045,
+      "positive_mass_all_interior": 54714.85886867052,
+      "positive_share_captured": 0.8571973676195824,
+      "n_interior_nodes_in_U": 14,
+      "largest_nodes_in_U": [
+        {
+          "node": 8,
+          "total": -18126.642355286338,
+          "study": -47375.30311920543,
+          "background": 29248.66076391909
+        },
+        {
+          "node": 6,
+          "total": 15518.060299290224,
+          "study": 41241.40586529545,
+          "background": -25723.34556600521
+        },
+        {
+          "node": 5,
+          "total": 10405.769282757867,
+          "study": 17608.494956620816,
+          "background": -7202.72567386294
+        },
+        {
+          "node": 10,
+          "total": 8685.299588503845,
+          "study": 43.210583594035995,
+          "background": 8642.08900490979
+        },
+        {
+          "node": 11,
+          "total": 4261.13143581556,
+          "study": -49.808329591321815,
+          "background": 4310.939765406885
+        },
+        {
+          "node": 19,
+          "total": 2863.779425624313,
+          "study": -1.7698852823678664,
+          "background": 2865.5493109066824
+        },
+        {
+          "node": 2,
+          "total": 1766.7948783539296,
+          "study": 2267.7919342404475,
+          "background": -500.9970558865207
+        },
+        {
+          "node": 23,
+          "total": 1501.8998600831344,
+          "study": 3.489414720108075,
+          "background": 1498.4104453630248
+        }
+      ],
+      "largest_positive_nodes_excluded": [
+        {
+          "node": 13,
+          "total": 7813.425876769188
+        }
+      ]
+    }
+  },
+  "eight_query_Cj": {
+    "per_od": {
+      "10->16": {
+        "C_j": 424051.5707798478,
+        "phi_s": 272743.17062264297,
+        "spread_abs": 297409.42546599807
+      },
+      "16->10": {
+        "C_j": 428214.04399565526,
+        "phi_s": 180671.4651177855,
+        "spread_abs": 300382.5631844014
+      },
+      "10->11": {
+        "C_j": 216548.50718391273,
+        "phi_s": 202928.2445643199,
+        "spread_abs": 171819.70587553026
+      },
+      "10->15": {
+        "C_j": 247362.72292448668,
+        "phi_s": 232160.62280875284,
+        "spread_abs": 166867.0931803657
+      },
+      "15->10": {
+        "C_j": 249847.9080593687,
+        "phi_s": 201351.24209110768,
+        "spread_abs": 169237.2060746284
+      },
+      "10->17": {
+        "C_j": 275179.8675925545,
+        "phi_s": 245178.7163590941,
+        "spread_abs": 120410.50104281567
+      },
+      "11->10": {
+        "C_j": 207841.47176699943,
+        "phi_s": 204802.32647547717,
+        "spread_abs": 166070.3528318444
+      },
+      "17->10": {
+        "C_j": 276552.12078759924,
+        "phi_s": 224954.2780995741,
+        "spread_abs": 123202.06715486803
+      }
+    },
+    "sum_Cj": 2325598.2130904244,
+    "dT_endpoint_TSTT": 2325546.013939754,
+    "completeness_relative": 2.2445976281453218e-05
+  },
+  "elapsed_seconds": 0.07766175270080566
+}

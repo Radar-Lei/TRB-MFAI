@@ -1,0 +1,154 @@
+{
+  "seconds": 292.15760254859924,
+  "selected_step": 1200,
+  "original_validation": {
+    "K_mse": 0.11798292448745379,
+    "flow_relative": 0.0002815970825717125
+  },
+  "logs": [
+    {
+      "step": 100,
+      "flow_loss": 0.0018786030215034075,
+      "edge_loss": 0.0033374288419378098,
+      "cut_loss": 0.001221477962415673,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.0940490384935233,
+        "flow_relative": 0.0002454553918233277
+      },
+      "elapsed_seconds": 57.21679997444153
+    },
+    {
+      "step": 200,
+      "flow_loss": 0.0022583491969261197,
+      "edge_loss": 0.002005589160582913,
+      "cut_loss": 0.0009287952596986357,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.06129377318931981,
+        "flow_relative": 0.0002881598388510111
+      },
+      "elapsed_seconds": 90.91760635375977
+    },
+    {
+      "step": 300,
+      "flow_loss": 0.0016784545294103604,
+      "edge_loss": 0.012922656017115312,
+      "cut_loss": 0.002783215763260558,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.05957472289413096,
+        "flow_relative": 0.0002512948964448287
+      },
+      "elapsed_seconds": 108.606436252594
+    },
+    {
+      "step": 400,
+      "flow_loss": 0.0016929271805560739,
+      "edge_loss": 0.0023713499248503712,
+      "cut_loss": 0.001022344874053144,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.12606903990656712,
+        "flow_relative": 0.0002621695133983789
+      },
+      "elapsed_seconds": 134.75028038024902
+    },
+    {
+      "step": 500,
+      "flow_loss": 0.0015877597527233819,
+      "edge_loss": 0.002568824760069745,
+      "cut_loss": 0.0009652364928178088,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.054828713835583166,
+        "flow_relative": 0.0002760988989711878
+      },
+      "elapsed_seconds": 162.83376383781433
+    },
+    {
+      "step": 600,
+      "flow_loss": 0.0021367064587504083,
+      "edge_loss": 0.007473098316607566,
+      "cut_loss": 0.0014301369489837304,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.06397621291605544,
+        "flow_relative": 0.0002588322436363156
+      },
+      "elapsed_seconds": 183.43473076820374
+    },
+    {
+      "step": 700,
+      "flow_loss": 0.0025737089315643748,
+      "edge_loss": 0.0025144623898115865,
+      "cut_loss": 0.0009011520391266662,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.047164096782654256,
+        "flow_relative": 0.0002985958254170126
+      },
+      "elapsed_seconds": 199.70948243141174
+    },
+    {
+      "step": 800,
+      "flow_loss": 0.0021593665009882897,
+      "edge_loss": 0.004050543559572189,
+      "cut_loss": 0.001607614193150858,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.049244960713571824,
+        "flow_relative": 0.0002871796879450308
+      },
+      "elapsed_seconds": 221.06243085861206
+    },
+    {
+      "step": 900,
+      "flow_loss": 0.0016961352901822108,
+      "edge_loss": 0.017861911626852574,
+      "cut_loss": 0.003599674636377421,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.047431170729864296,
+        "flow_relative": 0.0002717848979256661
+      },
+      "elapsed_seconds": 239.51531863212585
+    },
+    {
+      "step": 1000,
+      "flow_loss": 0.0014928534927319522,
+      "edge_loss": 0.0031623141811225265,
+      "cut_loss": 0.0013473757691950116,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.053432842866057116,
+        "flow_relative": 0.00025211592019702456
+      },
+      "elapsed_seconds": 260.1787996292114
+    },
+    {
+      "step": 1100,
+      "flow_loss": 0.0017796491892990718,
+      "edge_loss": 0.003632932962486078,
+      "cut_loss": 0.0018880655942992647,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.0639736068782143,
+        "flow_relative": 0.0002601364042187693
+      },
+      "elapsed_seconds": 275.12786388397217
+    },
+    {
+      "step": 1200,
+      "flow_loss": 0.0016615659842729542,
+      "edge_loss": 0.008308640049672899,
+      "cut_loss": 0.0020336700761908644,
+      "response_loss": 0.0,
+      "validation": {
+        "K_mse": 0.038932395683704595,
+        "flow_relative": 0.0002447718200442378
+      },
+      "elapsed_seconds": 292.09160566329956
+    }
+  ]
+}

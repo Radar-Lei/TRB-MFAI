@@ -1,0 +1,12 @@
+\begin{table}[t]
+\centering\small
+\caption{Equal-update continuation from five flow-trained checkpoints on four independent demand paths. Entries are medians over 60 active query--path--seed combinations, except flow (five seeds, held-out split) and increment error (20 path--seed pairs). Boundary error uses all separating cuts and is normalized by the corresponding maximum absolute reference account.}
+\label{tab:structured-learning}
+\begin{tabular}{lrrrrrr}\toprule
+Method & Flow (\%) & Increment (\%) & Column (\%) & System (\%) & Cut abs. & Cut (\%)\\\midrule
+Original & 0.04 & 5.18 & 14.11 & 2.08 & 260.55 & 9.93\\
+Flow continuation & 0.03 & 5.34 & 12.29 & 1.48 & 268.81 & 9.98\\
+Flow + response & 0.03 & 5.48 & 11.92 & 1.65 & 283.64 & 9.64\\
+Flow + response + boundary & 0.12 & 14.07 & 32.01 & 1.97 & 708.35 & 22.25\\
+\bottomrule\end{tabular}
+\end{table}

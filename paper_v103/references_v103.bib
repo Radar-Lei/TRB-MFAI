@@ -1,0 +1,644 @@
+% =====================================================================
+% TRB-MFAI reference candidates - metadata verified 2026-08-23
+% Sources: arXiv API, OpenAlex API, Crossref API, DBLP, PMLR/IJCAI/JMLR
+% official pages, GitHub README (TransportationNetworks), web search.
+% Key corrections vs. the candidate list are flagged in note fields.
+% =====================================================================
+
+% ---------- 1. Integrated gradients ----------
+@inproceedings{sundararajan2017axiomatic,
+  author    = {Sundararajan, Mukund and Taly, Ankur and Yan, Qiqi},
+  title     = {Axiomatic Attribution for Deep Networks},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {70},
+  pages     = {3319--3328},
+  year      = {2017},
+  publisher = {PMLR},
+  url       = {https://proceedings.mlr.press/v70/sundararajan17a.html},
+}
+
+% ---------- 1b. Conductance (input-specific, via internal neurons) ----------
+% Published at ICLR 2019 (DBLP conf/iclr/DhamdhereSY19); preprint
+% arXiv:1805.12233. Eq. (2) of this paper defines input-specific
+% conductance, the chain-rule decomposition our C~ columns coincide with.
+@inproceedings{dhamdhere2019important,
+  author    = {Dhamdhere, Kedar and Sundararajan, Mukund and Yan, Qiqi},
+  title     = {How Important Is a Neuron?},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2019},
+  url       = {https://openreview.net/forum?id=SylKoo0cKm},
+}
+% ICML 2022: rigorous treatment of internal-neuron attributions built on
+% IG (the direct antecedent of the 2025 four-axiom characterization).
+@inproceedings{lundstrom2022rigorous,
+  author    = {Lundstrom, Daniel D. and Huang, Tianjian and Razaviyayn, Meisam},
+  title     = {A Rigorous Study of Integrated Gradients Method and Extensions to Internal Neuron Attributions},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {162},
+  pages     = {14485--14508},
+  year      = {2022},
+  publisher = {PMLR},
+  url       = {https://proceedings.mlr.press/v162/lundstrom22a.html},
+}
+
+% ---------- 2. LRP ----------
+@article{bach2015pixel,
+  author  = {Bach, Sebastian and Binder, Alexander and Montavon, Gr{\'e}goire and Klauschen, Frederick and M{\"u}ller, Klaus-Robert and Samek, Wojciech},
+  title   = {On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation},
+  journal = {PLOS ONE},
+  volume  = {10},
+  number  = {7},
+  pages   = {e0130140},
+  year    = {2015},
+  doi     = {10.1371/journal.pone.0130140},
+}
+
+% ---------- 3. Deep Taylor decomposition ----------
+@article{montavon2017explaining,
+  author  = {Montavon, Gr{\'e}goire and Lapuschkin, Sebastian and Binder, Alexander and Samek, Wojciech and M{\"u}ller, Klaus-Robert},
+  title   = {Explaining nonlinear classification decisions with deep {Taylor} decomposition},
+  journal = {Pattern Recognition},
+  volume  = {65},
+  pages   = {211--222},
+  year    = {2017},
+  doi     = {10.1016/j.patcog.2016.11.008},
+}
+
+% ---------- 4. IG axiomatic characterizations (JMLR 26, paper 23-0671) ----------
+@article{lundstrom2025four,
+  author  = {Lundstrom, Daniel and Razaviyayn, Meisam},
+  title   = {Four Axiomatic Characterizations of the Integrated Gradients Attribution Method},
+  journal = {Journal of Machine Learning Research},
+  volume  = {26},
+  number  = {177},
+  pages   = {1--31},
+  year    = {2025},
+  url     = {https://www.jmlr.org/papers/v26/23-0671.html},
+}
+
+% ---------- 5. Shapley value in ML (published at IJCAI 2022, not ICDT) ----------
+@inproceedings{rozemberczki2022shapley,
+  author    = {Rozemberczki, Benedek and Watson, Lauren and Bayer, P{\'e}ter and Yang, Hao-Tsung and Kiss, Oliv{\'e}r and Nilsson, Sebastian and Sarkar, Rik},
+  title     = {The {Shapley} Value in Machine Learning},
+  booktitle = {Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence (IJCAI-22), Survey Track},
+  pages     = {5572--5579},
+  year      = {2022},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},
+  doi       = {10.24963/ijcai.2022/778},
+}
+
+% ---------- 6. Unifying attribution via functional decomposition ----------
+@misc{gevaert2024unifying,
+  author = {Gevaert, Arne and Saeys, Yvan},
+  title  = {Unifying Attribution-Based Explanations Using Functional Decomposition},
+  year   = {2024},
+  note   = {arXiv:2412.13623 [cs.LG]},
+  eprint = {2412.13623},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi    = {10.48550/arXiv.2412.13623},
+}
+
+% ---------- 7. Impossibility theorems (PNAS 121(2), not 121(24)) ----------
+@article{bilodeau2024impossibility,
+  author  = {Bilodeau, Blair and Jaques, Natasha and Koh, Pang Wei and Kim, Been},
+  title   = {Impossibility theorems for feature attribution},
+  journal = {Proceedings of the National Academy of Sciences},
+  volume  = {121},
+  number  = {2},
+  pages   = {e2304406120},
+  year    = {2024},
+  doi     = {10.1073/pnas.2304406120},
+}
+
+% ---------- 8. PIDL-TSE (AAAI 2021) ----------
+@inproceedings{shi2021physics,
+  author    = {Shi, Rongye and Mo, Zhaobin and Di, Xuan},
+  title     = {Physics-Informed Deep Learning for Traffic State Estimation: A Hybrid Paradigm Informed By Second-Order Traffic Models},
+  booktitle = {Proceedings of the 35th AAAI Conference on Artificial Intelligence},
+  pages     = {540--547},
+  year      = {2021},
+  doi       = {10.1609/aaai.v35i1.16132},
+}
+
+% ---------- 9. STDEN (AAAI 2022, not Information Fusion) ----------
+@inproceedings{ji2022stden,
+  author    = {Ji, Jiahao and Wang, Jingyuan and Jiang, Zhe and Jiang, Jiawei and Zhang, Hu},
+  title     = {{STDEN}: Towards Physics-Guided Neural Networks for Traffic Flow Prediction},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume    = {36},
+  number    = {4},
+  pages     = {4048--4056},
+  year      = {2022},
+  doi       = {10.1609/aaai.v36i4.20322},
+}
+
+% ---------- 10a. PI-DeepONet for freeway TSE (primary candidate) ----------
+@misc{yu2025physics,
+  author = {Yu, Hongxin and Wang, Yibing and Jin, Fengyue and Zhang, Meng and Chen, Anni},
+  title  = {A Physics-informed Deep Operator for Real-Time Freeway Traffic State Estimation},
+  year   = {2025},
+  note   = {arXiv:2508.08002},
+  eprint = {2508.08002},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi    = {10.48550/arXiv.2508.08002},
+}
+
+% ---------- 10b. PI-DeepONet alternative (same year, same acronym) ----------
+@article{li2025physics,
+  author  = {Li, Zhihao and Wang, Ting and Zou, Guojian and Wang, Ruofei and Li, Ye},
+  title   = {Physics-informed deep operator network for traffic state estimation},
+  journal = {Transportmetrica B: Transport Dynamics},
+  volume  = {13},
+  number  = {1},
+  pages   = {2595549},
+  year    = {2025},
+  doi     = {10.1080/21680566.2025.2595549},
+}
+
+@article{valente2025physics,
+  author  = {Valente, Matilde and Dias, Tiago C. and Guerra, Vasco and Ventura, Rodrigo},
+  title   = {Physics-consistent machine learning with output projection onto physical manifolds},
+  journal = {Communications Physics},
+  volume  = {8},
+  pages   = {433},
+  year    = {2025},
+  doi     = {10.1038/s42005-025-02329-1},
+}
+
+% ---------- 11. Neural Conservation Laws (NeurIPS 2022) ----------
+@inproceedings{richterpowell2022neural,
+  author    = {Richter-Powell, Jack and Lipman, Yaron and Chen, Ricky T. Q.},
+  title     = {Neural Conservation Laws: A Divergence-Free Perspective},
+  booktitle = {Advances in Neural Information Processing Systems 35 (NeurIPS 2022)},
+  pages     = {38075--38088},
+  year      = {2022},
+}
+
+% ---------- 12. PINN-Proj (projection conserves laws) ----------
+@misc{baez2024guaranteeing,
+  author = {Baez, Anthony and Zhang, Wang and Ma, Ziwen and Das, Subhro and Nguyen, Lam M. and Daniel, Luca},
+  title  = {Guaranteeing Conservation Laws with Projection in Physics-Informed Neural Networks},
+  year   = {2024},
+  note   = {arXiv:2410.17445 [cs.LG]},
+  eprint = {2410.17445},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi    = {10.48550/arXiv.2410.17445},
+}
+
+% ---------- 13. GNN-LRP (TPAMI 2022; real title differs from guess) ----------
+@article{schnake2022higher,
+  author  = {Schnake, Thomas and Eberle, Oliver and Lederer, Jonas and Nakajima, Shinichi and Sch{\"u}tt, Kristof T. and M{\"u}ller, Klaus-Robert and Montavon, Gr{\'e}goire},
+  title   = {Higher-Order Explanations of Graph Neural Networks via Relevant Walks},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume  = {44},
+  number  = {11},
+  pages   = {7581--7596},
+  year    = {2022},
+  doi     = {10.1109/TPAMI.2021.3115452},
+}
+
+% ---------- 14. First theoretical reliability analysis of GNN explainers ----------
+@inproceedings{agarwal2022probing,
+  author    = {Agarwal, Chirag and Zitnik, Marinka and Lakkaraju, Himabindu},
+  title     = {Probing {GNN} Explainers: A Rigorous Theoretical and Empirical Analysis of {GNN} Explanation Methods},
+  booktitle = {Proceedings of the 25th International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {151},
+  pages     = {8969--8996},
+  year      = {2022},
+  publisher = {PMLR},
+}
+
+% ---------- 15. SSRN 6989763 (2026) ----------
+@misc{afifi2026beyond,
+  author = {Lafifi, Sohaib},
+  title  = {Two Black Boxes, One Solver: Encoder Probing and Decoder
+            Attribution for Neural Multi-Attribute {VRP} under Hard-Mask and
+            Recourse Decoders},
+  year   = {2026},
+  note   = {arXiv:2607.04487},
+  eprint = {2607.04487},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi    = {10.48550/arXiv.2607.04487},
+}
+
+% ---------- 16b. CAX: constraint-anchored attribution (the CAX paper) ------
+% v34: author corrected to Sohaib Afifi per the v33 external review --
+% the paper's own PDF first page and HTML full text both sign
+% "Sohaib Afifi"; the arXiv abstract-page metadata ("Lafifi") is the
+% conflicting source record (the author's GitHub handle
+% "sohaibafifi" is the confusion source). v22-v33 had followed the
+% arXiv metadata.
+
+% ---------- 16. Tobin-Friesz sensitivity analysis ----------
+@article{tobin1988sensitivity,
+  author  = {Tobin, Roger L. and Friesz, Terry L.},
+  title   = {Sensitivity Analysis for Equilibrium Network Flow},
+  journal = {Transportation Science},
+  volume  = {22},
+  number  = {4},
+  pages   = {242--250},
+  year    = {1988},
+  doi     = {10.1287/trsc.22.4.242},
+}
+
+% ---------- 17. Josefsson-Patriksson ----------
+% v58 (external review, 88/100, twenty-fourth round): title verified
+% against the published record -- the doubled "equilibrium equilibria"
+% is the journal's official title (ScienceDirect page and the authors'
+% own Chalmers preprint both carry it verbatim), so it is kept.
+% ---------- 16b. Patriksson-Rockafellar 2003 ----------
+% v66 (external review, 89/100, thirty-second round): added for the
+% representation-independence connection in Sec. 2 (aggregated VI
+% sensitivity need not depend on a particular route- or
+% commodity-flow solution); metadata verified against the INFORMS
+% record (Transportation Science 37(1):56-68, 2003) via Semantic
+% Scholar and the DOI 10.1287/trsc.37.1.56.12821
+@article{patriksson2003aggregated,
+  author  = {Patriksson, Michael and Rockafellar, R. Tyrrell},
+  title   = {Sensitivity analysis of aggregated variational inequality problems, with application to traffic equilibria},
+  journal = {Transportation Science},
+  volume  = {37},
+  number  = {1},
+  pages   = {56--68},
+  year    = {2003},
+  doi     = {10.1287/trsc.37.1.56.12821},
+}
+
+@article{josefsson2007sensitivity,
+  author  = {Josefsson, Magnus and Patriksson, Michael},
+  title   = {Sensitivity analysis of separable traffic equilibrium equilibria with application to bilevel optimization in network design},
+  journal = {Transportation Research Part B: Methodological},
+  volume  = {41},
+  number  = {1},
+  pages   = {4--31},
+  year    = {2007},
+  doi     = {10.1016/j.trb.2005.12.004},
+}
+
+% ---------- 18. Matroid theory ----------
+@book{oxley2011matroid,
+  author    = {Oxley, James},
+  title     = {Matroid Theory},
+  edition   = {2nd},
+  series    = {Oxford Graduate Texts in Mathematics},
+  number    = {21},
+  publisher = {Oxford University Press},
+  address   = {Oxford},
+  year      = {2011},
+  doi       = {10.1093/acprof:oso/9780198566946.001.0001},
+  isbn      = {978-0-19-856694-6},
+}
+
+% ---------- 19. Algebraic graph theory ----------
+@book{biggs1993algebraic,
+  author    = {Biggs, Norman},
+  title     = {Algebraic Graph Theory},
+  edition   = {2nd},
+  series    = {Cambridge Mathematical Library},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {1993},
+  isbn      = {978-0-521-45897-9},
+}
+
+% ---------- 20. Hopcroft-Tarjan / block-cut tree basis ----------
+@article{hopcroft1973algorithm,
+  author  = {Hopcroft, John and Tarjan, Robert},
+  title   = {Algorithm 447: Efficient Algorithms for Graph Manipulation},
+  journal = {Communications of the ACM},
+  volume  = {16},
+  number  = {6},
+  pages   = {372--378},
+  year    = {1973},
+  doi     = {10.1145/362248.362272},
+}
+
+% ---------- 21. Fisk equilibrium paradoxes ----------
+@article{fisk1979more,
+  author  = {Fisk, Caroline S.},
+  title   = {More paradoxes in the equilibrium assignment problem},
+  journal = {Transportation Research Part B: Methodological},
+  volume  = {13},
+  number  = {4},
+  pages   = {305--309},
+  year    = {1979},
+  doi     = {10.1016/0191-2615(79)90023-7},
+}
+
+% ---------- 22. Traffic equilibrium paradoxes ----------
+@article{dafermos1984some,
+  author  = {Dafermos, Stella and Nagurney, Anna},
+  title   = {On some traffic equilibrium theory paradoxes},
+  journal = {Transportation Research Part B: Methodological},
+  volume  = {18},
+  number  = {2},
+  pages   = {101--110},
+  year    = {1984},
+  doi     = {10.1016/0191-2615(84)90023-7},
+}
+
+% ---------- 23. Sheffi book ----------
+@book{sheffi1985urban,
+  author    = {Sheffi, Yosef},
+  title     = {Urban Transportation Networks: Equilibrium Analysis with Mathematical Programming Methods},
+  publisher = {Prentice-Hall},
+  address   = {Englewood Cliffs, NJ},
+  year      = {1985},
+}
+
+% ---------- 24. Braess paradox ----------
+@article{braess1968paradoxon,
+  author  = {Braess, Dietrich},
+  title   = {{\"U}ber ein {P}aradoxon aus der {V}erkehrsplanung},
+  journal = {Unternehmensforschung},
+  volume  = {12},
+  number  = {1},
+  pages   = {258--268},
+  year    = {1968},
+  doi     = {10.1007/BF01918335},
+}
+
+% ---------- 25. BPR function source ----------
+@techreport{bpr1964traffic,
+  author      = {{United States Bureau of Public Roads}},
+  title       = {Traffic Assignment Manual: For Application with a Large, High Speed Computer},
+  institution = {U.S. Department of Commerce, Bureau of Public Roads, Office of Planning, Urban Planning Division},
+  address     = {Washington, D.C.},
+  year        = {1964},
+}
+
+% ---------- 26. PINNs ----------
+@article{raissi2019physics,
+  author  = {Raissi, Maziar and Perdikaris, Paris and Karniadakis, George Em},
+  title   = {Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations},
+  journal = {Journal of Computational Physics},
+  volume  = {378},
+  pages   = {686--707},
+  year    = {2019},
+  doi     = {10.1016/j.jcp.2018.10.045},
+}
+
+% ---------- 27. Adam ----------
+@inproceedings{kingma2015adam,
+  author    = {Kingma, Diederik P. and Ba, Jimmy},
+  title     = {Adam: A Method for Stochastic Optimization},
+  booktitle = {3rd International Conference on Learning Representations (ICLR)},
+  address   = {San Diego, CA},
+  year      = {2015},
+}
+
+% ---------- 28. GradientSHAP via implicit differentiation ----------
+@misc{darm2026explaining,
+  author = {Darm, Paul and Alpturk, Cem and Ulrich, Kenneth and Duncan, William and Anwar, Ali and Riccardi, Annalisa},
+  title  = {Explaining Process Control Optimisation Recommendations via {GradientSHAP} and Implicit Differentiation},
+  year   = {2026},
+  eprint = {2607.14970},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi    = {10.48550/arXiv.2607.14970},
+}
+
+% ---------- 29. Directional influence function ----------
+@misc{wang2026directional,
+  author = {Wang, Xin and Rockafellar, R. Tyrrell and Ban, Xuegang},
+  title  = {Directional Influence Function: Estimating Training Data Influence in Constrained Learning},
+  year   = {2026},
+  eprint = {2607.23388},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  doi    = {10.48550/arXiv.2607.23388},
+}
+
+% ---------- 30. Transportation Networks for Research (Sioux Falls etc.) ----------
+@misc{tnfrc2024transportation,
+  author       = {{Transportation Networks for Research Core Team}},
+  title        = {Transportation Networks for Research},
+  howpublished = {\url{https://github.com/bstabler/TransportationNetworks}},
+  year         = {2024},
+  note         = {Sioux Falls network, trip, and node files; accessed September 2026},
+}
+
+@article{liu2023endtoend,
+  author  = {Liu, Zhichen and Yin, Yafeng and Bai, Fan and Grimm, Donald K.},
+  title   = {End-to-end learning of user equilibrium with implicit neural networks},
+  journal = {Transportation Research Part C: Emerging Technologies},
+  volume  = {150},
+  pages   = {104085},
+  year    = {2023},
+  doi     = {10.1016/j.trc.2023.104085}
+}
+
+@article{liu2025expressivity,
+  author  = {Liu, Zhichen and Yin, Yafeng},
+  title   = {End-to-End Learning of User Equilibrium: Expressivity, Generalization, and Optimization},
+  journal = {Transportation Science},
+  volume  = {59},
+  number  = {4},
+  pages   = {853--882},
+  year    = {2025},
+  doi     = {10.1287/trsc.2023.0489}
+}
+
+@article{jiang2011statistical,
+  author  = {Jiang, Xiaoye and Lim, Lek-Heng and Yao, Yuan and Ye, Yinyu},
+  title   = {Statistical ranking and combinatorial {H}odge theory},
+  journal = {Mathematical Programming},
+  volume  = {127},
+  number  = {1},
+  pages   = {203--244},
+  year    = {2011},
+  doi     = {10.1007/s10107-010-0419-x}
+}
+
+@article{liu2024heterogeneous,
+  author  = {Liu, Tong and Meidani, Hadi},
+  title   = {End-to-end heterogeneous graph neural networks for traffic assignment},
+  journal = {Transportation Research Part C: Emerging Technologies},
+  volume  = {165},
+  pages   = {104695},
+  year    = {2024},
+  doi     = {10.1016/j.trc.2024.104695}
+}
+
+@inproceedings{lassen2025learning,
+  author = {Lassen, Oskar Bohn and Agriesti, Serio and Eldafrawi, Mohamed and
+            Gammelli, Daniele and Cantelmo, Guido and Gentile, Guido and
+            Pereira, Francisco Camara},
+  title  = {Learning Traffic Flows: Graph Neural Networks for Metamodelling
+            Traffic Assignment},
+  booktitle = {2025 9th International Conference on Models and Technologies
+               for Intelligent Transportation Systems (MT-ITS)},
+  year   = {2025},
+  publisher = {IEEE},
+  note   = {doi: 10.1109/MT-ITS68460.2025.11223524 (arXiv:2505.11230)},
+}
+
+@article{toms2020physically,
+  author  = {Toms, Benjamin A. and Barnes, Elizabeth A. and Ebert-Uphoff, Imme},
+  title   = {Physically Interpretable Neural Networks for the Geosciences:
+             Applications to Earth System Variability},
+  journal = {Journal of Advances in Modeling Earth Systems},
+  volume  = {12},
+  pages   = {e2019MS002002},
+  year    = {2020},
+  doi     = {10.1029/2019MS002002}
+}
+
+@article{spielman2004nearly,
+  author  = {Spielman, Daniel A. and Teng, Shang-Hua},
+  title   = {Nearly-linear time algorithms for graph partitioning, graph
+             sparsification, and solving linear systems},
+  journal = {Proceedings of the thirty-sixth annual {ACM} symposium on
+             Theory of computing},
+  year    = {2004},
+  pages   = {81--90},
+  doi     = {10.1145/1007352.1007372},
+}
+
+@inproceedings{kelner2013simple,
+  author    = {Kelner, Jonathan A. and Orecchia, Lorenzo and Sidford, Aaron
+               and Zhu, Zeyuan Allen},
+  title     = {A simple, combinatorial algorithm for solving {SDD} systems
+               in nearly-linear time},
+  booktitle = {Proceedings of the forty-fifth annual {ACM} symposium on
+               Theory of computing},
+  year      = {2013},
+  pages     = {911--920},
+  doi       = {10.1145/2488608.2488724},
+}
+
+@incollection{yang2005sensitivity,
+  author = {Yang, Hai and Bell, Michael G. H.},
+  title = {Sensitivity analysis of network traffic equilibria revisited: the corrected approach},
+  booktitle = {Mathematics in Transport: Selected Proceedings of the Fourth {IMA} International Conference on Mathematics in Transport},
+  editor = {Heydecker, Benjamin G.},
+  publisher = {Elsevier},
+  address = {Oxford},
+  pages = {373--395},
+  year = {2007}
+}
+
+@inproceedings{amos2017optnet,
+  author = {Amos, Brandon and Kolter, J. Zico},
+  title = {Opt{N}et: Differentiable optimization as a layer in neural networks},
+  booktitle = {Proceedings of the 34th International Conference on Machine Learning},
+  pages = {136--145},
+  year = {2017}
+}
+
+@article{amos2023amortized,
+  author = {Amos, Brandon},
+  title = {Tutorial on amortized optimization},
+  journal = {Foundations and Trends in Machine Learning},
+  volume = {16},
+  number = {5--6},
+  pages = {592--732},
+  year = {2023}
+}
+
+@inproceedings{lundberg2017unified,
+  author = {Lundberg, Scott M. and Lee, Su-In},
+  title = {A unified approach to interpreting model predictions},
+  booktitle = {Advances in Neural Information Processing Systems 30},
+  pages = {4765--4774},
+  year = {2017}
+}
+
+% ---------- v53: Aumann-Shapley / continuous cost allocation ---------- %
+@book{aumann1974values,
+  author    = {Aumann, Robert J. and Shapley, Lloyd S.},
+  title     = {Values of Non-Atomic Games},
+  publisher = {Princeton University Press},
+  address   = {Princeton, NJ},
+  year      = {1974},
+}
+
+@article{billera1978internal,
+  author    = {Billera, Louis J. and Heath, David C. and Raanan, Joseph},
+  title     = {Internal telephone billing rates---a novel application of non-atomic game theory},
+  journal   = {Operations Research},
+  volume    = {26},
+  number    = {6},
+  pages     = {956--965},
+  year      = {1978},
+  doi       = {10.1287/opre.26.6.956},
+}
+
+% ---------- v56: screenline / select-link / origin-based practice ---------- %
+@article{vanzuylen1980most,
+  author  = {van Zuylen, Henk J. and Willumsen, Luis G.},
+  title   = {The most likely trip matrix estimated from traffic counts},
+  journal = {Transportation Research Part B: Methodological},
+  volume  = {14},
+  number  = {3},
+  pages   = {281--293},
+  year    = {1980},
+  doi     = {10.1016/0191-2615(80)90008-9},
+}
+
+@article{bar2002origin,
+  author  = {Bar-Gera, Hillel},
+  title   = {Origin-based algorithm for the traffic assignment problem},
+  journal = {Transportation Science},
+  volume  = {36},
+  number  = {4},
+  pages   = {398--417},
+  year    = {2002},
+  doi     = {10.1287/trsc.36.4.398.549},
+}
+
+@article{shadrin2014landau,
+  author = {Shadrin, Alexei},
+  title = {The {Landau--Kolmogorov} inequality revisited},
+  journal = {Discrete and Continuous Dynamical Systems},
+  volume = {34}, number = {3}, pages = {1183--1210},
+  year = {2014}, doi = {10.3934/dcds.2014.34.1183},
+}
+
+@inproceedings{wang2021shapleyflow,
+  author    = {Wang, Jiaxuan and Wiens, Jenna and Lundberg, Scott},
+  title     = {Shapley Flow: A Graph-based Approach to Interpreting Model Predictions},
+  booktitle = {Proceedings of the 24th International Conference on Artificial
+               Intelligence and Statistics (AISTATS)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {130},
+  pages     = {721--729},
+  year      = {2021},
+}
+
+@inproceedings{singal2021rsv,
+  author    = {Singal, Raghav and Michailidis, George and Ng, Hoiyi},
+  title     = {Flow-based Attribution in Graphical Models: A Recursive
+               Shapley Approach},
+  booktitle = {Proceedings of the 38th International Conference on Machine
+               Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  pages     = {9733--9743},
+  year      = {2021},
+}
+
+@inproceedings{czarnecki2017sobolev,
+ title={Sobolev Training for Neural Networks},
+ author={Czarnecki, Wojciech Marian and Osindero, Simon and Jaderberg, Max and Swirszcz, Grzegorz and Pascanu, Razvan},
+ booktitle={Advances in Neural Information Processing Systems},
+ volume={30}, year={2017}
+}
+
+@article{even1976st,
+ author={Even, Shimon and Tarjan, Robert Endre},
+ title={Computing an {st}-numbering},
+ journal={Theoretical Computer Science}, year={1976}, volume={2}, number={3}, pages={339--344}, doi={10.1016/0304-3975(76)90086-4}
+}
+@misc{yuan2022sobolev,
+ author={Yuan, Wentao and Zhu, Qingtian and Liu, Xiangyue and Ding, Yikang and Zhang, Haotian and Zhang, Chi},
+ title={Sobolev Training for Implicit Neural Representations with Approximated Image Derivatives},
+ year={2022}, eprint={2207.10395}, archivePrefix={arXiv}, doi={10.48550/arXiv.2207.10395}
+}

@@ -1,0 +1,5 @@
+{
+  "accepted_connectivity_checks": 1642,
+  "all_passed": true,
+  "purpose": "independent NetworkX connectivity and endpoint orientation of accepted scan candidates"
+}

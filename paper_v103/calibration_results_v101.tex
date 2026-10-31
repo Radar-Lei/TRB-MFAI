@@ -1,0 +1,12 @@
+\begin{table}[t]
+\centering\small
+\caption{Exploratory validation-calibrated continuation ($\lambda_{\mathrm{cut}}=0.01$), tested on four new independent demand paths (seed 101030). Entries are medians over 60 active query--path--seed combinations, except flow (five seeds, held-out split) and increment error (20 path--seed pairs). Boundary error uses all separating cuts and is normalized by the corresponding maximum absolute reference account.}
+\label{tab:calibration-learning}
+\begin{tabular}{lrrrrrr}\toprule
+Method & Flow (\%) & Increment (\%) & Column (\%) & System (\%) & Cut abs. & Cut (\%)\\\midrule
+Original & 0.04 & 5.40 & 12.22 & 1.65 & 289.36 & 7.47\\
+Flow continuation & 0.03 & 5.12 & 11.45 & 1.32 & 261.00 & 7.44\\
+Flow + response & 0.03 & 5.32 & 11.69 & 1.33 & 264.80 & 7.44\\
+Calibrated boundary & 0.03 & 5.64 & 11.92 & 1.68 & 275.14 & 7.74\\
+\bottomrule\end{tabular}
+\end{table}

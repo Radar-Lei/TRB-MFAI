@@ -1,0 +1,14 @@
+{
+  "new_seed": 102113,
+  "reps_per_group": 18,
+  "new_paths": 72,
+  "total_paths": 96,
+  "states_per_path": 41,
+  "bootstrap_seed": 20261030,
+  "bootstrap_reps": 10000,
+  "generation_rule": "identical to e111 with fresh seed",
+  "models": "v104 selection frozen; no retraining",
+  "reference_seconds": null,
+  "evaluation_seconds": 228.99755749851465,
+  "gate_fix": "max_reference_conservation corrected to 3.18e-11 (study+background supply); original in-run value 900.0 omitted the 522 background demands"
+}

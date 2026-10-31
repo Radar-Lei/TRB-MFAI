@@ -1,0 +1,223 @@
+{
+  "protocol": {
+    "synthetic_weights": "A,b1,B,b2,C = 1; pendant D = 3,4,5 (connected-example post-merge state)",
+    "sioux_levels": [
+      0.7,
+      1.0,
+      1.3
+    ],
+    "anaheim_state": "e112 21-state midpoint",
+    "elapsed_seconds": 528.5032451450825
+  },
+  "synthetic": {
+    "network": "two_bridges (Figure 1, post-merge weights)",
+    "nodes": 11,
+    "edges": 14,
+    "queries": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    "paths": 4,
+    "atoms": 6,
+    "queried_atom_edges": 11,
+    "eta_all": 1.0,
+    "eta_conn": 0.0,
+    "level2": {
+      "rho_swap": 6.457856262452392e-16,
+      "rho_ref": [
+        0.0,
+        0.0
+      ],
+      "rank_Tswap": 2
+    },
+    "level3_note": "Level 2 holds exactly, so every model response has one unrestricted common account; the universal condition fails (eta_all = 1 on the pendant atom)."
+  },
+  "sioux_falls": {
+    "network": "Sioux Falls (setting-C protocol path structure)",
+    "nodes": 24,
+    "edges": 76,
+    "queries": [
+      [
+        7,
+        18
+      ],
+      [
+        1,
+        19
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        12
+      ]
+    ],
+    "paths": 5280,
+    "levels": {
+      "0.7": {
+        "eta_all": 23.501477431171033,
+        "eta_conn": 23.501477431171033,
+        "eta_all_normalized": 2.12120013172385,
+        "level2": {
+          "rank_Tswap": 53,
+          "dim_Tswap_of_m": [
+            53,
+            76
+          ],
+          "rho_swap": 1.1158038040042517,
+          "rho_ref": [
+            0.0,
+            0.7948859991605003,
+            0.0,
+            0.784336939486679,
+            0.0,
+            0.9626659812933951
+          ],
+          "membership_residual_max": 1.9938142116684643e-14
+        }
+      },
+      "1.0": {
+        "eta_all": 56.795221086462156,
+        "eta_conn": 56.795221086462156,
+        "eta_all_normalized": 2.0830699049386197,
+        "level2": {
+          "rank_Tswap": 53,
+          "dim_Tswap_of_m": [
+            53,
+            76
+          ],
+          "rho_swap": 0.8843510447171165,
+          "rho_ref": [
+            0.0,
+            0.9443212693076594,
+            0.0,
+            0.8298636211797964,
+            0.0,
+            0.9730462850924498
+          ],
+          "membership_residual_max": 5.427006986838491e-15
+        }
+      },
+      "1.3": {
+        "eta_all": 144.238793485841,
+        "eta_conn": 144.238793485841,
+        "eta_all_normalized": 2.2082676782067803,
+        "level2": {
+          "rank_Tswap": 53,
+          "dim_Tswap_of_m": [
+            53,
+            76
+          ],
+          "rho_swap": 0.803307281432101,
+          "rho_ref": [
+            0.0,
+            0.983916472488507,
+            0.0,
+            0.8458533850363271,
+            0.0,
+            0.9793121251985669
+          ],
+          "membership_residual_max": 1.2525178022535197e-14
+        }
+      }
+    },
+    "atoms": 1,
+    "atom_types": [
+      "circuit"
+    ],
+    "queried_atom_edges": 76,
+    "level3_realized": {
+      "unrestricted_pct": [
+        19.57139749278631,
+        2585.974356654181,
+        54.52962153750119,
+        2047.9541088379221,
+        99.75016367431733,
+        1128.2873145325545
+      ],
+      "unrestricted_pct_median": 614.0187391034359,
+      "geometric_pct_median": 32.33103718789915
+    }
+  },
+  "anaheim": {
+    "network": "Anaheim (e112 protocol)",
+    "nodes": 416,
+    "edges": 914,
+    "queries": [
+      [
+        4,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        25,
+        4
+      ],
+      [
+        25,
+        2
+      ]
+    ],
+    "paths": 14060,
+    "atoms": 22,
+    "queried_atom_edges": 872,
+    "eta_all": 10.49320232564826,
+    "eta_conn": 10.49320232564826,
+    "eta_all_normalized": 10.08320190770685,
+    "level2": {
+      "rank_Tswap": 404,
+      "dim_Tswap_of_m": [
+        404,
+        914
+      ],
+      "rho_swap": 2.1777590740555834,
+      "rho_ref": [
+        0.9141275206619627,
+        0.9405330230257111,
+        0.8996289011910265,
+        0.9392978853900438,
+        0.9113571508031233,
+        0.9587936967189109
+      ],
+      "membership_residual_max": 4.926519508448019e-15
+    },
+    "level3_realized": {
+      "unrestricted_pct": [
+        1028.213011372506,
+        2059.4870902755047,
+        1002.5689266619341,
+        1945.5205095331776,
+        6591.9898687659925,
+        14917.176760576674
+      ],
+      "unrestricted_pct_median": 2002.5037999043411
+    }
+  }
+}

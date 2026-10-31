@@ -1,0 +1,28 @@
+\subsection{External spatial calculation on Anaheim}\label{sec:anaheim}
+The public Anaheim network has 416 nodes, 914 directed links and 1,406 positive OD demands \citep{tnfrc2024transportation}. We select the six largest demands, vary them jointly from 0.8 to 1.2 times their published values, and hold all other demands fixed while their route choices remain endogenous. Each OD uses ten free-flow shortest paths; candidate routes exclude other zone centroids as intermediate nodes (the first through node is 39). This reference calculation evaluates spatial computation and background mechanisms; no Anaheim surrogate is trained.
+\begin{table}[t]\centering\small
+\caption{Anaheim reference attribution (absolute accounts in vehicle-minutes per hour; divide by 60 for vehicle-hours per hour): unrestricted accounts and connected regions formed by removing edges on the OD path in two deterministic breadth-first spanning trees rooted at the origin and destination. These topology-only region rules use no attribution values. Ranges use 41-point integrated columns, with no connected-region enumeration.}\label{tab:anaheim}
+\begin{tabular}{lrrrr}\toprule
+OD & System & Unrestricted range & Selected connected range & Regions\\\midrule
+(4,2) & 34664.1 & [-12712.6,20514.0] & [238.9,4932.1] & 36\\
+(1,2) & 16773.6 & [-6032.2,9762.0] & [281.2,2964.7] & 26\\
+(2,4) & 12143.7 & [-4374.6,6733.0] & [99.9,1915.3] & 36\\
+(3,2) & 14706.7 & [-5613.8,9052.9] & [172.9,5777.4] & 28\\
+(25,4) & 6919.3 & [-1805.3,3091.8] & [96.9,1212.2] & 22\\
+(25,2) & 11445.9 & [-4157.3,6904.5] & [126.8,2676.4] & 16\\
+\bottomrule\end{tabular}\end{table}
+The reference chain with 21 quadrature states took 1278.7 seconds on the local CPU, including route construction and implicit sensitivities; the six unrestricted extrema took 0.0138 seconds after the columns were available. This separates the saved boundary-enumeration cost from reference attribution cost. Maximum path fixed-point residual was 1.1e-11, flow-balance residual 9.1e-12, and relative quadrature completeness discrepancy 3.2e-05.
+At the common middle state, the six background-response norms range from 0.115 to 0.487, while their maximum node divergence is below $3.1\times10^{-15}$. Weighting those same responses by the common total-flow marginal costs gives divergence norms 0.116--0.796. Background rerouting therefore remains a nonzero spatial attribution mechanism on this larger network. 
+
+For full-path mechanism analysis, order each query's pre-existing BFS regions lexicographically by its sorted node list and select the first, middle and last regions, denoted $U_0,U_1,U_2$. This rule uses topology and the OD only, without inspecting attribution. Each fixed comparison is decomposed using the same equilibrium states and total-flow marginal costs into free-flow/study, free-flow/background, congestion/study and congestion/background terms. Table~\ref{tab:anaheimmechanism} reports $\varphi_j(U_2)-\varphi_j(U_0)$; the additional $U_1-U_0$ comparisons and exact region memberships are archived with the experiment. These are differences for identical fixed regions, not sums of componentwise ranges.
+\begin{table}[t]\centering\small
+\caption{Anaheim full-path differences between two preselected connected regions (vehicle-minutes per hour). FF denotes free-flow costs, C congestion marginal costs, S the six study demands and B all other demands.}\label{tab:anaheimmechanism}
+\begin{tabular}{lrrrrr}\toprule OD & FF/S & FF/B & C/S & C/B & Total\\\midrule
+(4,2) & -0.00 & -0.10 & -1338.21 & 0.04 & -1338.28\\
+(1,2) & 21.81 & 17.46 & 3.96 & -15.69 & 27.54\\
+(2,4) & 0.00 & 0.00 & 654.99 & 0.00 & 654.99\\
+(3,2) & 0.00 & -0.00 & -1622.92 & -0.00 & -1622.92\\
+(25,4) & -396.00 & 4.26 & -673.82 & 1.47 & -1064.09\\
+(25,2) & -412.24 & 0.49 & -2134.60 & 0.13 & -2546.22\\
+\bottomrule\end{tabular}\end{table}
+These mechanism columns use 41 equally spaced trapezoidal states. The maximum unrounded decomposition discrepancy is 9.1e-13 per edge. Refining from 21 to 41 states changes the node representation by relative Euclidean errors between 5.8e-06 and 5.2e-05 across queries; the largest selected-account change is 0.206 vehicle-minutes per hour (0.00452\% relative). This evaluates spatial accounts directly rather than relying on cancellation in scalar completeness. For $(1,2)$, the background free-flow term is positive whereas its congestion term is negative, and these contributions largely cancel. For most other selected comparisons the background terms are small relative to the study-response congestion term. The mechanism decomposition identifies both cancellation and relative magnitude under common total-flow cost weights.

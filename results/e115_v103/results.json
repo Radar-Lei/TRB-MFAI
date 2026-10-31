@@ -1,0 +1,32 @@
+{
+  "network": "Sioux Falls",
+  "directions": 36,
+  "preprocess_seconds": 0.027617551386356354,
+  "preprocess_repeated_seconds": 0.0834773026406765,
+  "candidate_query_accounts": 1642,
+  "unique_regions_per_query": [
+    35,
+    152,
+    32,
+    123,
+    23,
+    148
+  ],
+  "rows": [
+    {
+      "columns": 6,
+      "accounts": 1642,
+      "max_absolute_error": 2.1827872842550278e-11,
+      "scan_seconds": 0.004160501062870026,
+      "direct_seconds": 0.02851405367255211
+    },
+    {
+      "columns": 120,
+      "accounts": 32840,
+      "max_absolute_error": 2.1827872842550278e-11,
+      "scan_seconds": 0.087923688814044,
+      "direct_seconds": 1.1761503517627716
+    }
+  ],
+  "timing": "median of five batches, three warmups; scan 20 repetitions per batch, direct two. 120 columns repeat six reference columns 20 times: workload timing only."
+}

@@ -1,0 +1,26 @@
+\subsection{Input-stratified OD coverage}\label{sec:coverage}
+We select queries using only the published positive OD demand and directed free-flow shortest-path time. Each attribute is divided at its empirical tertiles, keeping ties in the lower group. In each of the nine cells, OD pairs are ordered lexicographically and the pairs at zero-based positions $\lfloor N/3\rfloor$ and $\lfloor2N/3\rfloor$ are retained. Empty cells remain empty and a singleton is retained once. This yields 18 queries from 528 positive demands. For each query, only its demand moves from $(1-a)q_j$ to $(1+a)q_j$, $a\in\{0.1,0.2\}$; all other demands remain at their published levels with endogenous route choice. Four endpoint equilibria per query give the exact single-OD edge attribution by Eq.~\eqref{eq:edgeidentity}, avoiding quadrature. The geometric family uses the same 36 pre-specified directions and connected-side filter as the screenline experiment.
+\begin{table}[t]\centering\small
+\caption{All input-stratified queries. Entries are geometric-account spreads for $\pm10\%$ and $\pm20\%$ intervals and their ratios to the exact unrestricted spread. Absolute values use the Sioux Falls cost units. No query is removed based on its attribution.}\label{tab:coverage}
+\begin{tabular}{lrrrr}\toprule
+OD & $S_{\rm geo}^{10}$ & $S_{\rm geo}^{20}$ & $S_{\rm geo}^{10}/S_{\rm all}^{10}$ & $S_{\rm geo}^{20}/S_{\rm all}^{20}$\\\midrule
+(4,3) & 53.0 & 105.9 & 0.353 & 0.353\\
+(12,3) & 4.8 & 9.5 & 0.417 & 0.417\\
+(6,1) & 816.1 & 1632.1 & 0.651 & 0.651\\
+(15,6) & 2009.1 & 4018.1 & 0.672 & 0.672\\
+(6,21) & 1176.4 & 2352.8 & 0.668 & 0.668\\
+(18,14) & 889.5 & 1778.9 & 0.511 & 0.511\\
+(8,4) & 7235.2 & 14470.6 & 0.646 & 0.646\\
+(19,8) & 3266.6 & 6533.2 & 0.374 & 0.374\\
+(11,6) & 2434.9 & 4869.9 & 0.626 & 0.626\\
+(16,2) & 4366.2 & 8732.3 & 0.545 & 0.545\\
+(8,21) & 1730.7 & 3461.5 & 0.424 & 0.424\\
+(14,8) & 3318.4 & 6636.8 & 0.495 & 0.495\\
+(11,15) & 5054.3 & 10108.8 & 0.337 & 0.337\\
+(17,9) & 6509.7 & 13037.1 & 0.696 & 0.695\\
+(10,12) & 11713.3 & 23426.2 & 0.539 & 0.539\\
+(13,10) & 14211.4 & 28426.4 & 0.667 & 0.667\\
+(1,10) & 9336.8 & 18673.5 & 0.603 & 0.603\\
+(10,1) & 9428.5 & 18856.8 & 0.606 & 0.606\\
+\bottomrule\end{tabular}\end{table}
+The median geometric-to-unrestricted spread ratios are 0.574 and 0.574 for the two widths. These results describe this fixed input-stratified sample; they are not a probability sample of all demand conditions. Endpoint differences identify total edge accounts, but do not identify the same-state study/background response decomposition. That decomposition is evaluated separately in the mechanism experiments.

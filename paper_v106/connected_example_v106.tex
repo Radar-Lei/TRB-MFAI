@@ -1,0 +1,16 @@
+\paragraph{A constructive distinction on Figure~\ref{fig:blockcut}.}
+Keep weights $1$ on $A,b_1,B$, weights $2$ on $b_2,C$, but set the three
+off-path $D$ weights to $3,4,5$. The first query $(s,u)$ admits common
+account $1$ on every two-sided connected region for every conservative
+response. The second query $(u,t)$ initially has connected accounts
+spanning $[1,2]$ and fails that criterion. Changing only $b_2,C$ to
+weight $1$ makes both queries compatible on connected regions, while
+$D$ remains internally heterogeneous. For each query there are $512$
+unrestricted separating sets but only $5$ two-sided connected sets.
+Checking a particular response and a complete circulation basis confirms
+the universal connected-region assertions; this is stronger than checking
+sampled responses. A unit signed circulation in $D$ gives unrestricted
+accounts $[-1,3]$ after the merge, while all connected accounts remain
+$1$. Thus the unrestricted criterion still fails. This fixed structural
+outcome illustrates the theorem; its weights do not replace the original
+TSTT marginal costs. The reproducible record is provided with the code.

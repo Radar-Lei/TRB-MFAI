@@ -1,0 +1,344 @@
+{
+  "old_paths": [
+    {
+      "path": 0,
+      "query": "7->18",
+      "boundary_improved": 3,
+      "column_improved": 3,
+      "boundary_ratio_median": 0.9529241951987726,
+      "boundary_ratio_range": [
+        0.7904637230465383,
+        1.074938163436791
+      ]
+    },
+    {
+      "path": 1,
+      "query": "4->5",
+      "boundary_improved": 4,
+      "column_improved": 3,
+      "boundary_ratio_median": 0.9319956489358743,
+      "boundary_ratio_range": [
+        0.8464795586869143,
+        1.130202664909002
+      ]
+    },
+    {
+      "path": 1,
+      "query": "6->8",
+      "boundary_improved": 4,
+      "column_improved": 5,
+      "boundary_ratio_median": 0.9590086971867252,
+      "boundary_ratio_range": [
+        0.8293173724673545,
+        1.245294072761386
+      ]
+    },
+    {
+      "path": 2,
+      "query": "1->19",
+      "boundary_improved": 0,
+      "column_improved": 1,
+      "boundary_ratio_median": 1.1526522129795411,
+      "boundary_ratio_range": [
+        1.0407988600307436,
+        1.2001919257517066
+      ]
+    },
+    {
+      "path": 2,
+      "query": "7->12",
+      "boundary_improved": 0,
+      "column_improved": 2,
+      "boundary_ratio_median": 1.1166422984447384,
+      "boundary_ratio_range": [
+        1.0286509691237031,
+        1.3874233391290707
+      ]
+    },
+    {
+      "path": 2,
+      "query": "7->18",
+      "boundary_improved": 5,
+      "column_improved": 3,
+      "boundary_ratio_median": 0.9262122335240652,
+      "boundary_ratio_range": [
+        0.7131147607959117,
+        0.9455178246526534
+      ]
+    },
+    {
+      "path": 3,
+      "query": "1->15",
+      "boundary_improved": 2,
+      "column_improved": 0,
+      "boundary_ratio_median": 1.0037908055729579,
+      "boundary_ratio_range": [
+        0.9880049498127507,
+        1.2046641217775544
+      ]
+    },
+    {
+      "path": 3,
+      "query": "1->19",
+      "boundary_improved": 3,
+      "column_improved": 3,
+      "boundary_ratio_median": 0.9867608719904356,
+      "boundary_ratio_range": [
+        0.8352220373387473,
+        1.2721145866166486
+      ]
+    },
+    {
+      "path": 3,
+      "query": "4->5",
+      "boundary_improved": 2,
+      "column_improved": 3,
+      "boundary_ratio_median": 1.076663009789127,
+      "boundary_ratio_range": [
+        0.9494648487061357,
+        1.1450384372911486
+      ]
+    },
+    {
+      "path": 3,
+      "query": "6->8",
+      "boundary_improved": 3,
+      "column_improved": 5,
+      "boundary_ratio_median": 0.9176620111404465,
+      "boundary_ratio_range": [
+        0.8915618887286082,
+        1.1877602539292598
+      ]
+    },
+    {
+      "path": 3,
+      "query": "7->12",
+      "boundary_improved": 1,
+      "column_improved": 3,
+      "boundary_ratio_median": 1.0680351633151102,
+      "boundary_ratio_range": [
+        0.988767661871211,
+        1.5495813957728828
+      ]
+    },
+    {
+      "path": 3,
+      "query": "7->18",
+      "boundary_improved": 4,
+      "column_improved": 3,
+      "boundary_ratio_median": 0.8298657188848718,
+      "boundary_ratio_range": [
+        0.7996008611480977,
+        1.2315237406572237
+      ]
+    }
+  ],
+  "new_paths": [
+    {
+      "path": 0,
+      "query": "7->18",
+      "boundary_improved": 4,
+      "column_improved": 3,
+      "boundary_ratio_median": 0.8982047592232144,
+      "boundary_ratio_range": [
+        0.7776347355340897,
+        1.2827990505164104
+      ]
+    },
+    {
+      "path": 1,
+      "query": "4->5",
+      "boundary_improved": 5,
+      "column_improved": 5,
+      "boundary_ratio_median": 0.9370795266642071,
+      "boundary_ratio_range": [
+        0.8330366587178304,
+        0.9482677625720067
+      ]
+    },
+    {
+      "path": 1,
+      "query": "6->8",
+      "boundary_improved": 1,
+      "column_improved": 3,
+      "boundary_ratio_median": 1.0635161121555698,
+      "boundary_ratio_range": [
+        0.8381185964209991,
+        1.1036308058902395
+      ]
+    },
+    {
+      "path": 2,
+      "query": "1->19",
+      "boundary_improved": 2,
+      "column_improved": 0,
+      "boundary_ratio_median": 1.0333041105952172,
+      "boundary_ratio_range": [
+        0.901657399632512,
+        1.1325514623134025
+      ]
+    },
+    {
+      "path": 2,
+      "query": "7->12",
+      "boundary_improved": 4,
+      "column_improved": 4,
+      "boundary_ratio_median": 0.9144078568262691,
+      "boundary_ratio_range": [
+        0.8167913366101459,
+        1.0937937238208135
+      ]
+    },
+    {
+      "path": 2,
+      "query": "7->18",
+      "boundary_improved": 2,
+      "column_improved": 1,
+      "boundary_ratio_median": 1.0054107928941842,
+      "boundary_ratio_range": [
+        0.8186556592290376,
+        1.1929071148732417
+      ]
+    },
+    {
+      "path": 3,
+      "query": "1->15",
+      "boundary_improved": 2,
+      "column_improved": 4,
+      "boundary_ratio_median": 1.0362658619839493,
+      "boundary_ratio_range": [
+        0.8554834924329436,
+        1.200345932073874
+      ]
+    },
+    {
+      "path": 3,
+      "query": "1->19",
+      "boundary_improved": 0,
+      "column_improved": 2,
+      "boundary_ratio_median": 1.1411575290651634,
+      "boundary_ratio_range": [
+        1.0740354431588606,
+        1.2210286687827805
+      ]
+    },
+    {
+      "path": 3,
+      "query": "4->5",
+      "boundary_improved": 5,
+      "column_improved": 4,
+      "boundary_ratio_median": 0.9253809627765253,
+      "boundary_ratio_range": [
+        0.8443273355491,
+        0.9684808815700465
+      ]
+    },
+    {
+      "path": 3,
+      "query": "6->8",
+      "boundary_improved": 4,
+      "column_improved": 5,
+      "boundary_ratio_median": 0.8448776731330055,
+      "boundary_ratio_range": [
+        0.743549358445507,
+        1.2402302024824583
+      ]
+    },
+    {
+      "path": 3,
+      "query": "7->12",
+      "boundary_improved": 1,
+      "column_improved": 1,
+      "boundary_ratio_median": 1.1761710654975799,
+      "boundary_ratio_range": [
+        0.8987950140754573,
+        1.6803020283162327
+      ]
+    },
+    {
+      "path": 3,
+      "query": "7->18",
+      "boundary_improved": 2,
+      "column_improved": 3,
+      "boundary_ratio_median": 1.0269700110244067,
+      "boundary_ratio_range": [
+        0.8300301859515661,
+        1.1379278401274515
+      ]
+    }
+  ],
+  "old_totals": {
+    "ALL": {
+      "boundary_improved": 31,
+      "column_improved": 34,
+      "n": 60
+    },
+    "1->15": {
+      "boundary_improved": 2,
+      "column_improved": 0,
+      "n": 5
+    },
+    "1->19": {
+      "boundary_improved": 3,
+      "column_improved": 4,
+      "n": 10
+    },
+    "4->5": {
+      "boundary_improved": 6,
+      "column_improved": 6,
+      "n": 10
+    },
+    "6->8": {
+      "boundary_improved": 7,
+      "column_improved": 10,
+      "n": 10
+    },
+    "7->12": {
+      "boundary_improved": 1,
+      "column_improved": 5,
+      "n": 10
+    },
+    "7->18": {
+      "boundary_improved": 12,
+      "column_improved": 9,
+      "n": 15
+    }
+  },
+  "new_totals": {
+    "ALL": {
+      "boundary_improved": 32,
+      "column_improved": 35,
+      "n": 60
+    },
+    "1->15": {
+      "boundary_improved": 2,
+      "column_improved": 4,
+      "n": 5
+    },
+    "1->19": {
+      "boundary_improved": 2,
+      "column_improved": 2,
+      "n": 10
+    },
+    "4->5": {
+      "boundary_improved": 10,
+      "column_improved": 9,
+      "n": 10
+    },
+    "6->8": {
+      "boundary_improved": 5,
+      "column_improved": 8,
+      "n": 10
+    },
+    "7->12": {
+      "boundary_improved": 5,
+      "column_improved": 5,
+      "n": 10
+    },
+    "7->18": {
+      "boundary_improved": 8,
+      "column_improved": 7,
+      "n": 15
+    }
+  }
+}

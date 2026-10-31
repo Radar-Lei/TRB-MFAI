@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\small
+\caption{Endpoint supervision on 24 independent paths (six each with one, two, three and six active OD queries), five seeds. Flow is the five-seed mean relative error on the original held-out demand states. Other entries first average active queries and seeds within each path, then report medians over paths; the last column gives the 90th percentile. All methods share 1,200 continuation updates and a common validation selection rule.}
+\label{tab:pairs-v102}
+\begin{tabular}{lrrrrrr}\toprule
+Method & Flow (\%) & Column (\%) & System (\%) & Cut abs. & Cut (\%) & Cut P90 (\%)\\\midrule
+Flow & 0.0386 & 21.61 & 2.33 & 270.16 & 14.53 & 34.27\\
+Flow + endpoint edge & 0.0518 & 17.14 & 3.07 & 255.83 & 15.50 & 28.93\\
+Flow + endpoint edge + cut & 0.0513 & 18.02 & 3.26 & 289.68 & 17.18 & 26.63\\
+Flow + response & 0.0388 & 14.22 & 3.31 & 178.72 & 12.08 & 28.17\\
+\bottomrule\end{tabular}\end{table}

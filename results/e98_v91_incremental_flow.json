@@ -1,0 +1,73 @@
+{
+  "protocol": {
+    "purpose": "demand-change flow-increment error E_dF of the full-background surrogate vs direct SUE on the identical 41-state six-query setting-C chain; denominator matched to the increment, not the flow level",
+    "definition": "E_dF = ||(f_L(q1)-f_L(q0)) - (f_S(q1)-f_S(q0))||_2 / ||f_S(q1)-f_S(q0)||_2",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "claims_supported": "flow-space increment fidelity of the surrogate on this demand direction; NOT attribution accuracy and not a bound on the attribution errors"
+  },
+  "sue_reference": {
+    "dF_norm_l2": 2982.6766087976216,
+    "fS0_norm_l2": 108503.56644503948,
+    "fS1_norm_l2": 110133.40018999123,
+    "increment_over_level_pct": 2.7489203410732514
+  },
+  "per_seed": {
+    "0": {
+      "E_dF": 0.05996856107667023,
+      "level_error_q0": 0.0018385011923998278,
+      "level_error_q1": 0.0005441247110297326,
+      "chain_mean_level_error": 0.0006505622189005156,
+      "gates": {
+        "conservation_endpoint_max": 1.4551915228366852e-11
+      }
+    },
+    "1": {
+      "E_dF": 0.05002355922252621,
+      "level_error_q0": 0.0011673877691891837,
+      "level_error_q1": 0.0003719391340640501,
+      "chain_mean_level_error": 0.00037002244365483386,
+      "gates": {
+        "conservation_endpoint_max": 2.1827872842550278e-11
+      }
+    },
+    "2": {
+      "E_dF": 0.0636214742367805,
+      "level_error_q0": 0.001771935059915608,
+      "level_error_q1": 0.0005043383668448155,
+      "chain_mean_level_error": 0.0006423715089398321,
+      "gates": {
+        "conservation_endpoint_max": 1.2732925824820995e-11
+      }
+    },
+    "3": {
+      "E_dF": 0.06964191220267311,
+      "level_error_q0": 0.0019533853231209816,
+      "level_error_q1": 0.00038018813346315275,
+      "chain_mean_level_error": 0.0005167388168806093,
+      "gates": {
+        "conservation_endpoint_max": 1.9099388737231493e-11
+      }
+    },
+    "4": {
+      "E_dF": 0.05593957086542455,
+      "level_error_q0": 0.0015204920391625623,
+      "level_error_q1": 0.00037983217731819054,
+      "chain_mean_level_error": 0.0004384636910407252,
+      "gates": {
+        "conservation_endpoint_max": 3.637978807091713e-11
+      }
+    }
+  },
+  "summary": {
+    "E_dF_median": 0.05996856107667023,
+    "E_dF_min": 0.05002355922252621,
+    "E_dF_max": 0.06964191220267311
+  },
+  "elapsed_seconds": 0.024254322052001953
+}

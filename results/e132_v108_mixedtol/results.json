@@ -1,0 +1,1130 @@
+{
+  "grid": [
+    {
+      "eps_abs_frac": 0.05,
+      "tau": 0.0
+    },
+    {
+      "eps_abs_frac": 0.05,
+      "tau": 0.05
+    },
+    {
+      "eps_abs_frac": 0.05,
+      "tau": 0.1
+    },
+    {
+      "eps_abs_frac": 0.025,
+      "tau": 0.05
+    },
+    {
+      "eps_abs_frac": 0.025,
+      "tau": 0.1
+    },
+    {
+      "eps_abs_frac": 0.01,
+      "tau": 0.1
+    }
+  ],
+  "sioux_falls": [
+    {
+      "od": [
+        4,
+        3
+      ],
+      "regions": 33,
+      "chains": 27,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 33,
+          "median_segments_per_chain": 1.2222222222222223,
+          "max_rel_overall": 0.05820555969996051,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 27,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.09301008690061915,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 27,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.09006098478721361,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 30,
+          "median_segments_per_chain": 1.1111111111111112,
+          "max_rel_overall": 0.07893797540148965,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 27,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.09006098478721361,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 27,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.09006098478721361,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        12,
+        3
+      ],
+      "regions": 36,
+      "chains": 24,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 24,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.009784803618886137,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 24,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.010076843922079092,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 24,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.010556693632654351,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 24,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.010076843922079092,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 24,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.010556693632654351,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 24,
+          "median_segments_per_chain": 1.0,
+          "max_rel_overall": 0.010556693632654351,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        6,
+        1
+      ],
+      "regions": 56,
+      "chains": 22,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 50,
+          "median_segments_per_chain": 2.272727272727273,
+          "max_rel_overall": 0.16553289904177498,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 48,
+          "median_segments_per_chain": 2.1818181818181817,
+          "max_rel_overall": 0.16528496738011894,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 45,
+          "median_segments_per_chain": 2.0454545454545454,
+          "max_rel_overall": 0.15658575857063903,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 51,
+          "median_segments_per_chain": 2.3181818181818183,
+          "max_rel_overall": 0.12389129925763294,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 45,
+          "median_segments_per_chain": 2.0454545454545454,
+          "max_rel_overall": 0.15658575857063903,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 51,
+          "median_segments_per_chain": 2.3181818181818183,
+          "max_rel_overall": 0.11737070455986279,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        15,
+        6
+      ],
+      "regions": 105,
+      "chains": 33,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 137,
+          "median_segments_per_chain": 4.151515151515151,
+          "max_rel_overall": 0.5258270628263141,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 102,
+          "median_segments_per_chain": 3.090909090909091,
+          "max_rel_overall": 0.5671359392429436,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 87,
+          "median_segments_per_chain": 2.6363636363636362,
+          "max_rel_overall": 0.5372866792827883,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 144,
+          "median_segments_per_chain": 4.363636363636363,
+          "max_rel_overall": 0.1507372297912488,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 115,
+          "median_segments_per_chain": 3.484848484848485,
+          "max_rel_overall": 0.29411000610768784,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 132,
+          "median_segments_per_chain": 4.0,
+          "max_rel_overall": 0.14280369138118304,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        6,
+        21
+      ],
+      "regions": 149,
+      "chains": 34,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 177,
+          "median_segments_per_chain": 5.205882352941177,
+          "max_rel_overall": 13.979439263685661,
+          "max_rel_small": 13.979439263685661
+        },
+        "fa0.05_tau0.05": {
+          "segments": 156,
+          "median_segments_per_chain": 4.588235294117647,
+          "max_rel_overall": 13.330467300501377,
+          "max_rel_small": 13.330467300501377
+        },
+        "fa0.05_tau0.1": {
+          "segments": 135,
+          "median_segments_per_chain": 3.9705882352941178,
+          "max_rel_overall": 12.681495337317095,
+          "max_rel_small": 12.681495337317095
+        },
+        "fa0.025_tau0.05": {
+          "segments": 194,
+          "median_segments_per_chain": 5.705882352941177,
+          "max_rel_overall": 13.330467300501379,
+          "max_rel_small": 13.330467300501379
+        },
+        "fa0.025_tau0.1": {
+          "segments": 167,
+          "median_segments_per_chain": 4.911764705882353,
+          "max_rel_overall": 12.681495337317095,
+          "max_rel_small": 12.681495337317095
+        },
+        "fa0.01_tau0.1": {
+          "segments": 205,
+          "median_segments_per_chain": 6.029411764705882,
+          "max_rel_overall": 6.713048422144287,
+          "max_rel_small": 6.713048422144287
+        }
+      }
+    },
+    {
+      "od": [
+        18,
+        14
+      ],
+      "regions": 134,
+      "chains": 31,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 167,
+          "median_segments_per_chain": 5.387096774193548,
+          "max_rel_overall": 0.5579304648363673,
+          "max_rel_small": 0.5579304648363673
+        },
+        "fa0.05_tau0.05": {
+          "segments": 150,
+          "median_segments_per_chain": 4.838709677419355,
+          "max_rel_overall": 0.530033941594549,
+          "max_rel_small": 0.530033941594549
+        },
+        "fa0.05_tau0.1": {
+          "segments": 145,
+          "median_segments_per_chain": 4.67741935483871,
+          "max_rel_overall": 0.5021374183527306,
+          "max_rel_small": 0.5021374183527306
+        },
+        "fa0.025_tau0.05": {
+          "segments": 182,
+          "median_segments_per_chain": 5.870967741935484,
+          "max_rel_overall": 0.2451316023371229,
+          "max_rel_small": 0.11557532034149205
+        },
+        "fa0.025_tau0.1": {
+          "segments": 159,
+          "median_segments_per_chain": 5.129032258064516,
+          "max_rel_overall": 0.39682315704750376,
+          "max_rel_small": 0.39682315704750376
+        },
+        "fa0.01_tau0.1": {
+          "segments": 179,
+          "median_segments_per_chain": 5.774193548387097,
+          "max_rel_overall": 0.1648010212876844,
+          "max_rel_small": 0.10949240874457142
+        }
+      }
+    },
+    {
+      "od": [
+        8,
+        4
+      ],
+      "regions": 77,
+      "chains": 29,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 98,
+          "median_segments_per_chain": 3.3793103448275863,
+          "max_rel_overall": 0.2166231805739938,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 74,
+          "median_segments_per_chain": 2.5517241379310347,
+          "max_rel_overall": 0.603573587546124,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 69,
+          "median_segments_per_chain": 2.3793103448275863,
+          "max_rel_overall": 0.5718065566226439,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 101,
+          "median_segments_per_chain": 3.4827586206896552,
+          "max_rel_overall": 0.2057920215452941,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 77,
+          "median_segments_per_chain": 2.6551724137931036,
+          "max_rel_overall": 0.19496086251659442,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 97,
+          "median_segments_per_chain": 3.3448275862068964,
+          "max_rel_overall": 0.12212421035460094,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        19,
+        8
+      ],
+      "regions": 85,
+      "chains": 29,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 123,
+          "median_segments_per_chain": 4.241379310344827,
+          "max_rel_overall": 0.27600710075609786,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 94,
+          "median_segments_per_chain": 3.2413793103448274,
+          "max_rel_overall": 0.2893157772880795,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 71,
+          "median_segments_per_chain": 2.4482758620689653,
+          "max_rel_overall": 0.4310079817659451,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 114,
+          "median_segments_per_chain": 3.9310344827586206,
+          "max_rel_overall": 0.16587820062000078,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 82,
+          "median_segments_per_chain": 2.8275862068965516,
+          "max_rel_overall": 0.24840639068048795,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 108,
+          "median_segments_per_chain": 3.7241379310344827,
+          "max_rel_overall": 0.1571477690084219,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        11,
+        6
+      ],
+      "regions": 95,
+      "chains": 31,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 117,
+          "median_segments_per_chain": 3.774193548387097,
+          "max_rel_overall": 0.23854645012297365,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 101,
+          "median_segments_per_chain": 3.2580645161290325,
+          "max_rel_overall": 0.24595727798537284,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 87,
+          "median_segments_per_chain": 2.806451612903226,
+          "max_rel_overall": 0.23301215809140585,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 116,
+          "median_segments_per_chain": 3.7419354838709675,
+          "max_rel_overall": 0.15282693666379274,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 98,
+          "median_segments_per_chain": 3.161290322580645,
+          "max_rel_overall": 0.2146918051106763,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 111,
+          "median_segments_per_chain": 3.5806451612903225,
+          "max_rel_overall": 0.1447834136814879,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        16,
+        2
+      ],
+      "regions": 78,
+      "chains": 30,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 130,
+          "median_segments_per_chain": 4.333333333333333,
+          "max_rel_overall": 0.2130256493094924,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 109,
+          "median_segments_per_chain": 3.6333333333333333,
+          "max_rel_overall": 0.5669839460687385,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 97,
+          "median_segments_per_chain": 3.2333333333333334,
+          "max_rel_overall": 0.609863437127237,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 130,
+          "median_segments_per_chain": 4.333333333333333,
+          "max_rel_overall": 0.20237436684401777,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 112,
+          "median_segments_per_chain": 3.7333333333333334,
+          "max_rel_overall": 0.2089412661752178,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 123,
+          "median_segments_per_chain": 4.1,
+          "max_rel_overall": 0.15134021827445363,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        8,
+        21
+      ],
+      "regions": 128,
+      "chains": 34,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 166,
+          "median_segments_per_chain": 4.882352941176471,
+          "max_rel_overall": 0.1984816191439304,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 112,
+          "median_segments_per_chain": 3.2941176470588234,
+          "max_rel_overall": 0.28130972418111566,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 97,
+          "median_segments_per_chain": 2.8529411764705883,
+          "max_rel_overall": 0.344698386068308,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 171,
+          "median_segments_per_chain": 5.029411764705882,
+          "max_rel_overall": 0.18116745337254503,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 123,
+          "median_segments_per_chain": 3.6176470588235294,
+          "max_rel_overall": 0.18910334683999266,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 144,
+          "median_segments_per_chain": 4.235294117647059,
+          "max_rel_overall": 0.13287708447771346,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        14,
+        8
+      ],
+      "regions": 119,
+      "chains": 35,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 156,
+          "median_segments_per_chain": 4.457142857142857,
+          "max_rel_overall": 0.2368485079404192,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 118,
+          "median_segments_per_chain": 3.3714285714285714,
+          "max_rel_overall": 0.3823456144864185,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 109,
+          "median_segments_per_chain": 3.1142857142857143,
+          "max_rel_overall": 0.3622221610923962,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 158,
+          "median_segments_per_chain": 4.514285714285714,
+          "max_rel_overall": 0.22500608254339824,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 124,
+          "median_segments_per_chain": 3.5428571428571427,
+          "max_rel_overall": 0.21316365714637728,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 143,
+          "median_segments_per_chain": 4.085714285714285,
+          "max_rel_overall": 0.12497928732704655,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        11,
+        15
+      ],
+      "regions": 62,
+      "chains": 29,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 64,
+          "median_segments_per_chain": 2.206896551724138,
+          "max_rel_overall": 0.06726508224149076,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 35,
+          "median_segments_per_chain": 1.206896551724138,
+          "max_rel_overall": 0.11710073563025894,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 30,
+          "median_segments_per_chain": 1.0344827586206897,
+          "max_rel_overall": 0.14975454780966616,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 49,
+          "median_segments_per_chain": 1.6896551724137931,
+          "max_rel_overall": 0.08320977137510643,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 32,
+          "median_segments_per_chain": 1.103448275862069,
+          "max_rel_overall": 0.1340408167218162,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 35,
+          "median_segments_per_chain": 1.206896551724138,
+          "max_rel_overall": 0.11093753901814031,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        17,
+        9
+      ],
+      "regions": 68,
+      "chains": 29,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 55,
+          "median_segments_per_chain": 1.896551724137931,
+          "max_rel_overall": 0.08765142018491043,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 47,
+          "median_segments_per_chain": 1.6206896551724137,
+          "max_rel_overall": 0.09434439700458457,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 47,
+          "median_segments_per_chain": 1.6206896551724137,
+          "max_rel_overall": 0.09113889348085347,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 52,
+          "median_segments_per_chain": 1.793103448275862,
+          "max_rel_overall": 0.08326884917566492,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 47,
+          "median_segments_per_chain": 1.6206896551724137,
+          "max_rel_overall": 0.09113889348085347,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 47,
+          "median_segments_per_chain": 1.6206896551724137,
+          "max_rel_overall": 0.09113889348085347,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        10,
+        12
+      ],
+      "regions": 83,
+      "chains": 34,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 107,
+          "median_segments_per_chain": 3.1470588235294117,
+          "max_rel_overall": 0.1536115026781087,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 73,
+          "median_segments_per_chain": 2.1470588235294117,
+          "max_rel_overall": 0.20177084633064252,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 60,
+          "median_segments_per_chain": 1.7647058823529411,
+          "max_rel_overall": 0.25140547078546394,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 100,
+          "median_segments_per_chain": 2.9411764705882355,
+          "max_rel_overall": 0.09114250681608636,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 75,
+          "median_segments_per_chain": 2.2058823529411766,
+          "max_rel_overall": 0.1655921790344725,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 89,
+          "median_segments_per_chain": 2.6176470588235294,
+          "max_rel_overall": 0.12902218816085195,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        13,
+        10
+      ],
+      "regions": 93,
+      "chains": 34,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 123,
+          "median_segments_per_chain": 3.6176470588235294,
+          "max_rel_overall": 0.44829025468499856,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 89,
+          "median_segments_per_chain": 2.6176470588235294,
+          "max_rel_overall": 0.42587574195074857,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 73,
+          "median_segments_per_chain": 2.1470588235294117,
+          "max_rel_overall": 0.5942541598386927,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 127,
+          "median_segments_per_chain": 3.735294117647059,
+          "max_rel_overall": 0.28531658862386294,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 103,
+          "median_segments_per_chain": 3.0294117647058822,
+          "max_rel_overall": 0.3606285579003245,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 121,
+          "median_segments_per_chain": 3.5588235294117645,
+          "max_rel_overall": 0.20187864224253757,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        1,
+        10
+      ],
+      "regions": 88,
+      "chains": 35,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 167,
+          "median_segments_per_chain": 4.771428571428571,
+          "max_rel_overall": 0.3721943499434441,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 130,
+          "median_segments_per_chain": 3.7142857142857144,
+          "max_rel_overall": 0.43701466899114505,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 91,
+          "median_segments_per_chain": 2.6,
+          "max_rel_overall": 0.5546801003015394,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 165,
+          "median_segments_per_chain": 4.714285714285714,
+          "max_rel_overall": 0.19538888335685636,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 136,
+          "median_segments_per_chain": 3.8857142857142857,
+          "max_rel_overall": 0.2938852791374916,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 149,
+          "median_segments_per_chain": 4.257142857142857,
+          "max_rel_overall": 0.18510525791702187,
+          "max_rel_small": 0
+        }
+      }
+    },
+    {
+      "od": [
+        10,
+        1
+      ],
+      "regions": 88,
+      "chains": 35,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 170,
+          "median_segments_per_chain": 4.857142857142857,
+          "max_rel_overall": 0.3324466621721035,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.05": {
+          "segments": 131,
+          "median_segments_per_chain": 3.742857142857143,
+          "max_rel_overall": 0.4306829755200707,
+          "max_rel_small": 0
+        },
+        "fa0.05_tau0.1": {
+          "segments": 92,
+          "median_segments_per_chain": 2.6285714285714286,
+          "max_rel_overall": 0.5590221354282998,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.05": {
+          "segments": 165,
+          "median_segments_per_chain": 4.714285714285714,
+          "max_rel_overall": 0.19522699541384572,
+          "max_rel_small": 0
+        },
+        "fa0.025_tau0.1": {
+          "segments": 135,
+          "median_segments_per_chain": 3.857142857142857,
+          "max_rel_overall": 0.29920199595489316,
+          "max_rel_small": 0
+        },
+        "fa0.01_tau0.1": {
+          "segments": 149,
+          "median_segments_per_chain": 4.257142857142857,
+          "max_rel_overall": 0.1849518903920645,
+          "max_rel_small": 0
+        }
+      }
+    }
+  ],
+  "anaheim": [
+    {
+      "query": [
+        4,
+        2
+      ],
+      "regions": 211,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 12,
+          "max_rel_overall": 0.9411693852677017,
+          "max_rel_small_positions": 0.9411693852677017,
+          "max_abs": 489.40387003590354
+        },
+        "fa0.05_tau0.05": {
+          "segments": 11,
+          "max_rel_overall": 1.0514026389137476,
+          "max_rel_small_positions": 1.0514026389137476,
+          "max_abs": 542.0057437692219
+        },
+        "fa0.05_tau0.1": {
+          "segments": 11,
+          "max_rel_overall": 1.5729739548463224,
+          "max_rel_small_positions": 1.5729739548463224,
+          "max_abs": 671.2447451400974
+        },
+        "fa0.025_tau0.05": {
+          "segments": 12,
+          "max_rel_overall": 0.36610991908918994,
+          "max_rel_small_positions": 0.36610991908918994,
+          "max_abs": 233.10806989447815
+        },
+        "fa0.025_tau0.1": {
+          "segments": 12,
+          "max_rel_overall": 0.3468409759792324,
+          "max_rel_small_positions": 0.3468409759792324,
+          "max_abs": 244.20845417516762
+        },
+        "fa0.01_tau0.1": {
+          "segments": 13,
+          "max_rel_overall": 0.31882460224518494,
+          "max_rel_small_positions": 0.31882460224518494,
+          "max_abs": 244.20845417516762
+        }
+      }
+    },
+    {
+      "query": [
+        1,
+        2
+      ],
+      "regions": 83,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 8,
+          "max_rel_overall": 0.5357756384736034,
+          "max_rel_small_positions": 0.5357756384736034,
+          "max_abs": 211.90188493066717
+        },
+        "fa0.05_tau0.05": {
+          "segments": 6,
+          "max_rel_overall": 0.5872455578390953,
+          "max_rel_small_positions": 0.5872455578390953,
+          "max_abs": 359.02630782768256
+        },
+        "fa0.05_tau0.1": {
+          "segments": 6,
+          "max_rel_overall": 1.3381125485849021,
+          "max_rel_small_positions": 1.3381125485849021,
+          "max_abs": 417.187108512559
+        },
+        "fa0.025_tau0.05": {
+          "segments": 8,
+          "max_rel_overall": 0.5089868565499235,
+          "max_rel_small_positions": 0.5089868565499235,
+          "max_abs": 213.87317616803125
+        },
+        "fa0.025_tau0.1": {
+          "segments": 8,
+          "max_rel_overall": 0.48219807462624326,
+          "max_rel_small_positions": 0.48219807462624326,
+          "max_abs": 233.09207342373384
+        },
+        "fa0.01_tau0.1": {
+          "segments": 11,
+          "max_rel_overall": 0.450339173501565,
+          "max_rel_small_positions": 0.450339173501565,
+          "max_abs": 135.67644572981908
+        }
+      }
+    },
+    {
+      "query": [
+        2,
+        4
+      ],
+      "regions": 211,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 14,
+          "max_rel_overall": 0.38323682612885746,
+          "max_rel_small_positions": 0.38323682612885746,
+          "max_abs": 90.72425671757912
+        },
+        "fa0.05_tau0.05": {
+          "segments": 12,
+          "max_rel_overall": 0.9842294289075879,
+          "max_rel_small_positions": 0.9842294289075879,
+          "max_abs": 112.81679608640809
+        },
+        "fa0.05_tau0.1": {
+          "segments": 12,
+          "max_rel_overall": 0.9324278800177148,
+          "max_rel_small_positions": 0.9324278800177148,
+          "max_abs": 118.1890244714752
+        },
+        "fa0.025_tau0.05": {
+          "segments": 15,
+          "max_rel_overall": 0.3510691729211807,
+          "max_rel_small_positions": 0.3510691729211807,
+          "max_abs": 82.28771533422503
+        },
+        "fa0.025_tau0.1": {
+          "segments": 14,
+          "max_rel_overall": 0.3449131435159717,
+          "max_rel_small_positions": 0.3449131435159717,
+          "max_abs": 99.79668238933698
+        },
+        "fa0.01_tau0.1": {
+          "segments": 17,
+          "max_rel_overall": 0.1289958739357863,
+          "max_rel_small_positions": 0.03225104178886503,
+          "max_abs": 99.79668238933698
+        }
+      }
+    },
+    {
+      "query": [
+        3,
+        2
+      ],
+      "regions": 157,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 8,
+          "max_rel_overall": 0.5626253865114518,
+          "max_rel_small_positions": 0.5626253865114518,
+          "max_abs": 154.19234163432031
+        },
+        "fa0.05_tau0.05": {
+          "segments": 8,
+          "max_rel_overall": 0.5344941171858791,
+          "max_rel_small_positions": 0.5344941171858791,
+          "max_abs": 161.90195871603623
+        },
+        "fa0.05_tau0.1": {
+          "segments": 8,
+          "max_rel_overall": 1.5236136330916605,
+          "max_rel_small_positions": 1.5236136330916605,
+          "max_abs": 377.7066229028473
+        },
+        "fa0.025_tau0.05": {
+          "segments": 8,
+          "max_rel_overall": 0.5344941171858791,
+          "max_rel_small_positions": 0.5344941171858791,
+          "max_abs": 161.90195871603623
+        },
+        "fa0.025_tau0.1": {
+          "segments": 8,
+          "max_rel_overall": 0.5063628478603064,
+          "max_rel_small_positions": 0.5063628478603064,
+          "max_abs": 169.61157579775227
+        },
+        "fa0.01_tau0.1": {
+          "segments": 11,
+          "max_rel_overall": 0.3137130094778226,
+          "max_rel_small_positions": 0.3137130094778226,
+          "max_abs": 89.16401437733174
+        }
+      }
+    },
+    {
+      "query": [
+        25,
+        4
+      ],
+      "regions": 164,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 13,
+          "max_rel_overall": 0.12228581027042201,
+          "max_rel_small_positions": 0.00015533664134742016,
+          "max_abs": 56.386763015153974
+        },
+        "fa0.05_tau0.05": {
+          "segments": 11,
+          "max_rel_overall": 0.16348978751771706,
+          "max_rel_small_positions": 0.00016305281726069007,
+          "max_abs": 80.61841279079624
+        },
+        "fa0.05_tau0.1": {
+          "segments": 11,
+          "max_rel_overall": 0.15488506185888962,
+          "max_rel_small_positions": 0.00017081723713028866,
+          "max_abs": 84.45738482845331
+        },
+        "fa0.025_tau0.05": {
+          "segments": 14,
+          "max_rel_overall": 0.10247591061703953,
+          "max_rel_small_positions": 0.00016305281726069007,
+          "max_abs": 59.20610116591172
+        },
+        "fa0.025_tau0.1": {
+          "segments": 11,
+          "max_rel_overall": 0.15488506185888962,
+          "max_rel_small_positions": 0.00017081723713028866,
+          "max_abs": 84.45738482845331
+        },
+        "fa0.01_tau0.1": {
+          "segments": 13,
+          "max_rel_overall": 0.11005722924337971,
+          "max_rel_small_positions": 0.00017081723713028866,
+          "max_abs": 62.02543931666935
+        }
+      }
+    },
+    {
+      "query": [
+        25,
+        2
+      ],
+      "regions": 84,
+      "grid": {
+        "fa0.05_tau0.0": {
+          "segments": 4,
+          "max_rel_overall": 0.7952809619179056,
+          "max_rel_small_positions": 0.7952809619179056,
+          "max_abs": 279.15626000085376
+        },
+        "fa0.05_tau0.05": {
+          "segments": 4,
+          "max_rel_overall": 0.7555169138220106,
+          "max_rel_small_positions": 0.7555169138220106,
+          "max_abs": 293.1140730008964
+        },
+        "fa0.05_tau0.1": {
+          "segments": 4,
+          "max_rel_overall": 2.2607510203374424,
+          "max_rel_small_positions": 2.2607510203374424,
+          "max_abs": 364.12404896021894
+        },
+        "fa0.025_tau0.05": {
+          "segments": 5,
+          "max_rel_overall": 0.4440104154030336,
+          "max_rel_small_positions": 0.4440104154030336,
+          "max_abs": 172.26047350180664
+        },
+        "fa0.025_tau0.1": {
+          "segments": 5,
+          "max_rel_overall": 0.35651819225874715,
+          "max_rel_small_positions": 0.35651819225874715,
+          "max_abs": 221.08077601740172
+        },
+        "fa0.01_tau0.1": {
+          "segments": 6,
+          "max_rel_overall": 0.24202006356490266,
+          "max_rel_small_positions": 0.24202006356490266,
+          "max_abs": 126.74551843147435
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+ "protocol": {
+  "learned": "seed-0 M3 (e5_ckpt/M3|norm|raw|0.pt), q0=0.2 q_base -> q1=1.6 q_base, 200-step trapezoid chain (identical to e9b_m3 / e73); uniform = LinearT(ones), inactive = LinkFlowT(arc 0 = paper 1->2), active = LinkFlowT(e_act = middle arc of the free-flow-shortest frozen path of OD 0)",
+  "sue": "logit-SUE FD chain replicated from run_e9b_validation.e9b_sue (theta=1, tol=1e-7, FD_HREL=5e-3 central differences, warm starts), 11 path nodes (published row) and 41 path nodes (convergence gate, e13 grid)",
+  "ratio": "sum_{v not in {s,t}} |(B C~_{:,j})_v| / |phi_j({s_j})| = Eq.-(8) all-cuts spread over origin-cut value; every row from its own realized node divergence"
+ },
+ "learned_rows": {
+  "uniform::od10_16": {
+   "phi_s": 6159.999999999998,
+   "spread_abs": 1.1166956031746778e-12,
+   "ratio_cutspread": 1.8128175376212306e-16,
+   "delta_dir": 1.0550117515048741e-16
+  },
+  "uniform::od10_11": {
+   "phi_s": 5599.999999999996,
+   "spread_abs": 7.393032312643516e-15,
+   "ratio_cutspread": 1.320184341543486e-18,
+   "delta_dir": 1.1484230202818287e-16
+  },
+  "link_flow_inactive::od10_16": {
+   "phi_s": -0.0,
+   "spread_abs": 0.0,
+   "ratio_cutspread": null,
+   "delta_dir": NaN
+  },
+  "link_flow_inactive::od10_11": {
+   "phi_s": -0.0,
+   "spread_abs": 0.0,
+   "ratio_cutspread": null,
+   "delta_dir": NaN
+  },
+  "link_flow_active::od10_16": {
+   "phi_s": 3834.231230452268,
+   "spread_abs": 0.0,
+   "ratio_cutspread": 0.0,
+   "delta_dir": 0.0
+  },
+  "link_flow_active::od10_11": {
+   "phi_s": 1.3910947257006085,
+   "spread_abs": 1.3910947257006085,
+   "ratio_cutspread": 1.0,
+   "delta_dir": 0.8660254037844387
+  },
+  "tstt::od10_16": {
+   "phi_s": 57670.16806253877,
+   "spread_abs": 15510.11351612088,
+   "ratio_cutspread": 0.2689451762877018,
+   "delta_dir": 0.24761670974482106
+  },
+  "tstt::od10_11": {
+   "phi_s": 28834.1695616809,
+   "spread_abs": 100.29978651519006,
+   "ratio_cutspread": 0.003478504428595829,
+   "delta_dir": 0.0017142012239999595
+  }
+ },
+ "sue_rows": {
+  "11": {
+   "phi_s": 57501.550266593316,
+   "spread_abs": 15500.788039518959,
+   "ratio_cutspread": 0.2695716544624094,
+   "delta_dir": 0.24781228907727432,
+   "beta_end": 49753.8616062317,
+   "E_od_end": 12726.585134458745,
+   "n_solves": 187,
+   "solver_max_residual": 9.999939720728435e-08
+  },
+  "41": {
+   "phi_s": 57468.926613229276,
+   "spread_abs": 15479.830717876734,
+   "ratio_cutspread": 0.26936001122932574,
+   "delta_dir": 0.24786880392156826,
+   "beta_end": 49731.6194553908,
+   "E_od_end": 12723.986742074527,
+   "n_solves": 697,
+   "solver_max_residual": 9.999939720728435e-08
+  }
+ },
+ "active_link_arc": {
+  "edge_index": 28,
+  "edge": [
+   10,
+   16
+  ]
+ },
+ "gates": {
+  "a_tstt_vs_e73": "passed",
+  "b_balanced_rows_zero_spread": "passed",
+  "c_inactive_phi_s_zero": "passed",
+  "d_active_10_11_delta": "passed",
+  "e_sue_vs_e9b_and_e13": "passed"
+ }
+}

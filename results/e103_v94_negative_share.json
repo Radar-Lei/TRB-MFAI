@@ -1,0 +1,127 @@
+{
+  "protocol": {
+    "purpose": "negative-account share over the exact connected family and pre-specified simple-boundary families for all six study queries, re-aggregated from the frozen e87 41-point columns",
+    "definition": "r_j^- = #{U connected two-sided: phi_j(U)<0} / |connected family|; a share within the enumerated family, NOT a boundary-selection probability",
+    "columns": "e87 C_41 (setting C, six-query joint protocol, 41 quadrature points)",
+    "claims_supported": "how large the negative-account subset is within each enumerated connected family; the simple-family ranges for all six queries; NOT analyst-selection odds",
+    "no_new_solves": true
+  },
+  "gates": {
+    "table4_phi_s_Cj_max_abs": 0.05,
+    "py_vs_c_n_sets_and_extrema": "exact / 1e-6 rel",
+    "e87_interval_match": "1e-6 rel",
+    "attaining_masks_direct_link_sum": "1e-6",
+    "e99_crossing_family_match": "1e-9"
+  },
+  "per_od": {
+    "7->18": {
+      "n_connected": 4621,
+      "n_negative": 0,
+      "negative_share": 0.0,
+      "phi_min": 633.9636168293008,
+      "phi_max": 710.0351972571997,
+      "origin_cut": 671.2016992866315,
+      "C_j": 672.8907903522312,
+      "predefined": {
+        "n_candidates": 2,
+        "n_admissible": 2,
+        "n_rejected_inadmissible": 0,
+        "n_distinct_sets": 1,
+        "any_negative": false,
+        "min_phi": 671.2016992866315,
+        "max_phi": 671.2016992866315
+      }
+    },
+    "1->19": {
+      "n_connected": 14477,
+      "n_negative": 2584,
+      "negative_share": 0.17849001865027284,
+      "phi_min": -13501.557636357411,
+      "phi_max": 24259.646690610327,
+      "origin_cut": 1771.559983071581,
+      "C_j": 50097.71019860236,
+      "predefined": {
+        "n_candidates": 19,
+        "n_admissible": 19,
+        "n_rejected_inadmissible": 0,
+        "n_distinct_sets": 16,
+        "any_negative": false,
+        "min_phi": 1771.559983071581,
+        "max_phi": 15803.518803938976
+      }
+    },
+    "4->5": {
+      "n_connected": 8627,
+      "n_negative": 0,
+      "negative_share": 0.0,
+      "phi_min": 2396.048848910099,
+      "phi_max": 3452.4485331740775,
+      "origin_cut": 2659.419539961977,
+      "C_j": 2825.992855199194,
+      "predefined": {
+        "n_candidates": 2,
+        "n_admissible": 2,
+        "n_rejected_inadmissible": 0,
+        "n_distinct_sets": 1,
+        "any_negative": false,
+        "min_phi": 2659.419539961977,
+        "max_phi": 2659.419539961977
+      }
+    },
+    "1->15": {
+      "n_connected": 15191,
+      "n_negative": 373,
+      "negative_share": 0.024554012244091896,
+      "phi_min": -8286.004454306018,
+      "phi_max": 40539.74499411164,
+      "origin_cut": 2948.1396071973504,
+      "C_j": 77403.23151461112,
+      "predefined": {
+        "n_candidates": 19,
+        "n_admissible": 19,
+        "n_rejected_inadmissible": 0,
+        "n_distinct_sets": 16,
+        "any_negative": false,
+        "min_phi": 2948.1396071973504,
+        "max_phi": 26602.020673813844
+      }
+    },
+    "6->8": {
+      "n_connected": 4737,
+      "n_negative": 0,
+      "negative_share": 0.0,
+      "phi_min": 35306.50984623485,
+      "phi_max": 66694.58116447707,
+      "origin_cut": 48126.7886405302,
+      "C_j": 73964.85150169354,
+      "predefined": {
+        "n_candidates": 2,
+        "n_admissible": 2,
+        "n_rejected_inadmissible": 0,
+        "n_distinct_sets": 1,
+        "any_negative": false,
+        "min_phi": 48126.7886405302,
+        "max_phi": 48126.7886405302
+      }
+    },
+    "7->12": {
+      "n_connected": 16943,
+      "n_negative": 1240,
+      "negative_share": 0.07318656672372072,
+      "phi_min": -17616.15519689441,
+      "phi_max": 60028.704711095445,
+      "origin_cut": 9473.760946276467,
+      "C_j": 117482.33125727983,
+      "predefined": {
+        "n_candidates": 19,
+        "n_admissible": 13,
+        "n_rejected_inadmissible": 6,
+        "n_distinct_sets": 11,
+        "any_negative": false,
+        "min_phi": 9473.760946276467,
+        "max_phi": 32139.370333283656
+      }
+    }
+  },
+  "elapsed_seconds": 4.922734498977661
+}

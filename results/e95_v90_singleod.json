@@ -1,0 +1,310 @@
+{
+  "protocol": {
+    "purpose": "single-OD demand-change check for the six-query sign crossings: each focal OD alone moves 0.2->1.6 of published demand, other 527 ODs at published demand, full re-equilibration (setting-C protocol)",
+    "focal_ods": [
+      "1->19",
+      "1->15",
+      "7->12",
+      "6->8"
+    ],
+    "control": "6->8",
+    "grid": 41,
+    "claims_supported": "whether each sign crossing and the positive system contribution survive when only one OD demand changes; NOT agreement with the joint scenario in magnitude"
+  },
+  "per_od": {
+    "1->19": {
+      "key": "1->19",
+      "published_demand_veh_h": 300.0,
+      "Cj_column_sum": 50322.15832024263,
+      "dT_endpoint": 50322.156624186784,
+      "completeness_relative": 3.3703957925989333e-08,
+      "phi_s": 1772.0358184935233,
+      "unrestricted": {
+        "min": -19273.19286312163,
+        "max": 26856.33637786324,
+        "span": 46129.52924098487
+      },
+      "connected": {
+        "min": -13607.548148912756,
+        "max": 24414.451046119444,
+        "span": 38021.9991950322,
+        "n_sets": 14477
+      },
+      "range_pct": 2603.193951248761,
+      "conn_range_pct": 2145.667643860392,
+      "connected_straddles_zero": true,
+      "phi_at_joint_boundaries": {
+        "U_minus": {
+          "phi_singleod": -13607.548148912754,
+          "phi_joint_published": -13501.557636357411,
+          "nodes_1idx": [
+            1,
+            2,
+            6,
+            7,
+            8,
+            9,
+            15,
+            16,
+            18,
+            20,
+            21,
+            22,
+            24
+          ]
+        },
+        "U_plus": {
+          "phi_singleod": 24414.451046119444,
+          "phi_joint_published": 24259.646690610327,
+          "nodes_1idx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            22,
+            23
+          ]
+        }
+      },
+      "gates": {
+        "solver_max_residual": 3.31488081428688e-09,
+        "flow_conservation_max": 1.8189894035458565e-11,
+        "jacobian_conservation_max": 1.687538997430238e-14,
+        "fd_relative_errors": {
+          "node0_t0.0000": 6.22988828938414e-10,
+          "node20_t0.5000": 6.759918888449858e-10,
+          "node40_t1.0000": 7.543015819236384e-10
+        }
+      },
+      "elapsed_seconds": 1.9974305629730225
+    },
+    "1->15": {
+      "key": "1->15",
+      "published_demand_veh_h": 500.0,
+      "Cj_column_sum": 77672.60331923918,
+      "dT_endpoint": 77672.59759681579,
+      "completeness_relative": 7.367364510421667e-08,
+      "phi_s": 2948.6082614111915,
+      "unrestricted": {
+        "min": -16384.075099252197,
+        "max": 44347.929162367,
+        "span": 60732.00426161919
+      },
+      "connected": {
+        "min": -8359.39433887143,
+        "max": 40745.20016865422,
+        "span": 49104.59450752565,
+        "n_sets": 15191
+      },
+      "range_pct": 2059.6837177873576,
+      "conn_range_pct": 1665.3481966446232,
+      "connected_straddles_zero": true,
+      "phi_at_joint_boundaries": {
+        "U_minus": {
+          "phi_singleod": -8359.39433887143,
+          "phi_joint_published": -8286.004454306018,
+          "nodes_1idx": [
+            1,
+            2,
+            6,
+            7,
+            8,
+            9,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            24
+          ]
+        },
+        "U_plus": {
+          "phi_singleod": 40745.20016865423,
+          "phi_joint_published": 40539.74499411164,
+          "nodes_1idx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            22,
+            23
+          ]
+        }
+      },
+      "gates": {
+        "solver_max_residual": 2.520823727536481e-08,
+        "flow_conservation_max": 1.8189894035458565e-11,
+        "jacobian_conservation_max": 1.8540724511240114e-14,
+        "fd_relative_errors": {
+          "node0_t0.0000": 1.6850217176585328e-09,
+          "node20_t0.5000": 1.7971184809785515e-09,
+          "node40_t1.0000": 1.873489771486772e-09
+        }
+      },
+      "elapsed_seconds": 1.8740146160125732
+    },
+    "7->12": {
+      "key": "7->12",
+      "published_demand_veh_h": 700.0,
+      "Cj_column_sum": 117476.80891424172,
+      "dT_endpoint": 117476.78656574711,
+      "completeness_relative": 1.902375376188919e-07,
+      "phi_s": 9473.629059081823,
+      "unrestricted": {
+        "min": -45219.581245273825,
+        "max": 61633.021844103016,
+        "span": 106852.60308937685
+      },
+      "connected": {
+        "min": -17580.29045894396,
+        "max": 60006.414824867585,
+        "span": 77586.70528381155,
+        "n_sets": 16943
+      },
+      "range_pct": 1127.8951542539385,
+      "conn_range_pct": 818.9755456958032,
+      "connected_straddles_zero": true,
+      "phi_at_joint_boundaries": {
+        "U_minus": {
+          "phi_singleod": -17580.29045894396,
+          "phi_joint_published": -17616.15519689441,
+          "nodes_1idx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            14,
+            17,
+            19,
+            23
+          ]
+        },
+        "U_plus": {
+          "phi_singleod": 60006.414824867585,
+          "phi_joint_published": 60028.704711095445,
+          "nodes_1idx": [
+            7,
+            8,
+            9,
+            15,
+            16,
+            18,
+            20,
+            21,
+            22,
+            24
+          ]
+        }
+      },
+      "gates": {
+        "solver_max_residual": 1.7007550923153758e-10,
+        "flow_conservation_max": 1.4551915228366852e-11,
+        "jacobian_conservation_max": 2.0539125955565396e-14,
+        "fd_relative_errors": {
+          "node0_t0.0000": 1.4669980253354874e-08,
+          "node20_t0.5000": 1.25939154777902e-08,
+          "node40_t1.0000": 2.4621764735197524e-08
+        }
+      },
+      "elapsed_seconds": 2.2125701904296875
+    },
+    "6->8": {
+      "key": "6->8",
+      "published_demand_veh_h": 800.0,
+      "Cj_column_sum": 74176.11731999103,
+      "dT_endpoint": 74176.10670635756,
+      "completeness_relative": 1.4308695800483412e-07,
+      "phi_s": 48234.08338071117,
+      "unrestricted": {
+        "min": 26144.05070907447,
+        "max": 74361.39624972612,
+        "span": 48217.34554065166
+      },
+      "connected": {
+        "min": 35352.37342434636,
+        "max": 66861.27625501306,
+        "span": 31508.902830666695,
+        "n_sets": 4737
+      },
+      "range_pct": 99.96529872885237,
+      "conn_range_pct": 65.32497483567215,
+      "connected_straddles_zero": false,
+      "phi_at_joint_boundaries": {
+        "U_minus": {
+          "phi_singleod": 35352.37342434637,
+          "phi_joint_published": 35306.50984623485,
+          "nodes_1idx": [
+            1,
+            2,
+            3,
+            6,
+            12,
+            13,
+            15,
+            16,
+            18,
+            20,
+            21,
+            22,
+            24
+          ]
+        },
+        "U_plus": {
+          "phi_singleod": 66861.27625501306,
+          "phi_joint_published": 66694.58116447707,
+          "nodes_1idx": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            17,
+            19,
+            23
+          ]
+        }
+      },
+      "gates": {
+        "solver_max_residual": 1.6939338820520788e-10,
+        "flow_conservation_max": 2.000888343900442e-11,
+        "jacobian_conservation_max": 1.4654943925052066e-14,
+        "fd_relative_errors": {
+          "node0_t0.0000": 1.9953365866863918e-08,
+          "node20_t0.5000": 2.508492153530837e-08,
+          "node40_t1.0000": 3.01664010469759e-08
+        }
+      },
+      "elapsed_seconds": 2.2011361122131348
+    }
+  },
+  "elapsed_seconds": 14.00908088684082
+}

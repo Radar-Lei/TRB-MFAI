@@ -1,0 +1,1128 @@
+{
+  "protocol": {
+    "purpose": "v88 revision: setting-A boundary-number provenance, connected-boundary account error E_cut, and own/other split of the study response",
+    "basis": "frozen e79/e80/e83/e87/e91 arrays; checkpoint re-evaluation for the published 200-step seed-0 chain only"
+  },
+  "part_a": {
+    "direct_vs_e79_BC_max_rel": 5.617253115737498e-07,
+    "cut_change_ratio_vs_e79_rel_frozen": 0.0,
+    "cut_change_ratio_vs_e79_rel_resolve": 2.16362381512128e-06,
+    "records": [
+      {
+        "od": "(10,16)",
+        "chain": "direct SUE, setting A, 41 nodes",
+        "phi_10": 57468.91866670649,
+        "phi_10_17": 43216.974974532095,
+        "delta": -14251.943692174398,
+        "rel_pct": 24.799394216601097
+      },
+      {
+        "od": "(10,16)",
+        "chain": "direct SUE, setting A, e79 frozen",
+        "phi_10": 57468.926613229276,
+        "phi_10_17": 43217.0117861477,
+        "delta": -14251.914827081579,
+        "rel_pct": 24.799340560157262
+      },
+      {
+        "od": "(10,16)",
+        "chain": "learned seed 0, 41 nodes",
+        "phi_10": 57671.68820887458,
+        "phi_10_17": 43375.47784559052,
+        "delta": -14296.210363284059,
+        "rel_pct": 24.788957645051465
+      },
+      {
+        "od": "(10,16)",
+        "chain": "learned seed 0, 200 steps",
+        "phi_10": 57670.16806253877,
+        "phi_10_17": 43373.90474972318,
+        "delta": -14296.263312815587,
+        "rel_pct": 24.789702879506805
+      },
+      {
+        "od": "(10,11)",
+        "chain": "direct SUE, setting A, 41 nodes",
+        "phi_10": 28807.09838488888,
+        "phi_10_17": 28807.023192720335,
+        "delta": -0.075192168544163,
+        "rel_pct": 0.0002610195846160125
+      },
+      {
+        "od": "(10,11)",
+        "chain": "direct SUE, setting A, e79 frozen",
+        "phi_10": 28807.09835712969,
+        "phi_10_17": 28807.023170185643,
+        "delta": -0.07518694404643611,
+        "rel_pct": 0.00026100144872045924
+      },
+      {
+        "od": "(10,11)",
+        "chain": "learned seed 0, 41 nodes",
+        "phi_10": 28834.826622018307,
+        "phi_10_17": 28869.836214677864,
+        "delta": 35.0095926595568,
+        "rel_pct": 0.12141426448815003
+      }
+    ]
+  },
+  "part_b": {
+    "per_od": {
+      "10->16": {
+        "phi_s_sue": 57468.91866670649,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 215.62199706128914,
+            "E_cut": 0.003751975886510034,
+            "E_cut_unrestricted": 0.0037547265608524737,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              15,
+              19,
+              22
+            ],
+            "singleton_diff": 202.76954216808372,
+            "singleton_floor": 0.003528334043381859
+          },
+          "1": {
+            "conn_max_abs_diff": 337.9101352778636,
+            "E_cut": 0.005879876342159633,
+            "E_cut_unrestricted": 0.005879900197552003,
+            "attaining_nodes_1idx": [
+              5,
+              9,
+              10,
+              14,
+              15,
+              17,
+              19,
+              22
+            ],
+            "singleton_diff": 253.16251339689916,
+            "singleton_floor": 0.004405207532529474
+          },
+          "2": {
+            "conn_max_abs_diff": 251.30308796795796,
+            "E_cut": 0.004372852209476938,
+            "E_cut_unrestricted": 0.004385203460799883,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              10,
+              11,
+              14,
+              17
+            ],
+            "singleton_diff": 224.13364199517673,
+            "singleton_floor": 0.003900084553444438
+          },
+          "3": {
+            "conn_max_abs_diff": 63.91750797565257,
+            "E_cut": 0.0011122100338505575,
+            "E_cut_unrestricted": 0.0011136944773048726,
+            "attaining_nodes_1idx": [
+              4,
+              7,
+              9,
+              10,
+              11,
+              15,
+              17,
+              18,
+              19,
+              20,
+              22
+            ],
+            "singleton_diff": 24.40758711930539,
+            "singleton_floor": 0.0004247093504727009
+          },
+          "4": {
+            "conn_max_abs_diff": 119.9938008561508,
+            "E_cut": 0.002087977356108962,
+            "E_cut_unrestricted": 0.002096035646173361,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              10,
+              11,
+              12,
+              13,
+              15,
+              19,
+              21,
+              24
+            ],
+            "singleton_diff": 98.42996117698931,
+            "singleton_floor": 0.001712751230762461
+          }
+        },
+        "median": 0.003751975886510034
+      },
+      "16->10": {
+        "phi_s_sue": 41994.28802672187,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 114.99452703338895,
+            "E_cut": 0.0027383373415026217,
+            "E_cut_unrestricted": 0.002762805835590822,
+            "attaining_nodes_1idx": [
+              7,
+              8,
+              9,
+              14,
+              16,
+              17,
+              18,
+              20,
+              22,
+              23
+            ],
+            "singleton_diff": 95.27416008259752,
+            "singleton_floor": 0.002268740930242049
+          },
+          "1": {
+            "conn_max_abs_diff": 330.44031900802,
+            "E_cut": 0.007868696780803944,
+            "E_cut_unrestricted": 0.007874010964159942,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              14,
+              16,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 330.0209937640393,
+            "singleton_floor": 0.007858711488430042
+          },
+          "2": {
+            "conn_max_abs_diff": 229.69746172479677,
+            "E_cut": 0.005469731063868384,
+            "E_cut_unrestricted": 0.005495768293231761,
+            "attaining_nodes_1idx": [
+              4,
+              5,
+              8,
+              9,
+              11,
+              16
+            ],
+            "singleton_diff": 228.22861018066033,
+            "singleton_floor": 0.005434753651149736
+          },
+          "3": {
+            "conn_max_abs_diff": 730.240427097231,
+            "E_cut": 0.0173890417342607,
+            "E_cut_unrestricted": 0.017389827031563356,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              12,
+              13,
+              14,
+              16,
+              18,
+              20,
+              23,
+              24
+            ],
+            "singleton_diff": 728.6305587532988,
+            "singleton_floor": 0.01735070632200397
+          },
+          "4": {
+            "conn_max_abs_diff": 208.8917146847468,
+            "E_cut": 0.0049742887545045295,
+            "E_cut_unrestricted": 0.004977443586939644,
+            "attaining_nodes_1idx": [
+              7,
+              8,
+              9,
+              12,
+              13,
+              14,
+              16,
+              17,
+              18,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 130.67033071825426,
+            "singleton_floor": 0.0031116215289828443
+          }
+        },
+        "median": 0.005469731063868384
+      },
+      "10->11": {
+        "phi_s_sue": 28807.09838488888,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 63.1690191313472,
+            "E_cut": 0.002192828249737339,
+            "E_cut_unrestricted": 0.0022103410825551157,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              17,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 27.728237129427725,
+            "singleton_floor": 0.000962548770409064
+          },
+          "1": {
+            "conn_max_abs_diff": 26.722384052170142,
+            "E_cut": 0.0009276319223524331,
+            "E_cut_unrestricted": 0.0009604126486791756,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              17,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 11.531239563923009,
+            "singleton_floor": 0.00040029160208554233
+          },
+          "2": {
+            "conn_max_abs_diff": 20.82125240733844,
+            "E_cut": 0.0007227820077241964,
+            "E_cut_unrestricted": 0.0007232795464269309,
+            "attaining_nodes_1idx": [
+              5,
+              8,
+              9,
+              10,
+              15,
+              19
+            ],
+            "singleton_diff": 15.391883510892512,
+            "singleton_floor": 0.0005343087077095733
+          },
+          "3": {
+            "conn_max_abs_diff": 49.080778625797,
+            "E_cut": 0.0017037737702712513,
+            "E_cut_unrestricted": 0.0017043159080977787,
+            "attaining_nodes_1idx": [
+              5,
+              7,
+              8,
+              9,
+              10,
+              15,
+              17,
+              19
+            ],
+            "singleton_diff": 24.32236736348932,
+            "singleton_floor": 0.0008443185439408198
+          },
+          "4": {
+            "conn_max_abs_diff": 32.66355376291275,
+            "E_cut": 0.0011338717050394364,
+            "E_cut_unrestricted": 0.0011627982158544327,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              17,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 0.3640828320349101,
+            "singleton_floor": 1.2638649931708993e-05
+          }
+        },
+        "median": 0.0011338717050394364
+      },
+      "10->15": {
+        "phi_s_sue": 34056.38752279721,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 66.72158834705857,
+            "E_cut": 0.0019591504912961012,
+            "E_cut_unrestricted": 0.0019691447315946273,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              12,
+              13,
+              17,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 17.06476463204308,
+            "singleton_floor": 0.0005010738329372131
+          },
+          "1": {
+            "conn_max_abs_diff": 69.38517934923931,
+            "E_cut": 0.002037361693244568,
+            "E_cut_unrestricted": 0.0020375979611187626,
+            "attaining_nodes_1idx": [
+              5,
+              9,
+              10,
+              11,
+              14,
+              17,
+              21,
+              22,
+              23
+            ],
+            "singleton_diff": 6.910710013915377,
+            "singleton_floor": 0.0002029196434674516
+          },
+          "2": {
+            "conn_max_abs_diff": 8.657059347992426,
+            "E_cut": 0.00025419781655342704,
+            "E_cut_unrestricted": 0.00027741329206580693,
+            "attaining_nodes_1idx": [
+              4,
+              7,
+              8,
+              10,
+              11,
+              16,
+              18,
+              20
+            ],
+            "singleton_diff": 6.507125721720513,
+            "singleton_floor": 0.00019106917072060766
+          },
+          "3": {
+            "conn_max_abs_diff": 34.50208310412738,
+            "E_cut": 0.0010130869893652645,
+            "E_cut_unrestricted": 0.0010859553924375783,
+            "attaining_nodes_1idx": [
+              4,
+              7,
+              8,
+              10,
+              11,
+              16,
+              18,
+              20
+            ],
+            "singleton_diff": 16.6038655150478,
+            "singleton_floor": 0.00048754042113049247
+          },
+          "4": {
+            "conn_max_abs_diff": 72.73303622434905,
+            "E_cut": 0.002135665040094515,
+            "E_cut_unrestricted": 0.002135681557879378,
+            "attaining_nodes_1idx": [
+              4,
+              9,
+              10,
+              11,
+              17,
+              18,
+              19,
+              20
+            ],
+            "singleton_diff": 32.90315848350292,
+            "singleton_floor": 0.0009661376580671593
+          }
+        },
+        "median": 0.0019591504912961012
+      },
+      "15->10": {
+        "phi_s_sue": 33859.398983217296,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 49.77232584153144,
+            "E_cut": 0.0014699707418374887,
+            "E_cut_unrestricted": 0.001471764687084905,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              15,
+              16,
+              18,
+              19,
+              20
+            ],
+            "singleton_diff": 1.5701693601367879,
+            "singleton_floor": 4.637322005966662e-05
+          },
+          "1": {
+            "conn_max_abs_diff": 111.69043803926728,
+            "E_cut": 0.003298653886166958,
+            "E_cut_unrestricted": 0.0032994841351073768,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              15,
+              16,
+              21,
+              22,
+              24
+            ],
+            "singleton_diff": 20.33074328751536,
+            "singleton_floor": 0.000600446076954658
+          },
+          "2": {
+            "conn_max_abs_diff": 43.07419957318427,
+            "E_cut": 0.0012721489709411078,
+            "E_cut_unrestricted": 0.001282303004439942,
+            "attaining_nodes_1idx": [
+              4,
+              7,
+              8,
+              11,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20
+            ],
+            "singleton_diff": 13.081519052990188,
+            "singleton_floor": 0.0003863482355216688
+          },
+          "3": {
+            "conn_max_abs_diff": 18.42068962179324,
+            "E_cut": 0.0005440347488425183,
+            "E_cut_unrestricted": 0.0005734369729728952,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              19,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 3.8482195102988044,
+            "singleton_floor": 0.00011365291841731177
+          },
+          "4": {
+            "conn_max_abs_diff": 52.351705048847904,
+            "E_cut": 0.0015461498615139766,
+            "E_cut_unrestricted": 0.0015469187221720333,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              12,
+              13,
+              14,
+              15,
+              16,
+              21,
+              22,
+              23,
+              24
+            ],
+            "singleton_diff": 13.146254763603793,
+            "singleton_floor": 0.0003882601333272291
+          }
+        },
+        "median": 0.0014699707418374887
+      },
+      "10->17": {
+        "phi_s_sue": 46977.15682781544,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 302.1353072661317,
+            "E_cut": 0.00643153668012611,
+            "E_cut_unrestricted": 0.006431841009003414,
+            "attaining_nodes_1idx": [
+              5,
+              9,
+              10,
+              11,
+              15,
+              18,
+              19,
+              20,
+              21
+            ],
+            "singleton_diff": 266.657636176933,
+            "singleton_floor": 0.005676325562960497
+          },
+          "1": {
+            "conn_max_abs_diff": 59.59203051321455,
+            "E_cut": 0.001268532081063062,
+            "E_cut_unrestricted": 0.0012904145434679314,
+            "attaining_nodes_1idx": [
+              4,
+              5,
+              7,
+              10,
+              11,
+              15,
+              18,
+              19,
+              20,
+              21
+            ],
+            "singleton_diff": 36.97720662725624,
+            "singleton_floor": 0.0007871316427851978
+          },
+          "2": {
+            "conn_max_abs_diff": 34.32072211686781,
+            "E_cut": 0.0007305832118078786,
+            "E_cut_unrestricted": 0.0007357433688376225,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              10,
+              11,
+              12,
+              13,
+              15,
+              19,
+              21,
+              24
+            ],
+            "singleton_diff": 22.239762149554736,
+            "singleton_floor": 0.0004734165209501663
+          },
+          "3": {
+            "conn_max_abs_diff": 149.17399244898297,
+            "E_cut": 0.0031754580847825216,
+            "E_cut_unrestricted": 0.003183310465643236,
+            "attaining_nodes_1idx": [
+              4,
+              7,
+              10,
+              11,
+              15,
+              18,
+              19,
+              20,
+              22
+            ],
+            "singleton_diff": 96.4913820508009,
+            "singleton_floor": 0.0020540064270911304
+          },
+          "4": {
+            "conn_max_abs_diff": 58.853383232249804,
+            "E_cut": 0.0012528085394346894,
+            "E_cut_unrestricted": 0.0012528829577719185,
+            "attaining_nodes_1idx": [
+              7,
+              9,
+              10,
+              14,
+              15,
+              18,
+              19,
+              20,
+              23
+            ],
+            "singleton_diff": 40.47936202949495,
+            "singleton_floor": 0.0008616818207594653
+          }
+        },
+        "median": 0.001268532081063062
+      },
+      "11->10": {
+        "phi_s_sue": 28010.412801053917,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 56.97534290897179,
+            "E_cut": 0.002034077230979903,
+            "E_cut_unrestricted": 0.002041315496068528,
+            "attaining_nodes_1idx": [
+              4,
+              5,
+              7,
+              8,
+              9,
+              11,
+              16,
+              18,
+              20,
+              22
+            ],
+            "singleton_diff": 0.1332157855213154,
+            "singleton_floor": 4.755937960196825e-06
+          },
+          "1": {
+            "conn_max_abs_diff": 31.58489290644192,
+            "E_cut": 0.0011276125464760559,
+            "E_cut_unrestricted": 0.0011648863924316013,
+            "attaining_nodes_1idx": [
+              7,
+              8,
+              11,
+              13,
+              14,
+              16,
+              18,
+              20,
+              21,
+              23,
+              24
+            ],
+            "singleton_diff": 0.14543629293257254,
+            "singleton_floor": 5.192222405487018e-06
+          },
+          "2": {
+            "conn_max_abs_diff": 4.563429558694903,
+            "E_cut": 0.00016291903982661762,
+            "E_cut_unrestricted": 0.00018226384252632887,
+            "attaining_nodes_1idx": [
+              4,
+              5,
+              8,
+              9,
+              11,
+              14,
+              15,
+              17,
+              19
+            ],
+            "singleton_diff": 0.08388845283479895,
+            "singleton_floor": 2.994902411136282e-06
+          },
+          "3": {
+            "conn_max_abs_diff": 35.77865299551111,
+            "E_cut": 0.0012773340132339966,
+            "E_cut_unrestricted": 0.0012810308501356802,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              6,
+              7,
+              11,
+              12,
+              13,
+              14,
+              16,
+              18,
+              20,
+              21,
+              23,
+              24
+            ],
+            "singleton_diff": 0.09490977685709368,
+            "singleton_floor": 3.3883747994432487e-06
+          },
+          "4": {
+            "conn_max_abs_diff": 30.289919239503373,
+            "E_cut": 0.0010813806799149952,
+            "E_cut_unrestricted": 0.0010959796332345052,
+            "attaining_nodes_1idx": [
+              7,
+              8,
+              11,
+              14,
+              15,
+              16,
+              18,
+              19,
+              20,
+              22
+            ],
+            "singleton_diff": 0.004098438224900747,
+            "singleton_floor": 1.4631838002567886e-07
+          }
+        },
+        "median": 0.0011276125464760559
+      },
+      "17->10": {
+        "phi_s_sue": 29372.096446769294,
+        "per_seed": {
+          "0": {
+            "conn_max_abs_diff": 87.02437092700707,
+            "E_cut": 0.0029628246347590584,
+            "E_cut_unrestricted": 0.0029645076157829675,
+            "attaining_nodes_1idx": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              11,
+              12,
+              13,
+              16,
+              17,
+              18,
+              20,
+              21,
+              23,
+              24
+            ],
+            "singleton_diff": 6.862540650556184,
+            "singleton_floor": 0.00023364149927102023
+          },
+          "1": {
+            "conn_max_abs_diff": 63.467969153662004,
+            "E_cut": 0.002160825301274775,
+            "E_cut_unrestricted": 0.002190975409207779,
+            "attaining_nodes_1idx": [
+              7,
+              8,
+              9,
+              13,
+              14,
+              16,
+              17,
+              18,
+              20,
+              21,
+              23,
+              24
+            ],
+            "singleton_diff": 10.581070979118522,
+            "singleton_floor": 0.0003602422795490432
+          },
+          "2": {
+            "conn_max_abs_diff": 63.36820331745912,
+            "E_cut": 0.002157428681752444,
+            "E_cut_unrestricted": 0.0021739187111981615,
+            "attaining_nodes_1idx": [
+              17
+            ],
+            "singleton_diff": 63.36820331745912,
+            "singleton_floor": 0.002157428681752444
+          },
+          "3": {
+            "conn_max_abs_diff": 165.23347292032122,
+            "E_cut": 0.005625525342386503,
+            "E_cut_unrestricted": 0.005647687211368739,
+            "attaining_nodes_1idx": [
+              17
+            ],
+            "singleton_diff": 165.23347292032122,
+            "singleton_floor": 0.005625525342386503
+          },
+          "4": {
+            "conn_max_abs_diff": 152.46388607211702,
+            "E_cut": 0.005190773030056793,
+            "E_cut_unrestricted": 0.005220957547618371,
+            "attaining_nodes_1idx": [
+              17
+            ],
+            "singleton_diff": 152.46388607211702,
+            "singleton_floor": 0.005190773030056793
+          }
+        },
+        "median": 0.0029628246347590584
+      }
+    },
+    "summary": {
+      "n_units": 40,
+      "median": 0.0020357194621122357,
+      "p95": 0.006503394685159997,
+      "max": 0.0173890417342607,
+      "min": 0.00016291903982661762,
+      "max_unit": {
+        "od": "16->10",
+        "seed": 3
+      }
+    },
+    "denominator": "|phi_SUE({s_j})| of the same 41-node zero-background chain (e83 C_zero)",
+    "pairing": "e83 C_learned(seed) vs C_zero, identical 41 integration nodes, setting A"
+  },
+  "part_c": {
+    "gates": {
+      "loading_max_abs_gap": 7.60337570682168e-10,
+      "J_study_reproduction_max_rel": 1.3080265120537674e-14,
+      "own_conservation_max_abs": 6.661338147750939e-16,
+      "other_circulation_max_abs": 1.030679431097926e-15,
+      "J_additivity_max_abs": 8.470329472543003e-22,
+      "C_additivity_max_abs": 2.1827872842550278e-11
+    },
+    "protocol": "same joint equilibrium states and total-flow gradients as the published 41-point columns; logit loading recomputed from stored F; no new equilibrium solves",
+    "per_query": {
+      "1->19": {
+        "U_minus_nodes_1idx": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          15,
+          16,
+          18,
+          20,
+          21,
+          22,
+          24
+        ],
+        "interior_nodes_0idx": [
+          1,
+          5,
+          6,
+          7,
+          8,
+          14,
+          15,
+          17,
+          19,
+          20,
+          21,
+          23
+        ],
+        "interior_sum": {
+          "own": 19480.881104413445,
+          "other_query": -59.44372148563362,
+          "study": 19421.437382927823,
+          "background": -4148.319763498829
+        },
+        "top_nodes": [
+          {
+            "node": 15,
+            "total": 10528.371300378305,
+            "own": 14463.973776593208,
+            "other_query": -1.735363148344342,
+            "study": 14462.23841344487,
+            "background": -3933.8671130665643
+          },
+          {
+            "node": 8,
+            "total": 2552.002078687071,
+            "own": 49.292516116047786,
+            "other_query": -3.3360985110993244,
+            "study": 45.95641760494847,
+            "background": 2506.0456610821225
+          },
+          {
+            "node": 6,
+            "total": -2465.2899203212287,
+            "own": -55.24908148825929,
+            "other_query": 3.3609317667759715,
+            "study": -51.88814972148334,
+            "background": -2413.4017705997453
+          }
+        ]
+      },
+      "1->15": {
+        "U_minus_nodes_1idx": [
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          24
+        ],
+        "interior_nodes_0idx": [
+          1,
+          5,
+          6,
+          7,
+          8,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          23
+        ],
+        "interior_sum": {
+          "own": 7856.869868468617,
+          "other_query": -26.699582311113765,
+          "study": 7830.170286157516,
+          "background": 3403.9737753458544
+        },
+        "top_nodes": [
+          {
+            "node": 8,
+            "total": 3991.032736280257,
+            "own": 0.0011704064260892014,
+            "other_query": 8.060600526578225,
+            "study": 8.061770933004315,
+            "background": 3982.9709653472523
+          },
+          {
+            "node": 6,
+            "total": -3928.295230000999,
+            "own": -0.0015463313337466728,
+            "other_query": -12.798326719973588,
+            "study": -12.799873051307333,
+            "background": -3915.4953569496915
+          },
+          {
+            "node": 24,
+            "total": 3892.3067576236385,
+            "own": 0.2696307135161468,
+            "other_query": 2.8824698294595215,
+            "study": 3.1521005429756683,
+            "background": 3889.1546570806627
+          }
+        ]
+      },
+      "7->12": {
+        "U_minus_nodes_1idx": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          17,
+          19,
+          23
+        ],
+        "interior_nodes_0idx": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          13,
+          16,
+          18,
+          22
+        ],
+        "interior_sum": {
+          "own": 14002.31388116147,
+          "other_query": -3.2429835695560905,
+          "study": 13999.070897591928,
+          "background": 13090.84524557895
+        },
+        "top_nodes": [
+          {
+            "node": 8,
+            "total": -18126.64235528634,
+            "own": -47371.691928401684,
+            "other_query": -3.6111908037393254,
+            "study": -47375.30311920543,
+            "background": 29248.66076391909
+          },
+          {
+            "node": 6,
+            "total": 15518.060299290239,
+            "own": 41237.379862147776,
+            "other_query": 4.026003147661098,
+            "study": 41241.40586529545,
+            "background": -25723.34556600521
+          },
+          {
+            "node": 5,
+            "total": 10405.769282757876,
+            "own": 17570.073472577416,
+            "other_query": 38.421484043391715,
+            "study": 17608.494956620816,
+            "background": -7202.72567386294
+          }
+        ]
+      }
+    }
+  },
+  "elapsed_seconds": 6.182650566101074
+}

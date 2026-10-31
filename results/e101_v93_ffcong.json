@@ -1,0 +1,87 @@
+{
+  "protocol": {
+    "purpose": "free-flow vs congestion decomposition of the boundary accounts at the published U_- and U_+, same 41-point setting-C chain, states, and responses as the published columns",
+    "split": "g'_e = t0_e + 0.75 t0_e (F_e/c_e)^4; C~_j^ff uses the t0_e integrand, C~_j^cong the congestion premium; both with the same trapezoid rule",
+    "no_reselection": "both components reported at the published e91 extremal boundaries; no per-component boundary re-selection",
+    "claims_supported": "mechanism attribution of the negative accounts between free-flow-time heterogeneity and the congestion premium; either outcome is reported"
+  },
+  "gates": {
+    "reproduction_relative": 1.7075194118594336e-15,
+    "split_relative": 2.1343992648242883e-16,
+    "boundary_reproduction_abs": "<=1e-6 vs e91 phi"
+  },
+  "per_od": {
+    "1->19": {
+      "U_minus": {
+        "phi_U_minus_ff": 397.76807713154415,
+        "phi_U_minus_cong": -13899.32571348895,
+        "phi_U_minus_total": -13501.557636357396,
+        "phi_s_total": 1771.5599830715817,
+        "interior_total": 4036.2998830770475,
+        "phi_s_ff": 1752.880366559547,
+        "interior_ff": -467.34757964169336,
+        "phi_s_cong": 18.679616512033924,
+        "interior_cong": 4503.647462718738
+      },
+      "U_plus": {
+        "phi_U_plus_ff": 2508.2436381778766,
+        "phi_U_plus_cong": 21751.40305243245,
+        "phi_U_plus_total": 24259.646690610312,
+        "phi_s_total": 1771.5599830715817,
+        "interior_total": 4036.2998830770475,
+        "phi_s_ff": 1752.880366559547,
+        "interior_ff": -467.34757964169336,
+        "phi_s_cong": 18.679616512033924,
+        "interior_cong": 4503.647462718738
+      }
+    },
+    "1->15": {
+      "U_minus": {
+        "phi_U_minus_ff": 1875.6556194996251,
+        "phi_U_minus_cong": -10161.660073805644,
+        "phi_U_minus_total": -8286.004454306014,
+        "phi_s_total": 2948.1396071973504,
+        "interior_total": 22000.35736944624,
+        "phi_s_ff": 2916.9016040666625,
+        "interior_ff": 517.3215010460092,
+        "phi_s_cong": 31.23800313068822,
+        "interior_cong": 21483.03586840023
+      },
+      "U_plus": {
+        "phi_U_plus_ff": 4195.627697380396,
+        "phi_U_plus_cong": 36344.11729673121,
+        "phi_U_plus_total": 40539.74499411161,
+        "phi_s_total": 2948.1396071973504,
+        "interior_total": 22000.35736944624,
+        "phi_s_ff": 2916.9016040666625,
+        "interior_ff": 517.3215010460092,
+        "phi_s_cong": 31.23800313068822,
+        "interior_cong": 21483.03586840023
+      }
+    },
+    "7->12": {
+      "U_minus": {
+        "phi_U_minus_ff": 2585.9521798255396,
+        "phi_U_minus_cong": -20202.107376719938,
+        "phi_U_minus_total": -17616.1551968944,
+        "phi_s_total": 9473.760946276467,
+        "interior_total": -2538.47477136438,
+        "phi_s_ff": 2402.8667106625953,
+        "interior_ff": 1563.3039265379323,
+        "phi_s_cong": 7070.894235613872,
+        "interior_cong": -4101.778697902312
+      },
+      "U_plus": {
+        "phi_U_plus_ff": 4131.519472695986,
+        "phi_U_plus_cong": 55897.18523839944,
+        "phi_U_plus_total": 60028.704711095415,
+        "phi_s_total": 9473.760946276467,
+        "interior_total": -2538.47477136438,
+        "phi_s_ff": 2402.8667106625953,
+        "interior_ff": 1563.3039265379323,
+        "phi_s_cong": 7070.894235613872,
+        "interior_cong": -4101.778697902312
+      }
+    }
+  }
+}

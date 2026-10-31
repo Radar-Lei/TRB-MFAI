@@ -1,0 +1,2525 @@
+{
+  "scope": "Six independent single-OD test paths, exact endpoint columns; checkpoints at fixed budgets without validation selection",
+  "rows": [
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 70.68313252546717
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.993687701260921
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 38.82843077942016
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.918493373105002
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 1.7350142134021433
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 4.08933128664019
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 45.750355727251566
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 4.80201091132383
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 41.01306790522067
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 3.6131315200272502
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 1.7168120871351906
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 3.81813687864648
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 28.223140314572426
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 3.9090518746103564
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 42.22665950038714
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 4.285848686539443
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 2.371799320197855
+    },
+    {
+      "method": "flow",
+      "seed": 0,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 4.790964604156298
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 28.809575059586052
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.885221152365448
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 27.79308267001021
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.0174546161858213
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 2.526271828568473
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 3.4645630023135503
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 34.11957891199692
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 5.166895708231255
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 27.056819240085016
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.842115914121333
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.680395966361567
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 2.8170644122416086
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 36.18218195491111
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 5.1173713059488675
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 25.0438423679843
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.7814344499960932
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 2.482634346519547
+    },
+    {
+      "method": "flow",
+      "seed": 1,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 2.2710441511537103
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 75.17529402613741
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 5.213431438937052
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 34.411771394633746
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.327658411177948
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 5.133966940686215
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 3.164463198518699
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 89.28297277731822
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 5.204923342059181
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 32.14051434761956
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 3.25506260983382
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 5.021015145024607
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 3.347976035046448
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 55.717569258701495
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 4.099026213246932
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 31.141066821038898
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.958626452433047
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 4.405892178560092
+    },
+    {
+      "method": "flow",
+      "seed": 2,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 3.2880282372857046
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 47.422324334018285
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.214000806694791
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 21.744195684428842
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 5.544743123043959
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 4.812043958419234
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 5.8043123431859485
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 65.63634370004439
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 3.7579233626971043
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 20.869071775638744
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 5.668284680073205
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 5.617074992707102
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 5.465639148424047
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 39.73438934076639
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 4.234244234096176
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 19.866393005026733
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 5.658756157284809
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 5.531587497969179
+    },
+    {
+      "method": "flow",
+      "seed": 3,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 5.007711508150912
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 18.892739241004914
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 2.822610181215557
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 23.862058654359725
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.863257979825846
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 3.4329127515743627
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 5.383783822820821
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 17.524823903322083
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.544146540662571
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 22.265174552776163
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 4.041978277950054
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 3.750434667539496
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 4.381912463157324
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 21.157373767881992
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.9712893973027423
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 20.04412340176023
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 3.7150566924649477
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.371255462711474
+    },
+    {
+      "method": "flow",
+      "seed": 4,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 3.4139837954145307
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 40.27698026379678
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.6108691803645327
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 28.523360794346573
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 4.4589568253204686
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 3.127256483239153
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 6.866592035177759
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 13.267579221475868
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.6526839270473572
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 28.21254658983308
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 4.941741325691113
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.6874192351056707
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 6.505202356736461
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 26.048626501248425
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.1657275463074765
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 20.51491267323747
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 5.662837046502796
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.693672151329532
+    },
+    {
+      "method": "edge",
+      "seed": 0,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 4.248593488707845
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 32.42354066146327
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.7304804626550006
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 27.437197359231952
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.933984865837328
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 1.3221547787109762
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 2.0238098128858844
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 34.84196377052429
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 4.018704758150265
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 23.489723927463537
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.431503696454586
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 1.4231322224524696
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 2.8508121626501826
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 36.52753663607678
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 3.3119017780712228
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 19.36784243143149
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.6138336958090895
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 1.4702973632548162
+    },
+    {
+      "method": "edge",
+      "seed": 1,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 2.3722749579627305
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 43.126197625571905
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.4673518776285293
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 29.78968381546221
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.609679141856577
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 6.110151500020551
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 3.328324292848101
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 43.17722654549075
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.145799884367137
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 29.676129548375663
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.3668355771226373
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 4.191294793620692
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 3.6342895284603522
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 30.155000962342676
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 1.9427295808260043
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 22.213411957114307
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.34569305512041
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.0899675570689737
+    },
+    {
+      "method": "edge",
+      "seed": 2,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 3.8689334284945547
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 91.27526162448548
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.419764725124869
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 24.722605477993696
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 5.6821618203467406
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 4.540109517593103
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 7.438380665587202
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 66.69097995794114
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 3.732498592108524
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 20.32672671366843
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 5.5353625339041574
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 3.104011953593289
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 5.968174855747463
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 103.16476618543886
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.9791849013187375
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 16.165036161905324
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 5.87240684605179
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 1.6936778918638837
+    },
+    {
+      "method": "edge",
+      "seed": 3,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 5.3390871117713505
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 27.331133016979503
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 2.531219531478754
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 24.80012642447249
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.661212968250747
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 3.25404843142781
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 5.698110765556894
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 11.955546279682292
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.3635060516492037
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 23.07464957606606
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 3.487121661797226
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.8278714469531048
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 5.776065747268382
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 26.52435732928049
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.1821291617113467
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 19.990015310186745
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 3.761235239636925
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.3518397948529524
+    },
+    {
+      "method": "edge",
+      "seed": 4,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 5.534777788254784
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 40.342736098258285
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.6797052531391254
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 28.477170406069607
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 4.53485826384613
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 3.1630972880126826
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 6.957676585512308
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 13.088489045481728
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.693240217057752
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 28.14684964323823
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 4.9845881974001545
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.6872838820226495
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 6.610101472953905
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 26.34762505531187
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.189780962363964
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 20.38842773879988
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 5.709223676295171
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.6964682622626057
+    },
+    {
+      "method": "cut",
+      "seed": 0,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 4.239871181511247
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 32.5778034696395
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.783250384565532
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 27.40231815166388
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.973504514260494
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 1.2931728446099438
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 2.0136867939393035
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 35.204322851224155
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 4.067018542248106
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 23.463371898056
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.4542803060478406
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 1.4111042314248805
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 2.852750854852681
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 37.11854882262413
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 3.3356908232894518
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 19.2650875945388
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.622202373622941
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 1.433937740087903
+    },
+    {
+      "method": "cut",
+      "seed": 1,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 2.356558896709091
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 42.96862381958929
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.4838085351363284
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 29.785611356711165
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.6334495985410866
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 6.2058969016448025
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 3.3537700357314324
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 43.107822926327366
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.155694110255452
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 29.66365470245136
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.3659562657134225
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 4.2549922260683415
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 3.651122672246911
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 29.96212354026307
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 1.9492649813985539
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 22.08417336415975
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.3328959531589937
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.1443336022796236
+    },
+    {
+      "method": "cut",
+      "seed": 2,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 3.898928263879933
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 90.93904993322904
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 4.456705816502683
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 24.644451203844845
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 5.703131934946999
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 4.531616417041865
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 7.529688871978019
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 66.25711303823077
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 3.7760966600666688
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 20.25374639591192
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 5.554720843144776
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 3.0979804928056045
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 6.064232536118008
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 103.03369812111441
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 3.015369922186637
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 16.00816098820328
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 5.87235871735728
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 1.676857840990481
+    },
+    {
+      "method": "cut",
+      "seed": 3,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 5.347674534310077
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 27.265769678573445
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 2.5423153431533265
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 24.722048308381126
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.669150458561771
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 3.2604033063621043
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 5.7032612382155845
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 11.864909152194322
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.3815636906632554
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 22.947791757113283
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 3.494547391328671
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.833809659103602
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 5.778937455513407
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 26.824780842857617
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.183824438727311
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 19.821008646184076
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 3.762256457524646
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 3.35195024145689
+    },
+    {
+      "method": "cut",
+      "seed": 4,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 5.536787809856673
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 36.326040326994416
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.561240677318427
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 38.890286992125745
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.3694740187984027
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 2.3636859041930864
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 4.639712287344528
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 37.47493924595178
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 3.4447573922807893
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 37.113820785123295
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 3.1065827929662237
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.477550235457529
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 4.5078247370827365
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 21.950598503664665
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.760446035138273
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 33.72199899455877
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 3.1684914352164664
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 2.962473299113144
+    },
+    {
+      "method": "response",
+      "seed": 0,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 5.4177306922005055
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 19.47610902502375
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.5770359672275047
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 34.24054564009443
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.279664157302199
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 2.8289129312340324
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 2.0868141166693026
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 36.23742504519179
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.8311137511997497
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 28.928214486296017
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 1.9460632351630445
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.6749883504976046
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 1.9939300430025344
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 26.001036578100674
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.6833999050581903
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 25.092292551423228
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.327378623193803
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 2.94091980466177
+    },
+    {
+      "method": "response",
+      "seed": 1,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 1.592463333776444
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 30.55842155000602
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 3.9238462456923404
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 33.207974017140174
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.658788589447057
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 1.4648775847757132
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 3.0214785020921884
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 63.38344227796969
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.6864433225476287
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 32.49242883676277
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.069255731573411
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 1.4493648588268102
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 3.264134790575651
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 33.12593139258557
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 2.761812978255524
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 28.582065362794673
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.1017316654652665
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 1.0200589856517195
+    },
+    {
+      "method": "response",
+      "seed": 2,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 2.9853153946933415
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 99.87972112903391
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 2.8877818045188546
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 28.53612435237909
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 3.714942721295456
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 2.051176928995533
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 5.661325939738349
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 62.036474491733564
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.505556758138162
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 25.897787566464118
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 3.8909828085910263
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.143912732567569
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 4.361918596217604
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 88.01719960033608
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 1.9088460399085703
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 22.918535138799445
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.9475794940065243
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 2.128107614498579
+    },
+    {
+      "method": "response",
+      "seed": 3,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 3.981660536006355
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 300,
+      "path": 0,
+      "boundary_pct": 13.606629603634353
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 300,
+      "path": 1,
+      "boundary_pct": 1.878152934584042
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 300,
+      "path": 2,
+      "boundary_pct": 26.27328658827407
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 300,
+      "path": 3,
+      "boundary_pct": 2.9464418739118803
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 300,
+      "path": 4,
+      "boundary_pct": 2.5570911553288296
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 300,
+      "path": 5,
+      "boundary_pct": 3.949403232254161
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 600,
+      "path": 0,
+      "boundary_pct": 9.869136897842957
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 600,
+      "path": 1,
+      "boundary_pct": 2.19095048466279
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 600,
+      "path": 2,
+      "boundary_pct": 25.485677559003975
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 600,
+      "path": 3,
+      "boundary_pct": 2.813798787813825
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 600,
+      "path": 4,
+      "boundary_pct": 2.442844889003602
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 600,
+      "path": 5,
+      "boundary_pct": 3.6350537198228023
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 1200,
+      "path": 0,
+      "boundary_pct": 15.397687333335696
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 1200,
+      "path": 1,
+      "boundary_pct": 1.7899975226912952
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 1200,
+      "path": 2,
+      "boundary_pct": 21.398585128849714
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 1200,
+      "path": 3,
+      "boundary_pct": 2.4558751394705665
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 1200,
+      "path": 4,
+      "boundary_pct": 2.0931709123405344
+    },
+    {
+      "method": "response",
+      "seed": 4,
+      "budget": 1200,
+      "path": 5,
+      "boundary_pct": 3.264288972507589
+    }
+  ]
+}

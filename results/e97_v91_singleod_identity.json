@@ -1,0 +1,109 @@
+{
+  "protocol": {
+    "purpose": "per-edge endpoint identity check for the E95 single-OD chains: C~_{e,j} vs g_e(F1)-g_e(F0) per edge, separable TSTT, background re-equilibration included in the Jacobian column",
+    "focal_ods": [
+      "1->19",
+      "1->15",
+      "7->12",
+      "6->8"
+    ],
+    "control": "6->8",
+    "grid": 41,
+    "claims_supported": "the E95 single-OD attribution columns satisfy the per-edge endpoint identity up to trapezoid quadrature error; NOT a claim of exact zero"
+  },
+  "per_od": {
+    "1->19": {
+      "resid_inf": 0.000537974896360538,
+      "resid_l2": 0.001091294189097176,
+      "resid_inf_over_max_dg": 5.8274614424998834e-08,
+      "resid_inf_over_max_C": 5.827461782092972e-08,
+      "max_abs_dg": 9231.719534634205,
+      "max_abs_C": 9231.718996659309,
+      "resid_sum": 0.0016960564943699907,
+      "completeness_gap_published": 0.001696055849606637,
+      "resid_max_edge_1idx": [
+        10,
+        15
+      ],
+      "resid_sum_over_abs_dT": 3.37039707387024e-08,
+      "gates": {
+        "solver_max_residual": 3.31488081428688e-09,
+        "flow_conservation_max": 1.8189894035458565e-11,
+        "jacobian_conservation_max": 1.687538997430238e-14,
+        "column_vs_frozen_rel_l2": 0.0,
+        "dT_vs_published_rel": 0.0,
+        "resid_sum_vs_gap_rel": 3.801545532644034e-07
+      }
+    },
+    "1->15": {
+      "resid_inf": 0.0015627407628926449,
+      "resid_l2": 0.0033055798487840815,
+      "resid_inf_over_max_dg": 9.643391048542843e-08,
+      "resid_inf_over_max_C": 9.64339159729338e-08,
+      "max_abs_dg": 16205.303248889628,
+      "max_abs_C": 16205.302326738041,
+      "resid_sum": 0.00572242183973426,
+      "completeness_gap_published": 0.005722423389670439,
+      "resid_max_edge_1idx": [
+        6,
+        8
+      ],
+      "resid_sum_over_abs_dT": 7.367362514948067e-08,
+      "gates": {
+        "solver_max_residual": 2.520823727536481e-08,
+        "flow_conservation_max": 1.8189894035458565e-11,
+        "jacobian_conservation_max": 1.8540724511240114e-14,
+        "column_vs_frozen_rel_l2": 0.0,
+        "dT_vs_published_rel": 0.0,
+        "resid_sum_vs_gap_rel": 2.708531113232814e-07
+      }
+    },
+    "7->12": {
+      "resid_inf": 0.01634025062639921,
+      "resid_l2": 0.034193850253033,
+      "resid_inf_over_max_dg": 8.043360041288223e-07,
+      "resid_inf_over_max_C": 8.04336309040269e-07,
+      "max_abs_dg": 20315.20476830745,
+      "max_abs_C": 20315.197067127723,
+      "resid_sum": 0.02234849587407528,
+      "completeness_gap_published": 0.02234849460364785,
+      "resid_max_edge_1idx": [
+        17,
+        10
+      ],
+      "resid_sum_over_abs_dT": 1.902375484331767e-07,
+      "gates": {
+        "solver_max_residual": 1.7007550923153758e-10,
+        "flow_conservation_max": 1.4551915228366852e-11,
+        "jacobian_conservation_max": 2.0539125955565396e-14,
+        "column_vs_frozen_rel_l2": 0.0,
+        "dT_vs_published_rel": 0.0,
+        "resid_sum_vs_gap_rel": 5.6846219508453283e-08
+      }
+    },
+    "6->8": {
+      "resid_inf": 0.009077620830566957,
+      "resid_l2": 0.025142519274563936,
+      "resid_inf_over_max_dg": 2.6574999847082925e-07,
+      "resid_inf_over_max_C": 2.6574993600703745e-07,
+      "max_abs_dg": 34158.498147887614,
+      "max_abs_C": 34158.506176748684,
+      "resid_sum": 0.010613632929595385,
+      "completeness_gap_published": 0.01061363346525468,
+      "resid_max_edge_1idx": [
+        10,
+        17
+      ],
+      "resid_sum_over_abs_dT": 1.4308695078338077e-07,
+      "gates": {
+        "solver_max_residual": 1.6939338820520788e-10,
+        "flow_conservation_max": 2.000888343900442e-11,
+        "jacobian_conservation_max": 1.4654943925052066e-14,
+        "column_vs_frozen_rel_l2": 0.0,
+        "dT_vs_published_rel": 0.0,
+        "resid_sum_vs_gap_rel": 5.0468983732261146e-08
+      }
+    }
+  },
+  "elapsed_seconds": 14.195510387420654
+}

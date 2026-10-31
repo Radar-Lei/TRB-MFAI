@@ -1,0 +1,542 @@
+{
+  "protocol": {
+    "purpose": "small-interval endpoint test: do the sign crossings survive +-10% and +-20% demand bands around the published demand, single moving OD, all 528 ODs jointly re-equilibrated (E95 protocol, Eq. (14) endpoint columns)",
+    "focal_ods": [
+      "1->19",
+      "1->15",
+      "7->12",
+      "6->8"
+    ],
+    "intervals": [
+      [
+        0.9,
+        1.1
+      ],
+      [
+        0.8,
+        1.2
+      ]
+    ],
+    "columns": "endpoint identity Eq. (14), g_e(F1)-g_e(F0); one 41-point integral spot check",
+    "connected_family": "same exact e80 enumeration as the published connected intervals",
+    "claims_supported": "persistence or disappearance of the sign crossings under small demand changes; either outcome is reported"
+  },
+  "per_chain": {
+    "1->19|0.9->1.1": {
+      "od": "1->19",
+      "interval": [
+        0.9,
+        1.1
+      ],
+      "q0_q1_veh_h": [
+        270.0,
+        330.0
+      ],
+      "Cj_dT": 7202.429111180827,
+      "phi_s": 253.20515502348644,
+      "unrestricted_min": -2758.414449417596,
+      "unrestricted_max": 3843.3553903338834,
+      "connected_min": -1947.3849633400387,
+      "connected_max": 3493.9388516271138,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "connected_max_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        22,
+        23
+      ],
+      "phi_published_U_minus": -1947.3849633400387,
+      "phi_published_U_plus": 3493.9388516271138,
+      "sign_crossing": true,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 9.777068044058979e-11,
+            "flow_conservation": 7.275957614183426e-12
+          },
+          {
+            "path_residual": 9.57243173616007e-11,
+            "flow_conservation": 9.094947017729282e-12
+          }
+        ],
+        "colsum_vs_dT_rel": 1.3890371658044681e-13
+      }
+    },
+    "1->19|0.8->1.2": {
+      "od": "1->19",
+      "interval": [
+        0.8,
+        1.2
+      ],
+      "q0_q1_veh_h": [
+        240.0,
+        360.0
+      ],
+      "Cj_dT": 14404.882141341455,
+      "phi_s": 506.41087586696085,
+      "unrestricted_min": -5516.825082832944,
+      "unrestricted_max": 7686.7108088102505,
+      "connected_min": -3894.75832664685,
+      "connected_max": 6987.877518265923,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "connected_max_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        22,
+        23
+      ],
+      "phi_published_U_minus": -3894.75832664685,
+      "phi_published_U_plus": 6987.877518265923,
+      "sign_crossing": true,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 2.7057467377744615e-11,
+            "flow_conservation": 5.4569682106375694e-12
+          },
+          {
+            "path_residual": 1.1584688763832673e-10,
+            "flow_conservation": 2.1827872842550278e-11
+          }
+        ],
+        "colsum_vs_dT_rel": 3.207407766111869e-14
+      }
+    },
+    "1->15|0.9->1.1": {
+      "od": "1->15",
+      "interval": [
+        0.9,
+        1.1
+      ],
+      "q0_q1_veh_h": [
+        450.0,
+        550.0
+      ],
+      "Cj_dT": 11130.071994191036,
+      "phi_s": 421.373513771272,
+      "unrestricted_min": -2351.3434969727205,
+      "unrestricted_max": 6354.686396098918,
+      "connected_min": -1200.8603850677864,
+      "connected_max": 5838.421650348526,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24
+      ],
+      "connected_max_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        22,
+        23
+      ],
+      "phi_published_U_minus": -1200.8603850677864,
+      "phi_published_U_plus": 5838.421650348526,
+      "sign_crossing": true,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 1.6052581486292183e-10,
+            "flow_conservation": 1.4551915228366852e-11
+          },
+          {
+            "path_residual": 8.65156835061498e-11,
+            "flow_conservation": 1.4551915228366852e-11
+          }
+        ],
+        "colsum_vs_dT_rel": 2.3207082167871038e-14
+      }
+    },
+    "1->15|0.8->1.2": {
+      "od": "1->15",
+      "interval": [
+        0.8,
+        1.2
+      ],
+      "q0_q1_veh_h": [
+        400.0,
+        600.0
+      ],
+      "Cj_dT": 22260.224876900204,
+      "phi_s": 842.749103105707,
+      "unrestricted_min": -4702.703447012707,
+      "unrestricted_max": 12709.382505142774,
+      "connected_min": -2401.723555769371,
+      "connected_max": 11676.852662988764,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        24
+      ],
+      "connected_max_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        22,
+        23
+      ],
+      "phi_published_U_minus": -2401.723555769371,
+      "phi_published_U_plus": 11676.852662988764,
+      "sign_crossing": true,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 4.5133674575481564e-11,
+            "flow_conservation": 9.094947017729282e-12
+          },
+          {
+            "path_residual": 7.423750503221527e-11,
+            "flow_conservation": 1.0913936421275139e-11
+          }
+        ],
+        "colsum_vs_dT_rel": 7.272615519871822e-14
+      }
+    },
+    "7->12|0.9->1.1": {
+      "od": "7->12",
+      "interval": [
+        0.9,
+        1.1
+      ],
+      "q0_q1_veh_h": [
+        630.0,
+        770.0000000000001
+      ],
+      "Cj_dT": 16866.646199033596,
+      "phi_s": 1362.583713109325,
+      "unrestricted_min": -6482.452577012165,
+      "unrestricted_max": 8839.108302818458,
+      "connected_min": -2517.296848241527,
+      "connected_max": 8607.618000045819,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        19,
+        23
+      ],
+      "connected_max_nodes_1idx": [
+        7,
+        8,
+        9,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "phi_published_U_minus": -2517.296848241527,
+      "phi_published_U_plus": 8607.618000045819,
+      "sign_crossing": true,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 8.86757334228605e-11,
+            "flow_conservation": 7.275957614183426e-12
+          },
+          {
+            "path_residual": 1.2255441106390208e-10,
+            "flow_conservation": 9.094947017729282e-12
+          }
+        ],
+        "colsum_vs_dT_rel": 1.5529730749057353e-14
+      }
+    },
+    "7->12|0.8->1.2": {
+      "od": "7->12",
+      "interval": [
+        0.8,
+        1.2
+      ],
+      "q0_q1_veh_h": [
+        560.0,
+        840.0
+      ],
+      "Cj_dT": 33733.58652480692,
+      "phi_s": 2725.229099284399,
+      "unrestricted_min": -12964.982486029883,
+      "unrestricted_max": 17678.3561161647,
+      "connected_min": -5034.524015427378,
+      "connected_max": 17215.29305489541,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        17,
+        19,
+        23
+      ],
+      "connected_max_nodes_1idx": [
+        7,
+        8,
+        9,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "phi_published_U_minus": -5034.524015427378,
+      "phi_published_U_plus": 17215.29305489541,
+      "sign_crossing": true,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 8.51514414534904e-11,
+            "flow_conservation": 1.0913936421275139e-11
+          },
+          {
+            "path_residual": 6.434675015043467e-11,
+            "flow_conservation": 8.185452315956354e-12
+          }
+        ],
+        "colsum_vs_dT_rel": 2.200026007021076e-14
+      }
+    },
+    "6->8|0.9->1.1": {
+      "od": "6->8",
+      "interval": [
+        0.9,
+        1.1
+      ],
+      "q0_q1_veh_h": [
+        720.0,
+        880.0000000000001
+      ],
+      "Cj_dT": 10705.969807678834,
+      "phi_s": 6928.631015962106,
+      "unrestricted_min": 3756.85937815559,
+      "unrestricted_max": 10690.421972957985,
+      "connected_min": 5078.570132829824,
+      "connected_max": 9623.010720290884,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        3,
+        6,
+        12,
+        13,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "connected_max_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        17,
+        19,
+        23
+      ],
+      "phi_published_U_minus": null,
+      "phi_published_U_plus": null,
+      "sign_crossing": false,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 6.298250809777528e-11,
+            "flow_conservation": 9.094947017729282e-12
+          },
+          {
+            "path_residual": 5.832134775118902e-11,
+            "flow_conservation": 7.275957614183426e-12
+          }
+        ],
+        "colsum_vs_dT_rel": 9.446674393253956e-14
+      }
+    },
+    "6->8|0.8->1.2": {
+      "od": "6->8",
+      "interval": [
+        0.8,
+        1.2
+      ],
+      "q0_q1_veh_h": [
+        640.0,
+        960.0
+      ],
+      "Cj_dT": 21412.056099681184,
+      "phi_s": 13857.347601956979,
+      "unrestricted_min": 7513.732370787166,
+      "unrestricted_max": 21381.074010529326,
+      "connected_min": 10157.15409189925,
+      "connected_max": 19246.272576216263,
+      "connected_min_nodes_1idx": [
+        1,
+        2,
+        3,
+        6,
+        12,
+        13,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "connected_max_nodes_1idx": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        17,
+        19,
+        23
+      ],
+      "phi_published_U_minus": null,
+      "phi_published_U_plus": null,
+      "sign_crossing": false,
+      "gates": {
+        "endpoints": [
+          {
+            "path_residual": 7.617018127348274e-11,
+            "flow_conservation": 1.0913936421275139e-11
+          },
+          {
+            "path_residual": 9.754330676514655e-11,
+            "flow_conservation": 1.2732925824820995e-11
+          }
+        ],
+        "colsum_vs_dT_rel": 3.873795044041851e-14
+      }
+    }
+  },
+  "spot_check": {
+    "chain": "1->19|0.8->1.2",
+    "grid": 41,
+    "resid_inf": 1.2736263670376502e-05,
+    "resid_inf_over_max_dg": 4.822756368014908e-09,
+    "dT_integral": 14404.882181207888,
+    "dT_endpoint": 14404.882141341455,
+    "completeness_rel": 2.7675639429347997e-09
+  },
+  "elapsed_seconds": 9.30309247970581
+}

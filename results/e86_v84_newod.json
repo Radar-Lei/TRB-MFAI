@@ -1,0 +1,338 @@
+{
+  "protocol": {
+    "setting": "C: full background, all 528 ODs re-equilibrate at every node; six pre-specified queries not involving node 10 scale 0.2->1.6 of published demand",
+    "theta": 1.0,
+    "paths_per_od": 10,
+    "nodes": 41,
+    "integration": "uniform composite trapezoid",
+    "study_ods_1idx": [
+      [
+        7,
+        18
+      ],
+      [
+        1,
+        19
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        12
+      ]
+    ],
+    "background_ods": 522,
+    "claims_supported": "boundary variation is not confined to the eight published queries; NOT an A/C paired background-enlargement claim"
+  },
+  "selection": {
+    "rule": "positive-demand ODs without node 10; demand terciles; min/max free-flow shortest-path time within each tercile; ties by ascending (origin, destination)",
+    "n_candidates": 482,
+    "candidate_demand_min_max": [
+      100.0,
+      2800.0
+    ],
+    "tercile_demand_ranges": [
+      [
+        100.0,
+        300.0
+      ],
+      [
+        300.0,
+        600.0
+      ],
+      [
+        600.0,
+        2800.0
+      ]
+    ],
+    "selection": [
+      {
+        "tercile": 0,
+        "distance_class": "short",
+        "od": [
+          7,
+          18
+        ],
+        "published_demand_veh_h": 200.0,
+        "free_flow_sp_time": 2.0
+      },
+      {
+        "tercile": 0,
+        "distance_class": "long",
+        "od": [
+          1,
+          19
+        ],
+        "published_demand_veh_h": 300.0,
+        "free_flow_sp_time": 22.0
+      },
+      {
+        "tercile": 1,
+        "distance_class": "short",
+        "od": [
+          4,
+          5
+        ],
+        "published_demand_veh_h": 500.0,
+        "free_flow_sp_time": 2.0
+      },
+      {
+        "tercile": 1,
+        "distance_class": "long",
+        "od": [
+          1,
+          15
+        ],
+        "published_demand_veh_h": 500.0,
+        "free_flow_sp_time": 23.0
+      },
+      {
+        "tercile": 2,
+        "distance_class": "short",
+        "od": [
+          6,
+          8
+        ],
+        "published_demand_veh_h": 800.0,
+        "free_flow_sp_time": 2.0
+      },
+      {
+        "tercile": 2,
+        "distance_class": "long",
+        "od": [
+          7,
+          12
+        ],
+        "published_demand_veh_h": 700.0,
+        "free_flow_sp_time": 19.0
+      }
+    ],
+    "demands_span_terciles": true
+  },
+  "gates": {
+    "path_fixed_point_max_abs": 1.5211298887152225e-10,
+    "J_conservation_max_abs": 2.142730437526552e-14,
+    "background_circulation_max_abs": 2.1496693314304594e-14,
+    "J_additivity_max_abs": 1.887379141862766e-15,
+    "midpoint_FD_max_column_relative_l2": 2.519223478871934e-08,
+    "flow_conservation_max_abs": 2.1827872842550278e-11,
+    "completeness_relative": 4.267975422345025e-07
+  },
+  "per_od": {
+    "7->18": {
+      "phi_s": 671.2016992866315,
+      "spread_abs": 131.3635525457229,
+      "spread_pct": 19.57139749278631,
+      "connected_range_abs": 76.07158042789888,
+      "connected_range_pct": 11.33363942742539,
+      "connected_fraction": 0.5790919852096806,
+      "n_connected_cuts": 4621,
+      "major_nodes_1idx": [
+        16,
+        8,
+        10
+      ],
+      "signed_node_decomposition": [
+        {
+          "node": 16,
+          "total": 34.75508254866733,
+          "study": 0.016981253964434073,
+          "background": 34.73810129470292
+        },
+        {
+          "node": 8,
+          "total": -24.031248311456597,
+          "study": -0.8004038662384803,
+          "background": -23.230844445218132
+        },
+        {
+          "node": 10,
+          "total": -16.29159870165436,
+          "study": 0.12257865845645657,
+          "background": -16.41417736011082
+        }
+      ]
+    },
+    "1->19": {
+      "phi_s": 1771.559983071581,
+      "spread_abs": 45812.08687497824,
+      "spread_pct": 2585.974356654181,
+      "connected_range_abs": 37761.20432696774,
+      "connected_range_pct": 2131.5227645578384,
+      "connected_fraction": 0.8242629162478133,
+      "n_connected_cuts": 14477,
+      "major_nodes_1idx": [
+        15,
+        10,
+        5
+      ],
+      "signed_node_decomposition": [
+        {
+          "node": 15,
+          "total": 10528.371300378312,
+          "study": 14462.238413444871,
+          "background": -3933.8671130665575
+        },
+        {
+          "node": 10,
+          "total": -5531.0678239903955,
+          "study": -10836.093902094022,
+          "background": 5305.026078103629
+        },
+        {
+          "node": 5,
+          "total": -5192.365393770918,
+          "study": -9976.421411263897,
+          "background": 4784.056017492977
+        }
+      ]
+    },
+    "4->5": {
+      "phi_s": 2659.419539961977,
+      "spread_abs": 1450.1714102356214,
+      "spread_pct": 54.52962153750119,
+      "connected_range_abs": 1056.3996842639785,
+      "connected_range_pct": 39.72294210785119,
+      "connected_fraction": 0.7284653916134897,
+      "n_connected_cuts": 8627,
+      "major_nodes_1idx": [
+        10,
+        6,
+        11
+      ],
+      "signed_node_decomposition": [
+        {
+          "node": 10,
+          "total": 282.78070132644456,
+          "study": 14.194366919655142,
+          "background": 268.5863344067894
+        },
+        {
+          "node": 6,
+          "total": -201.43177003045122,
+          "study": 3.64396223783909,
+          "background": -205.0757322682904
+        },
+        {
+          "node": 11,
+          "total": -171.70346973737867,
+          "study": -16.44155706814078,
+          "background": -155.26191266923783
+        }
+      ]
+    },
+    "1->15": {
+      "phi_s": 2948.1396071973504,
+      "spread_abs": 60376.54621987631,
+      "spread_pct": 2047.9541088379221,
+      "connected_range_abs": 48825.74944841766,
+      "connected_range_pct": 1656.154590821222,
+      "connected_fraction": 0.8086873546990658,
+      "n_connected_cuts": 15191,
+      "major_nodes_1idx": [
+        10,
+        5,
+        13
+      ],
+      "signed_node_decomposition": [
+        {
+          "node": 10,
+          "total": -8963.690567138057,
+          "study": -17100.12425801641,
+          "background": 8136.433690878351
+        },
+        {
+          "node": 5,
+          "total": -8481.58105756391,
+          "study": -15671.532485203545,
+          "background": 7189.95142763964
+        },
+        {
+          "node": 13,
+          "total": -5904.18545919309,
+          "study": -7.447775379802231,
+          "background": -5896.737683813288
+        }
+      ]
+    },
+    "6->8": {
+      "phi_s": 48126.7886405302,
+      "spread_abs": 48006.55044012164,
+      "spread_pct": 99.75016367431733,
+      "connected_range_abs": 31388.071318242226,
+      "connected_range_pct": 65.21954238976298,
+      "connected_fraction": 0.6538289260627553,
+      "n_connected_cuts": 4737,
+      "major_nodes_1idx": [
+        13,
+        10,
+        16
+      ],
+      "signed_node_decomposition": [
+        {
+          "node": 13,
+          "total": -5540.412954675565,
+          "study": 6.875645677992603,
+          "background": -5547.28860035356
+        },
+        {
+          "node": 10,
+          "total": -5155.115349895358,
+          "study": 129.9818897061383,
+          "background": -5285.0972396015
+        },
+        {
+          "node": 16,
+          "total": 4941.467118557673,
+          "study": 0.32102732174801374,
+          "background": 4941.1460912359225
+        }
+      ]
+    },
+    "7->12": {
+      "phi_s": 9473.760946276467,
+      "spread_abs": 106891.24296597668,
+      "spread_pct": 1128.2873145325545,
+      "connected_range_abs": 77644.85990798986,
+      "connected_range_pct": 819.5779938748308,
+      "connected_fraction": 0.7263912155339433,
+      "n_connected_cuts": 16943,
+      "major_nodes_1idx": [
+        8,
+        6,
+        16
+      ],
+      "signed_node_decomposition": [
+        {
+          "node": 8,
+          "total": -18126.642355286338,
+          "study": -47375.30311920544,
+          "background": 29248.660763919124
+        },
+        {
+          "node": 6,
+          "total": 15518.060299290224,
+          "study": 41241.405865295455,
+          "background": -25723.345566005253
+        },
+        {
+          "node": 16,
+          "total": -12775.026880106745,
+          "study": -9.2808965363278,
+          "background": -12765.745983570414
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 7.676866292953491
+}

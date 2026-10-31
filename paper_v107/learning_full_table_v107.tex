@@ -1,0 +1,11 @@
+\begin{table}[t]\centering\footnotesize
+\caption{The paper's principal learning comparison: four objectives with update zero included in validation selection. All prediction and explanation entries use the same 24 paths and report path medians after averaging seeds and active queries.}
+\label{tab:pairs-v102}
+\begin{tabular}{lrrrrr}\toprule Method & Flow (\%) & Column (\%) & System (\%) & Boundary (\%) & Geometric (\%)\\\midrule
+Flow & 0.0325 & 21.61 & 2.33 & 14.53 & 7.91\\
+Flow + endpoint edge & 0.0376 & 21.80 & 2.92 & 18.91 & 8.30\\
+Flow + endpoint edge + boundary & 0.0376 & 21.81 & 2.95 & 18.93 & 8.30\\
+Flow + response & 0.0291 & 14.22 & 3.31 & 12.08 & 5.81\\
+\bottomrule\end{tabular}\end{table}
+Selected updates in seed order 0--4 are Flow: 1100, 800, 1000, 100, 700; Flow + endpoint edge: 0, 1200, 0, 0, 1100; Flow + endpoint edge + boundary: 0, 1200, 0, 0, 1100; Flow + response: 1100, 1200, 1200, 1200, 1200. All selected models meet the endpoint flow constraint. For each endpoint objective, three seeds retain update zero.
+On the original held-out demand-state split, seed-mean relative flow errors are Flow: 0.0386\%, Flow + endpoint edge: 0.0445\%, Flow + endpoint edge + boundary: 0.0445\%, Flow + response: 0.0388\%. These are distinct from the matched-path flow errors in the table.

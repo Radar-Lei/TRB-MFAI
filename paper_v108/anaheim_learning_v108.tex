@@ -1,0 +1,44 @@
+\paragraph{Second network: Anaheim.}
+The same conservative parameterization, training objectives and
+evaluation protocol transfer unchanged to Anaheim: the six largest
+published OD demands are the study queries, all remaining positive
+demands stay fixed with endogenous route choice over the same ten-path
+centroid-restricted structure as Section~\ref{sec:anaheim}, the model
+outputs all $14{,}060$ path flows, and forty-eight test demand paths
+(twelve per active-query group, same generation rule, fresh seed) are
+solved at a 21-state quadrature with reference sensitivities
+(Appendix~\ref{app:anaheimlearning} gives the full protocol, label
+budgets and gates). Table~\ref{tab:anaheimlearning} reports the
+outcome. Anaheim's attribution columns are easier to learn than Sioux
+Falls' --- the free-flow-weighted response dominates the column and
+both objectives reach column errors near $1.5\%$ --- but the ordering
+is the same and is consistent across seeds: response supervision
+lowers the median column error from $1.64\%$ to $1.31\%$ and the
+geometric-boundary error from $0.94\%$ to $0.78\%$, improves $46$--$48$
+of $48$ paths in column error and $44$--$47$ of $48$ in geometric
+error across the five seeds, and does so while flow
+accuracy is again indistinguishable ($0.024\%$ and $0.019\%$). The
+delivered summaries inherit the same budget structure as Sioux Falls:
+the model term of Eq.~\eqref{eq:totalbudget} falls from $17.0$ to
+$13.1$ vehicle-minutes per hour while the summary term reflects the
+prescribed tolerance (path medians $99.7$ and $99.3$), the total stays
+within the budget on every path, and the paired total error improves on
+$73.3\%$ of path--seed units. The direction of every conclusion ---
+better explanations from response supervision, dominant response term,
+tolerance-dominated total error --- therefore does not depend on the
+network.
+\begin{table}[t]\centering\footnotesize
+\caption{Anaheim learned assignment on the 48 test demand paths, same
+protocol as Table~\ref{tab:pathtable} with a 21-state quadrature.
+Column/Geometric/Flow as in Table~\ref{tab:pathtable}; $E$-terms are
+absolute medians of the budget quantities of
+Eq.~\eqref{eq:totalbudget} over the ordered nested-prefix families
+(vehicle-minutes per hour).}\label{tab:anaheimlearning}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}lccccccc}
+\toprule
+Method & Flow pred.\ (\%) & Column (\%) & Geometric (\%) & $E_{\mathrm{model}}$ & $E_{\mathrm{summary}}$ & $E_{\mathrm{total}}$ & Segments\\
+\midrule
+Flow & 0.024 & 1.64 & 0.94 & 17.0 & 99.7 & 102.9 & 9.9\\
+Response & 0.019 & 1.31 & 0.78 & 13.1 & 99.3 & 101.9 & 9.9\\
+\bottomrule\end{tabular*}\end{table}

@@ -1,0 +1,10 @@
+\begin{table}[t]\centering\small
+\caption{Incremental computation costs (seconds). Training-label and common-validation costs are measured separately on the same CPU protocol; training times are archived continuation medians, and explanation times are newly measured sequential medians for the selected models.}
+\label{tab:learning-costs}
+\begin{tabular}{lrrrr}\toprule Method & Training labels & Common validation & Continuation & Explanation\\\midrule
+Flow & 0.00 & 6.45 & 246.0 & 7.34\\
+Flow + endpoint edge & 25.75 & 6.45 & 422.2 & 7.59\\
+Flow + endpoint edge + boundary & 25.75 & 6.45 & 275.1 & 7.27\\
+Flow + response & 16.12 & 6.45 & 297.1 & 7.13\\
+\bottomrule\end{tabular}\end{table}
+Training labels comprise 768 endpoint states for either endpoint objective, or 384 center states and their sensitivities for response supervision. Every method additionally uses the same 192 endpoint states for validation; unused center-validation derivatives are excluded. Endpoint objectives share their labels and do not incur duplicate reference solves. Existing flow data, pretrained models and the common test reference are excluded from these incremental costs. The 984 test states and sensitivities took 74.4\,s in the archived reference run. Explanation timing covers all 24 paths, forward evaluation, six directional derivatives per state, quadrature and node aggregation, excluding model loading. Archived continuation times include initialization, validation and saving under concurrent seed jobs; they describe the actual training expense and do not establish a method speed advantage.

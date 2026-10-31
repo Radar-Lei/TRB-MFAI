@@ -1,0 +1,156 @@
+{
+  "protocol": {
+    "edge_source": "public TNTP topology, no assignment solve",
+    "elapsed_seconds": 347.92096834629774
+  },
+  "sioux_falls": {
+    "network": "Sioux Falls",
+    "nodes": 24,
+    "edges": 76,
+    "atoms": 1,
+    "circuit_atoms": 1,
+    "bridge_atoms": 0,
+    "study_queries": [
+      {
+        "query": "7->18",
+        "atoms_traversed": 1,
+        "atom_edge_count": 76,
+        "edge_share_pct": 100.0
+      },
+      {
+        "query": "1->19",
+        "atoms_traversed": 1,
+        "atom_edge_count": 76,
+        "edge_share_pct": 100.0
+      },
+      {
+        "query": "4->5",
+        "atoms_traversed": 1,
+        "atom_edge_count": 76,
+        "edge_share_pct": 100.0
+      },
+      {
+        "query": "1->15",
+        "atoms_traversed": 1,
+        "atom_edge_count": 76,
+        "edge_share_pct": 100.0
+      },
+      {
+        "query": "6->8",
+        "atoms_traversed": 1,
+        "atom_edge_count": 76,
+        "edge_share_pct": 100.0
+      },
+      {
+        "query": "7->12",
+        "atoms_traversed": 1,
+        "atom_edge_count": 76,
+        "edge_share_pct": 100.0
+      }
+    ],
+    "all_od_distribution": {
+      "queries": 528,
+      "median_pct": 100.0,
+      "q1_pct": 100.0,
+      "q3_pct": 100.0,
+      "min_pct": 100.0,
+      "max_pct": 100.0,
+      "release_median_pct": 0.0
+    }
+  },
+  "anaheim": {
+    "network": "Anaheim",
+    "nodes": 416,
+    "edges": 914,
+    "atoms": 22,
+    "circuit_atoms": 22,
+    "bridge_atoms": 0,
+    "study_queries": [
+      {
+        "query": "4->2",
+        "atoms_traversed": 1,
+        "atom_edge_count": 872,
+        "edge_share_pct": 95.40481400437636
+      },
+      {
+        "query": "1->2",
+        "atoms_traversed": 1,
+        "atom_edge_count": 872,
+        "edge_share_pct": 95.40481400437636
+      },
+      {
+        "query": "2->4",
+        "atoms_traversed": 1,
+        "atom_edge_count": 872,
+        "edge_share_pct": 95.40481400437636
+      },
+      {
+        "query": "3->2",
+        "atoms_traversed": 1,
+        "atom_edge_count": 872,
+        "edge_share_pct": 95.40481400437636
+      },
+      {
+        "query": "25->4",
+        "atoms_traversed": 1,
+        "atom_edge_count": 872,
+        "edge_share_pct": 95.40481400437636
+      },
+      {
+        "query": "25->2",
+        "atoms_traversed": 1,
+        "atom_edge_count": 872,
+        "edge_share_pct": 95.40481400437636
+      }
+    ],
+    "all_od_distribution": {
+      "queries": 1406,
+      "median_pct": 95.40481400437636,
+      "q1_pct": 95.40481400437636,
+      "q3_pct": 95.84245076586433,
+      "min_pct": 95.40481400437636,
+      "max_pct": 96.49890590809628,
+      "release_median_pct": 4.595185995623638
+    }
+  },
+  "extra_networks": {
+    "EMA": {
+      "network": "EMA",
+      "source": "Eastern-Massachusetts",
+      "nodes": 74,
+      "edges": 258,
+      "ods": 1113,
+      "atoms": 13,
+      "circuit_atoms": 13,
+      "bridge_atoms": 0,
+      "all_od_distribution": {
+        "queries": 1113,
+        "median_pct": 89.14728682170542,
+        "q1_pct": 89.14728682170542,
+        "q3_pct": 89.92248062015504,
+        "min_pct": 0.7751937984496124,
+        "max_pct": 92.24806201550388,
+        "release_median_pct": 10.852713178294579
+      }
+    },
+    "Winnipeg": {
+      "network": "Winnipeg",
+      "source": "Winnipeg",
+      "nodes": 1052,
+      "edges": 2836,
+      "ods": 4344,
+      "atoms": 68,
+      "circuit_atoms": 68,
+      "bridge_atoms": 0,
+      "all_od_distribution": {
+        "queries": 4344,
+        "median_pct": 95.27503526093089,
+        "q1_pct": 95.27503526093089,
+        "q3_pct": 95.34555712270804,
+        "min_pct": 95.27503526093089,
+        "max_pct": 95.62764456981664,
+        "release_median_pct": 4.724964739069108
+      }
+    }
+  }
+}

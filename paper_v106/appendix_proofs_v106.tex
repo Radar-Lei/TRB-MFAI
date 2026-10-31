@@ -1,0 +1,332 @@
+%% Mathematical appendix for the focused v82 revision.
+\section{Mathematical foundations and proofs}\label{app:proofs}
+
+\subsection{Conventions and conservation transfer}\label{app:notation}
+The incidence matrix $B\in\R^{n\times m}$ has entries $-1$ at an arc's
+origin and $+1$ at its destination; $\mu_j=e_{t_j}-e_{s_j}$ and
+$M=[\mu_1,\ldots,\mu_K]$. Write $Z=\ker B$ and let $B^\dagger$ be the
+Moore--Penrose pseudoinverse. All norms below are Euclidean or their
+induced operator norms unless indicated otherwise. Graphs are loopless
+multigraphs: parallel and reciprocal arcs remain distinct edges, including
+in two-edge cycles. Cycle atoms and the block-cut tree are taken on the
+underlying undirected multigraph. Formally, $\iota(v)$ is the cut-vertex
+node when $v$ is an articulation vertex and otherwise its unique block
+node; $\mathcal P(s,t)$ lists the atoms on the unique tree path from
+$\iota(s)$ to $\iota(t)$. A signed simple $s$--$t$ path vector $p$ satisfies
+$Bp=\mu$ and the full solution set is $p+Z$. Such a path uses only atoms
+of $\mathcal P(s,t)$ and meets every atom on it.
+
+\paragraph{Signed responses.}\label{app:signed}
+The circulation and response vectors are signed first-order sensitivities,
+not nonnegative commodity flows. At a strictly positive flow, sufficiently
+small signed circulation perturbations also preserve nonnegativity. A
+restricted response family is treated explicitly below.
+
+\begin{corollary}[IG exchange]\label{cor:ig}
+For an exactly conservative $C^1$ field on an open neighborhood of the
+attribution path, $BG_{:,j}=\mu_j\Delta q_j$.
+\end{corollary}
+\begin{pf}
+Differentiate $Bf(q)=Mq$ to obtain $BJ_f(q)=M$, then integrate the
+$j$th column along $\gamma(\lambda)=q^0+\lambda\Delta q$.
+\end{pf}
+
+\subsection{Cycle structure and the classification proofs}\label{app:classificationproof}
+\begin{lemma}[structure of circuit classes]\label{lem:mprime}
+The non-bridge atoms are the non-singleton circuit classes; each bridge
+is a singleton class. Moreover $Z=\bigoplus_A Z_A$, where
+$Z_A=\{z\in Z:\operatorname{supp}z\subseteq A\}$, and the summands
+have disjoint edge supports.
+\end{lemma}
+\begin{pf}
+No simple cycle crosses an articulation vertex into another block: it
+would revisit that vertex. Within a non-bridge block, any two edges lie
+on a common cycle. One way to see this is to subdivide the two edges;
+the resulting block is still biconnected, so its two new vertices lie
+on a common cycle, which descends to the required cycle. This is the
+usual circuit-class characterization of the graphic matroid
+\citep{oxley2011matroid}. Every signed circulation is a linear combination
+of signed simple-cycle vectors: subtract the fundamental cycles of a
+spanning forest to leave a circulation on a forest, necessarily zero
+by successive leaf elimination. Grouping these cycles by their blocks
+gives the direct sum, and distinct blocks have disjoint edge sets.
+\end{pf}
+
+\begin{lemma}[circulation-preserving diagonal maps]\label{lem:m}
+For $D=\operatorname{diag}(w)$, $DZ\subseteq Z$ if and only if $w$ is
+constant on every non-bridge atom; bridge weights are free.
+\end{lemma}
+\begin{pf}
+For any signed simple-cycle vector $z_C$, a circulation supported on
+that cycle has equal signed amplitudes on successive edges, by node
+balance. Thus $BDz_C=0$ forces $w$ constant on $C$, and
+Lemma~\ref{lem:mprime} propagates equality throughout each atom.
+Conversely, atomwise constancy makes $D$ a scalar on every $Z_A$, so
+it preserves their direct sum. Bridges carry no circulation.
+\end{pf}
+
+\begin{pf}[Theorem~\ref{thm:t3cpmain}]
+Add a virtual reverse OD edge $(t,s)$ and set
+\[
+\bar B=[B,-\mu],\qquad \bar D=\operatorname{diag}(w,\alpha).
+\]
+For a fixed $\alpha$, property~\eqref{eq:t3prop} is equivalent to
+$\bar D\ker\bar B\subseteq\ker\bar B$.
+Indeed, a kernel vector $(x,a)$ obeys $Bx=a\mu$. If $a\ne0$,
+apply \eqref{eq:t3prop} to $x/a$ to obtain $BDx=a\alpha\mu$.
+If $a=0$, subtract the identities for $p+x$ and $p$, with any fixed
+$Bp=\mu$, to obtain $BDx=0$. These are exactly the two cases of
+$\bar B\bar D(x,a)=0$. Conversely, applying kernel invariance to
+$(x,1)$ gives \eqref{eq:t3prop} for every $Bx=\mu$, at that same $\alpha$.
+
+By Lemma~\ref{lem:m}, this invariance holds precisely when the augmented
+weights are constant on its cycle atoms. The virtual edge and a simple
+$s$--$t$ path form a cycle meeting every original atom on
+$\mathcal P(s,t)$, so these atoms merge with the virtual edge into one
+circuit class. No other atoms join it: every new simple cycle contains
+the virtual edge and a simple $s$--$t$ path, which uses only those
+atoms. Other original atoms retain their classes. Thus the augmented
+criterion is exactly within-atom constancy everywhere and common value
+$\alpha$ on $\bigcup\mathcal P(s,t)$. This proves both directions and
+identifies $\alpha=w^*$ without changing the universal response family.
+\end{pf}
+
+\begin{pf}[Theorem~\ref{thm:t3cm} and Corollary~\ref{cor:path}]
+Apply the single-OD theorem to each query at the same $w$. Necessity
+requires equality within every atom and among all atoms co-traversed
+by a queried block path. Their transitive closure is exactly the
+compatibility-class partition. Conversely, class constancy supplies
+both single-OD conditions for every query. Along the attribution
+path, exact conservation gives $BJ_f(\gamma(\lambda))\mathbf e_j=\mu_j$;
+the static theorem therefore yields
+\[
+B\widetilde C_{:,j}=\Delta q_j\int_0^1
+BD_\lambda J_f(\gamma(\lambda))\mathbf e_j\,d\lambda
+=\Delta q_j\left(\int_0^1w^*_{k(j)}(\lambda)\,d\lambda\right)\mu_j.
+\]
+\end{pf}
+
+\begin{corollary}[all-OD class collapse]\label{cor:allod}
+Requiring the criterion at one common $w$ for every ordered pair of
+distinct vertices makes all atoms in a connected component share one
+constant.
+\end{corollary}
+\begin{pf}
+For two atoms incident to the same cut vertex, choose endpoints on
+their opposite sides. Their OD block path contains both atoms, forcing
+their constants to agree. Connectivity of the block-cut tree propagates
+the equality throughout the component.
+\end{pf}
+
+\begin{rmk}[a common flow realization]\label{rmk:quantifier}
+The merging proof requires one common weight vector. Computing the
+queries at different realized flows does not in general supply this
+premise.
+\end{rmk}
+
+\begin{table}[pos=tb]
+\caption{Constructive query-dependent compatibility on Figure~\ref{fig:blockcut}
+of the main text. Ranges use all $512$ separating sets per query and a
+conservative unit response; the weighted circulation residual is below
+$5\times10^{-16}$ in all stages, so these ranges are independent of that
+response. The intentionally chosen linear weights illustrate
+compatibility; they are not the marginal costs of the original TSTT
+outcome.}\label{tab:topologyexample}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}lccccl}
+\toprule Stage & $w_{A,b_1,B}$ & $w_{b_2,C}$ & $w_D$ & Queried ODs & Account ranges\\\midrule
+Initial query & 1 & 2 & 3 & $(s,u)$ & $[1,1]$\\
+Add query & 1 & 2 & 3 & $(s,u);(u,t)$ & $[1,1];[1,2]$\\
+Adjust merged class & 1 & 1 & 3 & $(s,u);(u,t)$ & $[1,1];[1,1]$\\
+\bottomrule\end{tabular*}\end{table}
+The calculation uses the minimum-norm solution of $Bx=\mu$ and checks
+$BDZ=0$ on a basis of $\ker B$, which establishes response independence
+of the displayed boundary vector. The theorem supplies the uniform
+common-account guarantee in stages one and three.
+
+\subsection{Direction, integration, and network representation}\label{supp:criteria}
+At fixed weights $D=\operatorname{diag}(w)$, a realized model balances
+when $BDJ_j=\alpha_j\mu_j$ for its actual response.
+\emph{Universal directional balance} requires
+$BDx\in\operatorname{span}\{\mu_j\}$ for every $Bx=\mu_j$, allowing its
+coefficient to depend on $x$; \emph{structural cut consistency}
+additionally requires one common coefficient across all such responses,
+and is the property classified in the main text. For non-collinear
+queries with shared weights, universal directional balance already
+implies structural cut consistency because
+$BD\ker B\subseteq\bigcap_j\operatorname{span}\{\mu_j\}=\{0\}$;
+a query and its reverse alone do not suffice.
+\begin{proposition}[universal directional criterion]\label{prop:directional}
+Let $\hat x_j=B^\dagger\mu_j$, let $N$ span $Z$ with orthonormal
+columns, and let $P_{\mu_j}$ project orthogonally onto
+$\operatorname{span}\{\mu_j\}$. At fixed $w$, universal directional
+balance is equivalent to
+\[
+(I-P_{\mu_j})BD\hat x_j=0,\qquad (I-P_{\mu_j})BDN=0.
+\]
+The scale may depend on the response. Requiring one common boundary value
+additionally requires $BDN=0$. If directional balance holds along the
+whole path for a conservative model, its integrated column balances.
+\end{proposition}
+\begin{pf}
+Every response is $\hat x_j+z$, $z\in Z$. Apply $I-P_{\mu_j}$ to
+$BD(\hat x_j+z)$ and vary $z$. The scale is
+$\mu_j^\top BD(\hat x_j+z)/\norm{\mu_j}^2$ and is independent of
+$z$ precisely when $BDZ=0$. Integrating the realized directional
+identity gives the endpoint conclusion. Equivalently, invariance on
+all incidence fibers, $Bx=By\Rightarrow BDx=BDy$, is exactly
+$DZ\subseteq Z$, since $x-y$ ranges over $Z$.
+\end{pf}
+
+\begin{example}[strict separation of the criteria]\label{ex:triangle}
+On the diamond $(s,a),(a,t),(s,b),(b,t)$ with weights $(1,1,1,2)$,
+the upper-path response $(1,1,0,0)$ has divergence $\mu$ after
+weighting, but the lower-path response has weighted divergence
+$(-1,0,-1,2)$ in node order $(s,a,b,t)$, outside $\operatorname{span}\{\mu\}$.
+On the triangle $(s,t),(t,u),(u,s)$ with weights $(1,0,0)$, every
+response $x=(1+c,c,c)$ satisfies $BDx=(1+c)\mu$; direction balances,
+but the common boundary value fails because the circulation $(1,1,1)$ maps
+to $\mu\ne0$.
+\end{example}
+
+If directional balance holds for all
+queries at common $w$, differences give
+$BDZ\subseteq\bigcap_j\operatorname{span}\{\mu_j\}$. For non-collinear
+queries this intersection is $\{0\}$, so directional balance implies
+the common-value property. This uses the full response space $Z$.
+
+\paragraph{Restricted families.}\label{app:membership}
+For $S\subseteq Z$ with basis $N_S$, test responses in
+$x_j^{\mathrm{ref}}+S$, where $Bx_j^{\mathrm{ref}}=\mu_j$.
+The same proof gives the direction tests with $\hat x_j,N$ replaced
+by $x_j^{\mathrm{ref}},N_S$; common boundary value replaces the second test by
+$BDN_S=0$. Using $\hat x_j$ requires
+$\hat x_j-x_j^{\mathrm{ref}}\in S$. For a fixed-path model $f=\Delta h$,
+$A_{\mathrm{OD}}h(q)=q$ and $B\Delta=MA_{\mathrm{OD}}$. Choose a path
+vector $a_j$ with $A_{\mathrm{OD}}a_j=\mathbf e_j$ and set
+$x_j^{\mathrm{ref}}=\Delta a_j$. Differentiation yields
+\[
+J_f\mathbf e_j-x_j^{\mathrm{ref}}
+=\Delta(\partial_jh-a_j)\in\Delta\ker A_{\mathrm{OD}}=:T_{\mathrm{swap}}.
+\]
+This space includes OD path exchanges of every OD: background
+ODs may reroute even when their demands remain fixed.
+
+\begin{example}[endpoint cancellation]\label{ex:cancellation}
+For two series bridges, $f(q)=(q,q)$ and
+$T(F)=F_1+F_2+[\sin(2\pi F_1)-\sin(2\pi F_2)]/(2\pi)$ give
+\[
+\widetilde C_1-\widetilde C_2
+=\frac{\sin(2\pi q^1)-\sin(2\pi q^0)}{\pi}.
+\]
+For $q^0=0$, the nonzero balanced endpoints in $[0,1]$ are
+$q^1=1/2,1$, although the two marginal weights differ almost
+everywhere. At $q^1=0.3$ balance fails. Endpoint cancellation therefore
+does not establish the pointwise classification conditions.
+\end{example}
+
+\begin{example}[network subdivision]\label{ex:subdivision}
+A single edge with $f(q)=q$, $T(F)=\tau F$, $\tau>0$, has cut account
+$\tau\Delta q$. Subdivide it into $(s,v),(v,t)$ and set
+$f'(q)=(q,q)$,
+$T'(F_1,F_2)=\tau[\alpha F_1+(1-\alpha)F_2]$, $0<\alpha<1$.
+The composite demand-to-outcome map is unchanged, but
+$\widetilde C'=\tau\Delta q(\alpha,1-\alpha)$ and
+$(B\widetilde C')_v=\tau(2\alpha-1)\Delta q$.
+The two cuts account $\tau\alpha\Delta q$ and
+$\tau(1-\alpha)\Delta q$. They agree only for $\alpha=1/2$, when each
+is half the undivided account; their sum remains the scalar
+contribution $\tau\Delta q$. The invariance studied here thus concerns
+conservative responses on a fixed network with a fixed edgewise
+outcome definition, rather than invariance under subdivision.
+\end{example}
+
+\subsection{Approximate conservation and attribution balance}\label{app:approx}\label{app:failurestatement}
+The residual identity~\eqref{eq:residualidentity} shows that output residuals alone do not control attribution columns. For unit $v\in\operatorname{im}B$ and
+$r_\varepsilon(q)=\varepsilon v\tanh((q_1-q_2)/\varepsilon)$, the field $f_\varepsilon(q)=B^\dagger(Mq+r_\varepsilon(q))$ has residual exactly $r_\varepsilon$, globally bounded by $\varepsilon$ and zero on $q_1=q_2$; yet on $q(\lambda)=\lambda(\delta,\delta)$ its partial derivatives are $v,-v$, so $R_1=\delta v$ and $R_2=-\delta v$, and its residual Jacobian Lipschitz constant grows as $\varepsilon^{-1}$. Added to an exactly conservative field with minimum flow $\varrho>0$ on a compact positive-demand box, it preserves strictly positive flows when $\varepsilon\|B^\dagger\|_2<\varrho$. The traffic experiments use exactly conservative models; these bounds delimit scope rather than enter the numerics.
+
+\begin{theorem}[local neighborhood bound]\label{thm:t1pmain}
+Let $r\in C^{1,1}(\mathcal N;\R^n)$ on an open neighborhood of the attribution path, with $\operatorname{Lip}(J_r)\le H$. Suppose, for some $\rho>0$ and every $j,\lambda$, the coordinate segment $\gamma(\lambda)+[-\rho,\rho]\mathbf e_j$ lies in $\mathcal N$ and its two endpoint residual norms are at most $\varepsilon$. Then
+\[
+\|R_j\|\le|\Delta q_j|(\varepsilon/\rho+H\rho/2).
+\]
+\end{theorem}
+\begin{pf}
+At $q=\gamma(\lambda)$, Taylor's formula gives $r(q\pm\rho\mathbf e_j)=r(q)\pm\rho\partial_jr(q)+\xi_\pm$ with $\|\xi_\pm\|\le H\rho^2/2$. Subtraction bounds $\|\partial_jr(q)\|$ by $\varepsilon/\rho+H\rho/2$; integration gives the claim.
+\end{pf}
+The optimized square-root rate is sharp. Indeed $r_\varepsilon=\varepsilon v\sin((q_1-q_2)/\sqrt\varepsilon)$ has supremum norm $\varepsilon$ and $\operatorname{Lip}(J_{r_\varepsilon})\le2$, while the same diagonal path gives $R_1=\delta\sqrt\varepsilon v=-R_2$. Thus a uniform $o(\sqrt\varepsilon)$ rate is impossible for bounded Jacobian Lipschitz constant.
+
+\begin{lemma}[minimum-norm support]\label{lem:s}
+For a signed $s$--$t$ path $p$, $\hat x=B^\dagger\mu=(I-P_Z)p$
+is supported on $\bigcup\mathcal P(s,t)$.
+\end{lemma}
+\begin{pf}
+The minimum-norm point of $p+Z$ is its orthogonal projection onto
+$Z^\perp$. Lemma~\ref{lem:mprime} gives
+$P_Z=\sum_A P_{Z_A}$ with disjoint supports; both $p$ and every
+$P_{Z_A}p$ vanish on off-path atoms.
+\end{pf}
+
+\begin{proposition}[combined dispersion--residual bound]\label{prop:combined}
+Let $f\in C^1$ near the attribution path, $r=Bf-Mq-b$ with the constant
+background balance $b$ of Section~\ref{sec:noninheritance} ($b=0$
+without background), and let
+$w(\lambda)=\nabla T(f(\gamma(\lambda)))$ be continuous.
+Let $\bar w(\lambda)$ be the compatibility-class mean vector and
+$\eta(\lambda)=\norm{w(\lambda)-\bar w(\lambda)}_\infty$.
+Writing $J_j(\lambda)=J_f(\gamma(\lambda))\mathbf e_j$ and
+$d_j=(I-P_{\mu_j})B\widetilde C_{:,j}$, we have
+\[
+\norm{d_j}_2\le |\Delta q_j|\norm{B}_2\int_0^1\left[
+\eta(\lambda)\norm{J_j(\lambda)}_2+
+\norm{\bar w(\lambda)}_\infty\norm{B^\dagger}_2
+\norm{\partial_jr(\gamma(\lambda))}_2\right]d\lambda.
+\]
+\end{proposition}
+\begin{pf}
+Differentiation gives $BJ_j=\mu_j+\partial_jr$ --- $b$ is constant and
+drops out of the derivative --- so
+$J_j=\hat x_j+z_j+B^\dagger\partial_jr$, $z_j\in Z$.
+Let $\bar D=\operatorname{diag}(\bar w)$. Class constancy gives
+$B\bar Dz_j=0$ by Lemma~\ref{lem:m}. By Lemma~\ref{lem:s},
+$\hat x_j$ is supported on the OD block path, whose atoms lie in one
+compatibility class $k(j)$; hence
+$B\bar D\hat x_j=\bar w_{k(j)}\mu_j$.
+Therefore
+\[
+(I-P_{\mu_j})BDJ_j=(I-P_{\mu_j})B
+\left[\operatorname{diag}(w-\bar w)J_j+
+\bar DB^\dagger\partial_jr\right].
+\]
+The projector is non-expansive, the two diagonal operator norms are
+$\eta$ and $\norm{\bar w}_\infty$, and integration gives the bound.
+For exact conservation only the dispersion term remains; for
+$\eta=0$ only the derivative residual remains. Theorem~\ref{thm:t1pmain}
+can bound that derivative term under its local hypotheses.
+\end{pf}
+
+\subsection{Exact boundary error and its path bound}\label{app:boundaryerror}
+\begin{pf}
+Set $b=Be_j$ and $I=V\setminus\{s_j,t_j\}$. Since $\mathbf1^\top b=0$,
+Eq.~\eqref{eq:cutextrema} applied to $e_j$ gives an interval of extrema
+with midpoint
+\[
+-b_{s_j}-\frac12\sum_{v\in I}b_v
+=\frac12(b_{t_j}-b_{s_j})
+\]
+and half-width $\frac12\sum_{v\in I}|b_v|$. The larger absolute
+endpoint is the absolute midpoint plus this half-width, proving
+Eq.~\eqref{eq:exactboundaryerror}. This argument concerns the attained
+extrema; it does not require every value between them to be attained.
+The map $\mathcal K_j$ is a seminorm because it is a sum of absolute
+linear functionals. Moreover
+$e_j=\Delta q_j\int_0^1 h_j(\gamma(\lambda))\,d\lambda$.
+Its homogeneity and triangle inequality therefore yield
+\[
+\epsilon_j^{\mathcal U}\le\mathcal K_j(e_j)
+\le |\Delta q_j|\int_0^1\mathcal K_j(h_j(\gamma(\lambda)))\,d\lambda,
+\]
+proving the path statement. Its kernel is $\ker B$: if the seminorm
+vanishes, all interior divergences vanish and $b_{s_j}=b_{t_j}$;
+the zero sum then makes both endpoints zero.
+\end{pf}
+

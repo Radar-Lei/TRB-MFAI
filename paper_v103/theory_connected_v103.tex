@@ -1,0 +1,38 @@
+\subsection{Compatibility for connected traffic regions}\label{sec:connectedclassification}
+The admissible region family changes the structural answer. Let
+\[
+\mathcal U^{\mathrm{conn}}_{st}=\{U\subset V:s\in U,\ t\notin U,
+\ G[U]\text{ and }G[V\setminus U]\text{ are connected}\},
+\]
+where connectivity uses the underlying undirected multigraph. These are
+separating bonds: both sides of the boundary form connected regions.
+\begin{theorem}[two-sided connected-region classification]\label{thm:connectedclassification}
+For a connected loopless multigraph, $\mu=e_t-e_s$, and
+$D=\operatorname{diag}(w)$, the property
+\begin{equation}
+\exists\alpha\in\R\quad\forall x\text{ with }Bx=\mu\quad
+\forall U\in\mathcal U^{\mathrm{conn}}_{st}:
+-\mathbf1_U^\top BDx=\alpha
+\label{eq:connectedclassification}
+\end{equation}
+holds if and only if every edge in the atoms of $\mathcal P(s,t)$ has
+one common weight $\alpha$. Weights of edges outside those atoms are
+arbitrary, even within an off-path cycle atom.
+\end{theorem}
+The proof in Appendix~\ref{app:connectedproof} uses connected prefix and
+suffix regions within each traversed atom. Each admissible boundary
+crosses edges in just one such atom, which explains why off-path
+heterogeneity is invisible to this region family. This is a universal
+fixed-weight statement; agreement for one realized response need not
+imply its conditions.
+
+\begin{corollary}[several queries on connected regions]\label{cor:connectedmulti}
+At one shared weight vector, Eq.~\eqref{eq:connectedclassification} holds
+for all queried ODs if and only if edges in each group of atoms joined
+by the queried block paths have one common weight. An atom on no queried
+path has no weight restriction, including no within-atom restriction.
+\end{corollary}
+Thus restricting attention to connected traffic regions permits additional
+outcome heterogeneity. It changes the compatibility classification,
+while the unrestricted extrema and error formulas below retain their
+own stated boundary family.

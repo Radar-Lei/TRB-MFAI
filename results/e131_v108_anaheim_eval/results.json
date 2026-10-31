@@ -1,0 +1,131 @@
+{
+  "overall": {
+    "flow": {
+      "flow_pct": 0.0237761439394424,
+      "column_pct": 1.6373447669225452,
+      "system_pct": 2.8966711018444107,
+      "geometry_pct": 0.9410707338900681,
+      "E_model": 17.03866836709979,
+      "E_summary": 99.67579483873197,
+      "E_total": 102.884385511667,
+      "segments": 9.883333333333333
+    },
+    "response": {
+      "flow_pct": 0.019481895527401413,
+      "column_pct": 1.3132362462100629,
+      "system_pct": 2.2259306773624727,
+      "geometry_pct": 0.7830891654039959,
+      "E_model": 13.10506367749057,
+      "E_summary": 99.3357964455458,
+      "E_total": 101.87608804709805,
+      "segments": 9.866666666666667
+    }
+  },
+  "by_group": {
+    "flow_g1": {
+      "column_pct": 1.192078023194351,
+      "geometry_pct": 0.6965306020760444
+    },
+    "flow_g2": {
+      "column_pct": 1.7214783880540125,
+      "geometry_pct": 0.9410707338900681
+    },
+    "flow_g3": {
+      "column_pct": 1.4144739418002743,
+      "geometry_pct": 0.8223386535973796
+    },
+    "flow_g6": {
+      "column_pct": 2.0149352836242045,
+      "geometry_pct": 1.3469028072746092
+    },
+    "response_g1": {
+      "column_pct": 1.0434015363412628,
+      "geometry_pct": 0.6235721282168516
+    },
+    "response_g2": {
+      "column_pct": 1.349050740755405,
+      "geometry_pct": 0.807683438267041
+    },
+    "response_g3": {
+      "column_pct": 1.1053815334610626,
+      "geometry_pct": 0.6822533771934991
+    },
+    "response_g6": {
+      "column_pct": 1.5824502550236281,
+      "geometry_pct": 1.0706327172214094
+    }
+  },
+  "five_seed_paired": [
+    {
+      "seed": 0,
+      "metric": "column_pct",
+      "median_flow": 1.2278992563574431,
+      "median_response": 1.1264992915472194,
+      "improved_share": 0.9513888888888888
+    },
+    {
+      "seed": 0,
+      "metric": "geometry_pct",
+      "median_flow": 0.6328788239975027,
+      "median_response": 0.5373467846649698,
+      "improved_share": 0.9166666666666666
+    },
+    {
+      "seed": 1,
+      "metric": "column_pct",
+      "median_flow": 1.3048290007904568,
+      "median_response": 1.0744192408565552,
+      "improved_share": 0.9722222222222222
+    },
+    {
+      "seed": 1,
+      "metric": "geometry_pct",
+      "median_flow": 0.6430897860709359,
+      "median_response": 0.5347701041454986,
+      "improved_share": 0.9027777777777778
+    },
+    {
+      "seed": 2,
+      "metric": "column_pct",
+      "median_flow": 1.3267200482374224,
+      "median_response": 1.0397290393903749,
+      "improved_share": 0.9375
+    },
+    {
+      "seed": 2,
+      "metric": "geometry_pct",
+      "median_flow": 0.5874428880877243,
+      "median_response": 0.5085739996370526,
+      "improved_share": 0.8958333333333334
+    },
+    {
+      "seed": 3,
+      "metric": "column_pct",
+      "median_flow": 1.2130015476722362,
+      "median_response": 0.9857595366066917,
+      "improved_share": 0.9791666666666666
+    },
+    {
+      "seed": 3,
+      "metric": "geometry_pct",
+      "median_flow": 0.5774514325427685,
+      "median_response": 0.4662931137154422,
+      "improved_share": 0.8888888888888888
+    },
+    {
+      "seed": 4,
+      "metric": "column_pct",
+      "median_flow": 1.254623606758511,
+      "median_response": 1.0082499137567935,
+      "improved_share": 0.9722222222222222
+    },
+    {
+      "seed": 4,
+      "metric": "geometry_pct",
+      "median_flow": 0.5155166352511413,
+      "median_response": 0.43996564496810975,
+      "improved_share": 0.8958333333333334
+    }
+  ],
+  "protocol": "e130 frozen selection; 48 Anaheim test paths; metrics identical to Sioux Falls e119/e127"
+}

@@ -1,0 +1,50 @@
+\subsection{Learned-model evaluation protocol}\label{app:pairs-v102}
+Four objectives continue each of five common conservative models for 1,200 Adam
+updates, with learning rate $3\times10^{-5}$, flow batch 32 and query batch eight.
+The flow data and seed-specific minibatch sequences are shared. Each of six
+queries has 64 training and 16 validation endpoint pairs. Centers are sampled
+coordinatewise from $[0.65,1.3]$ times baseline demand (seed 102111);
+half-widths 2.5\% and 15\% occur equally often. Only one demand changes per
+pair, while background routes remain responsive. Endpoint-edge and
+endpoint-edge-plus-boundary objectives use identical endpoint labels, coefficients
+one and 0.01, and training-only root-mean-square scales. Response supervision
+uses derivatives at the same pair centers; its coefficient is one.
+
+The flow loss averages $[(f_e^L-F_e^S)/s_e]^2$ over minibatch states and edges, with $s_e=0.01\sqrt{\operatorname{mean}_{\rm train}[(F_e^S)^2]}$ from the 2,500 training states. The response loss is the batch mean of $\|J_j^L-J_j^S\|_2^2/u_j^2$. With $\langle\cdot\rangle_j$ denoting the average over query $j$'s training pair centers or endpoint labels, the scales are
+\[
+\begin{aligned}
+u_j&=\max\{\sqrt{\langle\|J_j^S\|_2^2\rangle_j},10^{-6}\},\\
+b_j&=\max\{\sqrt{\langle\|z_j^S\|_2^2\rangle_j},10^{-6}\},\qquad
+a_j=\max\{\sqrt{\langle\mathcal K_j(z_j^S)^2\rangle_j},10^{-6}\}.
+\end{aligned}
+\]
+Edge and response losses sum squared errors over edges before batch averaging; their coefficients are one, while the boundary coefficient is 0.01.
+
+Candidates comprise the common initial model (update zero) and every 100th
+continuation update. We minimize normalized validation boundary mean-square
+error among candidates with mean endpoint flow error at most 1.1 times the
+initial model's value, using the same 96 validation pairs for every method.
+The initial model ensures this set is nonempty. Test paths never enter selection.
+
+The 24 fixed test paths (seed 102112) contain six each with one, two, three and
+six active queries; cyclic combinations balance query participation. Changes
+are 15--30\% of baseline demand with both same-direction and mixed-direction
+paths, each with 41 states. For every path, flow error first averages relative
+Euclidean errors across its states. Attribution statistics average active
+queries and seeds within each path and then take medians across the 24 paths;
+seeds do not add independent paths. For column error $e_j$ and reference column
+$c_j$, relative column, system and unrestricted-boundary errors divide
+$\|e_j\|_2$, $|\mathbf1^\top e_j|$ and $\mathcal K_j(e_j)$ by the
+corresponding reference values, with absolute floor $10^{-6}$. Geometric error
+uses $\max_{U\in\mathcal F_j^{\rm geo}}|\mathbf1_U^\top Be_j|$ and
+the same maximum for $c_j$. Percentages multiply ratios by 100.
+
+The decomposition in Eq.~\eqref{eq:coldecomp} is evaluated at the same 41 states
+with the same quadrature. Component norms describe error mechanisms; cancellation
+prevents treating their norms as additive shares. The fixed-screenline sign
+comparison in Appendix~\ref{supp:screenlinelearned} uses the separate frozen
+six-query baseline segment and is not pooled with these 24 paths.
+\input{learning_full_table_v106}
+\input{learning_cost_table_v106}
+
+\input{learning_seed_variation_v106}
