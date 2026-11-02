@@ -1,0 +1,700 @@
+{
+  "flow_baseline": {
+    "K_mse": 0.14571775381496213,
+    "flow_relative": 0.0003185717085598572
+  },
+  "methods": {
+    "flow": {
+      "lambda": null,
+      "per_seed": [
+        {
+          "seed": 0,
+          "selected_step": 1100,
+          "selected": {
+            "K_mse": 0.2689779834718716,
+            "flow_relative": 0.0005083096953079914
+          },
+          "initial": {
+            "K_mse": 0.34925671806032677,
+            "flow_relative": 0.0005068379148496573
+          }
+        },
+        {
+          "seed": 1,
+          "selected_step": 800,
+          "selected": {
+            "K_mse": 0.08481255869366482,
+            "flow_relative": 0.0001875002396436883
+          },
+          "initial": {
+            "K_mse": 0.11798292448745379,
+            "flow_relative": 0.0002815970825717125
+          }
+        },
+        {
+          "seed": 2,
+          "selected_step": 1000,
+          "selected": {
+            "K_mse": 0.11715136309946213,
+            "flow_relative": 0.00047443178976731853
+          },
+          "initial": {
+            "K_mse": 0.17688062233720067,
+            "flow_relative": 0.0005198966803409683
+          }
+        },
+        {
+          "seed": 3,
+          "selected_step": 100,
+          "selected": {
+            "K_mse": 0.1034008899090428,
+            "flow_relative": 0.0002539862659623082
+          },
+          "initial": {
+            "K_mse": 0.14571775381496213,
+            "flow_relative": 0.0003185717085598572
+          }
+        },
+        {
+          "seed": 4,
+          "selected_step": 700,
+          "selected": {
+            "K_mse": 0.04138144495754184,
+            "flow_relative": 0.00017608781993312434
+          },
+          "initial": {
+            "K_mse": 0.07231308616062972,
+            "flow_relative": 0.0002835630455019312
+          }
+        }
+      ]
+    },
+    "wresponse_norm": {
+      "lambda": 0.1,
+      "candidates": [
+        {
+          "lam": 0.001,
+          "median_selected_K_mse": 0.06131371034772997,
+          "median_selected_flow_relative": 0.00020942065112480182,
+          "initial_model_seeds": [],
+          "selected_steps": [
+            1200,
+            1200,
+            1200,
+            1200,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.10065818274250428,
+                "flow_relative": 0.00043793188319702297
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.037410094260262726,
+                "flow_relative": 0.00017273262178743834
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.06696198480284908,
+                "flow_relative": 0.00038275550590623946
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.06131371034772997,
+                "flow_relative": 0.00020942065112480182
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.02008758886399979,
+                "flow_relative": 0.00017183610951159088
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        },
+        {
+          "lam": 0.003,
+          "median_selected_K_mse": 0.05545159674072816,
+          "median_selected_flow_relative": 0.00021813515441040403,
+          "initial_model_seeds": [],
+          "selected_steps": [
+            1200,
+            1200,
+            1200,
+            800,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.0835953686770635,
+                "flow_relative": 0.00043751401020396177
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.032146323525933496,
+                "flow_relative": 0.0001750255320203746
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.060382968396344106,
+                "flow_relative": 0.0003823368481254306
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 800,
+              "selected": {
+                "K_mse": 0.05545159674072816,
+                "flow_relative": 0.00021813515441040403
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.018811229810991634,
+                "flow_relative": 0.00017145606388325313
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        },
+        {
+          "lam": 0.01,
+          "median_selected_K_mse": 0.05355520518704171,
+          "median_selected_flow_relative": 0.00022444265948720252,
+          "initial_model_seeds": [],
+          "selected_steps": [
+            1100,
+            1200,
+            1200,
+            800,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 1100,
+              "selected": {
+                "K_mse": 0.0734714377749112,
+                "flow_relative": 0.0005143327851428312
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.02981851886964731,
+                "flow_relative": 0.00017656601092797832
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.05694396026784559,
+                "flow_relative": 0.0003816976863324954
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 800,
+              "selected": {
+                "K_mse": 0.05355520518704171,
+                "flow_relative": 0.00022444265948720252
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.01800945923146095,
+                "flow_relative": 0.00016732904007891756
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        },
+        {
+          "lam": 0.03,
+          "median_selected_K_mse": 0.05164687258896226,
+          "median_selected_flow_relative": 0.0002267067115889805,
+          "initial_model_seeds": [],
+          "selected_steps": [
+            1100,
+            1200,
+            1200,
+            1000,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 1100,
+              "selected": {
+                "K_mse": 0.06735948440800173,
+                "flow_relative": 0.0005279788702482176
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.028995015442697298,
+                "flow_relative": 0.00017996694430152187
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.056492504990278046,
+                "flow_relative": 0.00038313370425167485
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 1000,
+              "selected": {
+                "K_mse": 0.05164687258896226,
+                "flow_relative": 0.0002267067115889805
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.017525943447097778,
+                "flow_relative": 0.00016479926311343995
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        },
+        {
+          "lam": 0.1,
+          "median_selected_K_mse": 0.04838614446679495,
+          "median_selected_flow_relative": 0.00026901231605495115,
+          "initial_model_seeds": [],
+          "selected_steps": [
+            1100,
+            1200,
+            1200,
+            1000,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 1100,
+              "selected": {
+                "K_mse": 0.05966652774842098,
+                "flow_relative": 0.0005538804156718542
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.028780468697053224,
+                "flow_relative": 0.0001879272769041703
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.05307965512983315,
+                "flow_relative": 0.0004176877848402481
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 1000,
+              "selected": {
+                "K_mse": 0.04838614446679495,
+                "flow_relative": 0.00026901231605495115
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.016991146013908498,
+                "flow_relative": 0.00017178291497612586
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        },
+        {
+          "lam": 0.3,
+          "median_selected_K_mse": 0.04873524994306017,
+          "median_selected_flow_relative": 0.00034887745149049954,
+          "initial_model_seeds": [],
+          "selected_steps": [
+            1200,
+            1200,
+            1200,
+            900,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.05636904833509698,
+                "flow_relative": 0.0005087166871207471
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.02844039939036418,
+                "flow_relative": 0.0002122435862451025
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.04873524994306017,
+                "flow_relative": 0.0005061216636918652
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 900,
+              "selected": {
+                "K_mse": 0.05977726841555059,
+                "flow_relative": 0.00034887745149049954
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.016554652496742785,
+                "flow_relative": 0.00019410882628486604
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        },
+        {
+          "lam": 1.0,
+          "median_selected_K_mse": 0.14571775381496213,
+          "median_selected_flow_relative": 0.0003185717085598572,
+          "initial_model_seeds": [
+            0,
+            2,
+            3
+          ],
+          "selected_steps": [
+            0,
+            1200,
+            0,
+            0,
+            1200
+          ],
+          "per_seed": [
+            {
+              "seed": 0,
+              "selected_step": 0,
+              "selected": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              },
+              "initial": {
+                "K_mse": 0.34925671806032677,
+                "flow_relative": 0.0005068379148496573
+              }
+            },
+            {
+              "seed": 1,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.028072870812461886,
+                "flow_relative": 0.000292147953096102
+              },
+              "initial": {
+                "K_mse": 0.11798292448745379,
+                "flow_relative": 0.0002815970825717125
+              }
+            },
+            {
+              "seed": 2,
+              "selected_step": 0,
+              "selected": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              },
+              "initial": {
+                "K_mse": 0.17688062233720067,
+                "flow_relative": 0.0005198966803409683
+              }
+            },
+            {
+              "seed": 3,
+              "selected_step": 0,
+              "selected": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              },
+              "initial": {
+                "K_mse": 0.14571775381496213,
+                "flow_relative": 0.0003185717085598572
+              }
+            },
+            {
+              "seed": 4,
+              "selected_step": 1200,
+              "selected": {
+                "K_mse": 0.0160529686290046,
+                "flow_relative": 0.00023946002470719044
+              },
+              "initial": {
+                "K_mse": 0.07231308616062972,
+                "flow_relative": 0.0002835630455019312
+              }
+            }
+          ]
+        }
+      ],
+      "flow_constraint_threshold": 0.00035042887941584295,
+      "constrained_choice": true,
+      "per_seed": [
+        {
+          "seed": 0,
+          "selected_step": 1100,
+          "selected": {
+            "K_mse": 0.05966652774842098,
+            "flow_relative": 0.0005538804156718542
+          },
+          "initial": {
+            "K_mse": 0.34925671806032677,
+            "flow_relative": 0.0005068379148496573
+          }
+        },
+        {
+          "seed": 1,
+          "selected_step": 1200,
+          "selected": {
+            "K_mse": 0.028780468697053224,
+            "flow_relative": 0.0001879272769041703
+          },
+          "initial": {
+            "K_mse": 0.11798292448745379,
+            "flow_relative": 0.0002815970825717125
+          }
+        },
+        {
+          "seed": 2,
+          "selected_step": 1200,
+          "selected": {
+            "K_mse": 0.05307965512983315,
+            "flow_relative": 0.0004176877848402481
+          },
+          "initial": {
+            "K_mse": 0.17688062233720067,
+            "flow_relative": 0.0005198966803409683
+          }
+        },
+        {
+          "seed": 3,
+          "selected_step": 1000,
+          "selected": {
+            "K_mse": 0.04838614446679495,
+            "flow_relative": 0.00026901231605495115
+          },
+          "initial": {
+            "K_mse": 0.14571775381496213,
+            "flow_relative": 0.0003185717085598572
+          }
+        },
+        {
+          "seed": 4,
+          "selected_step": 1200,
+          "selected": {
+            "K_mse": 0.016991146013908498,
+            "flow_relative": 0.00017178291497612586
+          },
+          "initial": {
+            "K_mse": 0.07231308616062972,
+            "flow_relative": 0.0002835630455019312
+          }
+        }
+      ]
+    },
+    "wresponse_jscale_v109": {
+      "lambda": 0.003,
+      "note": "v109 jscale-normalized weighted objective, retained for the scale-comparison block only"
+    }
+  },
+  "vscale": [
+    2.2993663566830325,
+    33.93567926202241,
+    3.6389414636853963,
+    33.90255783380033,
+    35.92282964655267,
+    31.891185930352062
+  ],
+  "jscale": [
+    0.9910201959639946,
+    1.8197933767839312,
+    0.9573064179059282,
+    1.668808465681519,
+    0.9071118978787838,
+    1.489227753975135
+  ],
+  "vscale_jscale_ratio": [
+    2.32020130976884,
+    18.648094720509405,
+    3.8012295704080246,
+    20.31542776237954,
+    39.601321215779045,
+    21.414579365195294
+  ],
+  "protocol": "normalized weighted objective: ||D^L J^L - D^S J^S||^2 divided by v_j^2 = E_train||D^S J^S||^2 with TSTT marginal weights at reference flows; everything else frozen as e134; lambda on validation only under the same rule"
+}

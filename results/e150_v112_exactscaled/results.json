@@ -1,0 +1,109 @@
+{
+  "protocol": {
+    "pretrain": "exact path-share architecture, per-link scaled MSE (the direct-model objective), E93 schedule (Adam 3e-3, batch 256, <=12000 steps, validation every 50, min-validation checkpoint on the unscaled relative-L2 metric)",
+    "continuation": "e111 protocol unchanged (1200 updates, shared labels, uniform selection rule)",
+    "rows_exact_direct": "copied from frozen e146 rows.json"
+  },
+  "gates": {
+    "exact_scaled_conservation_max": 4.729372449219227e-11,
+    "n_rows": 11520
+  },
+  "summary": {
+    "exact:flow": {
+      "flow_pct": 0.032218622364585114,
+      "increment_pct": 5.028925295833213,
+      "cons_residual_max": 2.929709808086045e-11,
+      "derivative_residual_max": 8.635508522760762e-16,
+      "column_pct": 21.17768587460666,
+      "system_pct": 2.522072722703925,
+      "E_model": 144.60250562804993,
+      "E_summary": 236.40459645926086,
+      "E_total": 348.9325525284626,
+      "E_total_normalized": 11.349857134113055
+    },
+    "exact:response": {
+      "flow_pct": 0.029206954004155468,
+      "increment_pct": 3.5237698784258176,
+      "cons_residual_max": 2.996785042341799e-11,
+      "derivative_residual_max": 7.693453047550496e-16,
+      "column_pct": 14.188861949177767,
+      "system_pct": 3.1251406460170625,
+      "E_model": 86.54540325276683,
+      "E_summary": 239.1467434669505,
+      "E_total": 301.55014064886007,
+      "E_total_normalized": 8.684097195350606
+    },
+    "exact_scaled:flow": {
+      "flow_pct": 0.03261705148465843,
+      "increment_pct": 5.526780533386448,
+      "cons_residual_max": 2.966658030345571e-11,
+      "derivative_residual_max": 8.321490031024007e-16,
+      "column_pct": 21.603951729918258,
+      "system_pct": 1.4950522009477285,
+      "E_model": 161.75442624763562,
+      "E_summary": 238.11619376430053,
+      "E_total": 369.6464601777552,
+      "E_total_normalized": 10.325996938280799
+    },
+    "exact_scaled:response": {
+      "flow_pct": 0.03163795389500601,
+      "increment_pct": 3.8076848383323387,
+      "cons_residual_max": 2.93425728159491e-11,
+      "derivative_residual_max": 8.018357922545704e-16,
+      "column_pct": 14.352430239074035,
+      "system_pct": 2.248545037764856,
+      "E_model": 85.12134101278102,
+      "E_summary": 239.19066639069672,
+      "E_total": 300.5658716599558,
+      "E_total_normalized": 8.186568435325349
+    },
+    "penalty:flow": {
+      "flow_pct": 0.040297072434962014,
+      "increment_pct": 22.756411086756536,
+      "cons_residual_max": 42.073752668977406,
+      "derivative_residual_max": 1.1604685170624764,
+      "column_pct": 183.67440987307182,
+      "system_pct": 323.00756295418967,
+      "E_model": 1627.974494083982,
+      "E_summary": 264.5932608727315,
+      "E_total": 1798.660285035979,
+      "E_total_normalized": 148.80819430542454
+    },
+    "penalty:response": {
+      "flow_pct": 0.03922789942596891,
+      "increment_pct": 22.238140100577247,
+      "cons_residual_max": 42.11984888339134,
+      "derivative_residual_max": 1.165360824351964,
+      "column_pct": 177.85361004797352,
+      "system_pct": 318.0454806711989,
+      "E_model": 1605.4256073467848,
+      "E_summary": 260.3866285224295,
+      "E_total": 1733.5328982142407,
+      "E_total_normalized": 144.90289047942588
+    },
+    "projection:flow": {
+      "flow_pct": 0.02612765475860499,
+      "increment_pct": 14.538221625542075,
+      "cons_residual_max": 1.8553691916167735e-11,
+      "derivative_residual_max": 2.4061666929328855e-15,
+      "column_pct": 104.09567831423524,
+      "system_pct": 265.50040106418817,
+      "E_model": 418.24625173934794,
+      "E_summary": 241.1597810865763,
+      "E_total": 572.2056302160966,
+      "E_total_normalized": 46.35921909913266
+    },
+    "projection:response": {
+      "flow_pct": 0.026192396947559517,
+      "increment_pct": 14.421104585521581,
+      "cons_residual_max": 1.8189894035458565e-11,
+      "derivative_residual_max": 2.3885031527726925e-15,
+      "column_pct": 99.36720906383795,
+      "system_pct": 271.51232189625125,
+      "E_model": 410.35084089850784,
+      "E_summary": 241.86262298514092,
+      "E_total": 558.2259609249111,
+      "E_total_normalized": 45.617168273046445
+    }
+  }
+}

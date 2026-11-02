@@ -1,0 +1,10 @@
+{
+  "seconds": 1038.7166888713837,
+  "best_val": 0.0004518870098165809,
+  "best_step": 3050,
+  "val_residual_final": 101.27217237323794,
+  "width": 577,
+  "n_params": 714979,
+  "n_params_exact": 715040,
+  "params_direct_actual": 714979
+}

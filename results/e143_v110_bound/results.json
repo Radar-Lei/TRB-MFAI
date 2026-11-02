@@ -1,0 +1,113 @@
+{
+  "protocol": "omega_j = mean path-edge TSTT marginal weight per state; eta/R/bound per the review formula; actual = max deviation of the reported distance-family accounts from beta_j^0; 21 frozen states of the joint 0.8->1.2 Anaheim path",
+  "rows": [
+    {
+      "query": [
+        4,
+        2
+      ],
+      "path_edges": 872,
+      "atoms_traversed": 1,
+      "eta_mean": 11.37802819948013,
+      "R_mean": 22.88052320450289,
+      "beta0": 855.7416938123179,
+      "bound": 218494.77189851526,
+      "actual_family_dev": 8976.386904585273,
+      "ratio_bound_actual": 24.34105996332498,
+      "family_range": [
+        307.4697868104686,
+        9832.12859839759
+      ]
+    },
+    {
+      "query": [
+        1,
+        2
+      ],
+      "path_edges": 872,
+      "atoms_traversed": 1,
+      "eta_mean": 11.37802819948013,
+      "R_mean": 18.53802548619899,
+      "beta0": 554.8286797257535,
+      "bound": 114943.19036078663,
+      "actual_family_dev": 5819.930162326402,
+      "ratio_bound_actual": 19.74992605664539,
+      "family_range": [
+        172.7293312485113,
+        6374.758842052155
+      ]
+    },
+    {
+      "query": [
+        2,
+        4
+      ],
+      "path_edges": 872,
+      "atoms_traversed": 1,
+      "eta_mean": 11.37802819948013,
+      "R_mean": 22.409664726287353,
+      "beta0": 516.4427728262121,
+      "bound": 129128.61038244897,
+      "actual_family_dev": 1389.4788959522593,
+      "ratio_bound_actual": 92.9331210129338,
+      "family_range": [
+        98.67925204909935,
+        1905.9216687784715
+      ]
+    },
+    {
+      "query": [
+        3,
+        2
+      ],
+      "path_edges": 872,
+      "atoms_traversed": 1,
+      "eta_mean": 11.37802819948013,
+      "R_mean": 17.026099304358645,
+      "beta0": 502.835070380343,
+      "bound": 95712.91006290351,
+      "actual_family_dev": 5274.538068631564,
+      "ratio_bound_actual": 18.146216562948318,
+      "family_range": [
+        202.82877807997048,
+        5777.3731390119065
+      ]
+    },
+    {
+      "query": [
+        25,
+        4
+      ],
+      "path_edges": 872,
+      "atoms_traversed": 1,
+      "eta_mean": 11.37802819948013,
+      "R_mean": 16.103310941746912,
+      "beta0": 500.6009699787823,
+      "bound": 89935.47695844634,
+      "actual_family_dev": 711.5741874268167,
+      "ratio_bound_actual": 126.38945952166925,
+      "family_range": [
+        96.81367942630021,
+        1212.175157405599
+      ]
+    },
+    {
+      "query": [
+        25,
+        2
+      ],
+      "path_edges": 872,
+      "atoms_traversed": 1,
+      "eta_mean": 11.37802819948013,
+      "R_mean": 10.152649236456023,
+      "beta0": 500.5603499714812,
+      "bound": 56749.01405406937,
+      "actual_family_dev": 5250.677164532412,
+      "ratio_bound_actual": 10.807941961734194,
+      "family_range": [
+        131.77907418461743,
+        5751.237514503892
+      ]
+    }
+  ]
+}

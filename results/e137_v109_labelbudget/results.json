@@ -1,0 +1,80 @@
+{
+  "curve": [
+    {
+      "per_query": 6,
+      "total_centers": 36,
+      "lam": 1.0,
+      "selected_steps": [
+        100,
+        1100,
+        1200
+      ],
+      "column_pct": 17.824238780750782,
+      "geometry_pct": 7.543120745669428,
+      "flow_pct": 0.030581098453446177
+    },
+    {
+      "per_query": 12,
+      "total_centers": 72,
+      "lam": 1.0,
+      "selected_steps": [
+        900,
+        1100,
+        1200
+      ],
+      "column_pct": 16.6380900495408,
+      "geometry_pct": 6.719772593226059,
+      "flow_pct": 0.031612879413134745
+    },
+    {
+      "per_query": 24,
+      "total_centers": 144,
+      "lam": 1.0,
+      "selected_steps": [
+        1000,
+        1100,
+        1200
+      ],
+      "column_pct": 15.614095137987967,
+      "geometry_pct": 6.13741248793155,
+      "flow_pct": 0.03071513397216228
+    },
+    {
+      "per_query": 48,
+      "total_centers": 288,
+      "lam": 1.0,
+      "selected_steps": [
+        1000,
+        1100,
+        1200
+      ],
+      "column_pct": 14.593541033718346,
+      "geometry_pct": 5.740966676074052,
+      "flow_pct": 0.027620812795142002
+    },
+    {
+      "per_query": 64,
+      "total_centers": 384,
+      "lam": 1.0,
+      "selected_steps": [
+        1100,
+        1200
+      ],
+      "column_pct": 14.188861949177767,
+      "geometry_pct": 5.747915220342686,
+      "flow_pct": 0.029206954004155468
+    }
+  ],
+  "label_cost": {
+    "per_center": "one reference flow solve + one sensitivity solve",
+    "train_centers": {
+      "36": 36,
+      "72": 72,
+      "144": 144,
+      "288": 288,
+      "384": 384
+    },
+    "shared_validation_centers": 96
+  },
+  "protocol": "prefix subsets of the frozen e111 per-query center order; identical budgets, selection rule and lambda (E134 validation choice) across budgets; 96 frozen test paths"
+}

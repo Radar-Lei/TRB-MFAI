@@ -1,0 +1,133 @@
+{
+  "matched_iso": {
+    "sioux_falls": {
+      "0.005": {
+        "L_star_med": 232.68333333333334,
+        "n_compared": 96,
+        "clamped_paths": 0,
+        "diff_med": -2.0246144387416773,
+        "diff_ci95": [
+          -2.7003450364489545,
+          -1.5985218144068778
+        ],
+        "diff_same_tol_med": -2.050344819807405
+      },
+      "0.01": {
+        "L_star_med": 200.76666666666665,
+        "n_compared": 96,
+        "clamped_paths": 0,
+        "diff_med": -1.9781226720956875,
+        "diff_ci95": [
+          -2.6837478478243653,
+          -1.6448372342536652
+        ],
+        "diff_same_tol_med": -1.98969551009771
+      },
+      "0.025": {
+        "L_star_med": 151.55,
+        "n_compared": 96,
+        "clamped_paths": 0,
+        "diff_med": -1.9320232128339487,
+        "diff_ci95": [
+          -2.589238882530121,
+          -1.49253048876983
+        ],
+        "diff_same_tol_med": -2.03792334033437
+      },
+      "0.05": {
+        "L_star_med": 116.76666666666667,
+        "n_compared": 95,
+        "clamped_paths": 1,
+        "diff_med": -1.6819020077314537,
+        "diff_ci95": [
+          -2.4135360793881553,
+          -1.2777860878209077
+        ],
+        "diff_same_tol_med": -1.7628958535778638
+      },
+      "0.1": {
+        "L_star_med": 25.0,
+        "n_compared": 14,
+        "clamped_paths": 82,
+        "diff_med": -1.7771398346573752,
+        "diff_ci95": [
+          -3.062558606748384,
+          -1.2492361565566545
+        ],
+        "diff_same_tol_med": -1.7771398346573752
+      }
+    },
+    "anaheim": {
+      "0.005": {
+        "L_star_med": 27.316666666666666,
+        "n_compared": 48,
+        "clamped_paths": 0,
+        "diff_med": -0.16084042422124772,
+        "diff_ci95": [
+          -0.20015340318178243,
+          -0.08309276357464268
+        ],
+        "diff_same_tol_med": -0.14356650173816166
+      },
+      "0.01": {
+        "L_star_med": 20.616666666666667,
+        "n_compared": 48,
+        "clamped_paths": 0,
+        "diff_med": -0.1092480215555876,
+        "diff_ci95": [
+          -0.17010899388551182,
+          -0.06595357052006001
+        ],
+        "diff_same_tol_med": -0.10365366284438571
+      },
+      "0.025": {
+        "L_star_med": 12.266666666666667,
+        "n_compared": 48,
+        "clamped_paths": 0,
+        "diff_med": -0.057061365975601186,
+        "diff_ci95": [
+          -0.07607156825326822,
+          -0.017745381329478782
+        ],
+        "diff_same_tol_med": -0.026994152653549985
+      },
+      "0.05": {
+        "L_star_med": 9.866666666666667,
+        "n_compared": 48,
+        "clamped_paths": 0,
+        "diff_med": -0.016813160037332686,
+        "diff_ci95": [
+          -0.03850634216978577,
+          -0.0059998939859471105
+        ],
+        "diff_same_tol_med": -0.01857340843506705
+      },
+      "0.1": {
+        "L_star_med": 5.6,
+        "n_compared": 35,
+        "clamped_paths": 13,
+        "diff_med": -0.030421096592763597,
+        "diff_ci95": [
+          -0.045474026197452666,
+          -0.010511942924782858
+        ],
+        "diff_same_tol_med": -0.030421096592763597
+      }
+    }
+  },
+  "protocol": {
+    "budget": "L* = min(L_flow, L_response) per path and tolerance; each method interpolated linearly on its own (L, E) grid over the five tolerances; paired bootstrap of the median difference, 5000 resamples"
+  },
+  "gates": {
+    "sioux_falls:0.005": true,
+    "sioux_falls:0.01": true,
+    "sioux_falls:0.025": true,
+    "sioux_falls:0.05": true,
+    "sioux_falls:0.1": true,
+    "anaheim:0.005": true,
+    "anaheim:0.01": true,
+    "anaheim:0.025": true,
+    "anaheim:0.05": true,
+    "anaheim:0.1": true
+  }
+}

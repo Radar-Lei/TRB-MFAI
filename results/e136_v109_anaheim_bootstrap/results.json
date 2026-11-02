@@ -1,0 +1,156 @@
+{
+  "protocol": "e131 frozen rows; paths are the resampling unit; seeds averaged within path before pairing (primary) and within (path, query) before seed averaging (secondary); 10000 bootstrap resamples, seed 20261031",
+  "pooled_path_level": {
+    "column_pct": {
+      "median_difference": -0.28784662450380194,
+      "ci95": [
+        -0.32945886916058154,
+        -0.21343046807993526
+      ],
+      "improved_paths": 48,
+      "paths": 48,
+      "ci_excludes_zero": true
+    },
+    "geometry_pct": {
+      "median_difference": -0.17241779126023532,
+      "ci95": [
+        -0.19371890786469986,
+        -0.10463990312316335
+      ],
+      "improved_paths": 47,
+      "paths": 48,
+      "ci_excludes_zero": true
+    }
+  },
+  "per_seed_path_level": [
+    {
+      "seed": 0,
+      "column_pct": {
+        "median_difference": -0.22511542192015876,
+        "ci95": [
+          -0.2984332998652939,
+          -0.1713256392323217
+        ],
+        "improved_paths": 48,
+        "paths": 48
+      },
+      "geometry_pct": {
+        "median_difference": -0.11632258150973751,
+        "ci95": [
+          -0.1436063747915581,
+          -0.06904914271874704
+        ],
+        "improved_paths": 45,
+        "paths": 48
+      }
+    },
+    {
+      "seed": 1,
+      "column_pct": {
+        "median_difference": -0.26998336802101447,
+        "ci95": [
+          -0.356390374658234,
+          -0.21440990392732706
+        ],
+        "improved_paths": 48,
+        "paths": 48
+      },
+      "geometry_pct": {
+        "median_difference": -0.1451788597047965,
+        "ci95": [
+          -0.17881232765226407,
+          -0.10597491128854386
+        ],
+        "improved_paths": 46,
+        "paths": 48
+      }
+    },
+    {
+      "seed": 2,
+      "column_pct": {
+        "median_difference": -0.3479188312879433,
+        "ci95": [
+          -0.39776841316782086,
+          -0.22709845979347953
+        ],
+        "improved_paths": 47,
+        "paths": 48
+      },
+      "geometry_pct": {
+        "median_difference": -0.17102789549775274,
+        "ci95": [
+          -0.2537292925456154,
+          -0.10463743264460446
+        ],
+        "improved_paths": 45,
+        "paths": 48
+      }
+    },
+    {
+      "seed": 3,
+      "column_pct": {
+        "median_difference": -0.2652640436675259,
+        "ci95": [
+          -0.31049154381087085,
+          -0.19912814154220393
+        ],
+        "improved_paths": 48,
+        "paths": 48
+      },
+      "geometry_pct": {
+        "median_difference": -0.16446770286063733,
+        "ci95": [
+          -0.20067612371957644,
+          -0.09117804303907834
+        ],
+        "improved_paths": 47,
+        "paths": 48
+      }
+    },
+    {
+      "seed": 4,
+      "column_pct": {
+        "median_difference": -0.251380950260511,
+        "ci95": [
+          -0.3367042726066929,
+          -0.18806934720290114
+        ],
+        "improved_paths": 46,
+        "paths": 48
+      },
+      "geometry_pct": {
+        "median_difference": -0.14620322454338472,
+        "ci95": [
+          -0.20095215239645642,
+          -0.08753193464944697
+        ],
+        "improved_paths": 44,
+        "paths": 48
+      }
+    }
+  ],
+  "seeds_with_negative_median": {
+    "column_pct": "5/5",
+    "geometry_pct": "5/5"
+  },
+  "secondary_path_query_level": {
+    "column_pct": {
+      "median_difference": -0.1861045777454748,
+      "ci95": [
+        -0.2462085889006531,
+        -0.15800241771897605
+      ],
+      "improved_pairs": 143,
+      "pairs": 144
+    },
+    "geometry_pct": {
+      "median_difference": -0.0883117524167435,
+      "ci95": [
+        -0.11402778153324045,
+        -0.06415512368544735
+      ],
+      "improved_pairs": 139,
+      "pairs": 144
+    }
+  }
+}

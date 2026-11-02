@@ -1,0 +1,271 @@
+{
+  "protocol": {
+    "penalty_weight": 1.0,
+    "penalty_normalization": "nodal throughput RMS over the 2500 training states",
+    "pretrain": "e93 schedule (Adam 3e-3, batch 256, <=12000 steps, validation every 50, min-validation checkpoint) with per-link scaled MSE (the stated pretraining objective)",
+    "continuation": "e111 protocol (1200 updates, lr 3e-5, batches 32/8, shared labels, uniform selection rule)",
+    "width_matching": "direct-MLP width solves 2W^2+(6+3+76)W+76 = exact parameter count",
+    "selection": "uniform rule incl. the pre-trained initial model (update 0); recomputed by run_e146b_v111_reselect.py",
+    "attribution_residual": "max_j ||B g_j - mu_j dq_j||_2 / (|dq_j| ||mu_j||_2), g_j trapezoid-integrated learned Jacobian (Eq. residualidentity)"
+  },
+  "gates": {
+    "exact_flow_column_pct": {
+      "published": 21.1777,
+      "recomputed": 21.1777
+    },
+    "exact_response_column_pct": {
+      "published": 14.1889,
+      "recomputed": 14.1889
+    },
+    "projection_conservation_max": 3.456079866737127e-11,
+    "exact_conservation_max": 5.002220859751105e-11
+  },
+  "summary": {
+    "exact:flow": {
+      "flow_pct": 0.032218622364585114,
+      "increment_pct": 5.028925295833213,
+      "cons_residual_max": 2.929709808086045e-11,
+      "derivative_residual_max": 8.635508522760762e-16,
+      "attribution_residual_max": 3.5488299560186716e-16,
+      "column_pct": 21.17768587460666,
+      "system_pct": 2.522072722703925,
+      "E_model": 144.60250562804993,
+      "E_summary": 236.40459645926086,
+      "E_total": 348.9325525284626,
+      "segments_distinct_chains": 116.96666666666667,
+      "E_total_normalized": 11.349857134113055
+    },
+    "exact:response": {
+      "flow_pct": 0.029206954004155468,
+      "increment_pct": 3.5237698784258176,
+      "cons_residual_max": 2.996785042341799e-11,
+      "derivative_residual_max": 7.693453047550496e-16,
+      "attribution_residual_max": 3.273516056944973e-16,
+      "column_pct": 14.188861949177767,
+      "system_pct": 3.1251406460170625,
+      "E_model": 86.54540325276683,
+      "E_summary": 239.1467434669505,
+      "E_total": 301.55014064886007,
+      "segments_distinct_chains": 117.16666666666667,
+      "E_total_normalized": 8.684097195350606
+    },
+    "penalty:flow": {
+      "flow_pct": 0.040297072434962014,
+      "increment_pct": 22.756411086756536,
+      "cons_residual_max": 42.073752668977406,
+      "derivative_residual_max": 1.1604685170624764,
+      "attribution_residual_max": 0.661749318902285,
+      "column_pct": 183.67440987307182,
+      "system_pct": 323.00756295418967,
+      "E_model": 1627.974494083982,
+      "E_summary": 264.5932608727315,
+      "E_total": 1798.660285035979,
+      "segments_distinct_chains": 124.4,
+      "E_total_normalized": 148.80819430542454
+    },
+    "penalty:response": {
+      "flow_pct": 0.03922789942596891,
+      "increment_pct": 22.238140100577247,
+      "cons_residual_max": 42.11984888339134,
+      "derivative_residual_max": 1.165360824351964,
+      "attribution_residual_max": 0.6461103908065096,
+      "column_pct": 177.85361004797352,
+      "system_pct": 318.0454806711989,
+      "E_model": 1605.4256073467848,
+      "E_summary": 260.3866285224295,
+      "E_total": 1733.5328982142407,
+      "segments_distinct_chains": 124.1,
+      "E_total_normalized": 144.90289047942588
+    },
+    "projection:flow": {
+      "flow_pct": 0.02612765475860499,
+      "increment_pct": 14.538221625542075,
+      "cons_residual_max": 1.8553691916167735e-11,
+      "derivative_residual_max": 2.4061666929328855e-15,
+      "attribution_residual_max": 3.904561410825971e-15,
+      "column_pct": 104.09567831423524,
+      "system_pct": 265.50040106418817,
+      "E_model": 418.24625173934794,
+      "E_summary": 241.1597810865763,
+      "E_total": 572.2056302160966,
+      "segments_distinct_chains": 123.71666666666667,
+      "E_total_normalized": 46.35921909913266
+    },
+    "projection:response": {
+      "flow_pct": 0.026192396947559517,
+      "increment_pct": 14.421104585521581,
+      "cons_residual_max": 1.8189894035458565e-11,
+      "derivative_residual_max": 2.3885031527726925e-15,
+      "attribution_residual_max": 3.931624509420313e-15,
+      "column_pct": 99.36720906383795,
+      "system_pct": 271.51232189625125,
+      "E_model": 410.35084089850784,
+      "E_summary": 241.86262298514092,
+      "E_total": 558.2259609249111,
+      "segments_distinct_chains": 123.31666666666666,
+      "E_total_normalized": 45.617168273046445
+    }
+  },
+  "selection_audit": {
+    "penalty:flow:0": {
+      "candidates": 13,
+      "old_step": 600,
+      "new_step": 0,
+      "new_K_mse": 68.41487758965121,
+      "initial_K_mse": 68.41487758965121,
+      "changed": true
+    },
+    "penalty:flow:1": {
+      "candidates": 13,
+      "old_step": 1100,
+      "new_step": 1100,
+      "new_K_mse": 41.68656941589718,
+      "initial_K_mse": 44.93580706229924,
+      "changed": false
+    },
+    "penalty:flow:2": {
+      "candidates": 13,
+      "old_step": 100,
+      "new_step": 100,
+      "new_K_mse": 34.56181327281825,
+      "initial_K_mse": 34.81721501784506,
+      "changed": false
+    },
+    "penalty:flow:3": {
+      "candidates": 13,
+      "old_step": 700,
+      "new_step": 0,
+      "new_K_mse": 22.955318012763858,
+      "initial_K_mse": 22.955318012763858,
+      "changed": true
+    },
+    "penalty:flow:4": {
+      "candidates": 13,
+      "old_step": 100,
+      "new_step": 0,
+      "new_K_mse": 51.40924412496182,
+      "initial_K_mse": 51.40924412496182,
+      "changed": true
+    },
+    "penalty:response:0": {
+      "candidates": 13,
+      "old_step": 1200,
+      "new_step": 1200,
+      "new_K_mse": 62.14397900169566,
+      "initial_K_mse": 68.41487758965121,
+      "changed": false
+    },
+    "penalty:response:1": {
+      "candidates": 13,
+      "old_step": 700,
+      "new_step": 700,
+      "new_K_mse": 37.264574710046865,
+      "initial_K_mse": 44.93580706229924,
+      "changed": false
+    },
+    "penalty:response:2": {
+      "candidates": 13,
+      "old_step": 500,
+      "new_step": 500,
+      "new_K_mse": 24.27562023887336,
+      "initial_K_mse": 34.81721501784506,
+      "changed": false
+    },
+    "penalty:response:3": {
+      "candidates": 13,
+      "old_step": 300,
+      "new_step": 300,
+      "new_K_mse": 21.059361623536926,
+      "initial_K_mse": 22.955318012763858,
+      "changed": false
+    },
+    "penalty:response:4": {
+      "candidates": 13,
+      "old_step": 100,
+      "new_step": 100,
+      "new_K_mse": 49.18033743671023,
+      "initial_K_mse": 51.40924412496182,
+      "changed": false
+    },
+    "projection:flow:0": {
+      "candidates": 13,
+      "old_step": 800,
+      "new_step": 800,
+      "new_K_mse": 4.018092933066911,
+      "initial_K_mse": 4.10314547181334,
+      "changed": false
+    },
+    "projection:flow:1": {
+      "candidates": 13,
+      "old_step": 1100,
+      "new_step": 1100,
+      "new_K_mse": 3.733916320428347,
+      "initial_K_mse": 4.195153135984992,
+      "changed": false
+    },
+    "projection:flow:2": {
+      "candidates": 13,
+      "old_step": 1000,
+      "new_step": 1000,
+      "new_K_mse": 3.1475640232229494,
+      "initial_K_mse": 3.983928505124396,
+      "changed": false
+    },
+    "projection:flow:3": {
+      "candidates": 13,
+      "old_step": 1100,
+      "new_step": 0,
+      "new_K_mse": 5.356417493657484,
+      "initial_K_mse": 5.356417493657484,
+      "changed": true
+    },
+    "projection:flow:4": {
+      "candidates": 13,
+      "old_step": 100,
+      "new_step": 0,
+      "new_K_mse": 4.356504902009815,
+      "initial_K_mse": 4.356504902009815,
+      "changed": true
+    },
+    "projection:response:0": {
+      "candidates": 13,
+      "old_step": 1100,
+      "new_step": 1100,
+      "new_K_mse": 3.9612811949160007,
+      "initial_K_mse": 4.10314547181334,
+      "changed": false
+    },
+    "projection:response:1": {
+      "candidates": 13,
+      "old_step": 100,
+      "new_step": 0,
+      "new_K_mse": 4.195153135984992,
+      "initial_K_mse": 4.195153135984992,
+      "changed": true
+    },
+    "projection:response:2": {
+      "candidates": 13,
+      "old_step": 300,
+      "new_step": 300,
+      "new_K_mse": 3.709686296862145,
+      "initial_K_mse": 3.983928505124396,
+      "changed": false
+    },
+    "projection:response:3": {
+      "candidates": 13,
+      "old_step": 500,
+      "new_step": 500,
+      "new_K_mse": 5.203577206940316,
+      "initial_K_mse": 5.356417493657484,
+      "changed": false
+    },
+    "projection:response:4": {
+      "candidates": 13,
+      "old_step": 700,
+      "new_step": 700,
+      "new_K_mse": 4.2785091135176945,
+      "initial_K_mse": 4.356504902009815,
+      "changed": false
+    }
+  }
+}

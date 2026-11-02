@@ -1,0 +1,367 @@
+{
+ "sources": {
+  "segments_and_family": "e126_v108_persdirection/results.json (row (25,2))",
+  "attribution_column": "e113_v103/columns_41.npz (41-state column, query index 5)",
+  "decomposition_curves": "v105_anaheim_profile/profile.json",
+  "network": "e112_v102/arrays.npz + data/Anaheim/Anaheim_net.tntp",
+  "sf_chain_stats": "fam_v108 direction families (as aggregated by e127)"
+ },
+ "query": [
+  25,
+  2
+ ],
+ "eps_absolute": 287.5618757251946,
+ "segments_table": [
+  {
+   "progress_range": [
+    0.0004970053617122281,
+    0.02426313894287569
+   ],
+   "boundaries": 6,
+   "beta": 134.32729914674698,
+   "worst_error": 2.5482249621295523,
+   "account_range_in_segment": [
+    131.77907418461743,
+    136.87552410887653
+   ]
+  },
+  {
+   "progress_range": [
+    0.029857088728766457,
+    0.6300516861678556
+   ],
+   "boundaries": 75,
+   "beta": 630.1721567320395,
+   "worst_error": 279.15626000085376,
+   "account_range_in_segment": [
+    351.0158967311858,
+    909.3284167328933
+   ]
+  },
+  {
+   "progress_range": [
+    0.7238444018556495,
+    0.8176371175434433
+   ],
+   "boundaries": 2,
+   "beta": 5751.237514503892,
+   "worst_error": 0.0,
+   "account_range_in_segment": [
+    5751.237514503892,
+    5751.237514503892
+   ]
+  },
+  {
+   "progress_range": [
+    0.9114298332312369,
+    0.9114298332312369
+   ],
+   "boundaries": 1,
+   "beta": 2673.0520802238834,
+   "worst_error": 0.0,
+   "account_range_in_segment": [
+    2673.0520802238834,
+    2673.0520802238834
+   ]
+  }
+ ],
+ "positions": [
+  {
+   "name": "early",
+   "progress": 0.24956099755638994,
+   "region_nodes": 231,
+   "account": 801.4520753284947,
+   "crossing_links": 34,
+   "top_links": [
+    {
+     "from": 269,
+     "to": 261,
+     "edge": 425,
+     "contribution": 550.4508322523968
+    },
+    {
+     "from": 271,
+     "to": 192,
+     "edge": 430,
+     "contribution": 163.8866575550935
+    },
+    {
+     "from": 193,
+     "to": 271,
+     "edge": 290,
+     "contribution": 36.590761382336694
+    },
+    {
+     "from": 267,
+     "to": 259,
+     "edge": 416,
+     "contribution": 36.32676544721639
+    },
+    {
+     "from": 80,
+     "to": 79,
+     "edge": 126,
+     "contribution": 8.35566774597043
+    }
+   ],
+   "crossing_total": 801.4520753284949,
+   "components": {
+    "ff_study": 669.2820468489205,
+    "ff_bg": 10.520556605245202,
+    "cong_study": 111.49755445408671,
+    "cong_bg": 10.151917420242562
+   }
+  },
+  {
+   "name": "middle",
+   "progress": 0.49989303714073197,
+   "region_nodes": 405,
+   "account": 411.9567872811312,
+   "crossing_links": 4,
+   "top_links": [
+    {
+     "from": 191,
+     "to": 190,
+     "edge": 287,
+     "contribution": 297.0213637581016
+    },
+    {
+     "from": 66,
+     "to": 65,
+     "edge": 106,
+     "contribution": 105.42405570790682
+    },
+    {
+     "from": 188,
+     "to": 187,
+     "edge": 283,
+     "contribution": 5.272935026190674
+    },
+    {
+     "from": 85,
+     "to": 84,
+     "edge": 133,
+     "contribution": 4.238432788931895
+    }
+   ],
+   "crossing_total": 411.95678728113097,
+   "components": {
+    "ff_study": 211.51552833343294,
+    "ff_bg": -1.7810174001710228,
+    "cong_study": 212.64129350286692,
+    "cong_bg": -10.419017154997636
+   }
+  },
+  {
+   "name": "plateau_start",
+   "progress": 0.7238444018556495,
+   "region_nodes": 413,
+   "account": 5751.237514503892,
+   "crossing_links": 2,
+   "top_links": [
+    {
+     "from": 63,
+     "to": 62,
+     "edge": 102,
+     "contribution": 5751.237514503893
+    },
+    {
+     "from": 87,
+     "to": 86,
+     "edge": 136,
+     "contribution": -1.2038707667422703e-15
+    }
+   ],
+   "crossing_total": 5751.237514503893,
+   "components": {
+    "ff_study": 537.5087979049601,
+    "ff_bg": 1.4730439090726577e-12,
+    "cong_study": 5213.728716598918,
+    "cong_bg": 1.4684670146536405e-11
+   }
+  },
+  {
+   "name": "plateau_end",
+   "progress": 0.8176371175434433,
+   "region_nodes": 414,
+   "account": 5751.237514503892,
+   "crossing_links": 2,
+   "top_links": [
+    {
+     "from": 63,
+     "to": 62,
+     "edge": 102,
+     "contribution": 5751.237514503893
+    },
+    {
+     "from": 2,
+     "to": 87,
+     "edge": 1,
+     "contribution": -7.031430017096275e-16
+    }
+   ],
+   "crossing_total": 5751.237514503893,
+   "components": {
+    "ff_study": 537.5087979049601,
+    "ff_bg": 1.4730439090726577e-12,
+    "cong_study": 5213.728716598918,
+    "cong_bg": 1.468517011572803e-11
+   }
+  },
+  {
+   "name": "destination",
+   "progress": 0.9114298332312369,
+   "region_nodes": 415,
+   "account": 2673.0520802238834,
+   "crossing_links": 2,
+   "top_links": [
+    {
+     "from": 62,
+     "to": 2,
+     "edge": 101,
+     "contribution": 2673.0520802238843
+    },
+    {
+     "from": 2,
+     "to": 87,
+     "edge": 1,
+     "contribution": -7.031430017096275e-16
+    }
+   ],
+   "crossing_total": 2673.0520802238843,
+   "components": {
+    "ff_study": 537.5087979049601,
+    "ff_bg": 1.4730439090726577e-12,
+    "cong_study": 2135.543282318917,
+    "cong_bg": 6.009712072046925e-12
+   }
+  }
+ ],
+ "family_bookkeeping": {
+  "anaheim": [
+   {
+    "query": [
+     4,
+     2
+    ],
+    "N_unique": 211,
+    "N_chain": 1,
+    "L": 12
+   },
+   {
+    "query": [
+     1,
+     2
+    ],
+    "N_unique": 83,
+    "N_chain": 1,
+    "L": 8
+   },
+   {
+    "query": [
+     2,
+     4
+    ],
+    "N_unique": 211,
+    "N_chain": 1,
+    "L": 14
+   },
+   {
+    "query": [
+     3,
+     2
+    ],
+    "N_unique": 157,
+    "N_chain": 1,
+    "L": 8
+   },
+   {
+    "query": [
+     25,
+     4
+    ],
+    "N_unique": 164,
+    "N_chain": 1,
+    "L": 13
+   },
+   {
+    "query": [
+     25,
+     2
+    ],
+    "N_unique": 84,
+    "N_chain": 1,
+    "L": 4
+   }
+  ],
+  "sioux_falls": [
+   {
+    "query": [
+     7,
+     18
+    ],
+    "directions": 32,
+    "N_chain": 23,
+    "per_chain_regions_min": 1,
+    "per_chain_regions_max": 7,
+    "N_chain_positions_total": 89
+   },
+   {
+    "query": [
+     1,
+     19
+    ],
+    "directions": 36,
+    "N_chain": 35,
+    "per_chain_regions_min": 1,
+    "per_chain_regions_max": 21,
+    "N_chain_positions_total": 472
+   },
+   {
+    "query": [
+     4,
+     5
+    ],
+    "directions": 36,
+    "N_chain": 25,
+    "per_chain_regions_min": 1,
+    "per_chain_regions_max": 6,
+    "N_chain_positions_total": 75
+   },
+   {
+    "query": [
+     1,
+     15
+    ],
+    "directions": 36,
+    "N_chain": 35,
+    "per_chain_regions_min": 2,
+    "per_chain_regions_max": 16,
+    "N_chain_positions_total": 412
+   },
+   {
+    "query": [
+     6,
+     8
+    ],
+    "directions": 30,
+    "N_chain": 18,
+    "per_chain_regions_min": 1,
+    "per_chain_regions_max": 7,
+    "N_chain_positions_total": 64
+   },
+   {
+    "query": [
+     7,
+     12
+    ],
+    "directions": 36,
+    "N_chain": 35,
+    "per_chain_regions_min": 1,
+    "per_chain_regions_max": 20,
+    "N_chain_positions_total": 438
+   }
+  ]
+ },
+ "protocol": "no equilibrium re-solved; crossing contributions are signed C_e entries of the frozen 41-state column (+1 link leaving the region, -1 entering); closure to the reported account asserted at each position"
+}

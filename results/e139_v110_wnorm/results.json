@@ -1,0 +1,493 @@
+{
+  "final": {
+    "flow": {
+      "lam": null,
+      "flow_pct": 0.032218622364585114,
+      "column_pct": 21.17768587460666,
+      "system_pct": 2.522072722703925,
+      "geometry_pct": 8.742454456202914,
+      "boundary_pct": 15.649331043804196
+    },
+    "response": {
+      "lam": 1.0,
+      "flow_pct": 0.029206954004155468,
+      "column_pct": 14.188861949177767,
+      "system_pct": 3.1251406460170625,
+      "geometry_pct": 5.747915220342686,
+      "boundary_pct": 12.082077900627311
+    },
+    "kboundary": {
+      "lam": 0.3,
+      "flow_pct": 0.03673668768786961,
+      "column_pct": 24.179256599047317,
+      "system_pct": 4.812030332939258,
+      "geometry_pct": 7.208085156534146,
+      "boundary_pct": 15.261627520393391
+    },
+    "edge": {
+      "lam": 0.3,
+      "flow_pct": 0.03452319905410513,
+      "column_pct": 16.229335088907753,
+      "system_pct": 2.8174960250047754,
+      "geometry_pct": 7.461429879462491,
+      "boundary_pct": 14.237702921477803
+    },
+    "cut": {
+      "lam": 0.3,
+      "flow_pct": 0.03461514902527528,
+      "column_pct": 16.258830880486137,
+      "system_pct": 2.871469862609926,
+      "geometry_pct": 7.469659513567297,
+      "boundary_pct": 14.241529040167467
+    },
+    "wresponse": {
+      "lam": 0.1,
+      "flow_pct": 0.03212644437313324,
+      "column_pct": 15.209909442052616,
+      "system_pct": 2.4676241532055574,
+      "geometry_pct": 6.9324227133544145,
+      "boundary_pct": 12.8624543400555,
+      "normalization": "v_j (own scale)"
+    }
+  },
+  "pareto": [
+    {
+      "method": "flow",
+      "lam": null,
+      "flow_pct": 0.032218622364585114,
+      "column_pct": 21.17768587460666,
+      "system_pct": 2.522072722703925,
+      "geometry_pct": 8.742454456202914,
+      "boundary_pct": 15.649331043804196
+    },
+    {
+      "method": "response",
+      "lam": 1.0,
+      "flow_pct": 0.029206954004155468,
+      "column_pct": 14.188861949177767,
+      "system_pct": 3.1251406460170625,
+      "geometry_pct": 5.747915220342686,
+      "boundary_pct": 12.082077900627311
+    },
+    {
+      "method": "kboundary",
+      "lam": 0.3,
+      "flow_pct": 0.03673668768786961,
+      "column_pct": 24.179256599047317,
+      "system_pct": 4.812030332939258,
+      "geometry_pct": 7.208085156534146,
+      "boundary_pct": 15.261627520393391
+    },
+    {
+      "method": "edge",
+      "lam": 0.3,
+      "flow_pct": 0.03452319905410513,
+      "column_pct": 16.229335088907753,
+      "system_pct": 2.8174960250047754,
+      "geometry_pct": 7.461429879462491,
+      "boundary_pct": 14.237702921477803
+    },
+    {
+      "method": "cut",
+      "lam": 0.3,
+      "flow_pct": 0.03461514902527528,
+      "column_pct": 16.258830880486137,
+      "system_pct": 2.871469862609926,
+      "geometry_pct": 7.469659513567297,
+      "boundary_pct": 14.241529040167467
+    },
+    {
+      "method": "response",
+      "lam": 0.001,
+      "flow_pct": 0.030998065343609174,
+      "column_pct": 20.9973520586899,
+      "system_pct": 2.5668245832151535,
+      "geometry_pct": 8.700055595543764,
+      "boundary_pct": 15.698762645200016
+    },
+    {
+      "method": "response",
+      "lam": 0.003,
+      "flow_pct": 0.029836735406300725,
+      "column_pct": 19.91252714953642,
+      "system_pct": 2.6535651552832746,
+      "geometry_pct": 8.237234633311775,
+      "boundary_pct": 15.068489450932038
+    },
+    {
+      "method": "response",
+      "lam": 0.01,
+      "flow_pct": 0.029501480466531792,
+      "column_pct": 19.346839950158568,
+      "system_pct": 2.628870627748342,
+      "geometry_pct": 8.057847963023141,
+      "boundary_pct": 14.913403281109261
+    },
+    {
+      "method": "response",
+      "lam": 0.03,
+      "flow_pct": 0.028717774806144777,
+      "column_pct": 18.16312808877653,
+      "system_pct": 2.7301911039300846,
+      "geometry_pct": 7.317657362931021,
+      "boundary_pct": 14.364787790053729
+    },
+    {
+      "method": "response",
+      "lam": 0.1,
+      "flow_pct": 0.02816093586354371,
+      "column_pct": 15.84448186380195,
+      "system_pct": 2.776480346023786,
+      "geometry_pct": 6.626388797306889,
+      "boundary_pct": 13.392678749896332
+    },
+    {
+      "method": "response",
+      "lam": 0.3,
+      "flow_pct": 0.026183341249623817,
+      "column_pct": 14.925297590917651,
+      "system_pct": 3.0941569331031635,
+      "geometry_pct": 6.061351096613457,
+      "boundary_pct": 12.408653619917217
+    },
+    {
+      "method": "kboundary",
+      "lam": 0.001,
+      "flow_pct": 0.02941100099697866,
+      "column_pct": 18.686084446762262,
+      "system_pct": 2.797675316240157,
+      "geometry_pct": 6.980901964278845,
+      "boundary_pct": 13.517168943584046
+    },
+    {
+      "method": "kboundary",
+      "lam": 0.003,
+      "flow_pct": 0.029797053053993397,
+      "column_pct": 17.962756269271388,
+      "system_pct": 3.115581050001258,
+      "geometry_pct": 6.770774653671131,
+      "boundary_pct": 12.870682798893501
+    },
+    {
+      "method": "kboundary",
+      "lam": 0.01,
+      "flow_pct": 0.030346593361725054,
+      "column_pct": 18.787693767948355,
+      "system_pct": 3.423021099919322,
+      "geometry_pct": 6.6125959046178,
+      "boundary_pct": 12.31570410616239
+    },
+    {
+      "method": "kboundary",
+      "lam": 0.03,
+      "flow_pct": 0.031717483924718785,
+      "column_pct": 19.38104861369549,
+      "system_pct": 4.063973116239596,
+      "geometry_pct": 6.447609632137194,
+      "boundary_pct": 12.267875574838282
+    },
+    {
+      "method": "kboundary",
+      "lam": 0.1,
+      "flow_pct": 0.034581439287758114,
+      "column_pct": 20.23849646259923,
+      "system_pct": 5.160151705230343,
+      "geometry_pct": 5.962163037533548,
+      "boundary_pct": 11.89399951457241
+    },
+    {
+      "method": "kboundary",
+      "lam": 1.0,
+      "flow_pct": 0.038013700530837115,
+      "column_pct": 22.334273730863202,
+      "system_pct": 3.621981242863982,
+      "geometry_pct": 7.834744257379261,
+      "boundary_pct": 17.068006926050735
+    },
+    {
+      "method": "edge",
+      "lam": 0.001,
+      "flow_pct": 0.03106124298438538,
+      "column_pct": 17.363093915577366,
+      "system_pct": 2.6348218364582623,
+      "geometry_pct": 7.593395243535355,
+      "boundary_pct": 14.564216279374126
+    },
+    {
+      "method": "edge",
+      "lam": 0.003,
+      "flow_pct": 0.03334654780529277,
+      "column_pct": 17.220133128597084,
+      "system_pct": 2.881520667044463,
+      "geometry_pct": 7.5282207749875445,
+      "boundary_pct": 14.831758047237292
+    },
+    {
+      "method": "edge",
+      "lam": 0.01,
+      "flow_pct": 0.03265877751725189,
+      "column_pct": 16.8306252237335,
+      "system_pct": 2.9647125418649978,
+      "geometry_pct": 7.6525569961924536,
+      "boundary_pct": 14.287880690089558
+    },
+    {
+      "method": "edge",
+      "lam": 0.03,
+      "flow_pct": 0.032867983599873835,
+      "column_pct": 16.37204433241208,
+      "system_pct": 2.9324976606848034,
+      "geometry_pct": 7.783831210344383,
+      "boundary_pct": 14.301652647661992
+    },
+    {
+      "method": "edge",
+      "lam": 0.1,
+      "flow_pct": 0.03430863726344269,
+      "column_pct": 15.985188038609854,
+      "system_pct": 2.6811289721338154,
+      "geometry_pct": 7.635665549964873,
+      "boundary_pct": 14.03593865984427
+    },
+    {
+      "method": "edge",
+      "lam": 1.0,
+      "flow_pct": 0.0374423642230938,
+      "column_pct": 20.58415981029119,
+      "system_pct": 2.9968262296736388,
+      "geometry_pct": 8.071624096812371,
+      "boundary_pct": 16.676981488909735
+    },
+    {
+      "method": "cut",
+      "lam": 0.001,
+      "flow_pct": 0.031064419771827678,
+      "column_pct": 17.367477017276713,
+      "system_pct": 2.6386898550463105,
+      "geometry_pct": 7.593512858067903,
+      "boundary_pct": 14.5652397670994
+    },
+    {
+      "method": "cut",
+      "lam": 0.003,
+      "flow_pct": 0.03334963936689718,
+      "column_pct": 17.22270693059049,
+      "system_pct": 2.8827271165573247,
+      "geometry_pct": 7.547092940113206,
+      "boundary_pct": 14.826730301917223
+    },
+    {
+      "method": "cut",
+      "lam": 0.01,
+      "flow_pct": 0.032667763992550565,
+      "column_pct": 16.8310843163165,
+      "system_pct": 2.97938306454283,
+      "geometry_pct": 7.639735372575366,
+      "boundary_pct": 14.280938846954946
+    },
+    {
+      "method": "cut",
+      "lam": 0.03,
+      "flow_pct": 0.03288932796693724,
+      "column_pct": 16.365603875656596,
+      "system_pct": 2.9478781425344907,
+      "geometry_pct": 7.763739339384649,
+      "boundary_pct": 14.27625199831918
+    },
+    {
+      "method": "cut",
+      "lam": 0.1,
+      "flow_pct": 0.03434770628330013,
+      "column_pct": 15.98077671114547,
+      "system_pct": 2.709290430130009,
+      "geometry_pct": 7.60733412828343,
+      "boundary_pct": 14.043197675842151
+    },
+    {
+      "method": "cut",
+      "lam": 1.0,
+      "flow_pct": 0.03748146481950833,
+      "column_pct": 20.595694365573756,
+      "system_pct": 3.027579930154086,
+      "geometry_pct": 8.071393969540459,
+      "boundary_pct": 16.65051571374328
+    },
+    {
+      "method": "wresponse",
+      "lam": 0.001,
+      "normalization": "v_j",
+      "flow_pct": 0.027692548643165137,
+      "column_pct": 16.424805519310638,
+      "system_pct": 2.7746380935675283,
+      "geometry_pct": 7.142212020315307,
+      "boundary_pct": 13.941415346141953
+    },
+    {
+      "method": "wresponse",
+      "lam": 0.003,
+      "normalization": "v_j",
+      "flow_pct": 0.02806214834402302,
+      "column_pct": 15.932396666137493,
+      "system_pct": 2.6077765684367487,
+      "geometry_pct": 7.052613164266388,
+      "boundary_pct": 13.646789734796283
+    },
+    {
+      "method": "wresponse",
+      "lam": 0.01,
+      "normalization": "v_j",
+      "flow_pct": 0.029694241618141423,
+      "column_pct": 15.675418164941902,
+      "system_pct": 2.6838291037772883,
+      "geometry_pct": 7.0003362454838465,
+      "boundary_pct": 13.363194262852371
+    },
+    {
+      "method": "wresponse",
+      "lam": 0.03,
+      "normalization": "v_j",
+      "flow_pct": 0.029823040602575547,
+      "column_pct": 15.365932572559178,
+      "system_pct": 2.70810034356517,
+      "geometry_pct": 7.1312624177842,
+      "boundary_pct": 13.335397995602762
+    },
+    {
+      "method": "wresponse",
+      "lam": 0.1,
+      "normalization": "v_j",
+      "flow_pct": 0.03212644437313324,
+      "column_pct": 15.209909442052616,
+      "system_pct": 2.4676241532055574,
+      "geometry_pct": 6.9324227133544145,
+      "boundary_pct": 12.8624543400555
+    },
+    {
+      "method": "wresponse",
+      "lam": 0.3,
+      "normalization": "v_j",
+      "flow_pct": 0.035314016434683224,
+      "column_pct": 14.905836883321442,
+      "system_pct": 2.98394147158672,
+      "geometry_pct": 6.683074061190997,
+      "boundary_pct": 12.693536893072597
+    },
+    {
+      "method": "wresponse",
+      "lam": 1.0,
+      "normalization": "v_j",
+      "flow_pct": 0.03774302689547035,
+      "column_pct": 20.268192789611305,
+      "system_pct": 3.0398108555058774,
+      "geometry_pct": 7.874817336342613,
+      "boundary_pct": 16.654431880253473
+    }
+  ],
+  "improvement_wresponse": [
+    {
+      "seed": 0,
+      "metric": "column_pct",
+      "improved_paths": 66,
+      "paths": 96,
+      "improved_share": 0.6875
+    },
+    {
+      "seed": 0,
+      "metric": "geometry_pct",
+      "improved_paths": 61,
+      "paths": 96,
+      "improved_share": 0.6354166666666666
+    },
+    {
+      "seed": 1,
+      "metric": "column_pct",
+      "improved_paths": 77,
+      "paths": 96,
+      "improved_share": 0.8020833333333334
+    },
+    {
+      "seed": 1,
+      "metric": "geometry_pct",
+      "improved_paths": 72,
+      "paths": 96,
+      "improved_share": 0.75
+    },
+    {
+      "seed": 2,
+      "metric": "column_pct",
+      "improved_paths": 83,
+      "paths": 96,
+      "improved_share": 0.8645833333333334
+    },
+    {
+      "seed": 2,
+      "metric": "geometry_pct",
+      "improved_paths": 81,
+      "paths": 96,
+      "improved_share": 0.84375
+    },
+    {
+      "seed": 3,
+      "metric": "column_pct",
+      "improved_paths": 74,
+      "paths": 96,
+      "improved_share": 0.7708333333333334
+    },
+    {
+      "seed": 3,
+      "metric": "geometry_pct",
+      "improved_paths": 60,
+      "paths": 96,
+      "improved_share": 0.625
+    },
+    {
+      "seed": 4,
+      "metric": "column_pct",
+      "improved_paths": 87,
+      "paths": 96,
+      "improved_share": 0.90625
+    },
+    {
+      "seed": 4,
+      "metric": "geometry_pct",
+      "improved_paths": 78,
+      "paths": 96,
+      "improved_share": 0.8125
+    }
+  ],
+  "scale_comparison": {
+    "vscale": [
+      2.2993663566830325,
+      33.93567926202241,
+      3.6389414636853963,
+      33.90255783380033,
+      35.92282964655267,
+      31.891185930352062
+    ],
+    "jscale": [
+      0.9910201959639946,
+      1.8197933767839312,
+      0.9573064179059282,
+      1.668808465681519,
+      0.9071118978787838,
+      1.489227753975135
+    ],
+    "ratio": [
+      2.32020130976884,
+      18.648094720509405,
+      3.8012295704080246,
+      20.31542776237954,
+      39.601321215779045,
+      21.414579365195294
+    ],
+    "lambda_jscale_v109": 0.003,
+    "final_jscale_v109": {
+      "flow_pct": 0.03210922432849919,
+      "column_pct": 13.85223636375056,
+      "system_pct": 2.7833227898926474,
+      "geometry_pct": 6.174606019681252,
+      "boundary_pct": 11.915179678528794
+    }
+  },
+  "protocol": "weighted objective renormalized by its own training scale v_j^2=E_train||D^S J^S||^2; all other methods merged from e134 with exact-median gates; identical budgets, initialization, batch schedule, selection rule; lambda on validation only"
+}

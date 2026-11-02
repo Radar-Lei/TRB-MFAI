@@ -1,0 +1,7922 @@
+[
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 0,
+  "query": 0,
+  "E_model": 11.354600216013978,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 29.383641557906003,
+    "E_total": 36.423305983740875,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 28.106083684434452
+   },
+   "0.01": {
+    "E_summary": 61.83050567554321,
+    "E_total": 64.21842238773255,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 55.500335998892524
+   },
+   "0.025": {
+    "E_summary": 144.79814307241054,
+    "E_total": 147.76702754720486,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 143.59615688166457
+   },
+   "0.05": {
+    "E_summary": 307.50235948682393,
+    "E_total": 310.9769446880632,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 309.86887776753724
+   },
+   "0.1": {
+    "E_summary": 624.7440201535237,
+    "E_total": 633.3009053769731,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 620.8843190161725
+   }
+  },
+  "fam_scale_reference": 6284.857882350223,
+  "dflow": {
+   "E_dF": 0.01209629814322748,
+   "abs_num": 21.70661324148689,
+   "ref_dF_norm": 1794.4839805093652
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 1,
+  "query": 1,
+  "E_model": 26.216354537887014,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.13510879018378,
+    "E_total": 31.31134584921358,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 19.099606327192504
+   },
+   "0.01": {
+    "E_summary": 35.09109986679209,
+    "E_total": 51.677438119217186,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 35.79293805770544
+   },
+   "0.025": {
+    "E_summary": 87.86289003810316,
+    "E_total": 110.66411529782897,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 72.57436861215638
+   },
+   "0.05": {
+    "E_summary": 191.23147080021585,
+    "E_total": 201.9284090078366,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 184.29060176813772
+   },
+   "0.1": {
+    "E_summary": 299.2739856911663,
+    "E_total": 309.970923898787,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 302.1266081072302
+   }
+  },
+  "fam_scale_reference": 3863.934366815438,
+  "dflow": {
+   "E_dF": 0.042982834711062505,
+   "abs_num": 44.858711525023516,
+   "ref_dF_norm": 1043.642463941035
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 2,
+  "query": 2,
+  "E_model": 10.692167621763474,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.3557526213301685,
+    "E_total": 12.624529104705687,
+    "segments_per_direction": [
+     46
+    ],
+    "E_summary_ref": 5.431680612736045
+   },
+   "0.01": {
+    "E_summary": 10.444315926125967,
+    "E_total": 14.052478819363046,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 10.738813224438275
+   },
+   "0.025": {
+    "E_summary": 25.132196220018102,
+    "E_total": 29.578595716047175,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 24.535479944462196
+   },
+   "0.05": {
+    "E_summary": 46.04791095388197,
+    "E_total": 46.613350985467775,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 51.98115688495983
+   },
+   "0.1": {
+    "E_summary": 68.1006048270597,
+    "E_total": 63.453473182402206,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 61.29810983769892
+   }
+  },
+  "fam_scale_reference": 1089.0325292334594,
+  "dflow": {
+   "E_dF": 0.014548849087924682,
+   "abs_num": 15.330661742554609,
+   "ref_dF_norm": 1053.737079125992
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 3,
+  "query": 3,
+  "E_model": 11.91538722338035,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 9.95681386969045,
+    "E_total": 14.063145491742262,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 10.371974769570727
+   },
+   "0.01": {
+    "E_summary": 18.268763546578285,
+    "E_total": 20.87489885561702,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 20.766133578495996
+   },
+   "0.025": {
+    "E_summary": 49.32184917710555,
+    "E_total": 49.32184917710555,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 49.32184917710549
+   },
+   "0.05": {
+    "E_summary": 49.32184917710555,
+    "E_total": 49.32184917710555,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 49.32184917710549
+   },
+   "0.1": {
+    "E_summary": 174.90600015005924,
+    "E_total": 177.29460490485593,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 176.62004502911014
+   }
+  },
+  "fam_scale_reference": 2095.285401996204,
+  "dflow": {
+   "E_dF": 0.046304570643509124,
+   "abs_num": 32.38461778628365,
+   "ref_dF_norm": 699.3827463730787
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 4,
+  "query": 4,
+  "E_model": 19.984919032853043,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.625472764011761,
+    "E_total": 19.508692258923475,
+    "segments_per_direction": [
+     31
+    ],
+    "E_summary_ref": 4.515201160964466
+   },
+   "0.01": {
+    "E_summary": 8.96369921830592,
+    "E_total": 23.135219821674127,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 8.893537498367607
+   },
+   "0.025": {
+    "E_summary": 22.68109510713407,
+    "E_total": 33.71613985029569,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 22.813228343677565
+   },
+   "0.05": {
+    "E_summary": 45.848603514027445,
+    "E_total": 58.27843212689635,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 42.55296571018101
+   },
+   "0.1": {
+    "E_summary": 91.88169601268851,
+    "E_total": 105.19071574589373,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 92.15117925757613
+   }
+  },
+  "fam_scale_reference": 929.718275508519,
+  "dflow": {
+   "E_dF": 0.02898825613356834,
+   "abs_num": 30.667681027672927,
+   "ref_dF_norm": 1057.9346645195333
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 5,
+  "query": 5,
+  "E_model": 7.772712113245291,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.405472453659797,
+    "E_total": 14.449914817976577,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 13.634380163022684
+   },
+   "0.01": {
+    "E_summary": 23.436326610000435,
+    "E_total": 29.093524478246877,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 25.292139545921202
+   },
+   "0.025": {
+    "E_summary": 67.85042819878421,
+    "E_total": 69.35111309195534,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 67.81853578544681
+   },
+   "0.05": {
+    "E_summary": 119.50150909136607,
+    "E_total": 119.37335978133643,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 118.78789994317827
+   },
+   "0.1": {
+    "E_summary": 169.25273010895376,
+    "E_total": 171.33910555700797,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 169.64638333980784
+   }
+  },
+  "fam_scale_reference": 2733.716837535861,
+  "dflow": {
+   "E_dF": 0.022163589305117148,
+   "abs_num": 11.248366869213513,
+   "ref_dF_norm": 507.51557946512213
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 6,
+  "query": 0,
+  "E_model": 51.33784139587328,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.91278289883769,
+    "E_total": 45.42688585286669,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 18.61972948487437
+   },
+   "0.01": {
+    "E_summary": 41.606217590434426,
+    "E_total": 61.53811333248905,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 40.79518351489128
+   },
+   "0.025": {
+    "E_summary": 101.15402794547344,
+    "E_total": 110.20575238207107,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 101.7528284820603
+   },
+   "0.05": {
+    "E_summary": 101.15402794547344,
+    "E_total": 110.20575238207107,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 106.66744372663356
+   },
+   "0.1": {
+    "E_summary": 398.6334666271838,
+    "E_total": 391.7320199087285,
+    "segments_per_direction": [
+     7
+    ],
+    "E_summary_ref": 418.22236195344806
+   }
+  },
+  "fam_scale_reference": 4187.745373863149,
+  "dflow": {
+   "E_dF": 0.031975544107236804,
+   "abs_num": 42.19459422859987,
+   "ref_dF_norm": 1319.5895615440131
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 7,
+  "query": 1,
+  "E_model": 8.696864976460063,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 15.395479831134509,
+    "E_total": 16.027967862440832,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 15.414979045839132
+   },
+   "0.01": {
+    "E_summary": 28.352168951204476,
+    "E_total": 31.92507628809051,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 29.004703037149454
+   },
+   "0.025": {
+    "E_summary": 62.31701965528731,
+    "E_total": 62.33750771141621,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 79.23970348164312
+   },
+   "0.05": {
+    "E_summary": 156.04949585492477,
+    "E_total": 156.0699839110536,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 152.8890064672068
+   },
+   "0.1": {
+    "E_summary": 242.72420416660404,
+    "E_total": 243.35669219791038,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 239.86971476647477
+   }
+  },
+  "fam_scale_reference": 3216.1085274154707,
+  "dflow": {
+   "E_dF": 0.020247425790506358,
+   "abs_num": 15.541826840776421,
+   "ref_dF_norm": 767.5951995864924
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 8,
+  "query": 2,
+  "E_model": 33.16722369605765,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.848384503217119,
+    "E_total": 33.286552731451195,
+    "segments_per_direction": [
+     44
+    ],
+    "E_summary_ref": 5.766371503221819
+   },
+   "0.01": {
+    "E_summary": 11.20639577363201,
+    "E_total": 22.232665796385675,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 11.078279383384483
+   },
+   "0.025": {
+    "E_summary": 28.025401919449195,
+    "E_total": 27.622296281510785,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 26.77885334324708
+   },
+   "0.05": {
+    "E_summary": 57.66492996017388,
+    "E_total": 57.11354894438227,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 56.608766572307786
+   },
+   "0.1": {
+    "E_summary": 72.03254108348438,
+    "E_total": 72.01714891903276,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 65.83803954512399
+   }
+  },
+  "fam_scale_reference": 1175.469741462893,
+  "dflow": {
+   "E_dF": 0.023543886520794713,
+   "abs_num": 24.73522467997816,
+   "ref_dF_norm": 1050.6007433450386
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 9,
+  "query": 3,
+  "E_model": 6.9287744265847095,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.238693963094136,
+    "E_total": 18.69972604735284,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 17.573614107097484
+   },
+   "0.01": {
+    "E_summary": 35.93237840640896,
+    "E_total": 41.03924250848763,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 36.05429771134621
+   },
+   "0.025": {
+    "E_summary": 75.9577717354907,
+    "E_total": 77.1615350559388,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 74.96276772340764
+   },
+   "0.05": {
+    "E_summary": 96.3665924663452,
+    "E_total": 96.36659246634531,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 96.3665924663452
+   },
+   "0.1": {
+    "E_summary": 295.266722764628,
+    "E_total": 296.65924292311934,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 295.53366252219695
+   }
+  },
+  "fam_scale_reference": 3627.954973807506,
+  "dflow": {
+   "E_dF": 0.020387621734528075,
+   "abs_num": 23.513574821809197,
+   "ref_dF_norm": 1153.3260292929149
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 10,
+  "query": 4,
+  "E_model": 26.233756041806146,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.9466620658722604,
+    "E_total": 26.370873755893456,
+    "segments_per_direction": [
+     31
+    ],
+    "E_summary_ref": 3.9886135594506413
+   },
+   "0.01": {
+    "E_summary": 7.7274592937444595,
+    "E_total": 26.370873755893456,
+    "segments_per_direction": [
+     27
+    ],
+    "E_summary_ref": 7.803925096640796
+   },
+   "0.025": {
+    "E_summary": 18.19819498843316,
+    "E_total": 25.328870071704387,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 19.594959178603006
+   },
+   "0.05": {
+    "E_summary": 39.22825454176848,
+    "E_total": 45.6933473808574,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 35.27165375140328
+   },
+   "0.1": {
+    "E_summary": 78.52409357428473,
+    "E_total": 77.7477820656706,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 76.49754146934339
+   }
+  },
+  "fam_scale_reference": 803.3235634276177,
+  "dflow": {
+   "E_dF": 0.05557198802598263,
+   "abs_num": 47.69617331426172,
+   "ref_dF_norm": 858.2772545758381
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 11,
+  "query": 5,
+  "E_model": 5.940539665344033,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.114754119427374,
+    "E_total": 13.000309937199972,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 12.191789698739342
+   },
+   "0.01": {
+    "E_summary": 24.135750980822763,
+    "E_total": 24.999130122868678,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 25.58426175673867
+   },
+   "0.025": {
+    "E_summary": 61.57101502263714,
+    "E_total": 62.47499836861556,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 66.8050436833314
+   },
+   "0.05": {
+    "E_summary": 130.10049010503474,
+    "E_total": 131.00447345101315,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 130.10970386913766
+   },
+   "0.1": {
+    "E_summary": 212.05807246953543,
+    "E_total": 213.0605679205476,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 213.01131186803076
+   }
+  },
+  "fam_scale_reference": 2684.5150947004067,
+  "dflow": {
+   "E_dF": 0.013440298469038155,
+   "abs_num": 8.982927332853087,
+   "ref_dF_norm": 668.3577268426498
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 12,
+  "query": 0,
+  "E_model": 90.30349577760228,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 55.324308298467486,
+    "E_total": 131.2749785398637,
+    "segments_per_direction": [
+     29
+    ],
+    "E_summary_ref": 55.220285924514485
+   },
+   "0.01": {
+    "E_summary": 105.22462116851136,
+    "E_total": 153.9788214562252,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 110.47193867234898
+   },
+   "0.025": {
+    "E_summary": 248.7280485853596,
+    "E_total": 282.15705676739526,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 239.62173164528122
+   },
+   "0.05": {
+    "E_summary": 526.6332006934729,
+    "E_total": 513.4712210411926,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 541.6196332122946
+   },
+   "0.1": {
+    "E_summary": 836.3533672613389,
+    "E_total": 832.6225850274806,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 798.046494149851
+   }
+  },
+  "fam_scale_reference": 11121.909002349583,
+  "dflow": {
+   "E_dF": 0.05491002819747567,
+   "abs_num": 136.82783313418972,
+   "ref_dF_norm": 2491.855087783036
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 12,
+  "query": 1,
+  "E_model": 21.659842741580746,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 21.876167653475107,
+    "E_total": 24.199742861554284,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 15.91774123576539
+   },
+   "0.01": {
+    "E_summary": 39.64362519839631,
+    "E_total": 46.45395145507928,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 31.57613491860775
+   },
+   "0.025": {
+    "E_summary": 108.10823960423636,
+    "E_total": 114.01241171721153,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 106.87716554882513
+   },
+   "0.05": {
+    "E_summary": 206.16125171269704,
+    "E_total": 215.2134012173872,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 219.04027558727353
+   },
+   "0.1": {
+    "E_summary": 284.9540169863994,
+    "E_total": 294.0061664910895,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 286.6156968838842
+   }
+  },
+  "fam_scale_reference": 4384.155602910088,
+  "dflow": {
+   "E_dF": 0.05491002819747567,
+   "abs_num": 136.82783313418972,
+   "ref_dF_norm": 2491.855087783036
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 13,
+  "query": 1,
+  "E_model": 4.2938727927343905,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.137507441233879,
+    "E_total": 12.271273009586594,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 10.844158885042816
+   },
+   "0.01": {
+    "E_summary": 24.562565335787326,
+    "E_total": 25.542405538675013,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 24.86863295433102
+   },
+   "0.025": {
+    "E_summary": 66.03215770449907,
+    "E_total": 66.03215770449913,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 66.03215770449913
+   },
+   "0.05": {
+    "E_summary": 115.02840679547921,
+    "E_total": 117.27790772369667,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 114.79745403818777
+   },
+   "0.1": {
+    "E_summary": 280.89716623071445,
+    "E_total": 278.185759787914,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 277.5540918086314
+   }
+  },
+  "fam_scale_reference": 2882.409543769038,
+  "dflow": {
+   "E_dF": 0.02018259495402887,
+   "abs_num": 24.35847387513874,
+   "ref_dF_norm": 1206.9049560089534
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 13,
+  "query": 2,
+  "E_model": 17.82482649070549,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.922128493278578,
+    "E_total": 17.94876713261246,
+    "segments_per_direction": [
+     40
+    ],
+    "E_summary_ref": 4.017789861426763
+   },
+   "0.01": {
+    "E_summary": 7.231714572192487,
+    "E_total": 11.80182946567055,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 8.112518103716013
+   },
+   "0.025": {
+    "E_summary": 19.208933865703727,
+    "E_total": 24.4833427311043,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 18.54941088888451
+   },
+   "0.05": {
+    "E_summary": 35.675507150889416,
+    "E_total": 40.084850612839716,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 38.62717386640355
+   },
+   "0.1": {
+    "E_summary": 46.42680693695435,
+    "E_total": 47.114835898721466,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 45.63209728169285
+   }
+  },
+  "fam_scale_reference": 815.0548072258472,
+  "dflow": {
+   "E_dF": 0.02018259495402887,
+   "abs_num": 24.35847387513874,
+   "ref_dF_norm": 1206.9049560089534
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 14,
+  "query": 2,
+  "E_model": 44.936888933647964,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 6.8992929630998105,
+    "E_total": 45.04721735173132,
+    "segments_per_direction": [
+     48
+    ],
+    "E_summary_ref": 6.890531505382
+   },
+   "0.01": {
+    "E_summary": 13.608889142535702,
+    "E_total": 45.04721735173132,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 13.258094038346513
+   },
+   "0.025": {
+    "E_summary": 33.93428601583207,
+    "E_total": 33.75306390901778,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 34.14083138803585
+   },
+   "0.05": {
+    "E_summary": 66.16488064305804,
+    "E_total": 70.46515677220714,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 69.12399176482643
+   },
+   "0.1": {
+    "E_summary": 84.56789630420292,
+    "E_total": 87.4812350289136,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 77.23256395139481
+   }
+  },
+  "fam_scale_reference": 1389.4165394170468,
+  "dflow": {
+   "E_dF": 0.020594693654126237,
+   "abs_num": 33.97471237612553,
+   "ref_dF_norm": 1649.6828234839293
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 14,
+  "query": 3,
+  "E_model": 7.536132857460899,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 19.201148252871917,
+    "E_total": 23.51311417186676,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 19.1319914352801
+   },
+   "0.01": {
+    "E_summary": 37.593774172267416,
+    "E_total": 41.45716003394611,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 38.05214444122694
+   },
+   "0.025": {
+    "E_summary": 80.11025024946792,
+    "E_total": 79.9190564674191,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 79.22207299692445
+   },
+   "0.05": {
+    "E_summary": 98.23331407049375,
+    "E_total": 98.23331407049363,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 98.23331407049363
+   },
+   "0.1": {
+    "E_summary": 297.86105242745236,
+    "E_total": 298.2721867041049,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 297.1631837493542
+   }
+  },
+  "fam_scale_reference": 3907.3239068774797,
+  "dflow": {
+   "E_dF": 0.020594693654126237,
+   "abs_num": 33.97471237612553,
+   "ref_dF_norm": 1649.6828234839293
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 15,
+  "query": 3,
+  "E_model": 13.112577690829141,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 6.919627560481402,
+    "E_total": 10.231924423168778,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 6.785317459425812
+   },
+   "0.01": {
+    "E_summary": 13.930520707730707,
+    "E_total": 22.625649206178764,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 13.57390209467762
+   },
+   "0.025": {
+    "E_summary": 33.05968971020447,
+    "E_total": 38.38815494536074,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 30.58595487927529
+   },
+   "0.05": {
+    "E_summary": 50.12712905863776,
+    "E_total": 50.12712905863782,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 50.12712905863776
+   },
+   "0.1": {
+    "E_summary": 129.19662773043336,
+    "E_total": 128.43367591875614,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 127.55180278653931
+   }
+  },
+  "fam_scale_reference": 1408.6030246095263,
+  "dflow": {
+   "E_dF": 0.02758004138538353,
+   "abs_num": 29.1026604023723,
+   "ref_dF_norm": 1055.2072781803622
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 15,
+  "query": 4,
+  "E_model": 13.58811642253265,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.0688257170812676,
+    "E_total": 13.715342198796804,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 3.044104620087296
+   },
+   "0.01": {
+    "E_summary": 5.451793921001922,
+    "E_total": 13.715342198796804,
+    "segments_per_direction": [
+     26
+    ],
+    "E_summary_ref": 5.864373850276422
+   },
+   "0.025": {
+    "E_summary": 14.224711808010852,
+    "E_total": 15.212344056271945,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 15.054579335433175
+   },
+   "0.05": {
+    "E_summary": 30.542222214818537,
+    "E_total": 31.733438604694783,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 30.670181021011956
+   },
+   "0.1": {
+    "E_summary": 59.76264572716394,
+    "E_total": 61.8238807142701,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 59.29756724989585
+   }
+  },
+  "fam_scale_reference": 613.8471125168505,
+  "dflow": {
+   "E_dF": 0.02758004138538353,
+   "abs_num": 29.1026604023723,
+   "ref_dF_norm": 1055.2072781803622
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 16,
+  "query": 4,
+  "E_model": 31.92526395914706,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.894298426724447,
+    "E_total": 31.69001239769372,
+    "segments_per_direction": [
+     40
+    ],
+    "E_summary_ref": 3.7428734582480274
+   },
+   "0.01": {
+    "E_summary": 7.631915766142754,
+    "E_total": 31.69001239769372,
+    "segments_per_direction": [
+     31
+    ],
+    "E_summary_ref": 7.83937631907088
+   },
+   "0.025": {
+    "E_summary": 19.130900066153743,
+    "E_total": 31.69001239769372,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 19.77981422591506
+   },
+   "0.05": {
+    "E_summary": 38.327446693261436,
+    "E_total": 52.165161081069186,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 37.88209974670036
+   },
+   "0.1": {
+    "E_summary": 73.44196408281294,
+    "E_total": 81.07690172687035,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 75.07001403277792
+   }
+  },
+  "fam_scale_reference": 796.0635675655635,
+  "dflow": {
+   "E_dF": 0.03128264987131749,
+   "abs_num": 36.58507517546799,
+   "ref_dF_norm": 1169.5005162913708
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 16,
+  "query": 5,
+  "E_model": 41.269233186338056,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.16987297211091,
+    "E_total": 31.637681288843623,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 17.0148370903147
+   },
+   "0.01": {
+    "E_summary": 33.87674958239012,
+    "E_total": 66.31615021454422,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 33.43593896181403
+   },
+   "0.025": {
+    "E_summary": 85.780338999506,
+    "E_total": 71.61734956523128,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 83.37846697120955
+   },
+   "0.05": {
+    "E_summary": 160.97693141863445,
+    "E_total": 161.3980755447725,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 152.01551465039188
+   },
+   "0.1": {
+    "E_summary": 232.63910789893504,
+    "E_total": 218.16416345670368,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 216.2296468465078
+   }
+  },
+  "fam_scale_reference": 3492.3226637083117,
+  "dflow": {
+   "E_dF": 0.03128264987131749,
+   "abs_num": 36.58507517546799,
+   "ref_dF_norm": 1169.5005162913708
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 17,
+  "query": 0,
+  "E_model": 5.807793062367864,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.891133881320854,
+    "E_total": 21.586796115575964,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 20.00563360322289
+   },
+   "0.01": {
+    "E_summary": 39.263868275188656,
+    "E_total": 40.686455964673456,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 40.53970614602065
+   },
+   "0.025": {
+    "E_summary": 90.89004476227228,
+    "E_total": 93.17705892714628,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 92.15976119806669
+   },
+   "0.05": {
+    "E_summary": 90.89004476227228,
+    "E_total": 93.17705892714628,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 92.15976119806669
+   },
+   "0.1": {
+    "E_summary": 405.51790181947536,
+    "E_total": 405.8435145401673,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 405.28153609500947
+   }
+  },
+  "fam_scale_reference": 4204.820329734426,
+  "dflow": {
+   "E_dF": 0.012857890638560939,
+   "abs_num": 15.465259188446593,
+   "ref_dF_norm": 1202.7835376096707
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 17,
+  "query": 5,
+  "E_model": 7.845429738933376,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 14.720531136015381,
+    "E_total": 15.595031728406411,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 14.442822823026546
+   },
+   "0.01": {
+    "E_summary": 26.375410729816622,
+    "E_total": 32.33594843523974,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 29.45170403587747
+   },
+   "0.025": {
+    "E_summary": 71.42331405731741,
+    "E_total": 72.29781464970841,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 72.17890389351709
+   },
+   "0.05": {
+    "E_summary": 138.65475424061077,
+    "E_total": 140.491023706921,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 139.89122851377005
+   },
+   "0.1": {
+    "E_summary": 210.92952716068936,
+    "E_total": 212.7657966269996,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 212.50849180731416
+   }
+  },
+  "fam_scale_reference": 2955.1928691256658,
+  "dflow": {
+   "E_dF": 0.012857890638560939,
+   "abs_num": 15.465259188446593,
+   "ref_dF_norm": 1202.7835376096707
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 18,
+  "query": 0,
+  "E_model": 47.79410842793067,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 37.29844208435367,
+    "E_total": 51.11620380186537,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 37.39788617911904
+   },
+   "0.01": {
+    "E_summary": 72.29049511848567,
+    "E_total": 79.72825329638391,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 73.84952135760577
+   },
+   "0.025": {
+    "E_summary": 176.91724674150987,
+    "E_total": 177.2787589909476,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 176.90907032238442
+   },
+   "0.05": {
+    "E_summary": 371.66023748034434,
+    "E_total": 365.20517496034876,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 363.72284986834507
+   },
+   "0.1": {
+    "E_summary": 717.0975007059178,
+    "E_total": 710.6424381859222,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 748.274804386987
+   }
+  },
+  "fam_scale_reference": 7507.815883810073,
+  "dflow": {
+   "E_dF": 0.02358715443306355,
+   "abs_num": 62.401754517173856,
+   "ref_dF_norm": 2645.582140663035
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 18,
+  "query": 1,
+  "E_model": 16.41471964325342,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.479728716192398,
+    "E_total": 26.032284290386187,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 17.44932223589612
+   },
+   "0.01": {
+    "E_summary": 39.45226908502002,
+    "E_total": 53.66821051806687,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 41.73309451584521
+   },
+   "0.025": {
+    "E_summary": 93.55971596374911,
+    "E_total": 99.20127280243582,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 91.87565506587902
+   },
+   "0.05": {
+    "E_summary": 140.1761156682752,
+    "E_total": 149.03125936396384,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 136.3963276944928
+   },
+   "0.1": {
+    "E_summary": 362.4314958904204,
+    "E_total": 371.9840514646142,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 359.0004138558906
+   }
+  },
+  "fam_scale_reference": 4207.053027018527,
+  "dflow": {
+   "E_dF": 0.02358715443306355,
+   "abs_num": 62.401754517173856,
+   "ref_dF_norm": 2645.582140663035
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 19,
+  "query": 1,
+  "E_model": 7.3670931827147115,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.60741101745856,
+    "E_total": 13.639879326040784,
+    "segments_per_direction": [
+     22
+    ],
+    "E_summary_ref": 11.743689192308977
+   },
+   "0.01": {
+    "E_summary": 21.832217888808458,
+    "E_total": 23.037391717969427,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 22.48561585605856
+   },
+   "0.025": {
+    "E_summary": 58.449962359968026,
+    "E_total": 62.787250181782156,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 58.44996235996808
+   },
+   "0.05": {
+    "E_summary": 102.61356677949732,
+    "E_total": 107.29293936488,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 103.05359163490346
+   },
+   "0.1": {
+    "E_summary": 216.97727634694172,
+    "E_total": 219.62935952840678,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 216.9770465120618
+   }
+  },
+  "fam_scale_reference": 2434.397999521734,
+  "dflow": {
+   "E_dF": 0.008020480575322246,
+   "abs_num": 11.469161570254025,
+   "ref_dF_norm": 1429.98433355014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 19,
+  "query": 2,
+  "E_model": 3.058911662053106,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.6388998735440055,
+    "E_total": 6.429151826794481,
+    "segments_per_direction": [
+     42
+    ],
+    "E_summary_ref": 5.187770010116623
+   },
+   "0.01": {
+    "E_summary": 10.385932824552867,
+    "E_total": 10.532146202054093,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 10.224719070355377
+   },
+   "0.025": {
+    "E_summary": 25.664450198988987,
+    "E_total": 26.17770532698802,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 25.56055352866923
+   },
+   "0.05": {
+    "E_summary": 52.99337866295201,
+    "E_total": 54.03615986938735,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 53.74007848279331
+   },
+   "0.1": {
+    "E_summary": 64.98466641108882,
+    "E_total": 64.95879644519698,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 64.86801206650483
+   }
+  },
+  "fam_scale_reference": 1142.516571308955,
+  "dflow": {
+   "E_dF": 0.008020480575322246,
+   "abs_num": 11.469161570254025,
+   "ref_dF_norm": 1429.98433355014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 20,
+  "query": 2,
+  "E_model": 14.468144561732856,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.6075185653206745,
+    "E_total": 12.612779667470932,
+    "segments_per_direction": [
+     46
+    ],
+    "E_summary_ref": 5.309338681559041
+   },
+   "0.01": {
+    "E_summary": 10.921749236171024,
+    "E_total": 15.898799782975686,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 10.571257977621428
+   },
+   "0.025": {
+    "E_summary": 24.934900568430947,
+    "E_total": 27.956875878354282,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 25.653753645278073
+   },
+   "0.05": {
+    "E_summary": 54.23521382614757,
+    "E_total": 57.58752393245197,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 54.39988919420051
+   },
+   "0.1": {
+    "E_summary": 66.50834373968218,
+    "E_total": 69.8383434929001,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 65.29734370269384
+   }
+  },
+  "fam_scale_reference": 1150.2524297896434,
+  "dflow": {
+   "E_dF": 0.036756289501206296,
+   "abs_num": 62.28795658640964,
+   "ref_dF_norm": 1694.6203610776715
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 20,
+  "query": 3,
+  "E_model": 44.65854917424292,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 19.29740047678314,
+    "E_total": 46.71967747605987,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 18.882829021986993
+   },
+   "0.01": {
+    "E_summary": 38.177015288868034,
+    "E_total": 46.71967747605987,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 38.3563265442985
+   },
+   "0.025": {
+    "E_summary": 91.72044209918099,
+    "E_total": 92.4099061667136,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 78.69618279723613
+   },
+   "0.05": {
+    "E_summary": 138.456403348432,
+    "E_total": 138.456403348432,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 138.45640334843188
+   },
+   "0.1": {
+    "E_summary": 367.46359193132054,
+    "E_total": 367.4635919313204,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 361.47705797889046
+   }
+  },
+  "fam_scale_reference": 3875.007401089255,
+  "dflow": {
+   "E_dF": 0.036756289501206296,
+   "abs_num": 62.28795658640964,
+   "ref_dF_norm": 1694.6203610776715
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 21,
+  "query": 3,
+  "E_model": 7.859521238305604,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.13339264951003,
+    "E_total": 20.724041168239978,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 16.655647212435156
+   },
+   "0.01": {
+    "E_summary": 33.35048928291786,
+    "E_total": 35.07156593947116,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 32.548814251017305
+   },
+   "0.025": {
+    "E_summary": 73.32652616026695,
+    "E_total": 73.32652616026678,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 73.32652616026678
+   },
+   "0.05": {
+    "E_summary": 162.55373876709376,
+    "E_total": 162.4356007359779,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 160.55478639169746
+   },
+   "0.1": {
+    "E_summary": 206.58981984765387,
+    "E_total": 206.47168181653802,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 204.79212104146632
+   }
+  },
+  "fam_scale_reference": 3443.542970496997,
+  "dflow": {
+   "E_dF": 0.02404320190973757,
+   "abs_num": 26.12878551035402,
+   "ref_dF_norm": 1086.7431720802454
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 21,
+  "query": 4,
+  "E_model": 10.812280778897673,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.7388020789628627,
+    "E_total": 14.339663462921806,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 3.594371112474221
+   },
+   "0.01": {
+    "E_summary": 7.38132675387692,
+    "E_total": 15.477737090110736,
+    "segments_per_direction": [
+     26
+    ],
+    "E_summary_ref": 7.575619003736676
+   },
+   "0.025": {
+    "E_summary": 18.538562497877138,
+    "E_total": 21.522660834418332,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 18.57841947472093
+   },
+   "0.05": {
+    "E_summary": 33.962673073362055,
+    "E_total": 42.37470647172563,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 33.812607517390745
+   },
+   "0.1": {
+    "E_summary": 75.53221417859925,
+    "E_total": 76.1329510768469,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 75.24615299344293
+   }
+  },
+  "fam_scale_reference": 757.7235782071283,
+  "dflow": {
+   "E_dF": 0.02404320190973757,
+   "abs_num": 26.12878551035402,
+   "ref_dF_norm": 1086.7431720802454
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 22,
+  "query": 4,
+  "E_model": 6.616916042857156,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 2.686795319102231,
+    "E_total": 7.200528472441931,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 2.7398572496803126
+   },
+   "0.01": {
+    "E_summary": 3.756179676115039,
+    "E_total": 7.200528472441931,
+    "segments_per_direction": [
+     28
+    ],
+    "E_summary_ref": 5.394201769446454
+   },
+   "0.025": {
+    "E_summary": 13.450905847895513,
+    "E_total": 17.704481809836466,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 13.569430421436152
+   },
+   "0.05": {
+    "E_summary": 26.66488957617159,
+    "E_total": 32.372167222177694,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 26.216945428017198
+   },
+   "0.1": {
+    "E_summary": 50.49834171509468,
+    "E_total": 56.51399371934434,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 52.35344900448669
+   }
+  },
+  "fam_scale_reference": 553.9051823305714,
+  "dflow": {
+   "E_dF": 0.02027107960320145,
+   "abs_num": 19.789262410692807,
+   "ref_dF_norm": 976.2313008512605
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 22,
+  "query": 5,
+  "E_model": 11.35660678877042,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.78890762736239,
+    "E_total": 24.078249931979144,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 16.730026219157907
+   },
+   "0.01": {
+    "E_summary": 33.64678496076414,
+    "E_total": 41.227491512759286,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 35.21353559462085
+   },
+   "0.025": {
+    "E_summary": 75.96135592914288,
+    "E_total": 77.59276840667354,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 75.9170170456602
+   },
+   "0.05": {
+    "E_summary": 165.56594687716,
+    "E_total": 165.57901505806205,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 163.61972152519957
+   },
+   "0.1": {
+    "E_summary": 236.90191640731257,
+    "E_total": 232.9963975224897,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 230.55076757166376
+   }
+  },
+  "fam_scale_reference": 3570.950913078212,
+  "dflow": {
+   "E_dF": 0.02027107960320145,
+   "abs_num": 19.789262410692807,
+   "ref_dF_norm": 976.2313008512605
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 23,
+  "query": 0,
+  "E_model": 5.605444553002258,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 22.059018911368923,
+    "E_total": 23.909087465038738,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 21.527446827482663
+   },
+   "0.01": {
+    "E_summary": 43.860197672161746,
+    "E_total": 43.93836100565841,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 44.34759359438078
+   },
+   "0.025": {
+    "E_summary": 100.692173946607,
+    "E_total": 100.5588574623348,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 98.76871732911343
+   },
+   "0.05": {
+    "E_summary": 223.20878588878185,
+    "E_total": 224.11602574044082,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 223.16109321619138
+   },
+   "0.1": {
+    "E_summary": 440.59314231015367,
+    "E_total": 443.4255219055826,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 441.97537361853574
+   }
+  },
+  "fam_scale_reference": 4470.337538842001,
+  "dflow": {
+   "E_dF": 0.031052521284880834,
+   "abs_num": 35.332407742697185,
+   "ref_dF_norm": 1137.8273415724277
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 23,
+  "query": 5,
+  "E_model": 10.834736160111902,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.630400768287757,
+    "E_total": 27.42821064112411,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 20.775092945494976
+   },
+   "0.01": {
+    "E_summary": 43.557399520001695,
+    "E_total": 41.06051045485452,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 40.16981781712133
+   },
+   "0.025": {
+    "E_summary": 94.53677861709605,
+    "E_total": 90.46750949592916,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 90.07950870586637
+   },
+   "0.05": {
+    "E_summary": 200.3419567564119,
+    "E_total": 203.1678791895477,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 201.8880069489598
+   },
+   "0.1": {
+    "E_summary": 279.5155629405382,
+    "E_total": 285.36785081498635,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 283.8546680943302
+   }
+  },
+  "fam_scale_reference": 4374.118029030388,
+  "dflow": {
+   "E_dF": 0.031052521284880834,
+   "abs_num": 35.332407742697185,
+   "ref_dF_norm": 1137.8273415724277
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 24,
+  "query": 0,
+  "E_model": 57.30795985291172,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 33.03435172336992,
+    "E_total": 50.61638925183661,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 31.634727824088145
+   },
+   "0.01": {
+    "E_summary": 65.73071011757213,
+    "E_total": 74.0837153240559,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 65.0287750066131
+   },
+   "0.025": {
+    "E_summary": 159.9506780293873,
+    "E_total": 160.98007230326255,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 158.38357628804033
+   },
+   "0.05": {
+    "E_summary": 324.8994650490177,
+    "E_total": 325.79937260944484,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 328.8564099383133
+   },
+   "0.1": {
+    "E_summary": 647.6646757534523,
+    "E_total": 645.2596226004814,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 639.4588410752026
+   }
+  },
+  "fam_scale_reference": 6607.845357368323,
+  "dflow": {
+   "E_dF": 0.021250601508026018,
+   "abs_num": 58.49701057320907,
+   "ref_dF_norm": 2752.722578281639
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 24,
+  "query": 1,
+  "E_model": 13.698341159252891,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.21938576552236,
+    "E_total": 27.722980825608346,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 25.065937238630283
+   },
+   "0.01": {
+    "E_summary": 46.49632921956925,
+    "E_total": 58.03970148914948,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 48.257709853072924
+   },
+   "0.025": {
+    "E_summary": 105.55457620185143,
+    "E_total": 104.8916037442799,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 102.70502120299136
+   },
+   "0.05": {
+    "E_summary": 260.65735795715375,
+    "E_total": 261.49355006220605,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 254.2262834300535
+   },
+   "0.1": {
+    "E_summary": 424.4007296130942,
+    "E_total": 431.9043246731802,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 421.30335656351076
+   }
+  },
+  "fam_scale_reference": 5296.519653586196,
+  "dflow": {
+   "E_dF": 0.021250601508026018,
+   "abs_num": 58.49701057320907,
+   "ref_dF_norm": 2752.722578281639
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 24,
+  "query": 2,
+  "E_model": 10.786028530213343,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.953517748564536,
+    "E_total": 10.846811962501135,
+    "segments_per_direction": [
+     44
+    ],
+    "E_summary_ref": 5.333172442523562
+   },
+   "0.01": {
+    "E_summary": 11.147814378998532,
+    "E_total": 13.462441455816588,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 10.797085960266259
+   },
+   "0.025": {
+    "E_summary": 26.13140673667948,
+    "E_total": 28.265142400675984,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 27.045225172553543
+   },
+   "0.05": {
+    "E_summary": 55.98889250350635,
+    "E_total": 57.27992294047954,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 57.21310099349421
+   },
+   "0.1": {
+    "E_summary": 69.36767531185419,
+    "E_total": 69.41764353823322,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 68.55062686447256
+   }
+  },
+  "fam_scale_reference": 1212.0900467189808,
+  "dflow": {
+   "E_dF": 0.021250601508026018,
+   "abs_num": 58.49701057320907,
+   "ref_dF_norm": 2752.722578281639
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 25,
+  "query": 1,
+  "E_model": 40.89866175429216,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 15.75330691997965,
+    "E_total": 50.906851207839395,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 16.038336079971998
+   },
+   "0.01": {
+    "E_summary": 35.54369768740534,
+    "E_total": 61.36709151366517,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 34.95216773425966
+   },
+   "0.025": {
+    "E_summary": 85.23761942598856,
+    "E_total": 125.50216395100284,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 78.94887784809964
+   },
+   "0.05": {
+    "E_summary": 124.12445159361448,
+    "E_total": 154.14526929406827,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 122.52835138583907
+   },
+   "0.1": {
+    "E_summary": 311.9086133852402,
+    "E_total": 341.929431085694,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 319.49008179641726
+   }
+  },
+  "fam_scale_reference": 3607.4210516148723,
+  "dflow": {
+   "E_dF": 0.057639262483388624,
+   "abs_num": 116.09369092374699,
+   "ref_dF_norm": 2014.1425466227065
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 25,
+  "query": 2,
+  "E_model": 34.067002424566326,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.273805371828132,
+    "E_total": 34.1411002780563,
+    "segments_per_direction": [
+     52
+    ],
+    "E_summary_ref": 4.308797244950995
+   },
+   "0.01": {
+    "E_summary": 7.7505553402947385,
+    "E_total": 34.1411002780563,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 7.267062316794863
+   },
+   "0.025": {
+    "E_summary": 20.93172165280002,
+    "E_total": 22.469947638449753,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 19.367530929605806
+   },
+   "0.05": {
+    "E_summary": 42.822194464626705,
+    "E_total": 42.141329883984,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 41.238108517666035
+   },
+   "0.1": {
+    "E_summary": 56.570319038088556,
+    "E_total": 56.93222233870321,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 48.8767755192157
+   }
+  },
+  "fam_scale_reference": 865.920825120578,
+  "dflow": {
+   "E_dF": 0.057639262483388624,
+   "abs_num": 116.09369092374699,
+   "ref_dF_norm": 2014.1425466227065
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 25,
+  "query": 3,
+  "E_model": 10.27545855355163,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.51618528792403,
+    "E_total": 22.958872066240957,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 19.31644387909077
+   },
+   "0.01": {
+    "E_summary": 33.832445380873594,
+    "E_total": 43.81210238287923,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 32.293461952307524
+   },
+   "0.025": {
+    "E_summary": 83.87819692761121,
+    "E_total": 85.55772571684108,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 82.73105635625737
+   },
+   "0.05": {
+    "E_summary": 102.08757460452318,
+    "E_total": 102.08757460452318,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 102.08757460452318
+   },
+   "0.1": {
+    "E_summary": 328.71663615638596,
+    "E_total": 329.81782637719886,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 328.8548746409353
+   }
+  },
+  "fam_scale_reference": 3870.663901795098,
+  "dflow": {
+   "E_dF": 0.057639262483388624,
+   "abs_num": 116.09369092374699,
+   "ref_dF_norm": 2014.1425466227065
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 26,
+  "query": 2,
+  "E_model": 43.01537630760777,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 8.127541286252153,
+    "E_total": 42.71745126555004,
+    "segments_per_direction": [
+     42
+    ],
+    "E_summary_ref": 7.937039551510452
+   },
+   "0.01": {
+    "E_summary": 16.257108393116027,
+    "E_total": 44.2955003345503,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 14.999859618290628
+   },
+   "0.025": {
+    "E_summary": 35.73237895309944,
+    "E_total": 67.1694403133065,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 39.05098541174607
+   },
+   "0.05": {
+    "E_summary": 70.75809784205504,
+    "E_total": 95.45622155491822,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 77.28226958822484
+   },
+   "0.1": {
+    "E_summary": 89.76984965883008,
+    "E_total": 100.55862801931394,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 90.94113902224382
+   }
+  },
+  "fam_scale_reference": 1630.5013944771924,
+  "dflow": {
+   "E_dF": 0.050719753933203215,
+   "abs_num": 113.85947220118169,
+   "ref_dF_norm": 2244.874301857459
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 26,
+  "query": 3,
+  "E_model": 14.970134327681876,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.804014115105247,
+    "E_total": 20.21127290485103,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 17.948187645079145
+   },
+   "0.01": {
+    "E_summary": 35.27315796138711,
+    "E_total": 36.64110280201197,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 35.7046540668091
+   },
+   "0.025": {
+    "E_summary": 87.1027967237194,
+    "E_total": 87.1027967237194,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 87.10279672371934
+   },
+   "0.05": {
+    "E_summary": 87.1027967237194,
+    "E_total": 87.1027967237194,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 87.10279672371934
+   },
+   "0.1": {
+    "E_summary": 273.21007464424275,
+    "E_total": 273.9254261058285,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 272.8842721273652
+   }
+  },
+  "fam_scale_reference": 3593.9071559951226,
+  "dflow": {
+   "E_dF": 0.050719753933203215,
+   "abs_num": 113.85947220118169,
+   "ref_dF_norm": 2244.874301857459
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 26,
+  "query": 4,
+  "E_model": 55.656251155293205,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.264316841781522,
+    "E_total": 54.90354197960269,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 5.356145373021661
+   },
+   "0.01": {
+    "E_summary": 10.466594327454231,
+    "E_total": 54.90354197960269,
+    "segments_per_direction": [
+     29
+    ],
+    "E_summary_ref": 10.512861105254103
+   },
+   "0.025": {
+    "E_summary": 26.776538417110828,
+    "E_total": 54.90354197960269,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 24.54759516819172
+   },
+   "0.05": {
+    "E_summary": 52.60021704600075,
+    "E_total": 57.10754446421316,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 53.44786196444687
+   },
+   "0.1": {
+    "E_summary": 103.14522348478118,
+    "E_total": 92.83884722899148,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 99.98321362616156
+   }
+  },
+  "fam_scale_reference": 1071.4244907499294,
+  "dflow": {
+   "E_dF": 0.050719753933203215,
+   "abs_num": 113.85947220118169,
+   "ref_dF_norm": 2244.874301857459
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 27,
+  "query": 3,
+  "E_model": 4.97519093168728,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 8.324803990885897,
+    "E_total": 8.951067942270456,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 8.317170532025955
+   },
+   "0.01": {
+    "E_summary": 16.045751633596964,
+    "E_total": 20.886932121237663,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 15.885378654079233
+   },
+   "0.025": {
+    "E_summary": 40.42132259979144,
+    "E_total": 40.54528532903751,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 40.19666057279257
+   },
+   "0.05": {
+    "E_summary": 54.57676192087325,
+    "E_total": 54.57676192087325,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 54.57676192087325
+   },
+   "0.1": {
+    "E_summary": 166.00162515135742,
+    "E_total": 167.03030591665902,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 166.40134358239624
+   }
+  },
+  "fam_scale_reference": 1673.2681401393472,
+  "dflow": {
+   "E_dF": 0.024845467730987773,
+   "abs_num": 38.94226538741212,
+   "ref_dF_norm": 1567.3790410813049
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 27,
+  "query": 4,
+  "E_model": 38.23094832363854,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.783857751516564,
+    "E_total": 38.15560508757072,
+    "segments_per_direction": [
+     41
+    ],
+    "E_summary_ref": 3.774853022579123
+   },
+   "0.01": {
+    "E_summary": 6.696434399411373,
+    "E_total": 38.15560508757072,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 7.745547623789946
+   },
+   "0.025": {
+    "E_summary": 19.453599606309467,
+    "E_total": 38.15560508757072,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 19.102572506327363
+   },
+   "0.05": {
+    "E_summary": 34.242879927226284,
+    "E_total": 48.193605365090946,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 38.8926740095514
+   },
+   "0.1": {
+    "E_summary": 77.5589908441454,
+    "E_total": 80.4383359969367,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 77.48155485000734
+   }
+  },
+  "fam_scale_reference": 782.2854536353848,
+  "dflow": {
+   "E_dF": 0.024845467730987773,
+   "abs_num": 38.94226538741212,
+   "ref_dF_norm": 1567.3790410813049
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 27,
+  "query": 5,
+  "E_model": 8.680359718447903,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.798410869623694,
+    "E_total": 13.188526139550731,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 8.989698000871101
+   },
+   "0.01": {
+    "E_summary": 18.01091960098995,
+    "E_total": 20.393222770757745,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 18.84195756314756
+   },
+   "0.025": {
+    "E_summary": 59.13558953343926,
+    "E_total": 61.33130543007496,
+    "segments_per_direction": [
+     7
+    ],
+    "E_summary_ref": 57.89192900780955
+   },
+   "0.05": {
+    "E_summary": 113.43998177993257,
+    "E_total": 118.43298486411555,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 114.697899486712
+   },
+   "0.1": {
+    "E_summary": 212.28049922086535,
+    "E_total": 213.2758168446718,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 211.5395741974565
+   }
+  },
+  "fam_scale_reference": 2385.415106790304,
+  "dflow": {
+   "E_dF": 0.024845467730987773,
+   "abs_num": 38.94226538741212,
+   "ref_dF_norm": 1567.3790410813049
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 28,
+  "query": 0,
+  "E_model": 12.371740714256475,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 37.36230731522414,
+    "E_total": 41.00324200730597,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 35.73173330339375
+   },
+   "0.01": {
+    "E_summary": 67.62407873912753,
+    "E_total": 71.68305789581655,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 74.22852044396762
+   },
+   "0.025": {
+    "E_summary": 173.53052922480515,
+    "E_total": 173.5380362962062,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 169.54999268698862
+   },
+   "0.05": {
+    "E_summary": 371.9650340614028,
+    "E_total": 373.72937786724674,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 373.2508784408334
+   },
+   "0.1": {
+    "E_summary": 742.9828029872806,
+    "E_total": 752.2808516262735,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 744.9062902581109
+   }
+  },
+  "fam_scale_reference": 7489.46322913344,
+  "dflow": {
+   "E_dF": 0.005452320942202814,
+   "abs_num": 15.49737384876567,
+   "ref_dF_norm": 2842.3443911400627
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 28,
+  "query": 4,
+  "E_model": 5.915810632548016,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.618889542181364,
+    "E_total": 8.612441069083843,
+    "segments_per_direction": [
+     28
+    ],
+    "E_summary_ref": 4.316563336944284
+   },
+   "0.01": {
+    "E_summary": 6.968878244166206,
+    "E_total": 10.856078818215735,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 9.206855084279198
+   },
+   "0.025": {
+    "E_summary": 22.623825062040396,
+    "E_total": 24.116167819100554,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 22.333718164575203
+   },
+   "0.05": {
+    "E_summary": 40.849807194845766,
+    "E_total": 42.13057087497987,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 40.828922283878796
+   },
+   "0.1": {
+    "E_summary": 93.25073725119182,
+    "E_total": 91.30631520599422,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 90.50169626258469
+   }
+  },
+  "fam_scale_reference": 938.585382222615,
+  "dflow": {
+   "E_dF": 0.005452320942202814,
+   "abs_num": 15.49737384876567,
+   "ref_dF_norm": 2842.3443911400627
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 28,
+  "query": 5,
+  "E_model": 7.761085915849435,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 21.222920434095045,
+    "E_total": 25.644229135397836,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 20.922355334099223
+   },
+   "0.01": {
+    "E_summary": 42.45662614870503,
+    "E_total": 37.8415248884653,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 41.27288177245862
+   },
+   "0.025": {
+    "E_summary": 96.22634422122798,
+    "E_total": 92.01524161438658,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 91.6936908803205
+   },
+   "0.05": {
+    "E_summary": 201.61395177100457,
+    "E_total": 204.5162761781251,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 203.18357002301377
+   },
+   "0.1": {
+    "E_summary": 281.2680647208945,
+    "E_total": 286.801991675423,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 285.486190401719
+   }
+  },
+  "fam_scale_reference": 4341.133328555064,
+  "dflow": {
+   "E_dF": 0.005452320942202814,
+   "abs_num": 15.49737384876567,
+   "ref_dF_norm": 2842.3443911400627
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 29,
+  "query": 0,
+  "E_model": 10.196567198114906,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 24.643460814608034,
+    "E_total": 27.458246830655753,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 23.0730948556145
+   },
+   "0.01": {
+    "E_summary": 48.83248924416023,
+    "E_total": 51.10572048117979,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 49.142624202136176
+   },
+   "0.025": {
+    "E_summary": 111.66017778644232,
+    "E_total": 111.88222235257626,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 109.98611308438353
+   },
+   "0.05": {
+    "E_summary": 111.66017778644232,
+    "E_total": 111.88222235257626,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 109.98611308438353
+   },
+   "0.1": {
+    "E_summary": 487.9445185585879,
+    "E_total": 492.72095167025077,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 491.15732541821865
+   }
+  },
+  "fam_scale_reference": 5008.212147425055,
+  "dflow": {
+   "E_dF": 0.010142943806391894,
+   "abs_num": 15.660536614318767,
+   "ref_dF_norm": 1543.9833753638454
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 29,
+  "query": 1,
+  "E_model": 4.046503647310374,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 11.141350510248117,
+    "E_total": 12.284104110775104,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 14.779669456590085
+   },
+   "0.01": {
+    "E_summary": 29.914357898239757,
+    "E_total": 29.953645870723676,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 29.759322393391756
+   },
+   "0.025": {
+    "E_summary": 68.96887544894173,
+    "E_total": 69.2339687939313,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 69.03062535529187
+   },
+   "0.05": {
+    "E_summary": 104.07601818424035,
+    "E_total": 105.2710313076015,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 104.69071439129226
+   },
+   "0.1": {
+    "E_summary": 256.6707449766217,
+    "E_total": 257.8657580999828,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 256.85974210111044
+   }
+  },
+  "fam_scale_reference": 3002.1928950207707,
+  "dflow": {
+   "E_dF": 0.010142943806391894,
+   "abs_num": 15.660536614318767,
+   "ref_dF_norm": 1543.9833753638454
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 29,
+  "query": 5,
+  "E_model": 7.200593624812257,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 11.729856637204193,
+    "E_total": 13.380251838603158,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 10.133485301294456
+   },
+   "0.01": {
+    "E_summary": 23.902093359125786,
+    "E_total": 28.564453691626397,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 23.393026101357464
+   },
+   "0.025": {
+    "E_summary": 56.872337412338254,
+    "E_total": 56.638891746301795,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 56.56630847069613
+   },
+   "0.05": {
+    "E_summary": 112.18579405232839,
+    "E_total": 111.80718183508057,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 111.29858463710124
+   },
+   "0.1": {
+    "E_summary": 172.91253941453317,
+    "E_total": 172.2296011152054,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 171.87316695826604
+   }
+  },
+  "fam_scale_reference": 2404.9785195624927,
+  "dflow": {
+   "E_dF": 0.010142943806391894,
+   "abs_num": 15.660536614318767,
+   "ref_dF_norm": 1543.9833753638454
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 30,
+  "query": 0,
+  "E_model": 13.042139328800715,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 40.90517077596013,
+    "E_total": 50.60815129174381,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 39.332184034717784
+   },
+   "0.01": {
+    "E_summary": 81.49261614261485,
+    "E_total": 84.80602155652605,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 79.99423674391619
+   },
+   "0.025": {
+    "E_summary": 164.47622015632714,
+    "E_total": 165.91913887127203,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 165.7492699134482
+   },
+   "0.05": {
+    "E_summary": 395.34084473030714,
+    "E_total": 401.879755778741,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 398.6881736054363
+   },
+   "0.1": {
+    "E_summary": 750.0988208574203,
+    "E_total": 750.1162689483424,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 748.9571366996232
+   }
+  },
+  "fam_scale_reference": 8211.16705087816,
+  "dflow": {
+   "E_dF": 0.015231152990533615,
+   "abs_num": 42.7739001892023,
+   "ref_dF_norm": 2808.316626836255
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 30,
+  "query": 1,
+  "E_model": 22.02362983022155,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 15.280262368168962,
+    "E_total": 25.408447661873197,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 15.756930279438336
+   },
+   "0.01": {
+    "E_summary": 31.332918380413616,
+    "E_total": 34.98703131394245,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 32.40683050773316
+   },
+   "0.025": {
+    "E_summary": 81.84751069638799,
+    "E_total": 90.08755305783927,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 74.88688940553112
+   },
+   "0.05": {
+    "E_summary": 116.65734781756805,
+    "E_total": 111.24996204787453,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 168.37602645054568
+   },
+   "0.1": {
+    "E_summary": 261.4386630034214,
+    "E_total": 273.7407307458526,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 264.88600398979025
+   }
+  },
+  "fam_scale_reference": 3372.047102713953,
+  "dflow": {
+   "E_dF": 0.015231152990533615,
+   "abs_num": 42.7739001892023,
+   "ref_dF_norm": 2808.316626836255
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 30,
+  "query": 2,
+  "E_model": 18.268402822067145,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.55711703603032,
+    "E_total": 14.472874636189175,
+    "segments_per_direction": [
+     45
+    ],
+    "E_summary_ref": 5.526502717201993
+   },
+   "0.01": {
+    "E_summary": 10.213896561462946,
+    "E_total": 14.928453897022848,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 11.044782714867836
+   },
+   "0.025": {
+    "E_summary": 24.578454495373023,
+    "E_total": 26.662842431392306,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 25.488559444038543
+   },
+   "0.05": {
+    "E_summary": 54.14727745074032,
+    "E_total": 55.70056845598714,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 53.528866588553456
+   },
+   "0.1": {
+    "E_summary": 62.99834344366819,
+    "E_total": 64.57456906222154,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 62.405179727861565
+   }
+  },
+  "fam_scale_reference": 1113.7828577978219,
+  "dflow": {
+   "E_dF": 0.015231152990533615,
+   "abs_num": 42.7739001892023,
+   "ref_dF_norm": 2808.316626836255
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 31,
+  "query": 1,
+  "E_model": 9.60162572666718,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.990257254450626,
+    "E_total": 14.444054396737386,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 11.8647757197906
+   },
+   "0.01": {
+    "E_summary": 34.69772751704022,
+    "E_total": 34.82049150545788,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 34.72518074500374
+   },
+   "0.025": {
+    "E_summary": 84.64099888449971,
+    "E_total": 84.88621800823091,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 83.45934029169558
+   },
+   "0.05": {
+    "E_summary": 124.8835404870598,
+    "E_total": 127.08014301738257,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 124.4741071701203
+   },
+   "0.1": {
+    "E_summary": 310.6601321938751,
+    "E_total": 312.4750148771173,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 310.0598389533953
+   }
+  },
+  "fam_scale_reference": 3495.634081627958,
+  "dflow": {
+   "E_dF": 0.019371858706695066,
+   "abs_num": 43.338139270510155,
+   "ref_dF_norm": 2237.169903347073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 31,
+  "query": 2,
+  "E_model": 11.934159254212886,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 6.3733241124519395,
+    "E_total": 14.943583148214088,
+    "segments_per_direction": [
+     46
+    ],
+    "E_summary_ref": 5.956519829043657
+   },
+   "0.01": {
+    "E_summary": 12.502635778056174,
+    "E_total": 17.663774317291427,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 11.518243024813387
+   },
+   "0.025": {
+    "E_summary": 29.21615203515657,
+    "E_total": 32.68367772535373,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 29.075297586384266
+   },
+   "0.05": {
+    "E_summary": 64.55088228148281,
+    "E_total": 63.62528909291484,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 61.50112885673707
+   },
+   "0.1": {
+    "E_summary": 76.15422382365779,
+    "E_total": 76.15769700848597,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 73.45559234079147
+   }
+  },
+  "fam_scale_reference": 1300.8291178579489,
+  "dflow": {
+   "E_dF": 0.019371858706695066,
+   "abs_num": 43.338139270510155,
+   "ref_dF_norm": 2237.169903347073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 31,
+  "query": 3,
+  "E_model": 10.906589706033856,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.171847521589484,
+    "E_total": 20.14470546779603,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 19.968011565444357
+   },
+   "0.01": {
+    "E_summary": 32.19058933936785,
+    "E_total": 33.03367220882279,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 39.02375303680489
+   },
+   "0.025": {
+    "E_summary": 80.78376057925453,
+    "E_total": 81.7602131289429,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 81.13689723648577
+   },
+   "0.05": {
+    "E_summary": 113.50816773339454,
+    "E_total": 113.50816773339443,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 113.50816773339443
+   },
+   "0.1": {
+    "E_summary": 322.7787763212691,
+    "E_total": 323.7552288709575,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 323.56608016583937
+   }
+  },
+  "fam_scale_reference": 4051.2190718872807,
+  "dflow": {
+   "E_dF": 0.019371858706695066,
+   "abs_num": 43.338139270510155,
+   "ref_dF_norm": 2237.169903347073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 32,
+  "query": 2,
+  "E_model": 6.357717073328104,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.396871728079503,
+    "E_total": 9.452141294162175,
+    "segments_per_direction": [
+     43
+    ],
+    "E_summary_ref": 4.841069807870269
+   },
+   "0.01": {
+    "E_summary": 9.39804486903165,
+    "E_total": 11.80094269478451,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 9.17292371948713
+   },
+   "0.025": {
+    "E_summary": 24.61071476869617,
+    "E_total": 25.11176586051397,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 24.50477517757274
+   },
+   "0.05": {
+    "E_summary": 53.388960129155066,
+    "E_total": 53.22260365236889,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 52.192395404675096
+   },
+   "0.1": {
+    "E_summary": 62.90261478674434,
+    "E_total": 63.29988900350668,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 61.787500924436785
+   }
+  },
+  "fam_scale_reference": 1095.4936322672588,
+  "dflow": {
+   "E_dF": 0.01017711480948858,
+   "abs_num": 19.88351153178143,
+   "ref_dF_norm": 1953.7473934403433
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 32,
+  "query": 3,
+  "E_model": 2.641748598506922,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 11.559703408042765,
+    "E_total": 11.52748824313501,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 11.381515076803595
+   },
+   "0.01": {
+    "E_summary": 20.314491892473185,
+    "E_total": 20.282276727565446,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 20.25955739409278
+   },
+   "0.025": {
+    "E_summary": 49.97711796668867,
+    "E_total": 50.049693748051595,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 49.48537562968178
+   },
+   "0.05": {
+    "E_summary": 65.0646019680816,
+    "E_total": 65.0646019680816,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 65.06460196808155
+   },
+   "0.1": {
+    "E_summary": 194.61960432210827,
+    "E_total": 195.24420395338063,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 194.88407660163648
+   }
+  },
+  "fam_scale_reference": 2336.8134575958634,
+  "dflow": {
+   "E_dF": 0.01017711480948858,
+   "abs_num": 19.88351153178143,
+   "ref_dF_norm": 1953.7473934403433
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 32,
+  "query": 4,
+  "E_model": 12.399732046581278,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.022657657278728,
+    "E_total": 12.372011005557852,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 3.973413646442623
+   },
+   "0.01": {
+    "E_summary": 5.600612740956478,
+    "E_total": 17.944902705490847,
+    "segments_per_direction": [
+     27
+    ],
+    "E_summary_ref": 7.795512500493203
+   },
+   "0.025": {
+    "E_summary": 20.09110038322632,
+    "E_total": 23.65980117876677,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 20.109833569438422
+   },
+   "0.05": {
+    "E_summary": 39.62051429447666,
+    "E_total": 46.01688741863745,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 39.587157630412946
+   },
+   "0.1": {
+    "E_summary": 77.52299071321599,
+    "E_total": 82.73023391672746,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 76.2234135543813
+   }
+  },
+  "fam_scale_reference": 805.044403147608,
+  "dflow": {
+   "E_dF": 0.01017711480948858,
+   "abs_num": 19.88351153178143,
+   "ref_dF_norm": 1953.7473934403433
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 33,
+  "query": 3,
+  "E_model": 9.226222108460135,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 9.488848934868471,
+    "E_total": 13.625149688052318,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 9.39331353953655
+   },
+   "0.01": {
+    "E_summary": 19.820594187412368,
+    "E_total": 21.656447202364433,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 17.238364346058376
+   },
+   "0.025": {
+    "E_summary": 45.55008167018467,
+    "E_total": 45.30856915740908,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 43.81432684425758
+   },
+   "0.05": {
+    "E_summary": 54.61814043586929,
+    "E_total": 54.61814043586941,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 54.61814043586935
+   },
+   "0.1": {
+    "E_summary": 181.31067614817843,
+    "E_total": 183.1465291631305,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 181.49086806449264
+   }
+  },
+  "fam_scale_reference": 1988.5571077049983,
+  "dflow": {
+   "E_dF": 0.027189978010811185,
+   "abs_num": 39.737355620863134,
+   "ref_dF_norm": 1461.4706788311084
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 33,
+  "query": 4,
+  "E_model": 11.956135951534009,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.6753898210064335,
+    "E_total": 13.084446824053543,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 4.520188295561354
+   },
+   "0.01": {
+    "E_summary": 7.693936382770062,
+    "E_total": 15.120276139259886,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 8.97657928777005
+   },
+   "0.025": {
+    "E_summary": 22.363843965413537,
+    "E_total": 25.698612177033453,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 22.6764803883853
+   },
+   "0.05": {
+    "E_summary": 42.4001803356914,
+    "E_total": 50.054941391572584,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 40.90725860207641
+   },
+   "0.1": {
+    "E_summary": 92.6130522898776,
+    "E_total": 93.0326205145351,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 90.14480713925246
+   }
+  },
+  "fam_scale_reference": 949.7631089174961,
+  "dflow": {
+   "E_dF": 0.027189978010811185,
+   "abs_num": 39.737355620863134,
+   "ref_dF_norm": 1461.4706788311084
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 33,
+  "query": 5,
+  "E_model": 3.3643495181526646,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 8.433580186084612,
+    "E_total": 10.134176583013186,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 8.581428638779755
+   },
+   "0.01": {
+    "E_summary": 17.824351105005974,
+    "E_total": 19.76071783175871,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 17.490339077672274
+   },
+   "0.025": {
+    "E_summary": 41.559700626407334,
+    "E_total": 43.77350006237623,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 41.72676334656012
+   },
+   "0.05": {
+    "E_summary": 81.87257651773356,
+    "E_total": 84.08637595370243,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 82.1812502434135
+   },
+   "0.1": {
+    "E_summary": 151.9456162509506,
+    "E_total": 154.1594156869195,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 152.90250887946033
+   }
+  },
+  "fam_scale_reference": 1830.827621645116,
+  "dflow": {
+   "E_dF": 0.027189978010811185,
+   "abs_num": 39.737355620863134,
+   "ref_dF_norm": 1461.4706788311084
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 34,
+  "query": 0,
+  "E_model": 42.60721188824209,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 27.303132115396238,
+    "E_total": 57.66148943677649,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 26.306889867308826
+   },
+   "0.01": {
+    "E_summary": 53.6321685586895,
+    "E_total": 76.91495040336508,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 53.31205336356538
+   },
+   "0.025": {
+    "E_summary": 129.47139632573726,
+    "E_total": 143.90261518918544,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 134.11475455380696
+   },
+   "0.05": {
+    "E_summary": 281.75105848638077,
+    "E_total": 280.58396694738207,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 278.15486454486296
+   },
+   "0.1": {
+    "E_summary": 517.9541387660761,
+    "E_total": 516.1375416951853,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 503.2204128272533
+   }
+  },
+  "fam_scale_reference": 5645.660147543854,
+  "dflow": {
+   "E_dF": 0.02959170285910101,
+   "abs_num": 57.38847107451799,
+   "ref_dF_norm": 1939.343313487889
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 34,
+  "query": 4,
+  "E_model": 13.014197738002736,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.99762123838417,
+    "E_total": 13.014197738002736,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 3.993173096809244
+   },
+   "0.01": {
+    "E_summary": 7.218334072798939,
+    "E_total": 17.0003695302064,
+    "segments_per_direction": [
+     27
+    ],
+    "E_summary_ref": 7.241022846379622
+   },
+   "0.025": {
+    "E_summary": 20.04897181381307,
+    "E_total": 24.891227625607144,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 19.516696558216154
+   },
+   "0.05": {
+    "E_summary": 39.61763052358026,
+    "E_total": 48.70819617024489,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 40.02497019472639
+   },
+   "0.1": {
+    "E_summary": 77.51224830426099,
+    "E_total": 84.74589690876874,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 76.97459077265177
+   }
+  },
+  "fam_scale_reference": 802.5121236978023,
+  "dflow": {
+   "E_dF": 0.02959170285910101,
+   "abs_num": 57.38847107451799,
+   "ref_dF_norm": 1939.343313487889
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 34,
+  "query": 5,
+  "E_model": 24.97840101410793,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 14.200780905011982,
+    "E_total": 20.63451761912836,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 13.336270572231228
+   },
+   "0.01": {
+    "E_summary": 24.09144475329981,
+    "E_total": 45.95115149085791,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 28.365033999178735
+   },
+   "0.025": {
+    "E_summary": 65.67174085051099,
+    "E_total": 63.66366819659237,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 61.893006151872584
+   },
+   "0.05": {
+    "E_summary": 133.9703956565519,
+    "E_total": 135.13112027572117,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 138.49060875362264
+   },
+   "0.1": {
+    "E_summary": 169.59045318954435,
+    "E_total": 163.8563359712154,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 161.5430857767232
+   }
+  },
+  "fam_scale_reference": 2843.140061527708,
+  "dflow": {
+   "E_dF": 0.02959170285910101,
+   "abs_num": 57.38847107451799,
+   "ref_dF_norm": 1939.343313487889
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 35,
+  "query": 0,
+  "E_model": 65.7744105337751,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 18.785807773085594,
+    "E_total": 65.73286169710929,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 19.54984612687241
+   },
+   "0.01": {
+    "E_summary": 37.98743670067688,
+    "E_total": 78.73705834790132,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 34.73854968359876
+   },
+   "0.025": {
+    "E_summary": 93.81728991176158,
+    "E_total": 115.51817596831631,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 96.78490075796196
+   },
+   "0.05": {
+    "E_summary": 93.81728991176158,
+    "E_total": 115.51817596831631,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 190.83855734046944
+   },
+   "0.1": {
+    "E_summary": 387.5873797807353,
+    "E_total": 380.30465086778554,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 395.30482579928423
+   }
+  },
+  "fam_scale_reference": 3970.4152710725157,
+  "dflow": {
+   "E_dF": 0.08715588111172431,
+   "abs_num": 124.64046609854034,
+   "ref_dF_norm": 1430.0866964876975
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 35,
+  "query": 1,
+  "E_model": 47.18907498199002,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.798181109002883,
+    "E_total": 59.91379059086614,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 18.065791789470325
+   },
+   "0.01": {
+    "E_summary": 42.386312655524875,
+    "E_total": 73.25507660722678,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 41.1520196667492
+   },
+   "0.025": {
+    "E_summary": 104.99912241328525,
+    "E_total": 136.60176861658147,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 89.5120798803116
+   },
+   "0.05": {
+    "E_summary": 210.07900467365926,
+    "E_total": 246.6531838183796,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 214.2086730619801
+   },
+   "0.1": {
+    "E_summary": 354.26924034067014,
+    "E_total": 390.8434194853906,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 367.46743265815
+   }
+  },
+  "fam_scale_reference": 4339.5286243496685,
+  "dflow": {
+   "E_dF": 0.08715588111172431,
+   "abs_num": 124.64046609854034,
+   "ref_dF_norm": 1430.0866964876975
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 35,
+  "query": 5,
+  "E_model": 14.55519762532225,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.467956761251827,
+    "E_total": 17.130062036337563,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 13.141036275195177
+   },
+   "0.01": {
+    "E_summary": 24.251989674804975,
+    "E_total": 36.43302938531667,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 24.917351401629958
+   },
+   "0.025": {
+    "E_summary": 64.61816406299613,
+    "E_total": 62.08467353620742,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 60.88975301806184
+   },
+   "0.05": {
+    "E_summary": 127.03780385359224,
+    "E_total": 127.44679129964052,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 125.51009228022977
+   },
+   "0.1": {
+    "E_summary": 179.49448168161675,
+    "E_total": 177.57178657699137,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 176.80092883291746
+   }
+  },
+  "fam_scale_reference": 2642.1832717653015,
+  "dflow": {
+   "E_dF": 0.08715588111172431,
+   "abs_num": 124.64046609854034,
+   "ref_dF_norm": 1430.0866964876975
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 36,
+  "query": 0,
+  "E_model": 31.590492040256663,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 25.603989257963576,
+    "E_total": 54.562216542914825,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 25.43830429927857
+   },
+   "0.01": {
+    "E_summary": 46.47929573378033,
+    "E_total": 65.57977172414871,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 51.3466391805963
+   },
+   "0.025": {
+    "E_summary": 117.21363033780165,
+    "E_total": 129.75043508333738,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 114.37296889736194
+   },
+   "0.05": {
+    "E_summary": 245.16583165288523,
+    "E_total": 237.81340132628299,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 248.90005919882697
+   },
+   "0.1": {
+    "E_summary": 415.01438090641375,
+    "E_total": 414.65186593673,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 402.1007294617888
+   }
+  },
+  "fam_scale_reference": 5164.019393175141,
+  "dflow": {
+   "E_dF": 0.0629302845374386,
+   "abs_num": 211.5534084069452,
+   "ref_dF_norm": 3361.710660645233
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 36,
+  "query": 1,
+  "E_model": 7.965643982369301,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 15.287260686625416,
+    "E_total": 21.930007963137655,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 18.57368727633667
+   },
+   "0.01": {
+    "E_summary": 46.2614328729326,
+    "E_total": 53.62296491185239,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 35.71299399281543
+   },
+   "0.025": {
+    "E_summary": 76.45825106856591,
+    "E_total": 78.01886189894356,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 114.22498769759875
+   },
+   "0.05": {
+    "E_summary": 227.55589855791544,
+    "E_total": 233.09093248896306,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 230.32341552343922
+   },
+   "0.1": {
+    "E_summary": 315.54478664800973,
+    "E_total": 321.07982057905735,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 316.76556982901667
+   }
+  },
+  "fam_scale_reference": 4689.306467046177,
+  "dflow": {
+   "E_dF": 0.0629302845374386,
+   "abs_num": 211.5534084069452,
+   "ref_dF_norm": 3361.710660645233
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 36,
+  "query": 2,
+  "E_model": 34.081465783207875,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 6.0295535600712356,
+    "E_total": 34.10844511413944,
+    "segments_per_direction": [
+     46
+    ],
+    "E_summary_ref": 6.042710843198165
+   },
+   "0.01": {
+    "E_summary": 11.922626252764786,
+    "E_total": 26.112097099533685,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 10.970054043972937
+   },
+   "0.025": {
+    "E_summary": 29.66030418028845,
+    "E_total": 34.088318613007516,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 27.6335173326828
+   },
+   "0.05": {
+    "E_summary": 57.606704505694836,
+    "E_total": 62.03471893841396,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 58.876445013266846
+   },
+   "0.1": {
+    "E_summary": 74.94937436171162,
+    "E_total": 75.1610713581967,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 69.68863265905493
+   }
+  },
+  "fam_scale_reference": 1235.7803285462298,
+  "dflow": {
+   "E_dF": 0.0629302845374386,
+   "abs_num": 211.5534084069452,
+   "ref_dF_norm": 3361.710660645233
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 36,
+  "query": 3,
+  "E_model": 25.367104397031085,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 21.476772016992868,
+    "E_total": 40.61155277842158,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 22.062444709767306
+   },
+   "0.01": {
+    "E_summary": 44.49136642905202,
+    "E_total": 56.9640994809148,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 42.94883923090478
+   },
+   "0.025": {
+    "E_summary": 95.9785369029413,
+    "E_total": 95.9785369029413,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 95.97853690294119
+   },
+   "0.05": {
+    "E_summary": 220.9344823883744,
+    "E_total": 217.49056657392205,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 212.1953578564102
+   },
+   "0.1": {
+    "E_summary": 279.0141079159457,
+    "E_total": 275.5701921014934,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 270.67330474863843
+   }
+  },
+  "fam_scale_reference": 4458.670319562568,
+  "dflow": {
+   "E_dF": 0.0629302845374386,
+   "abs_num": 211.5534084069452,
+   "ref_dF_norm": 3361.710660645233
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 36,
+  "query": 4,
+  "E_model": 41.249912919007386,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.4789255890777895,
+    "E_total": 41.25589703217318,
+    "segments_per_direction": [
+     43
+    ],
+    "E_summary_ref": 4.272830756487338
+   },
+   "0.01": {
+    "E_summary": 8.93942742517956,
+    "E_total": 41.25589703217318,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 8.588995391218702
+   },
+   "0.025": {
+    "E_summary": 21.948060688766816,
+    "E_total": 52.51849822560803,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 21.985195281905533
+   },
+   "0.05": {
+    "E_summary": 42.96990036781199,
+    "E_total": 42.70264011267648,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 37.1110470428589
+   },
+   "0.1": {
+    "E_summary": 85.06386678228648,
+    "E_total": 89.8942536414853,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 85.09593202316483
+   }
+  },
+  "fam_scale_reference": 896.1204517708982,
+  "dflow": {
+   "E_dF": 0.0629302845374386,
+   "abs_num": 211.5534084069452,
+   "ref_dF_norm": 3361.710660645233
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 36,
+  "query": 5,
+  "E_model": 43.799079168524145,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 23.42544076980346,
+    "E_total": 38.64858008445458,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 26.37308207216404
+   },
+   "0.01": {
+    "E_summary": 51.73288047917447,
+    "E_total": 72.4353339330836,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 52.132005256057084
+   },
+   "0.025": {
+    "E_summary": 120.40743425005047,
+    "E_total": 112.81999703407178,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 134.90439730111768
+   },
+   "0.05": {
+    "E_summary": 248.84077272429096,
+    "E_total": 240.0733859036015,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 236.80341061409894
+   },
+   "0.1": {
+    "E_summary": 289.09672862092805,
+    "E_total": 283.92330500301694,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 278.8563481121252
+   }
+  },
+  "fam_scale_reference": 5419.849135666407,
+  "dflow": {
+   "E_dF": 0.0629302845374386,
+   "abs_num": 211.5534084069452,
+   "ref_dF_norm": 3361.710660645233
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 37,
+  "query": 0,
+  "E_model": 5.408977638853003,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 24.54868679637525,
+    "E_total": 25.237142736505575,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 26.02570652944928
+   },
+   "0.01": {
+    "E_summary": 52.03098452188749,
+    "E_total": 52.61611994229679,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 51.56842250329623
+   },
+   "0.025": {
+    "E_summary": 130.18187081958217,
+    "E_total": 131.57272465783535,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 130.78743126193876
+   },
+   "0.05": {
+    "E_summary": 130.18187081958217,
+    "E_total": 131.57272465783535,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 130.78743126193876
+   },
+   "0.1": {
+    "E_summary": 532.3181770923823,
+    "E_total": 530.8845199936674,
+    "segments_per_direction": [
+     7
+    ],
+    "E_summary_ref": 530.0012560144836
+   }
+  },
+  "fam_scale_reference": 5446.993964121941,
+  "dflow": {
+   "E_dF": 0.03405900501452075,
+   "abs_num": 79.74406258304856,
+   "ref_dF_norm": 2341.350328615014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 37,
+  "query": 1,
+  "E_model": 5.32742329188909,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.675800354693422,
+    "E_total": 12.652800541924194,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 11.20551376231748
+   },
+   "0.01": {
+    "E_summary": 20.87720528464581,
+    "E_total": 21.42291080204052,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 21.28675040496651
+   },
+   "0.025": {
+    "E_summary": 56.107797048533314,
+    "E_total": 56.10779704853337,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 56.10779704853337
+   },
+   "0.05": {
+    "E_summary": 98.35367742823155,
+    "E_total": 99.9734913703785,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 97.59201041577631
+   },
+   "0.1": {
+    "E_summary": 242.31643538600974,
+    "E_total": 244.420531806101,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 241.7969096125267
+   }
+  },
+  "fam_scale_reference": 2461.2423523873813,
+  "dflow": {
+   "E_dF": 0.03405900501452075,
+   "abs_num": 79.74406258304856,
+   "ref_dF_norm": 2341.350328615014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 37,
+  "query": 2,
+  "E_model": 21.56822818513737,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.152695898592526,
+    "E_total": 21.695619945807138,
+    "segments_per_direction": [
+     47
+    ],
+    "E_summary_ref": 3.9123296388604274
+   },
+   "0.01": {
+    "E_summary": 8.245532225590352,
+    "E_total": 21.695619945807138,
+    "segments_per_direction": [
+     36
+    ],
+    "E_summary_ref": 7.922494473872462
+   },
+   "0.025": {
+    "E_summary": 18.88075076591025,
+    "E_total": 19.543934814288832,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 18.615497230434926
+   },
+   "0.05": {
+    "E_summary": 39.01532902078884,
+    "E_total": 40.028255699903866,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 38.87811228000538
+   },
+   "0.1": {
+    "E_summary": 47.276036208334034,
+    "E_total": 48.39776516910264,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 47.4933542548533
+   }
+  },
+  "fam_scale_reference": 832.1305231111647,
+  "dflow": {
+   "E_dF": 0.03405900501452075,
+   "abs_num": 79.74406258304856,
+   "ref_dF_norm": 2341.350328615014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 37,
+  "query": 3,
+  "E_model": 2.3300508393705286,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 8.934753050052123,
+    "E_total": 9.345490755650331,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 8.53537849889959
+   },
+   "0.01": {
+    "E_summary": 17.674095951590274,
+    "E_total": 19.505173608390223,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 15.661329235460869
+   },
+   "0.025": {
+    "E_summary": 39.248914685312144,
+    "E_total": 41.07999234211209,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 39.56548633262993
+   },
+   "0.05": {
+    "E_summary": 55.808995647940435,
+    "E_total": 55.80899564794038,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 55.80899564794032
+   },
+   "0.1": {
+    "E_summary": 165.21119855297295,
+    "E_total": 167.0422762097729,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 166.0259941029706
+   }
+  },
+  "fam_scale_reference": 1804.3760382528274,
+  "dflow": {
+   "E_dF": 0.03405900501452075,
+   "abs_num": 79.74406258304856,
+   "ref_dF_norm": 2341.350328615014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 37,
+  "query": 4,
+  "E_model": 66.11333258468247,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.585687239267884,
+    "E_total": 65.65247198400911,
+    "segments_per_direction": [
+     38
+    ],
+    "E_summary_ref": 4.441735957235494
+   },
+   "0.01": {
+    "E_summary": 9.13422055875111,
+    "E_total": 65.65247198400911,
+    "segments_per_direction": [
+     29
+    ],
+    "E_summary_ref": 8.656774077619446
+   },
+   "0.025": {
+    "E_summary": 22.863748083738813,
+    "E_total": 65.65247198400911,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 22.772490511431272
+   },
+   "0.05": {
+    "E_summary": 44.21594886326585,
+    "E_total": 46.39226706517036,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 42.39239757625933
+   },
+   "0.1": {
+    "E_summary": 90.14863148559022,
+    "E_total": 91.07802919461909,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 90.40177843203514
+   }
+  },
+  "fam_scale_reference": 920.4688513633016,
+  "dflow": {
+   "E_dF": 0.03405900501452075,
+   "abs_num": 79.74406258304856,
+   "ref_dF_norm": 2341.350328615014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 37,
+  "query": 5,
+  "E_model": 9.906833515014682,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.15393853000444,
+    "E_total": 17.966641848802738,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 15.201694886609857
+   },
+   "0.01": {
+    "E_summary": 31.358623275254217,
+    "E_total": 37.37399278663793,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 33.109739718786386
+   },
+   "0.025": {
+    "E_summary": 76.20121954367397,
+    "E_total": 78.01392286247227,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 77.00863232377395
+   },
+   "0.05": {
+    "E_summary": 161.93604810401507,
+    "E_total": 163.98990296156944,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 162.6766638675428
+   },
+   "0.1": {
+    "E_summary": 266.2620437247941,
+    "E_total": 268.3158985823485,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 266.81816914005407
+   }
+  },
+  "fam_scale_reference": 3332.7825204972983,
+  "dflow": {
+   "E_dF": 0.03405900501452075,
+   "abs_num": 79.74406258304856,
+   "ref_dF_norm": 2341.350328615014
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 38,
+  "query": 0,
+  "E_model": 30.593807565636553,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 41.69392833209554,
+    "E_total": 50.81963662701446,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 41.848999244821016
+   },
+   "0.01": {
+    "E_summary": 80.62967711963029,
+    "E_total": 84.99514712389714,
+    "segments_per_direction": [
+     22
+    ],
+    "E_summary_ref": 82.52252792843387
+   },
+   "0.025": {
+    "E_summary": 190.31602959694487,
+    "E_total": 195.0802270014492,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 190.25415066685878
+   },
+   "0.05": {
+    "E_summary": 418.6780147583603,
+    "E_total": 417.4994620355113,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 415.3394591030981
+   },
+   "0.1": {
+    "E_summary": 758.1710715585846,
+    "E_total": 758.2652042883063,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 752.5349908050923
+   }
+  },
+  "fam_scale_reference": 8378.261889008105,
+  "dflow": {
+   "E_dF": 0.015045757781374966,
+   "abs_num": 57.07749019176305,
+   "ref_dF_norm": 3793.5935843935263
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 38,
+  "query": 1,
+  "E_model": 4.794833865611508,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 13.091913304342029,
+    "E_total": 15.29528486278312,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 13.895964860622271
+   },
+   "0.01": {
+    "E_summary": 28.884364748811834,
+    "E_total": 27.34712396381218,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 26.194353964441405
+   },
+   "0.025": {
+    "E_summary": 55.097388715145655,
+    "E_total": 56.21178582013903,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 54.85675087681108
+   },
+   "0.05": {
+    "E_summary": 139.2872910714425,
+    "E_total": 138.83624473963232,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 138.26393151470614
+   },
+   "0.1": {
+    "E_summary": 222.0881341277548,
+    "E_total": 225.40130760564807,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 223.51919770079638
+   }
+  },
+  "fam_scale_reference": 3027.669215821909,
+  "dflow": {
+   "E_dF": 0.015045757781374966,
+   "abs_num": 57.07749019176305,
+   "ref_dF_norm": 3793.5935843935263
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 38,
+  "query": 2,
+  "E_model": 23.330019712007157,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.964351867302128,
+    "E_total": 23.375192302717068,
+    "segments_per_direction": [
+     45
+    ],
+    "E_summary_ref": 4.870364816862377
+   },
+   "0.01": {
+    "E_summary": 8.947312903723883,
+    "E_total": 14.624839714232252,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 9.478097308221322
+   },
+   "0.025": {
+    "E_summary": 23.437574570574597,
+    "E_total": 26.577560487116614,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 22.74991559915854
+   },
+   "0.05": {
+    "E_summary": 42.18529754252512,
+    "E_total": 41.664041936207184,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 47.851055122221965
+   },
+   "0.1": {
+    "E_summary": 62.55114194979723,
+    "E_total": 62.035426017043335,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 55.50077991473478
+   }
+  },
+  "fam_scale_reference": 994.0055841927511,
+  "dflow": {
+   "E_dF": 0.015045757781374966,
+   "abs_num": 57.07749019176305,
+   "ref_dF_norm": 3793.5935843935263
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 38,
+  "query": 3,
+  "E_model": 5.0196833432005405,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.72536782009024,
+    "E_total": 22.749879691646925,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 21.058073237403477
+   },
+   "0.01": {
+    "E_summary": 41.42335136346023,
+    "E_total": 44.74101177425504,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 41.85769291345807
+   },
+   "0.025": {
+    "E_summary": 93.70388231538544,
+    "E_total": 93.7038823153855,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 93.7038823153855
+   },
+   "0.05": {
+    "E_summary": 210.97023493637369,
+    "E_total": 207.85946811204462,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 207.84092797354992
+   },
+   "0.1": {
+    "E_summary": 282.7995463292842,
+    "E_total": 280.4928654313147,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 280.4217172248999
+   }
+  },
+  "fam_scale_reference": 4226.826867794825,
+  "dflow": {
+   "E_dF": 0.015045757781374966,
+   "abs_num": 57.07749019176305,
+   "ref_dF_norm": 3793.5935843935263
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 38,
+  "query": 4,
+  "E_model": 16.09350032018817,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.6373215642277046,
+    "E_total": 16.13617402152113,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 3.5103358344399567
+   },
+   "0.01": {
+    "E_summary": 7.347638785485174,
+    "E_total": 16.13617402152113,
+    "segments_per_direction": [
+     27
+    ],
+    "E_summary_ref": 7.382515886710678
+   },
+   "0.025": {
+    "E_summary": 17.43828613590182,
+    "E_total": 24.489923817189492,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 18.180334790304755
+   },
+   "0.05": {
+    "E_summary": 36.083407266735094,
+    "E_total": 45.168008061196645,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 35.40699920194436
+   },
+   "0.1": {
+    "E_summary": 68.73388913041168,
+    "E_total": 73.88658696843657,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 70.48905204908749
+   }
+  },
+  "fam_scale_reference": 742.0400241974874,
+  "dflow": {
+   "E_dF": 0.015045757781374966,
+   "abs_num": 57.07749019176305,
+   "ref_dF_norm": 3793.5935843935263
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 38,
+  "query": 5,
+  "E_model": 21.44562581209516,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 14.759087132454908,
+    "E_total": 20.052377174694072,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 14.862273424723412
+   },
+   "0.01": {
+    "E_summary": 24.008189638716942,
+    "E_total": 45.4538154508121,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 30.037358856427403
+   },
+   "0.025": {
+    "E_summary": 73.49811318203854,
+    "E_total": 71.73264860355107,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 69.87009874142797
+   },
+   "0.05": {
+    "E_summary": 144.43923146959398,
+    "E_total": 147.24261226691422,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 150.6496168274494
+   },
+   "0.1": {
+    "E_summary": 184.12861387674326,
+    "E_total": 177.497330699619,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 175.97963621419362
+   }
+  },
+  "fam_scale_reference": 3016.4456553086416,
+  "dflow": {
+   "E_dF": 0.015045757781374966,
+   "abs_num": 57.07749019176305,
+   "ref_dF_norm": 3793.5935843935263
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 39,
+  "query": 0,
+  "E_model": 27.667332987736927,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 22.853613415100824,
+    "E_total": 42.074987018202364,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 22.7255056628278
+   },
+   "0.01": {
+    "E_summary": 43.76427932792615,
+    "E_total": 69.35942904706394,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 46.969016393330776
+   },
+   "0.025": {
+    "E_summary": 117.2910558567529,
+    "E_total": 128.86831159052656,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 115.50354823580369
+   },
+   "0.05": {
+    "E_summary": 118.71812394157519,
+    "E_total": 129.01246163777023,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 122.13429288380826
+   },
+   "0.1": {
+    "E_summary": 422.7398847043287,
+    "E_total": 419.27788489259956,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 416.05820607083683
+   }
+  },
+  "fam_scale_reference": 4704.153593513319,
+  "dflow": {
+   "E_dF": 0.05367731620568175,
+   "abs_num": 117.17766828931515,
+   "ref_dF_norm": 2183.0016210257522
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 39,
+  "query": 1,
+  "E_model": 11.454437498363632,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.027773899368583,
+    "E_total": 20.758865552174,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 9.46187689741862
+   },
+   "0.01": {
+    "E_summary": 23.037627403944043,
+    "E_total": 21.709137289797752,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 18.896633152674326
+   },
+   "0.025": {
+    "E_summary": 58.420768278355126,
+    "E_total": 67.48906836296783,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 57.4421871879822
+   },
+   "0.05": {
+    "E_summary": 122.03956057298774,
+    "E_total": 118.68227865944755,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 116.46027882288536
+   },
+   "0.1": {
+    "E_summary": 245.98730380390222,
+    "E_total": 254.2947385069562,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 246.16542080902627
+   }
+  },
+  "fam_scale_reference": 2511.8047117686374,
+  "dflow": {
+   "E_dF": 0.05367731620568175,
+   "abs_num": 117.17766828931515,
+   "ref_dF_norm": 2183.0016210257522
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 39,
+  "query": 2,
+  "E_model": 7.920278832097495,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.86411409265574,
+    "E_total": 7.212421502490827,
+    "segments_per_direction": [
+     41
+    ],
+    "E_summary_ref": 3.806408504963258
+   },
+   "0.01": {
+    "E_summary": 7.824663556742735,
+    "E_total": 8.697006801289717,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 7.03550727846158
+   },
+   "0.025": {
+    "E_summary": 19.63984870062052,
+    "E_total": 21.199877844031334,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 17.710274047722635
+   },
+   "0.05": {
+    "E_summary": 36.034650171591124,
+    "E_total": 37.59467931500194,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 36.951254171550204
+   },
+   "0.1": {
+    "E_summary": 44.57737219456776,
+    "E_total": 46.77179029067362,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 44.692904094574885
+   }
+  },
+  "fam_scale_reference": 787.77934554106,
+  "dflow": {
+   "E_dF": 0.05367731620568175,
+   "abs_num": 117.17766828931515,
+   "ref_dF_norm": 2183.0016210257522
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 39,
+  "query": 3,
+  "E_model": 15.188994710493233,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.590862908146761,
+    "E_total": 14.869121802770422,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 10.584282521071287
+   },
+   "0.01": {
+    "E_summary": 19.583284624026973,
+    "E_total": 27.460215036800605,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 19.95619286173877
+   },
+   "0.025": {
+    "E_summary": 47.808066144269276,
+    "E_total": 55.68499655704288,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 51.30124426310124
+   },
+   "0.05": {
+    "E_summary": 61.84127743548544,
+    "E_total": 61.84127743548538,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 61.84127743548538
+   },
+   "0.1": {
+    "E_summary": 214.82341398934733,
+    "E_total": 227.75594026779777,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 215.0491026891255
+   }
+  },
+  "fam_scale_reference": 2154.035565729186,
+  "dflow": {
+   "E_dF": 0.05367731620568175,
+   "abs_num": 117.17766828931515,
+   "ref_dF_norm": 2183.0016210257522
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 39,
+  "query": 4,
+  "E_model": 29.89088677829116,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.166571639783598,
+    "E_total": 29.530353710452886,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 3.114846376300761
+   },
+   "0.01": {
+    "E_summary": 6.394133343809301,
+    "E_total": 29.530353710452886,
+    "segments_per_direction": [
+     29
+    ],
+    "E_summary_ref": 6.343893964568679
+   },
+   "0.025": {
+    "E_summary": 15.142419208712568,
+    "E_total": 29.530353710452886,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 15.997073644672298
+   },
+   "0.05": {
+    "E_summary": 31.57562507226106,
+    "E_total": 30.41722435381817,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 27.794988677749274
+   },
+   "0.1": {
+    "E_summary": 62.82641420814414,
+    "E_total": 61.210371818693034,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 59.75480788981602
+   }
+  },
+  "fam_scale_reference": 640.2718033159009,
+  "dflow": {
+   "E_dF": 0.05367731620568175,
+   "abs_num": 117.17766828931515,
+   "ref_dF_norm": 2183.0016210257522
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 39,
+  "query": 5,
+  "E_model": 18.55383184492905,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 14.880131742488288,
+    "E_total": 21.19635103677001,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 11.94723577279143
+   },
+   "0.01": {
+    "E_summary": 29.517118185290087,
+    "E_total": 34.041554908772696,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 27.772336971571235
+   },
+   "0.025": {
+    "E_summary": 72.85534334541137,
+    "E_total": 78.58845049055799,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 73.89365415061809
+   },
+   "0.05": {
+    "E_summary": 91.19770911708727,
+    "E_total": 92.39560717659691,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 148.1016355236839
+   },
+   "0.1": {
+    "E_summary": 274.82394294308637,
+    "E_total": 280.5570500882329,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 273.93137345487304
+   }
+  },
+  "fam_scale_reference": 2982.9821449174665,
+  "dflow": {
+   "E_dF": 0.05367731620568175,
+   "abs_num": 117.17766828931515,
+   "ref_dF_norm": 2183.0016210257522
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 40,
+  "query": 0,
+  "E_model": 33.932275655829386,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 24.466529060123747,
+    "E_total": 37.6743011527476,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 24.51688953004316
+   },
+   "0.01": {
+    "E_summary": 48.20233099653396,
+    "E_total": 56.45453990298674,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 47.986295756351524
+   },
+   "0.025": {
+    "E_summary": 113.55062938491301,
+    "E_total": 115.44884664750839,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 111.42640491224074
+   },
+   "0.05": {
+    "E_summary": 238.90033826824418,
+    "E_total": 235.10794327207233,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 231.2362631701545
+   },
+   "0.1": {
+    "E_summary": 493.1771625549725,
+    "E_total": 488.7775262026351,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 489.45956257020623
+   }
+  },
+  "fam_scale_reference": 4932.036664886972,
+  "dflow": {
+   "E_dF": 0.04809535483110054,
+   "abs_num": 170.92235596590123,
+   "ref_dF_norm": 3553.8225378758493
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 40,
+  "query": 1,
+  "E_model": 37.605242501898815,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.718655221874656,
+    "E_total": 38.68931056341765,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 18.06524987476368
+   },
+   "0.01": {
+    "E_summary": 40.56937792102633,
+    "E_total": 74.03010655753869,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 40.74373205714528
+   },
+   "0.025": {
+    "E_summary": 91.7168606225884,
+    "E_total": 94.7430404356877,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 91.17105474900643
+   },
+   "0.05": {
+    "E_summary": 203.9835489130354,
+    "E_total": 226.07424206056987,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 133.4541215961509
+   },
+   "0.1": {
+    "E_summary": 334.8309650627528,
+    "E_total": 370.5842898479692,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 347.66314821238603
+   }
+  },
+  "fam_scale_reference": 4166.053978764055,
+  "dflow": {
+   "E_dF": 0.04809535483110054,
+   "abs_num": 170.92235596590123,
+   "ref_dF_norm": 3553.8225378758493
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 40,
+  "query": 2,
+  "E_model": 37.08004259095584,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.7252377802846297,
+    "E_total": 37.14422692012259,
+    "segments_per_direction": [
+     50
+    ],
+    "E_summary_ref": 3.682226825062685
+   },
+   "0.01": {
+    "E_summary": 7.842313572729665,
+    "E_total": 37.14422692012259,
+    "segments_per_direction": [
+     36
+    ],
+    "E_summary_ref": 7.732463211510094
+   },
+   "0.025": {
+    "E_summary": 19.402032432015716,
+    "E_total": 37.14422692012259,
+    "segments_per_direction": [
+     22
+    ],
+    "E_summary_ref": 17.890864031353203
+   },
+   "0.05": {
+    "E_summary": 38.30177988016237,
+    "E_total": 38.27614384359288,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 37.72424396865489
+   },
+   "0.1": {
+    "E_summary": 46.57565126199708,
+    "E_total": 48.40415128367448,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 45.909383154025576
+   }
+  },
+  "fam_scale_reference": 806.181017207509,
+  "dflow": {
+   "E_dF": 0.04809535483110054,
+   "abs_num": 170.92235596590123,
+   "ref_dF_norm": 3553.8225378758493
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 40,
+  "query": 3,
+  "E_model": 23.65254412251508,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.41945986814011,
+    "E_total": 23.980957432566015,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 17.58746219405208
+   },
+   "0.01": {
+    "E_summary": 32.480958233027934,
+    "E_total": 35.37297695554955,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 34.29423946407957
+   },
+   "0.025": {
+    "E_summary": 79.23687257823656,
+    "E_total": 79.23687257823656,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 79.2368725782365
+   },
+   "0.05": {
+    "E_summary": 79.23687257823656,
+    "E_total": 79.23687257823656,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 79.2368725782365
+   },
+   "0.1": {
+    "E_summary": 256.40454154823743,
+    "E_total": 254.1014829887993,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 254.02216129600362
+   }
+  },
+  "fam_scale_reference": 3654.2111980299956,
+  "dflow": {
+   "E_dF": 0.04809535483110054,
+   "abs_num": 170.92235596590123,
+   "ref_dF_norm": 3553.8225378758493
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 40,
+  "query": 4,
+  "E_model": 139.27838751388907,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.68142768570678,
+    "E_total": 137.7990732796225,
+    "segments_per_direction": [
+     46
+    ],
+    "E_summary_ref": 4.569336124970846
+   },
+   "0.01": {
+    "E_summary": 9.341247889800968,
+    "E_total": 137.7990732796225,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 9.289350688330558
+   },
+   "0.025": {
+    "E_summary": 23.526474551931273,
+    "E_total": 137.7990732796225,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 23.343440832567694
+   },
+   "0.05": {
+    "E_summary": 45.574281506581826,
+    "E_total": 137.7990732796225,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 41.95015964732153
+   },
+   "0.1": {
+    "E_summary": 94.08076569300101,
+    "E_total": 106.61372055861449,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 90.60857144922824
+   }
+  },
+  "fam_scale_reference": 946.2975060387118,
+  "dflow": {
+   "E_dF": 0.04809535483110054,
+   "abs_num": 170.92235596590123,
+   "ref_dF_norm": 3553.8225378758493
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 40,
+  "query": 5,
+  "E_model": 8.533902408341646,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 21.134974522728726,
+    "E_total": 25.117259589892967,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 21.5991630955632
+   },
+   "0.01": {
+    "E_summary": 42.589748479544255,
+    "E_total": 44.90544188207775,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 43.27549013079101
+   },
+   "0.025": {
+    "E_summary": 97.01961371964939,
+    "E_total": 97.99423664068479,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 96.16337273068768
+   },
+   "0.05": {
+    "E_summary": 210.59025216365114,
+    "E_total": 210.6380572405156,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 208.09616551801702
+   },
+   "0.1": {
+    "E_summary": 294.81300426495454,
+    "E_total": 295.938933352646,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 292.8579796247339
+   }
+  },
+  "fam_scale_reference": 4650.160267196127,
+  "dflow": {
+   "E_dF": 0.04809535483110054,
+   "abs_num": 170.92235596590123,
+   "ref_dF_norm": 3553.8225378758493
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 41,
+  "query": 0,
+  "E_model": 26.37421194553434,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.395714960607336,
+    "E_total": 27.543236877222284,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 17.459131450055324
+   },
+   "0.01": {
+    "E_summary": 34.73728232145265,
+    "E_total": 49.24692395973591,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 31.155155853930978
+   },
+   "0.025": {
+    "E_summary": 87.96271255575869,
+    "E_total": 97.14403938794919,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 86.05895936719344
+   },
+   "0.05": {
+    "E_summary": 90.65011227715593,
+    "E_total": 96.17460858819413,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 93.11088217063264
+   },
+   "0.1": {
+    "E_summary": 354.3708940637912,
+    "E_total": 353.1279853810725,
+    "segments_per_direction": [
+     7
+    ],
+    "E_summary_ref": 355.9703738546592
+   }
+  },
+  "fam_scale_reference": 3560.9904595096627,
+  "dflow": {
+   "E_dF": 0.05074729254097699,
+   "abs_num": 89.40860484492208,
+   "ref_dF_norm": 1761.8399005765123
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 41,
+  "query": 1,
+  "E_model": 9.093576467748733,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 11.922636594949012,
+    "E_total": 16.945823629928498,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 11.716238790457169
+   },
+   "0.01": {
+    "E_summary": 25.32070350350591,
+    "E_total": 30.489042954485456,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 25.999246194303907
+   },
+   "0.025": {
+    "E_summary": 59.85956510707152,
+    "E_total": 65.60672440665445,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 59.572298872790896
+   },
+   "0.05": {
+    "E_summary": 90.48119148979936,
+    "E_total": 97.97950314936952,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 91.02670182109966
+   },
+   "0.1": {
+    "E_summary": 236.15765803690294,
+    "E_total": 243.6559696964731,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 238.1814153503476
+   }
+  },
+  "fam_scale_reference": 2625.0920735756595,
+  "dflow": {
+   "E_dF": 0.05074729254097699,
+   "abs_num": 89.40860484492208,
+   "ref_dF_norm": 1761.8399005765123
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 41,
+  "query": 2,
+  "E_model": 27.641826208541474,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.216167716862287,
+    "E_total": 27.71006744146905,
+    "segments_per_direction": [
+     45
+    ],
+    "E_summary_ref": 4.108083122393396
+   },
+   "0.01": {
+    "E_summary": 8.37865381281432,
+    "E_total": 19.46828786033325,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 8.545476200727308
+   },
+   "0.025": {
+    "E_summary": 20.2399130414163,
+    "E_total": 22.78897498334466,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 19.730458086893776
+   },
+   "0.05": {
+    "E_summary": 41.41769377688195,
+    "E_total": 44.34974254538156,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 41.72076599873759
+   },
+   "0.1": {
+    "E_summary": 53.48010865093788,
+    "E_total": 54.853265633186126,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 49.065717349175316
+   }
+  },
+  "fam_scale_reference": 872.6187022534218,
+  "dflow": {
+   "E_dF": 0.05074729254097699,
+   "abs_num": 89.40860484492208,
+   "ref_dF_norm": 1761.8399005765123
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 41,
+  "query": 3,
+  "E_model": 10.972443472917348,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 11.493057385074337,
+    "E_total": 17.74386017581321,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 14.569006929108014
+   },
+   "0.01": {
+    "E_summary": 29.341805816692244,
+    "E_total": 30.875470472850452,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 29.109393000290638
+   },
+   "0.025": {
+    "E_summary": 71.70248012790677,
+    "E_total": 71.70248012790677,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 71.70248012790677
+   },
+   "0.05": {
+    "E_summary": 71.70248012790677,
+    "E_total": 71.70248012790677,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 71.70248012790677
+   },
+   "0.1": {
+    "E_summary": 242.03324423744112,
+    "E_total": 244.56581030583442,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 243.85212614294147
+   }
+  },
+  "fam_scale_reference": 2948.3274740725005,
+  "dflow": {
+   "E_dF": 0.05074729254097699,
+   "abs_num": 89.40860484492208,
+   "ref_dF_norm": 1761.8399005765123
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 41,
+  "query": 4,
+  "E_model": 7.358036935005046,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 2.2140132456988226,
+    "E_total": 7.42792753715743,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 2.211675154498181
+   },
+   "0.01": {
+    "E_summary": 3.4058943287742522,
+    "E_total": 7.42792753715743,
+    "segments_per_direction": [
+     28
+    ],
+    "E_summary_ref": 4.586184595640361
+   },
+   "0.025": {
+    "E_summary": 11.115453944453748,
+    "E_total": 15.645523080261029,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 11.282648743935852
+   },
+   "0.05": {
+    "E_summary": 22.640304679339096,
+    "E_total": 28.164246381314314,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 22.428339732422046
+   },
+   "0.1": {
+    "E_summary": 41.91844925182454,
+    "E_total": 46.97819509308147,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 43.30994996228205
+   }
+  },
+  "fam_scale_reference": 461.34780923921886,
+  "dflow": {
+   "E_dF": 0.05074729254097699,
+   "abs_num": 89.40860484492208,
+   "ref_dF_norm": 1761.8399005765123
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 41,
+  "query": 5,
+  "E_model": 5.379907294002976,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.377449373319024,
+    "E_total": 11.367351880859644,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 10.673868154898798
+   },
+   "0.01": {
+    "E_summary": 21.254195555447836,
+    "E_total": 25.065279774763155,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 21.724518047909555
+   },
+   "0.025": {
+    "E_summary": 48.84029444844421,
+    "E_total": 49.83019695598486,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 49.57220234381455
+   },
+   "0.05": {
+    "E_summary": 99.58564101339113,
+    "E_total": 102.07364771130125,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 101.06660100394623
+   },
+   "0.1": {
+    "E_summary": 154.14435748881797,
+    "E_total": 156.6323641867281,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 156.39482369603266
+   }
+  },
+  "fam_scale_reference": 2179.9872020488633,
+  "dflow": {
+   "E_dF": 0.05074729254097699,
+   "abs_num": 89.40860484492208,
+   "ref_dF_norm": 1761.8399005765123
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 42,
+  "query": 0,
+  "E_model": 55.09440668245085,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 33.258769122572176,
+    "E_total": 60.18243527087975,
+    "segments_per_direction": [
+     30
+    ],
+    "E_summary_ref": 33.388778180048575
+   },
+   "0.01": {
+    "E_summary": 60.989207951010314,
+    "E_total": 70.43591169899491,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 66.55460707025276
+   },
+   "0.025": {
+    "E_summary": 159.866178872962,
+    "E_total": 163.08177313564397,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 150.8475266363406
+   },
+   "0.05": {
+    "E_summary": 334.32685275397466,
+    "E_total": 333.64611423874396,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 323.36003412839693
+   },
+   "0.1": {
+    "E_summary": 555.8249461250748,
+    "E_total": 553.7955934910069,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 544.0323569395563
+   }
+  },
+  "fam_scale_reference": 6735.594257645972,
+  "dflow": {
+   "E_dF": 0.05694987637470374,
+   "abs_num": 202.51545935566077,
+   "ref_dF_norm": 3556.029832676073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 42,
+  "query": 1,
+  "E_model": 28.676182614386207,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 28.670201085135204,
+    "E_total": 35.48022030333203,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 23.480362740985896
+   },
+   "0.01": {
+    "E_summary": 47.25267855477492,
+    "E_total": 72.64045928966752,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 45.571118932221225
+   },
+   "0.025": {
+    "E_summary": 99.15426845502532,
+    "E_total": 106.63452149558123,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 144.7038013870373
+   },
+   "0.05": {
+    "E_summary": 287.93434343694616,
+    "E_total": 313.32212417183877,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 276.844944333972
+   },
+   "0.1": {
+    "E_summary": 397.47189923303074,
+    "E_total": 422.8596799679232,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 405.01126888176384
+   }
+  },
+  "fam_scale_reference": 5804.963144802592,
+  "dflow": {
+   "E_dF": 0.05694987637470374,
+   "abs_num": 202.51545935566077,
+   "ref_dF_norm": 3556.029832676073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 42,
+  "query": 2,
+  "E_model": 18.662391689049997,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.0393676469831234,
+    "E_total": 16.4885838538884,
+    "segments_per_direction": [
+     49
+    ],
+    "E_summary_ref": 4.037333792347681
+   },
+   "0.01": {
+    "E_summary": 7.9967313170755006,
+    "E_total": 16.4885838538884,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 6.914994941239058
+   },
+   "0.025": {
+    "E_summary": 19.699806011881947,
+    "E_total": 21.87996488326877,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 18.344403073582413
+   },
+   "0.05": {
+    "E_summary": 38.69406093448697,
+    "E_total": 40.87421980587379,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 38.55021417875645
+   },
+   "0.1": {
+    "E_summary": 47.931534938053616,
+    "E_total": 49.46390982595442,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 45.43016102691837
+   }
+  },
+  "fam_scale_reference": 810.0179625841403,
+  "dflow": {
+   "E_dF": 0.05694987637470374,
+   "abs_num": 202.51545935566077,
+   "ref_dF_norm": 3556.029832676073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 42,
+  "query": 3,
+  "E_model": 15.207131695950437,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 25.245928950399644,
+    "E_total": 33.55726883048044,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 24.816631707670297
+   },
+   "0.01": {
+    "E_summary": 51.47958570015339,
+    "E_total": 66.47682954137957,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 49.339460290339844
+   },
+   "0.025": {
+    "E_summary": 97.62590211765223,
+    "E_total": 106.8367389497374,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 100.32510220353805
+   },
+   "0.05": {
+    "E_summary": 244.99702690070131,
+    "E_total": 242.73482655449442,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 240.97225300160517
+   },
+   "0.1": {
+    "E_summary": 313.0216487062958,
+    "E_total": 310.7594483600889,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 308.2191300058132
+   }
+  },
+  "fam_scale_reference": 5239.2985278736205,
+  "dflow": {
+   "E_dF": 0.05694987637470374,
+   "abs_num": 202.51545935566077,
+   "ref_dF_norm": 3556.029832676073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 42,
+  "query": 4,
+  "E_model": 17.79699965893755,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.1730132262256063,
+    "E_total": 18.239301756717197,
+    "segments_per_direction": [
+     38
+    ],
+    "E_summary_ref": 3.003276989479332
+   },
+   "0.01": {
+    "E_summary": 6.203168008290248,
+    "E_total": 18.239301756717197,
+    "segments_per_direction": [
+     30
+    ],
+    "E_summary_ref": 6.201822348871957
+   },
+   "0.025": {
+    "E_summary": 16.201759333076097,
+    "E_total": 25.318788203554362,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 15.49954212775424
+   },
+   "0.05": {
+    "E_summary": 29.32039571995088,
+    "E_total": 32.00523460084463,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 26.631109397798866
+   },
+   "0.1": {
+    "E_summary": 61.05950771835279,
+    "E_total": 61.11558668981661,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 61.378462730753796
+   }
+  },
+  "fam_scale_reference": 648.1899372163175,
+  "dflow": {
+   "E_dF": 0.05694987637470374,
+   "abs_num": 202.51545935566077,
+   "ref_dF_norm": 3556.029832676073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 42,
+  "query": 5,
+  "E_model": 46.519070199794044,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 19.00000863297538,
+    "E_total": 40.04152974541046,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 20.950003663219945
+   },
+   "0.01": {
+    "E_summary": 42.181669600575844,
+    "E_total": 66.07146184162667,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 46.28424348221654
+   },
+   "0.025": {
+    "E_summary": 103.50623939102599,
+    "E_total": 111.98804845408165,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 98.41219919498917
+   },
+   "0.05": {
+    "E_summary": 213.38473689928196,
+    "E_total": 217.16978688012318,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 206.4199046188598
+   },
+   "0.1": {
+    "E_summary": 259.1567584699299,
+    "E_total": 241.5713814288702,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 241.50671267855728
+   }
+  },
+  "fam_scale_reference": 4630.687631344147,
+  "dflow": {
+   "E_dF": 0.05694987637470374,
+   "abs_num": 202.51545935566077,
+   "ref_dF_norm": 3556.029832676073
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 43,
+  "query": 0,
+  "E_model": 66.9560730250729,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 25.62420890247347,
+    "E_total": 73.37796975640845,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 25.10024616261535
+   },
+   "0.01": {
+    "E_summary": 49.89909827069073,
+    "E_total": 94.66333932528437,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 49.54855720836963
+   },
+   "0.025": {
+    "E_summary": 126.92932029409747,
+    "E_total": 157.6381721937306,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 124.41845832927152
+   },
+   "0.05": {
+    "E_summary": 129.7285867514114,
+    "E_total": 155.9881227918088,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 144.5006454637064
+   },
+   "0.1": {
+    "E_summary": 502.1182183796866,
+    "E_total": 507.7730602699402,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 506.5879300169097
+   }
+  },
+  "fam_scale_reference": 5133.181017638256,
+  "dflow": {
+   "E_dF": 0.10053122342216858,
+   "abs_num": 227.40542886389903,
+   "ref_dF_norm": 2262.037813952962
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 43,
+  "query": 1,
+  "E_model": 20.50341548844679,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 14.366653573116508,
+    "E_total": 20.481066576011727,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 13.188598060639492
+   },
+   "0.01": {
+    "E_summary": 30.298281725464435,
+    "E_total": 40.12899426436775,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 26.51905172011911
+   },
+   "0.025": {
+    "E_summary": 66.64972525560802,
+    "E_total": 75.51115198283992,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 70.86408280170292
+   },
+   "0.05": {
+    "E_summary": 126.08929716133002,
+    "E_total": 135.1523751725548,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 124.82162405730298
+   },
+   "0.1": {
+    "E_summary": 268.88396296765694,
+    "E_total": 274.9880014776157,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 270.10067845474754
+   }
+  },
+  "fam_scale_reference": 3042.7108101046774,
+  "dflow": {
+   "E_dF": 0.10053122342216858,
+   "abs_num": 227.40542886389903,
+   "ref_dF_norm": 2262.037813952962
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 43,
+  "query": 2,
+  "E_model": 29.97143412829223,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.385932819168943,
+    "E_total": 29.993719131708502,
+    "segments_per_direction": [
+     50
+    ],
+    "E_summary_ref": 4.27050043304709
+   },
+   "0.01": {
+    "E_summary": 7.5837756766682105,
+    "E_total": 29.993719131708502,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 7.765822319325821
+   },
+   "0.025": {
+    "E_summary": 20.6170425655489,
+    "E_total": 25.648558361114226,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 19.714609544158463
+   },
+   "0.05": {
+    "E_summary": 41.81544512059533,
+    "E_total": 44.346432021783585,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 41.52136376621331
+   },
+   "0.1": {
+    "E_summary": 55.90652791667226,
+    "E_total": 56.468817111558494,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 50.17860659971706
+   }
+  },
+  "fam_scale_reference": 884.4305747424056,
+  "dflow": {
+   "E_dF": 0.10053122342216858,
+   "abs_num": 227.40542886389903,
+   "ref_dF_norm": 2262.037813952962
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 43,
+  "query": 3,
+  "E_model": 30.00268531532805,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.19488266029532,
+    "E_total": 27.7779581070875,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 12.713035875832588
+   },
+   "0.01": {
+    "E_summary": 25.216963678749124,
+    "E_total": 37.78974517688502,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 23.93734564282417
+   },
+   "0.025": {
+    "E_summary": 58.30344588316433,
+    "E_total": 58.2434722591791,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 60.39568692658611
+   },
+   "0.05": {
+    "E_summary": 68.28592362211447,
+    "E_total": 72.71553125338448,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 67.12744896090152
+   },
+   "0.1": {
+    "E_summary": 255.46182296598386,
+    "E_total": 256.24706282237264,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 253.2599407715938
+   }
+  },
+  "fam_scale_reference": 2569.5605483640975,
+  "dflow": {
+   "E_dF": 0.10053122342216858,
+   "abs_num": 227.40542886389903,
+   "ref_dF_norm": 2262.037813952962
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 43,
+  "query": 4,
+  "E_model": 19.89579045059301,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 2.634939091472944,
+    "E_total": 19.852460923318034,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 2.7994898114289413
+   },
+   "0.01": {
+    "E_summary": 5.578660731229036,
+    "E_total": 19.852460923318034,
+    "segments_per_direction": [
+     26
+    ],
+    "E_summary_ref": 5.311286045950624
+   },
+   "0.025": {
+    "E_summary": 12.481708098998837,
+    "E_total": 24.583852031650196,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 13.764335521757118
+   },
+   "0.05": {
+    "E_summary": 24.64465562229111,
+    "E_total": 39.92396339715006,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 23.205935354359298
+   },
+   "0.1": {
+    "E_summary": 54.00356126451635,
+    "E_total": 62.280371043223454,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 52.174378287800096
+   }
+  },
+  "fam_scale_reference": 563.2467372433093,
+  "dflow": {
+   "E_dF": 0.10053122342216858,
+   "abs_num": 227.40542886389903,
+   "ref_dF_norm": 2262.037813952962
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 43,
+  "query": 5,
+  "E_model": 13.331434925714007,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 15.686994931756544,
+    "E_total": 26.318128244674654,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 15.624924467447215
+   },
+   "0.01": {
+    "E_summary": 32.04988167642381,
+    "E_total": 39.1637911456678,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 31.735168320498587
+   },
+   "0.025": {
+    "E_summary": 78.6634143834076,
+    "E_total": 85.28002800447734,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 73.79752788740177
+   },
+   "0.05": {
+    "E_summary": 147.07510583434419,
+    "E_total": 150.2410149084402,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 147.23499483766642
+   },
+   "0.1": {
+    "E_summary": 275.94939036333767,
+    "E_total": 277.510400833989,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 275.30683006493757
+   }
+  },
+  "fam_scale_reference": 3208.462495557343,
+  "dflow": {
+   "E_dF": 0.10053122342216858,
+   "abs_num": 227.40542886389903,
+   "ref_dF_norm": 2262.037813952962
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 44,
+  "query": 0,
+  "E_model": 19.166809741820884,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 40.80562523119778,
+    "E_total": 43.97153008084911,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 40.9608854703834
+   },
+   "0.01": {
+    "E_summary": 80.54989238052735,
+    "E_total": 88.08775570899525,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 79.34597194940795
+   },
+   "0.025": {
+    "E_summary": 186.96181533571553,
+    "E_total": 181.97141154190035,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 180.3396766253395
+   },
+   "0.05": {
+    "E_summary": 391.427787526947,
+    "E_total": 391.6874397231842,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 390.313270596335
+   },
+   "0.1": {
+    "E_summary": 769.277800271381,
+    "E_total": 770.6167732999007,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 769.8871144590809
+   }
+  },
+  "fam_scale_reference": 8201.668874083567,
+  "dflow": {
+   "E_dF": 0.020727866733876322,
+   "abs_num": 83.76813784388997,
+   "ref_dF_norm": 4041.329429573406
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 44,
+  "query": 1,
+  "E_model": 24.916271412630408,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.68240979199605,
+    "E_total": 30.816376481382463,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 22.953912347561015
+   },
+   "0.01": {
+    "E_summary": 41.929677983300394,
+    "E_total": 44.21525682216213,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 42.83762524152053
+   },
+   "0.025": {
+    "E_summary": 100.33429869072563,
+    "E_total": 116.92803493365545,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 96.17303110587534
+   },
+   "0.05": {
+    "E_summary": 158.70251893379782,
+    "E_total": 148.28608065937453,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 229.2292723256354
+   },
+   "0.1": {
+    "E_summary": 376.2075566795066,
+    "E_total": 378.7456719104431,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 372.2683951577632
+   }
+  },
+  "fam_scale_reference": 4676.495539416512,
+  "dflow": {
+   "E_dF": 0.020727866733876322,
+   "abs_num": 83.76813784388997,
+   "ref_dF_norm": 4041.329429573406
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 44,
+  "query": 2,
+  "E_model": 28.270441241487987,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 5.74330253294616,
+    "E_total": 28.383876588448828,
+    "segments_per_direction": [
+     46
+    ],
+    "E_summary_ref": 5.644790621605239
+   },
+   "0.01": {
+    "E_summary": 11.416599650616973,
+    "E_total": 25.340730928512755,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 10.967293411200444
+   },
+   "0.025": {
+    "E_summary": 24.913299673889384,
+    "E_total": 36.81963491428178,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 27.886615025351972
+   },
+   "0.05": {
+    "E_summary": 51.889157487657826,
+    "E_total": 63.20752016689244,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 57.470990605100965
+   },
+   "0.1": {
+    "E_summary": 64.35390250247036,
+    "E_total": 71.32214422148195,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 63.97373119918407
+   }
+  },
+  "fam_scale_reference": 1153.477140417703,
+  "dflow": {
+   "E_dF": 0.020727866733876322,
+   "abs_num": 83.76813784388997,
+   "ref_dF_norm": 4041.329429573406
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 44,
+  "query": 3,
+  "E_model": 6.049240107391256,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.906441121482914,
+    "E_total": 19.254025733843264,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 17.75916120247325
+   },
+   "0.01": {
+    "E_summary": 34.203200777169,
+    "E_total": 37.57192939358799,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 34.15357686493516
+   },
+   "0.025": {
+    "E_summary": 87.55801191166012,
+    "E_total": 87.55801191166012,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 87.55801191166012
+   },
+   "0.05": {
+    "E_summary": 87.55801191166012,
+    "E_total": 87.55801191166012,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 87.55801191166012
+   },
+   "0.1": {
+    "E_summary": 252.21175714245197,
+    "E_total": 250.78555533156882,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 250.6391477937017
+   }
+  },
+  "fam_scale_reference": 3593.745907065432,
+  "dflow": {
+   "E_dF": 0.020727866733876322,
+   "abs_num": 83.76813784388997,
+   "ref_dF_norm": 4041.329429573406
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 44,
+  "query": 4,
+  "E_model": 13.04899612054254,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.7885852436672565,
+    "E_total": 15.499700794034993,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 3.9202891181317625
+   },
+   "0.01": {
+    "E_summary": 6.306884590872812,
+    "E_total": 15.499700794034993,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 8.050510896877483
+   },
+   "0.025": {
+    "E_summary": 20.3372269603438,
+    "E_total": 26.096927569141826,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 19.954974257520007
+   },
+   "0.05": {
+    "E_summary": 36.815944055678756,
+    "E_total": 41.23731557720396,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 35.88679426176736
+   },
+   "0.1": {
+    "E_summary": 78.97260200948341,
+    "E_total": 85.1923476522694,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 79.23600137471743
+   }
+  },
+  "fam_scale_reference": 827.4351869593316,
+  "dflow": {
+   "E_dF": 0.020727866733876322,
+   "abs_num": 83.76813784388997,
+   "ref_dF_norm": 4041.329429573406
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 44,
+  "query": 5,
+  "E_model": 7.389358444983429,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 15.37710196876128,
+    "E_total": 19.28692485889826,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 14.424350551303348
+   },
+   "0.01": {
+    "E_summary": 26.34833095969657,
+    "E_total": 23.38144250591779,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 28.95070053109862
+   },
+   "0.025": {
+    "E_summary": 68.16840062794051,
+    "E_total": 64.73250905737638,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 77.8819900695554
+   },
+   "0.05": {
+    "E_summary": 151.69803382433363,
+    "E_total": 156.08246412280528,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 152.57556399427912
+   },
+   "0.1": {
+    "E_summary": 187.75299394977134,
+    "E_total": 192.13742424824295,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 190.8201738189916
+   }
+  },
+  "fam_scale_reference": 3116.511215290803,
+  "dflow": {
+   "E_dF": 0.020727866733876322,
+   "abs_num": 83.76813784388997,
+   "ref_dF_norm": 4041.329429573406
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 45,
+  "query": 0,
+  "E_model": 44.44263101801056,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 32.95755052901882,
+    "E_total": 49.30643978536909,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 34.6584267143719
+   },
+   "0.01": {
+    "E_summary": 68.14568389323199,
+    "E_total": 91.61582415694193,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 69.67156825241591
+   },
+   "0.025": {
+    "E_summary": 172.88422434219137,
+    "E_total": 186.86498876871178,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 173.77194293588423
+   },
+   "0.05": {
+    "E_summary": 172.88422434219137,
+    "E_total": 186.86498876871178,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 176.08594114435527
+   },
+   "0.1": {
+    "E_summary": 674.1350885442057,
+    "E_total": 671.6435084034935,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 662.6801127011786
+   }
+  },
+  "fam_scale_reference": 6986.413165890388,
+  "dflow": {
+   "E_dF": 0.03165982249651015,
+   "abs_num": 80.27233524037338,
+   "ref_dF_norm": 2535.463843779344
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 45,
+  "query": 1,
+  "E_model": 8.880202688550355,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.309738778955875,
+    "E_total": 16.67324068786172,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 11.511412780058293
+   },
+   "0.01": {
+    "E_summary": 26.527537516411826,
+    "E_total": 32.551196946587936,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 25.900743000516854
+   },
+   "0.025": {
+    "E_summary": 58.702838732713815,
+    "E_total": 67.57074796434142,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 58.75016641614434
+   },
+   "0.05": {
+    "E_summary": 133.85126132911012,
+    "E_total": 141.31800165529353,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 135.4028805377489
+   },
+   "0.1": {
+    "E_summary": 231.6198186793051,
+    "E_total": 239.08655900548848,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 235.07775591692507
+   }
+  },
+  "fam_scale_reference": 2708.4361438841947,
+  "dflow": {
+   "E_dF": 0.03165982249651015,
+   "abs_num": 80.27233524037338,
+   "ref_dF_norm": 2535.463843779344
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 45,
+  "query": 2,
+  "E_model": 13.117187778323284,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 6.214999504943933,
+    "E_total": 13.255620141195664,
+    "segments_per_direction": [
+     44
+    ],
+    "E_summary_ref": 6.041657947089391
+   },
+   "0.01": {
+    "E_summary": 12.477751337066138,
+    "E_total": 15.217884261988388,
+    "segments_per_direction": [
+     34
+    ],
+    "E_summary_ref": 12.232168237119595
+   },
+   "0.025": {
+    "E_summary": 29.727411711974383,
+    "E_total": 30.369851054126713,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 29.64390031963501
+   },
+   "0.05": {
+    "E_summary": 62.40537533215229,
+    "E_total": 63.41350635168408,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 62.76468908208324
+   },
+   "0.1": {
+    "E_summary": 76.90496009815868,
+    "E_total": 76.57912045520717,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 75.88597872851986
+   }
+  },
+  "fam_scale_reference": 1335.264253911345,
+  "dflow": {
+   "E_dF": 0.03165982249651015,
+   "abs_num": 80.27233524037338,
+   "ref_dF_norm": 2535.463843779344
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 45,
+  "query": 3,
+  "E_model": 6.71160161981004,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 19.84654149686355,
+    "E_total": 21.27990850267554,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 19.60827400098026
+   },
+   "0.01": {
+    "E_summary": 39.46098446856979,
+    "E_total": 41.28495534201875,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 39.00524859825731
+   },
+   "0.025": {
+    "E_summary": 83.37047306324698,
+    "E_total": 84.04600488041524,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 82.13251222107135
+   },
+   "0.05": {
+    "E_summary": 102.67012830118585,
+    "E_total": 102.67012830118597,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 102.67012830118597
+   },
+   "0.1": {
+    "E_summary": 320.7128906510909,
+    "E_total": 321.991770902356,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 321.83596832701306
+   }
+  },
+  "fam_scale_reference": 3969.553356470254,
+  "dflow": {
+   "E_dF": 0.03165982249651015,
+   "abs_num": 80.27233524037338,
+   "ref_dF_norm": 2535.463843779344
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 45,
+  "query": 4,
+  "E_model": 9.890317649240345,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 2.855832714093225,
+    "E_total": 9.992174488202494,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 2.8219355717530448
+   },
+   "0.01": {
+    "E_summary": 4.487546514784981,
+    "E_total": 9.992174488202494,
+    "segments_per_direction": [
+     26
+    ],
+    "E_summary_ref": 5.0229119675326785
+   },
+   "0.025": {
+    "E_summary": 13.188117968493259,
+    "E_total": 16.71362702053193,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 14.254090396438414
+   },
+   "0.05": {
+    "E_summary": 28.432985200412872,
+    "E_total": 27.74715143122785,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 27.282624134791945
+   },
+   "0.1": {
+    "E_summary": 57.1016928801842,
+    "E_total": 60.41216109159737,
+    "segments_per_direction": [
+     10
+    ],
+    "E_summary_ref": 56.4151675504863
+   }
+  },
+  "fam_scale_reference": 572.465529060657,
+  "dflow": {
+   "E_dF": 0.03165982249651015,
+   "abs_num": 80.27233524037338,
+   "ref_dF_norm": 2535.463843779344
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 45,
+  "query": 5,
+  "E_model": 5.645829239679415,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.517861759243686,
+    "E_total": 17.82316443479357,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 16.568353916196855
+   },
+   "0.01": {
+    "E_summary": 32.45138369476052,
+    "E_total": 33.90030532269077,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 33.20993065221796
+   },
+   "0.025": {
+    "E_summary": 75.24339463936104,
+    "E_total": 76.20550223228739,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 75.40847019795783
+   },
+   "0.05": {
+    "E_summary": 164.91458258078808,
+    "E_total": 165.80149356398726,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 165.33611779920346
+   },
+   "0.1": {
+    "E_summary": 229.5653227953174,
+    "E_total": 230.55650113973,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 230.50436745912327
+   }
+  },
+  "fam_scale_reference": 3324.4954954823315,
+  "dflow": {
+   "E_dF": 0.03165982249651015,
+   "abs_num": 80.27233524037338,
+   "ref_dF_norm": 2535.463843779344
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 46,
+  "query": 0,
+  "E_model": 8.2283554064702,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 24.957829397983033,
+    "E_total": 27.902972048990478,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 24.83958592835552
+   },
+   "0.01": {
+    "E_summary": 49.67130539614152,
+    "E_total": 54.481726024347154,
+    "segments_per_direction": [
+     23
+    ],
+    "E_summary_ref": 49.937427867859356
+   },
+   "0.025": {
+    "E_summary": 114.20218804258297,
+    "E_total": 115.31222385669344,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 114.06894534323544
+   },
+   "0.05": {
+    "E_summary": 114.20218804258297,
+    "E_total": 115.31222385669344,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 114.06894534323544
+   },
+   "0.1": {
+    "E_summary": 510.57065319239564,
+    "E_total": 515.903896753616,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 488.6226321844896
+   }
+  },
+  "fam_scale_reference": 5110.711549217195,
+  "dflow": {
+   "E_dF": 0.004201962617422193,
+   "abs_num": 15.729764457627708,
+   "ref_dF_norm": 3743.432745548211
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 46,
+  "query": 1,
+  "E_model": 6.427878315104692,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 13.327507198300282,
+    "E_total": 17.709636701770364,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 13.056862017400817
+   },
+   "0.01": {
+    "E_summary": 37.926358494880674,
+    "E_total": 40.874551669660946,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 38.209001249523
+   },
+   "0.025": {
+    "E_summary": 89.04298440979858,
+    "E_total": 95.47086272490321,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 89.64448431522266
+   },
+   "0.05": {
+    "E_summary": 135.1641082777569,
+    "E_total": 140.07947475700496,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 137.03586213751748
+   },
+   "0.1": {
+    "E_summary": 337.2108275552197,
+    "E_total": 336.0389687954927,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 335.301234949337
+   }
+  },
+  "fam_scale_reference": 3837.331345322765,
+  "dflow": {
+   "E_dF": 0.004201962617422193,
+   "abs_num": 15.729764457627708,
+   "ref_dF_norm": 3743.432745548211
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 46,
+  "query": 2,
+  "E_model": 6.517475241233797,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.916482904757345,
+    "E_total": 8.230304173538002,
+    "segments_per_direction": [
+     44
+    ],
+    "E_summary_ref": 4.724930701994992
+   },
+   "0.01": {
+    "E_summary": 9.961535456848026,
+    "E_total": 12.274930849841326,
+    "segments_per_direction": [
+     35
+    ],
+    "E_summary_ref": 9.324340503689541
+   },
+   "0.025": {
+    "E_summary": 22.82773491541829,
+    "E_total": 23.821580053473042,
+    "segments_per_direction": [
+     21
+    ],
+    "E_summary_ref": 22.73453801846469
+   },
+   "0.05": {
+    "E_summary": 49.65360959111149,
+    "E_total": 49.149021623731926,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 48.35911947049516
+   },
+   "0.1": {
+    "E_summary": 59.63015155316248,
+    "E_total": 59.48883954576016,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 58.22253429142364
+   }
+  },
+  "fam_scale_reference": 1025.6188753928027,
+  "dflow": {
+   "E_dF": 0.004201962617422193,
+   "abs_num": 15.729764457627708,
+   "ref_dF_norm": 3743.432745548211
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 46,
+  "query": 3,
+  "E_model": 8.401828327213678,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 10.170638507176648,
+    "E_total": 18.308608455773225,
+    "segments_per_direction": [
+     19
+    ],
+    "E_summary_ref": 10.108828991158262
+   },
+   "0.01": {
+    "E_summary": 16.81370345023403,
+    "E_total": 17.661775459842218,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 16.8770153541642
+   },
+   "0.025": {
+    "E_summary": 42.509543070589416,
+    "E_total": 43.9162519719207,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 42.85217342038112
+   },
+   "0.05": {
+    "E_summary": 63.86433681368396,
+    "E_total": 63.86433681368396,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 63.86433681368396
+   },
+   "0.1": {
+    "E_summary": 175.97734758036805,
+    "E_total": 175.97734758036805,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 175.6166234794941
+   }
+  },
+  "fam_scale_reference": 2050.3774555764403,
+  "dflow": {
+   "E_dF": 0.004201962617422193,
+   "abs_num": 15.729764457627708,
+   "ref_dF_norm": 3743.432745548211
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 46,
+  "query": 4,
+  "E_model": 6.264688012465243,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 3.2900876055990693,
+    "E_total": 5.584619841477505,
+    "segments_per_direction": [
+     30
+    ],
+    "E_summary_ref": 3.25696756175671
+   },
+   "0.01": {
+    "E_summary": 6.518928654337856,
+    "E_total": 8.806738466347781,
+    "segments_per_direction": [
+     25
+    ],
+    "E_summary_ref": 6.578054530095301
+   },
+   "0.025": {
+    "E_summary": 16.478578690240624,
+    "E_total": 19.14321989196776,
+    "segments_per_direction": [
+     18
+    ],
+    "E_summary_ref": 16.51203309890525
+   },
+   "0.05": {
+    "E_summary": 32.443597265943595,
+    "E_total": 34.46864255455273,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 31.2842966018315
+   },
+   "0.1": {
+    "E_summary": 66.05610807185025,
+    "E_total": 67.71125746007738,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 64.71185945754718
+   }
+  },
+  "fam_scale_reference": 663.416177552004,
+  "dflow": {
+   "E_dF": 0.004201962617422193,
+   "abs_num": 15.729764457627708,
+   "ref_dF_norm": 3743.432745548211
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 46,
+  "query": 5,
+  "E_model": 3.4857948735170794,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 16.534352165542145,
+    "E_total": 17.28281965728246,
+    "segments_per_direction": [
+     15
+    ],
+    "E_summary_ref": 16.50156038474455
+   },
+   "0.01": {
+    "E_summary": 33.112726602119096,
+    "E_total": 36.49842684273665,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 34.17022972451775
+   },
+   "0.025": {
+    "E_summary": 92.98466388075144,
+    "E_total": 94.36352585419417,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 94.04832861334296
+   },
+   "0.05": {
+    "E_summary": 182.96042672979178,
+    "E_total": 183.79306294815314,
+    "segments_per_direction": [
+     5
+    ],
+    "E_summary_ref": 183.75097858484264
+   },
+   "0.1": {
+    "E_summary": 281.4070288429177,
+    "E_total": 282.2396650612791,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 282.0279681266626
+   }
+  },
+  "fam_scale_reference": 3863.41218004736,
+  "dflow": {
+   "E_dF": 0.004201962617422193,
+   "abs_num": 15.729764457627708,
+   "ref_dF_norm": 3743.432745548211
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 47,
+  "query": 0,
+  "E_model": 23.91045223213689,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 28.866709055895512,
+    "E_total": 29.23019181650625,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 28.74730932147247
+   },
+   "0.01": {
+    "E_summary": 56.43040136615218,
+    "E_total": 58.51840571680816,
+    "segments_per_direction": [
+     24
+    ],
+    "E_summary_ref": 55.934051609834455
+   },
+   "0.025": {
+    "E_summary": 139.75326424057744,
+    "E_total": 143.15178789974118,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 140.8632167609794
+   },
+   "0.05": {
+    "E_summary": 292.84457767161405,
+    "E_total": 294.20589866384563,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 288.59988532019037
+   },
+   "0.1": {
+    "E_summary": 567.3429598135052,
+    "E_total": 567.0503459434481,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 564.9435168270813
+   }
+  },
+  "fam_scale_reference": 5887.777311633037,
+  "dflow": {
+   "E_dF": 0.0330363888890532,
+   "abs_num": 72.8850935065316,
+   "ref_dF_norm": 2206.2064274428767
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 47,
+  "query": 1,
+  "E_model": 4.108953127252448,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 12.285453526752491,
+    "E_total": 12.338541090461007,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 12.126919285003169
+   },
+   "0.01": {
+    "E_summary": 26.346399004096497,
+    "E_total": 25.759385683989592,
+    "segments_per_direction": [
+     16
+    ],
+    "E_summary_ref": 25.757576191248233
+   },
+   "0.025": {
+    "E_summary": 56.027444001242884,
+    "E_total": 57.41594462900599,
+    "segments_per_direction": [
+     9
+    ],
+    "E_summary_ref": 56.10957775373498
+   },
+   "0.05": {
+    "E_summary": 131.81836219419534,
+    "E_total": 133.30054706580444,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 132.0592152151023
+   },
+   "0.1": {
+    "E_summary": 224.47019037225152,
+    "E_total": 225.95237524386062,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 223.19912036705654
+   }
+  },
+  "fam_scale_reference": 2671.015447047008,
+  "dflow": {
+   "E_dF": 0.0330363888890532,
+   "abs_num": 72.8850935065316,
+   "ref_dF_norm": 2206.2064274428767
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 47,
+  "query": 2,
+  "E_model": 14.013146551923796,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.162960589811064,
+    "E_total": 10.209398944614207,
+    "segments_per_direction": [
+     44
+    ],
+    "E_summary_ref": 4.180331633238211
+   },
+   "0.01": {
+    "E_summary": 7.478577535363286,
+    "E_total": 9.46069262963519,
+    "segments_per_direction": [
+     32
+    ],
+    "E_summary_ref": 7.150419994816048
+   },
+   "0.025": {
+    "E_summary": 20.44561780312563,
+    "E_total": 23.789223322276143,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 18.820217474311733
+   },
+   "0.05": {
+    "E_summary": 38.21374924850471,
+    "E_total": 41.55735476765523,
+    "segments_per_direction": [
+     14
+    ],
+    "E_summary_ref": 39.692076095453444
+   },
+   "0.1": {
+    "E_summary": 47.39049185418092,
+    "E_total": 49.09650284272894,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 47.11960374544225
+   }
+  },
+  "fam_scale_reference": 836.5810842452602,
+  "dflow": {
+   "E_dF": 0.0330363888890532,
+   "abs_num": 72.8850935065316,
+   "ref_dF_norm": 2206.2064274428767
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 47,
+  "query": 3,
+  "E_model": 3.067898791469588,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 17.061301208633438,
+    "E_total": 18.161404812015462,
+    "segments_per_direction": [
+     20
+    ],
+    "E_summary_ref": 16.66554404181852
+   },
+   "0.01": {
+    "E_summary": 33.871256567988496,
+    "E_total": 35.133291648369976,
+    "segments_per_direction": [
+     12
+    ],
+    "E_summary_ref": 33.9810379154479
+   },
+   "0.025": {
+    "E_summary": 83.98991912689524,
+    "E_total": 83.98991912689519,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 83.98991912689519
+   },
+   "0.05": {
+    "E_summary": 83.98991912689524,
+    "E_total": 83.98991912689519,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 83.98991912689519
+   },
+   "0.1": {
+    "E_summary": 261.0396841945136,
+    "E_total": 261.32323134944227,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 260.4073713446515
+   }
+  },
+  "fam_scale_reference": 3421.726374348128,
+  "dflow": {
+   "E_dF": 0.0330363888890532,
+   "abs_num": 72.8850935065316,
+   "ref_dF_norm": 2206.2064274428767
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 47,
+  "query": 4,
+  "E_model": 32.269450292198286,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 4.7876374984724634,
+    "E_total": 32.32852886169772,
+    "segments_per_direction": [
+     33
+    ],
+    "E_summary_ref": 5.03939857402662
+   },
+   "0.01": {
+    "E_summary": 9.664612177331293,
+    "E_total": 32.32852886169772,
+    "segments_per_direction": [
+     26
+    ],
+    "E_summary_ref": 10.176952001703569
+   },
+   "0.025": {
+    "E_summary": 24.516826853980035,
+    "E_total": 31.891311482800404,
+    "segments_per_direction": [
+     17
+    ],
+    "E_summary_ref": 24.58041857101614
+   },
+   "0.05": {
+    "E_summary": 46.63179714324798,
+    "E_total": 52.34316844735116,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 41.698540657515196
+   },
+   "0.1": {
+    "E_summary": 102.24126740988305,
+    "E_total": 100.60966027875577,
+    "segments_per_direction": [
+     8
+    ],
+    "E_summary_ref": 95.84300514182803
+   }
+  },
+  "fam_scale_reference": 1024.4473923361434,
+  "dflow": {
+   "E_dF": 0.0330363888890532,
+   "abs_num": 72.8850935065316,
+   "ref_dF_norm": 2206.2064274428767
+  }
+ },
+ {
+  "method": "flow",
+  "seed": 0,
+  "path": 47,
+  "query": 5,
+  "E_model": 4.384544053758361,
+  "tau_grid": {
+   "0.005": {
+    "E_summary": 20.86082663817092,
+    "E_total": 23.02938279984187,
+    "segments_per_direction": [
+     13
+    ],
+    "E_summary_ref": 21.052530880869085
+   },
+   "0.01": {
+    "E_summary": 41.56484651798985,
+    "E_total": 42.718253229487686,
+    "segments_per_direction": [
+     11
+    ],
+    "E_summary_ref": 42.12113781126061
+   },
+   "0.025": {
+    "E_summary": 97.5047282661834,
+    "E_total": 98.71266989345611,
+    "segments_per_direction": [
+     6
+    ],
+    "E_summary_ref": 97.21612524168245
+   },
+   "0.05": {
+    "E_summary": 200.5435762186857,
+    "E_total": 201.704097213014,
+    "segments_per_direction": [
+     4
+    ],
+    "E_summary_ref": 201.08111183117455
+   },
+   "0.1": {
+    "E_summary": 281.5932054019852,
+    "E_total": 282.7537263963135,
+    "segments_per_direction": [
+     3
+    ],
+    "E_summary_ref": 282.25818306425737
+   }
+  },
+  "fam_scale_reference": 4246.6380576900965,
+  "dflow": {
+   "E_dF": 0.0330363888890532,
+   "abs_num": 72.8850935065316,
+   "ref_dF_norm": 2206.2064274428767
+  }
+ }
+]

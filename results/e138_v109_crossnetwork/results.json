@@ -1,0 +1,21 @@
+{
+  "protocol": "e131 checkpoints/states/families recomputed with per-row gates; unified per-query normalization identical to e127 (E / fam_scale_reference, mean within path, median over the 48 test paths, x100)",
+  "table_unified_normalized": {
+    "flow": {
+      "E_model": 0.9410707338900688,
+      "E_summary": 4.32814258372839,
+      "E_total": 4.573860142596871,
+      "E_single": 47.95813818140314,
+      "E_equal": 46.59756536683271,
+      "segments": 9.883333333333333
+    },
+    "response": {
+      "E_model": 0.783089165403996,
+      "E_summary": 4.321379286402468,
+      "E_total": 4.548246991875793,
+      "E_single": 47.952837698950255,
+      "E_equal": 46.59288875235599,
+      "segments": 9.866666666666667
+    }
+  }
+}

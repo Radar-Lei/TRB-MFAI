@@ -1,0 +1,37 @@
+{
+  "sioux_falls": {
+    "0.005": {
+      "L_ref": 233.0
+    },
+    "0.01": {
+      "L_ref": 199.83333333333334
+    },
+    "0.025": {
+      "L_ref": 149.0
+    },
+    "0.05": {
+      "L_ref": 116.66666666666667
+    },
+    "0.1": {
+      "L_ref": 76.66666666666667
+    }
+  },
+  "anaheim": {
+    "0.005": {
+      "L_ref": 25.916666666666664
+    },
+    "0.01": {
+      "L_ref": 20.0
+    },
+    "0.025": {
+      "L_ref": 12.0
+    },
+    "0.05": {
+      "L_ref": 9.75
+    },
+    "0.1": {
+      "L_ref": 5.916666666666666
+    }
+  },
+  "protocol": "reference-profile segment counts at the E140 tolerances; greedy per-direction segmentation of aS at eps=tau*max|aS|; every recomputed E_summary_ref gated against the stored E140 shard values to 1e-9 relative; aggregation identical to E140 collect (path mean over queries, median over paths; SF sums over deduplicated direction chains)"
+}

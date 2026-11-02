@@ -1,0 +1,165 @@
+{
+  "protocol": "tau sweep on the frozen e127/e138 rows: eps(tau) = tau x max|a^L| per family (learned scale), greedy absolute rule identical to e127/e138; unified normalization E/fam_scale_reference, mean within path, median over paths; L sums distinct direction chains on Sioux Falls; oracle floor compresses the reference profile at the same tau; E_dF from path endpoint flow predictions; per-row gates at tau=5% asserted during sharding",
+  "table": {
+    "sioux_falls": {
+      "flow": {
+        "E_model": 8.74245445620291,
+        "tau_0.005": {
+          "E_summary": 0.42730870886348193,
+          "E_total": 8.80200219680971,
+          "E_summary_ref_floor": 0.4224559173450737,
+          "L": 232.86666666666667
+        },
+        "tau_0.01": {
+          "E_summary": 0.8976595421085715,
+          "E_total": 9.014728502997794,
+          "E_summary_ref_floor": 0.773114927084272,
+          "L": 202.3
+        },
+        "tau_0.025": {
+          "E_summary": 2.376168205421931,
+          "E_total": 9.628985989694474,
+          "E_summary_ref_floor": 2.3842502164925063,
+          "L": 151.95
+        },
+        "tau_0.05": {
+          "E_summary": 4.761737815390265,
+          "E_total": 11.349857134113055,
+          "E_summary_ref_floor": 4.699066391244505,
+          "L": 116.96666666666667
+        },
+        "tau_0.1": {
+          "E_summary": 8.612718037625122,
+          "E_total": 13.93474893240693,
+          "E_summary_ref_floor": 8.065602284166406,
+          "L": 77.0
+        },
+        "E_dF": {
+          "median_pct": 5.141613795370075,
+          "median_abs_num": 13.622280932706051,
+          "median_ref_dF_norm": 258.20435966391597,
+          "min_ref_dF_norm": 44.777760719569166
+        }
+      },
+      "response": {
+        "E_model": 5.747915220342689,
+        "tau_0.005": {
+          "E_summary": 0.4332534275138552,
+          "E_total": 5.822404993102948,
+          "E_summary_ref_floor": 0.4224559173450737,
+          "L": 234.58333333333331
+        },
+        "tau_0.01": {
+          "E_summary": 0.8921035091714866,
+          "E_total": 6.041411183221813,
+          "E_summary_ref_floor": 0.773114927084272,
+          "L": 200.93333333333334
+        },
+        "tau_0.025": {
+          "E_summary": 2.3855946053146684,
+          "E_total": 6.914565904785232,
+          "E_summary_ref_floor": 2.3842502164925063,
+          "L": 151.86666666666667
+        },
+        "tau_0.05": {
+          "E_summary": 4.754572509368215,
+          "E_total": 8.684097195350606,
+          "E_summary_ref_floor": 4.699066391244505,
+          "L": 117.16666666666667
+        },
+        "tau_0.1": {
+          "E_summary": 8.56180286315277,
+          "E_total": 11.5084043755692,
+          "E_summary_ref_floor": 8.065602284166406,
+          "L": 77.06666666666666
+        },
+        "E_dF": {
+          "median_pct": 3.4580841401360747,
+          "median_abs_num": 8.837470404160534,
+          "median_ref_dF_norm": 258.20435966391597,
+          "min_ref_dF_norm": 44.777760719569166
+        }
+      }
+    },
+    "anaheim": {
+      "flow": {
+        "E_model": 0.9410707338900688,
+        "tau_0.005": {
+          "E_summary": 0.47623505385445714,
+          "E_total": 1.0613182174656157,
+          "E_summary_ref_floor": 0.47789910298272703,
+          "L": 27.616666666666667
+        },
+        "tau_0.01": {
+          "E_summary": 0.9409009699791867,
+          "E_total": 1.3651017265600045,
+          "E_summary_ref_floor": 0.953734734601583,
+          "L": 20.833333333333336
+        },
+        "tau_0.025": {
+          "E_summary": 2.302676571096959,
+          "E_total": 2.5384079540160274,
+          "E_summary_ref_floor": 2.29032223815714,
+          "L": 12.350000000000001
+        },
+        "tau_0.05": {
+          "E_summary": 4.32814258372839,
+          "E_total": 4.573860142596871,
+          "E_summary_ref_floor": 4.354085414609965,
+          "L": 9.883333333333333
+        },
+        "tau_0.1": {
+          "E_summary": 7.955090822653844,
+          "E_total": 8.136553745655608,
+          "E_summary_ref_floor": 7.9368297752266095,
+          "L": 6.0
+        },
+        "E_dF": {
+          "median_pct": 2.46302878865166,
+          "median_abs_num": 38.63039621654139,
+          "median_ref_dF_norm": 1672.1515922808003,
+          "min_ref_dF_norm": 507.51557946512213
+        }
+      },
+      "response": {
+        "E_model": 0.783089165403996,
+        "tau_0.005": {
+          "E_summary": 0.4752526690598017,
+          "E_total": 0.9051298310775377,
+          "E_summary_ref_floor": 0.47789910298272703,
+          "L": 27.316666666666666
+        },
+        "tau_0.01": {
+          "E_summary": 0.9330192586870338,
+          "E_total": 1.24024551805958,
+          "E_summary_ref_floor": 0.953734734601583,
+          "L": 20.616666666666667
+        },
+        "tau_0.025": {
+          "E_summary": 2.2954353653062824,
+          "E_total": 2.488210473900197,
+          "E_summary_ref_floor": 2.29032223815714,
+          "L": 12.266666666666667
+        },
+        "tau_0.05": {
+          "E_summary": 4.321379286402468,
+          "E_total": 4.548246991875793,
+          "E_summary_ref_floor": 4.354085414609965,
+          "L": 9.866666666666667
+        },
+        "tau_0.1": {
+          "E_summary": 7.972494110062799,
+          "E_total": 8.12913373440088,
+          "E_summary_ref_floor": 7.9368297752266095,
+          "L": 6.0
+        },
+        "E_dF": {
+          "median_pct": 2.079334230426026,
+          "median_abs_num": 33.21869671332337,
+          "median_ref_dF_norm": 1672.1515922808003,
+          "min_ref_dF_norm": 507.51557946512213
+        }
+      }
+    }
+  }
+}
