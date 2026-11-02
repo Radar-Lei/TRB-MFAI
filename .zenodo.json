@@ -1,0 +1,31 @@
+{
+  "title": "TRB-MFAI: Spatial explanations of OD demand effects — code, frozen results, and paper sources",
+  "creators": [
+    {
+      "name": "Lei, Da",
+      "affiliation": "Business School, Sichuan University"
+    },
+    {
+      "name": "He, Sylvia Y.",
+      "affiliation": "Department of Geography and Resource Management, The Chinese University of Hong Kong"
+    },
+    {
+      "name": "Luo, Shuli",
+      "affiliation": "School of Humanities and Social Science, The Chinese University of Hong Kong, Shenzhen"
+    }
+  ],
+  "description": "<p>Research archive for the manuscript <em>Spatial explanations of OD demand effects: Topological structure and error-controlled boundary profiles</em>. Scripts reproduce every table and figure; README files map each reported result to its generating script, fixed random seeds, and numerical gates. Includes: <code>scripts/</code> (all experiment and figure scripts e1–e153), <code>results/</code> (frozen result arrays; large regenerable artifacts such as solver shards and model checkpoints are documented in the READMEs and regenerated from the frozen seeds), <code>paper_v112/</code> (complete LaTeX source chain and compiled PDF), and <code>figures/</code>.</p><p>Code under MIT; data and result arrays under CC-BY-4.0.</p>",
+  "upload_type": "software",
+  "license": "MIT",
+  "keywords": [
+    "traffic assignment",
+    "OD attribution",
+    "explainable artificial intelligence",
+    "integrated gradients",
+    "boundary accounts",
+    "transportation networks"
+  ],
+  "version": "v112",
+  "language": "eng",
+  "access_right": "open"
+}
