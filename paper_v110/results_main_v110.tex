@@ -1,0 +1,20 @@
+\section{Error-controlled spatial explanations in traffic networks}\label{sec:numerics}
+Sioux Falls absolute accounts use benchmark flows in veh/h and time units of $0.01$ h; multiply an account by $0.01$ for the hourly vehicle-hour total. Anaheim uses vehicle-minutes per hour. All experiments use the stated fixed-path logit-SUE assignment models and prespecified demand scenarios; shares reported over boundary families are enumeration shares over those families. The adaptive reporting rule of Section~\ref{sec:stability} organizes the experiments: every query either receives one error-controlled common value or an explicit spatial profile. Table~\ref{tab:experimentmap} collects the settings of the five studies; they are presented in delivery order --- the compact explanation first, its generating mechanisms second, and the spatial resolution it requires last.
+\begin{table}[pos=tb]
+\footnotesize
+\caption{Settings of the five experimental studies. Background
+treatments: none (all other demands zero); frozen (background link
+flows fixed at the joint baseline equilibrium); responsive (all demands
+at published values, all routes re-equilibrated). The
+learned-assignment study is Section~\ref{sec:pairresults}; full
+protocols in Appendices~\ref{supp:networks}
+and~\ref{app:anaheimsettings}.}\label{tab:experimentmap}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}p{2.5cm}p{2.4cm}p{3.0cm}p{3.2cm}p{2.2cm}@{}}
+\toprule Study & Network, study ODs & Demand change & Background / boundary family & Grid\\
+\midrule
+Large-network profile & Anaheim, 6 largest demands & joint $0.8\to1.2\times$ base & responsive / ordered distance family & 41 states\\
+Background comparison & Sioux Falls, 8 largest demands & joint $0.2\to1.6\times$ base & none, frozen, responsive / connected families & 41 states\\
+Mechanism decomposition & Sioux Falls, 6 prespecified ODs & joint $0.2\to1.6\times$ base & responsive / connected families, screenlines & 41 states\\
+Adaptive representation & Sioux Falls, 18 input-stratified ODs & focal $\pm10\%$, $\pm20\%$; 3 load levels & responsive / 36-direction screenlines & endpoints\\
+Learned explanation & Sioux Falls + Anaheim & 96 / 48 test paths & responsive / screenlines; ordered distance & 41 / 21\\
+\bottomrule\end{tabular*}\end{table}

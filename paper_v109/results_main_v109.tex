@@ -1,0 +1,13 @@
+\section{Error-controlled spatial explanations in traffic networks}\label{sec:numerics}
+Sioux Falls absolute accounts use benchmark flows in veh/h and time units of $0.01$ h; multiply an account by $0.01$ for the hourly vehicle-hour total. Anaheim uses vehicle-minutes per hour. All experiments use the stated fixed-path logit-SUE assignment models and prespecified demand scenarios; shares reported over boundary families are enumeration shares over those families. The adaptive reporting rule of Section~\ref{sec:stability} organizes the experiments: every query either receives one error-controlled common value or an explicit spatial profile. Table~\ref{tab:experimentmap} maps the four studies; they are presented in delivery order --- the compact explanation first, its generating mechanisms second, and the spatial resolution it requires last.
+\begin{table}[pos=tb]
+\footnotesize
+\caption{Experiment map. Each study is reported in its own subsection; the learned-assignment study is Section~\ref{sec:pairresults}.}\label{tab:experimentmap}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}llll@{}}
+\toprule Study & Purpose & Network, query set & Main output\\
+\midrule
+Large-network profile & compact delivered explanation & Anaheim, 6 queries & 83--211 values to 4--14 segments\\
+Mechanism decomposition & why profiles vary & Sioux Falls, 6 queries & free-flow/congestion $\times$ study/background\\
+Adaptive representation & one value vs.\ profile & Sioux Falls, 18 queries & summary error and segments\\
+Learned explanation & improve profile accuracy & Sioux Falls, Anaheim & response supervision\\
+\bottomrule\end{tabular*}\end{table}

@@ -1,0 +1,54 @@
+\subsection{Anaheim learned-assignment protocol}\label{app:anaheimlearning}
+The Anaheim experiment mirrors the Sioux Falls protocol in structure;
+differences are stated here once. The study queries are the six largest
+published OD demands of Section~\ref{sec:anaheim}; all remaining
+positive demands are fixed with endogenous route choice over the same
+ten-path centroid-restricted structure. The model is the conservative
+parameterization of Eq.~\eqref{eq:consparam} with $K=1{,}406$ OD
+softmaxes over $P=14{,}060$ paths and $m=914$ link outputs; the input
+is the six-dimensional study demand vector. Reference labels: 1{,}000
+flow states ($q\sim U(0.65,1.3)\,q_{\mathrm{base}}$; 800 train, 200
+validation), 480 derivative centers (384 train, 96 validation) with
+equilibrium sensitivities of the six study columns, and 48 test demand
+paths (twelve per active-query group $k\in\{1,2,3,6\}$, mixed and same
+signs, generation rule identical to the Sioux Falls test paths under a
+fresh seed) solved at a 21-state quadrature with sensitivities at every
+state. Training: stage~A pretrains flow-only from scratch for up to
+4{,}000 steps (Adam, learning rate $3\times10^{-3}$, batch 128,
+per-link scaled MSE, best-validation selection every 50 steps); stage~B
+continues for 1{,}200 steps with the method objective exactly as in
+the Sioux Falls protocol (learning rate $3\times10^{-5}$, batch 32
+flow samples plus 8 derivative centers, rotation over the six study
+columns), methods \emph{flow} and \emph{response}, five seeds.
+Validation: flow relative error on the 200 held-out flow states;
+$K$-MSE, the boundary-seminorm of the weighted response discrepancy
+normalized per query, on the 96 held-out centers. Selection: minimum
+validation $K$-MSE among states with validation flow error at most
+1.1 times the stage-A checkpoint, else minimum flow error; test
+paths enter neither training nor selection. Selected checkpoints
+cluster at the training cap, as in Sioux Falls, so the operating
+point is budget-limited rather than validation-plateaued; the
+extended-budget replication below triples the cap under the identical
+rule. Numerical checks: conservation of every reference state (study
+plus background supply) holds to $9.1\times10^{-12}$ vehicle-units;
+reference-column completeness relative to the endpoint outcome change
+is at most $1.2\times10^{-5}$; the total error of every reported
+summary stays within its budget. Costs: reference data 2{,}488
+equilibrium solves with sensitivities ($\approx$35\,s per state
+single-threaded, parallelized over twelve workers), pretraining
+$\approx$40\,minutes per seed, fine-tuning $\approx$5--9\,minutes per
+(method, seed).
+
+\paragraph{Extended budget.}
+The convergence check of Section~\ref{sec:pairresults} repeats the
+stage-B continuation for both methods and five seeds with the budget
+tripled to 3{,}600 updates: identical initialization, learning rate,
+batches, label sets, validation cadence and selection rule, and the
+same test paths for the final report. The extension is an exact
+continuation of the shared protocol on Sioux Falls, where the
+3{,}600-update runs repeat the 1{,}200-update stage with the same
+initialization and minibatch sequence. Every Anaheim run selects beyond
+the original cap (all five response seeds at 3{,}600 updates); the
+3{,}600-update fine-tuning takes $\approx$30--105 minutes per
+(method, seed) single-threaded on Anaheim and $\approx$4--6 minutes
+per run on Sioux Falls.

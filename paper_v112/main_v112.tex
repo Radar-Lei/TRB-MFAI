@@ -1,0 +1,1269 @@
+\PassOptionsToPackage{hypertexnames=false}{hyperref}
+\documentclass[a4paper,fleqn]{cas-sc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[authoryear,round]{natbib}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{needspace}
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\floatpagefraction}{0.85}
+\renewcommand{\textfraction}{0.07}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{5}
+\setlength{\textfloatsep}{13pt plus 3pt minus 2pt}
+\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+\AtBeginDocument{%
+  \setlength{\abovedisplayskip}{9pt plus 2pt minus 3pt}%
+  \setlength{\belowdisplayskip}{9pt plus 2pt minus 3pt}%
+}
+\floatstyle{plaintop}
+\newfloat{algo}{t}{loa}
+\floatname{algo}{Procedure}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}[theorem]{Example}
+\newtheorem*{uproposition}{Proposition}
+\newdefinition{rmk}{Remark}
+\newproof{pf}{Proof}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\inner}[2]{\langle #1, #2 \rangle}
+\newcommand{\odpair}{(s,t)}
+\makeatletter
+\AtBeginDocument{\gdef\lastpage{\@abspage@last}}
+\makeatother
+\ExplSyntaxOn
+\RenewDocumentCommand \printorcid { }
+  {
+    \seq_if_empty:NF \g_stm_orcid_seq
+      {
+        \group_begin:
+          \tex_let:D \thefootnote \relax \footnotetext
+          {
+            \raggedright
+            \textsc{orcid}(s):\c_space_token
+            \seq_use:Nn \g_stm_orcid_seq { ;~ }
+          }
+        \group_end:
+      }
+  }
+\ExplSyntaxOff
+\begin{document}
+\hypersetup{bookmarksopen=true,bookmarksnumbered=true,
+pdfkeywords={spatial attribution, traffic assignment, origin-destination demand, network topology, response-supervised learning, explainable artificial intelligence}}
+\shorttitle{Topology-aware spatial attribution in traffic assignment}
+\shortauthors{Lei et al.}
+\title[mode=title]{Topology-aware spatial attribution in traffic assignment: Structural guarantees, adaptive summaries, and response-supervised learning}
+\author[1]{Da Lei}
+\ead{dalei@scu.edu.cn}
+\author[2]{Sylvia Y. He}
+\cormark[1]
+\ead{sylviahe@cuhk.edu.hk}
+\author[3]{Shuli Luo}
+\affiliation[1]{organization={Business School, Sichuan University},city={Chengdu},country={China}}
+\affiliation[2]{organization={Department of Geography and Resource Management, The Chinese University of Hong Kong},city={New Territories},country={Hong Kong}}
+\affiliation[3]{organization={School of Humanities and Social Science, The Chinese University of Hong Kong, Shenzhen},city={Shenzhen},country={China}}
+\cortext[1]{Corresponding author: Sylvia Y. He.}
+\begin{abstract}
+Origin--destination demand changes alter network outcomes through spatially heterogeneous link-flow responses. Existing explanations are either a single system-wide value or a link-level map, leaving no principled intermediate spatial scale. We develop a topology-aware framework that represents each OD effect as a boundary-attribution profile and reports the coarsest profile satisfying a prescribed error tolerance, for both reference and learned traffic assignment. At a fixed flow state, the profile is constant over all two-sided connected regions for every conservative response if and only if the marginal outcome weights agree on the biconnected edge blocks and bridges traversed by the queried OD path; weights elsewhere are unrestricted. When a single value is insufficient, the divergence of the edge-attribution column yields the exact profile range, the minimax constant, minimum-segment summaries for ordered boundary families, and an error budget separating learned-model error from spatial compression error. On Anaheim, 83--211 boundary values are represented by 4--14 segments at a $5\%$ family-scale tolerance. On 96 Sioux Falls test paths, supervising demand-to-flow responses reduces median attribution-column error from $21.18\%$ to $14.19\%$ and family-boundary error from $8.74\%$ to $5.75\%$; at every matched segment count on the pre-specified tolerance grid the final error is lower, with paired intervals excluding zero. The framework provides physically valid, error-controlled, and learnable spatial explanations of traffic-assignment responses.
+\end{abstract}
+\begin{keywords}
+spatial attribution \sep traffic assignment \sep origin--destination demand \sep network topology \sep response-supervised learning \sep explainable artificial intelligence
+\end{keywords}
+\maketitle
+\hypersetup{pdfauthor={Da Lei, Sylvia Y. He, Shuli Luo}}
+\section{Introduction}\label{sec:intro}
+An OD demand change may have a clear network-wide cost effect while
+producing different signed contributions at successive screenlines. For
+planning, the missing information is not only how much the demand change
+costs, but where the contribution changes and whether that change is
+produced by the studied traffic or by rerouting elsewhere; demand-management
+impact tracing, corridor and screenline impact assessment, regional network
+assessment, and the location of background-rerouting effects all ask this
+spatial question. A system-wide scalar is too coarse, whereas an edge map
+is often too detailed. We therefore represent OD demand effects at the
+coarsest spatial resolution that preserves their signed boundary
+attributions within a prescribed error.
+
+The explanation object is the \emph{boundary-attribution profile}: the
+signed aggregation of an OD-specific edge-attribution column over the
+links crossing each screenline or regional boundary, read as a function
+over the boundary family.
+
+\medskip
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+\textbf{What the profile measures.} For a region containing the
+origin, $\phi_j(U)$ is the signed OD-specific change in the selected
+link outcome across the region's boundary: moving the boundary reveals
+where that contribution is created, attenuated, or reversed by
+congestion and network-wide rerouting. It is not a cost inside the
+region, and it is not a count of the OD's own vehicles; it is the
+signed attribution of the chosen outcome on the boundary's crossing
+links. The network-wide contribution $C_j$, attribution on roads within
+a region, and boundary attribution $\phi_j(U)$ answer distinct
+questions.}}
+\medskip
+
+\noindent The objective is not to force distinct boundaries to agree,
+but to identify the coarsest spatial explanation that preserves the
+original attribution within a stated error.
+
+For learned assignment models the framework supplies what accurate
+prediction alone cannot, and each of its three parts plays one role for
+learned explanations: the topology theorem is the \emph{structural
+certificate} that a learned attribution can admit one transferable
+value; the node-divergence representation is the \emph{exact validation
+tool} that measures learned-reference error over every boundary at
+once; and response supervision is the \emph{training mechanism} derived
+from that error representation. Exact conservation of the learned map
+transfers directly to flow-valued integrated gradients; our analysis
+identifies the additional topological and outcome-weight conditions
+required for this conservation to persist after outcome weighting, and
+quantifies the spatial profile when those conditions are not imposed.
+Trustworthiness in this paper therefore has three concrete meanings:
+physical validity, through exact flow conservation of the learned
+assignment map; representational reliability, through explicit spatial
+approximation tolerances on every reported summary; and model fidelity,
+through exact or bounded disagreement between learned and reference
+explanations. Structural compatibility and compression error are
+certified from the learned model and the reported profile alone,
+whereas learned-reference fidelity is an offline validation guarantee
+requiring reference assignments. Physical penalties, output
+projections, and conservative parameterizations constrain predicted
+flows
+\citep{raissi2019physics,shi2021physics,valente2025physics,richterpowell2022neural};
+Section~\ref{sec:pairresults} measures how much each conservation
+mechanism contributes to attribution-level guarantees under matched
+pretraining.
+
+Transportation sensitivity analysis asks how changes in origin--destination
+(OD) demand affect link flows and system outcomes
+\citep{tobin1988sensitivity,josefsson2007sensitivity,patriksson2003aggregated}.
+For a differentiable assignment model or learned surrogate, integrated
+gradients allocate a finite outcome change across OD demands
+\citep{sundararajan2017axiomatic}. Resolving this allocation through
+individual link flows additionally locates the contribution on the
+network --- and raises the spatial question above, because different
+aggregations of the same edge attributions need not agree.
+
+The question differs from tracking physical OD vehicles through screenlines
+or cordons \citep{sheffi1985urban,vanzuylen1980most,bar2002origin}:
+an OD-indexed sensitivity describes the network-wide response,
+including other ODs' route changes. Flow conservation transfers to
+flow-valued attribution, but outcome weighting introduces additional
+topology-dependent conditions (Section~\ref{sec:objects}).
+
+We take the boundary-attribution profile as the primary spatial
+explanation, and the paper asks three questions about it. \emph{When
+does this profile collapse exactly to a single transferable value?} A
+topology theorem answers with a query-dependent structural condition.
+\emph{When it does not, what is its least-complex representation under a
+prescribed error?} A node-divergence representation returns the exact
+boundary range, the minimax common summary, and error-controlled
+segmentations of ordered boundary families. \emph{How can a learned
+assignment model be trained to reproduce the resulting profile
+accurately?} Response supervision acts on the discrepancy identified by
+the error bound. The same order organizes the paper;
+Figure~\ref{fig:pipeline} traces the full pipeline from a demand change
+to a certified, error-controlled summary, for reference and learned
+assignment alike.
+
+\begin{figure}[pos=t]
+\centering
+\includegraphics[width=0.90\linewidth]{../figures/fig0_pipeline_v112.pdf}
+\caption{The paper as one pipeline. (a)~An OD demand change is
+propagated through an assignment map --- a reference SUE model or a
+conservative learned surrogate --- and weighted by the outcome's
+marginal weights, giving the signed edge-attribution column $c_j$;
+rerouting of other ODs enters the same column. (b)~Nested two-sided
+connected boundaries turn the column into the boundary-attribution
+profile $\phi_j(U)$. (c)~At a prescribed tolerance the profile is
+reported either by one transferable value (when its certified range is
+small enough) or by the minimum-segment summary, each value carrying
+its explicit error. (d)~For learned assignment, the topology theorem
+supplies the structural certificate, node divergence validates the
+learned column against a reference exactly, and response supervision
+trains the discrepancy the error bound identifies; the reported summary
+carries a total budget of compression plus model error. Compatibility
+and compression are certified from the learned model alone;
+learned-reference fidelity is an offline validation guarantee.}\label{fig:pipeline}
+\end{figure}
+
+\paragraph{Contributions.}
+This paper makes one overarching contribution: it turns the spatial
+attribution of OD demand effects from an arbitrary boundary aggregation
+into a mathematically controlled representation for both reference and
+learned traffic assignment. First, we characterize exactly when a
+boundary-attribution profile admits one transferable value. For
+two-sided connected regions, this occurs for every conservative
+response if and only if the marginal outcome weights agree on the
+biconnected edge blocks and bridges traversed by the queried OD path;
+weights outside that path are unrestricted --- the principal structural
+result of the paper. Second, when one value is insufficient, node
+divergence yields the exact profile range and the coarsest ordered
+summary satisfying a prescribed approximation tolerance, together with
+separate model and compression errors --- the operational and
+reporting consequence of that result. Third, the same error
+representation identifies demand-to-flow response mismatch as the
+trainable source of learned explanation error and leads to response
+supervision, which improves spatial attribution on both Sioux Falls and
+Anaheim without sacrificing flow accuracy --- its learning consequence.
+
+\section{Related work}\label{sec:related}
+\paragraph{Attribution and cost allocation.}
+Our edge-level object is input-specific conductance
+\citep{dhamdhere2019important,lundstrom2022rigorous}: demand is the input,
+link flow is an intermediate variable, and the traffic outcome is the output.
+Its sum over links gives the integrated-gradient contribution of an OD, and
+continuous marginal cost allocation underlies Aumann--Shapley sharing
+\citep{aumann1974values,billera1978internal}. In transportation
+applications, attribution typically explains a prediction model by ranking
+its input features \citep{sariyer2024leveraging,guo2024towards}, whereas
+the object attributed here is a link flow that must satisfy node balance.
+Existing scalar attribution methods do not characterize how a fixed OD
+contribution changes across physical network boundaries; that additional
+property is what we analyze.
+
+\paragraph{Conserved attribution flows on graphs.}
+Graph-based explanation methods construct attribution flows with
+boundary-consistency or conservation properties on directed acyclic
+graphs: Shapley Flow makes edge attributions consistent across
+different choices of explanatory boundary, and the recursive Shapley
+value recursively constructs edge-attribution flows that conserve at
+internal nodes \citep{wang2021shapleyflow,singal2021rsv}. Those works
+design new attribution rules satisfying such axioms on computational or
+causal graphs; the present problem instead asks when an already
+specified traffic-outcome attribution is boundary-consistent on a
+cyclic physical network, uniformly over flow-conserving responses.
+
+\paragraph{Traffic sensitivity and learned assignment.}
+Equilibrium sensitivity analysis studies demand-to-flow derivatives and
+their aggregation
+\citep{tobin1988sensitivity,yang2005sensitivity,josefsson2007sensitivity,patriksson2003aggregated}.
+Learned assignment maps, implicit optimization layers, and logit
+equilibrium metamodels make such derivatives available to explanations
+\citep{liu2023endtoend,amos2017optnet,lassen2025learning}; training on
+derivative targets is Sobolev training
+\citep{czarnecki2017sobolev,yuan2022sobolev}; fully differentiable
+formulations propagate these gradients end to end
+\citep{li2026differentiable,seo2026differentiable}, graph-attention
+surrogates embed node-based flow conservation in the training loss
+\citep{liu2024heterogeneous,liu2025multiclass}, and expressivity and
+learning guarantees for end-to-end user-equilibrium models are
+established in \citet{liu2025endtoend}. These studies primarily
+evaluate flows, efficiency and conservation; physical OD tracking
+through assignment and cordon counts concerns commodity flows
+\citep{sheffi1985urban,vanzuylen1980most,bar2002origin}. None
+quantify whether OD-indexed spatial explanations are transferable or
+how their boundary error should be controlled; the present work
+supplies both.
+
+\paragraph{Conservation and graph structure.}
+Physics-informed losses and conservative architectures constrain physical
+outputs \citep{raissi2019physics,shi2021physics,richterpowell2022neural};
+projections can enforce constraints exactly \citep{valente2025physics,baez2024guaranteeing}.
+We examine their transfer to flow and outcome attributions; for
+approximate conservation, derivative bounds of Landau--Kolmogorov type
+are classical \citep{shadrin2014landau}, and
+Appendix~\ref{app:approx} transfers such control to attribution
+residuals. The relevant
+circulation space and its decomposition into circuit classes are classical
+\citep{oxley2011matroid,hopcroft1973algorithm}. Classical block and
+circulation results characterize graph structure; they do not
+characterize when an outcome-weighted OD response has one transferable
+value over a specified family of traffic regions. The new
+classification couples the classical decomposition to queried OD
+directions and their transitive equality constraints.
+
+\section{Boundary attribution of OD demand effects}\label{sec:objects}
+\subsection{Edge attribution and the spatial aggregation question}
+Let $\mathcal G=(V,E)$ be connected, with incidence matrix
+$B\in\{-1,0,1\}^{n\times m}$ (negative at a link's tail), OD vectors
+$\mu_j=e_{t_j}-e_{s_j}$, $s_j\ne t_j$, and $M=[\mu_1,\ldots,\mu_K]$.
+Reciprocal and parallel arcs remain distinct edges when orientations are
+forgotten. Let $f:\Omega\subset\R^K\to\R^m$ map demands to flows on an
+open demand domain $\Omega$, and
+$T:\R^m\to\R$ be a specified edgewise outcome. Assume both maps are $C^1$
+on open neighborhoods of the relevant paths. The construction reads as
+follows: a demand change is first propagated to link-flow responses,
+then weighted by the marginal contribution of each link to the selected
+outcome; summing over all links gives the OD's system contribution, and
+summing with boundary orientation gives its signed boundary attribution.
+With $\Delta q=q^1-q^0$ and
+$\gamma(\lambda)=q^0+\lambda\Delta q$, define
+\begin{align}
+g_j&=\Delta q_j\int_0^1 J_f(\gamma(\lambda))\mathbf e_j\,d\lambda,
+\label{eq:Gdef}\\
+c_j&=\Delta q_j\int_0^1 D_\lambda J_f(\gamma(\lambda))\mathbf e_j\,d\lambda,
+\quad D_\lambda=\operatorname{diag}(\nabla T(f(\gamma(\lambda)))),
+\label{eq:Cdef}\\
+C_j&=\mathbf1^\top c_j,\qquad
+\sum_j C_j=T(f(q^1))-T(f(q^0)).\label{eq:Cscalar}
+\end{align}
+The vector $g_j$ attributes flow changes; $c_j$ resolves the outcome
+contribution through links; $C_j$ is its scalar OD contribution. Both
+vectors are signed system sensitivities, including other ODs' route
+adjustments, rather than physical commodity flows. Entry $c_{e,j}$ is
+input-specific conductance through link $e$
+\citep{dhamdhere2019important}.\label{sec:whyC}
+
+If $Bf(q)=Mq$, differentiation and integration give
+\begin{equation}
+BJ_f(q)=M,\qquad Bg_j=\mu_j\Delta q_j.\label{eq:anchorchain}
+\end{equation}
+The same conclusion holds for $Bf(q)=Mq+b$ with constant background demand
+balance $b$. Outcome attribution is \emph{OD cut consistent} when
+$Bc_j=\beta_j\mu_j$ for some $\beta_j\in\R$.
+The scale $\beta_j$ is a boundary value, generally different from $C_j$:
+on two series links with unit weights, $C_j=2\Delta q_j$ but
+$\beta_j=\Delta q_j$. Outcome weighting is what makes cut consistency a
+genuine restriction: on two series links, a conservative unit response
+$(1,1)$ with weights $(w_1,w_2)$ balances at the intermediate node only
+if $w_1=w_2$, although the response itself conserves exactly.
+
+For $s_j\in U\subseteq V\setminus\{t_j\}$, write $b_j=Bc_j$ and define
+the boundary attribution $\phi_j(U)=-\mathbf1_U^\top b_j$. Any two
+separating sets satisfy
+\begin{equation}
+\phi_j(U')-\phi_j(U)
+=-\sum_{v\in U'\setminus U}b_{jv}
++\sum_{v\in U\setminus U'}b_{jv};
+\label{eq:cutdiff}
+\end{equation}
+for nested sets $U\subseteq U'$ the second term vanishes, leaving
+$\phi_j(U')-\phi_j(U)=-\sum_{v\in U'\setminus U}b_{jv}$.
+The difference between two boundaries is thus the enclosed imbalance,
+with incoming and outgoing regions entering with opposite signs.
+For a separable outcome $T(F)=\sum_e g_e(F_e)$, the attribution itself
+also has a direct reading. With $\delta^+(U)$ and $\delta^-(U)$ the
+arcs leaving and entering $U$,
+\begin{equation}
+H_U(F)=\sum_{e\in\delta^+(U)}g_e(F_e)-\sum_{e\in\delta^-(U)}g_e(F_e),
+\qquad
+\phi_j(U)=\operatorname{IG}_j[\,H_U\circ f\,],
+\label{eq:hboundary}
+\end{equation}
+because each entry $c_{e,j}$ of Eq.~\eqref{eq:Cdef} is the
+integrated gradient of the scalar outcome $g_e\circ f$, and the
+incidence signs turn $-\mathbf 1_U^\top b_j$ into the
+signed boundary sum of $H_U$. For TSTT, $\phi_j(U)$ therefore
+attributes the demand change to the excess of the total travel cost on
+the region's outgoing arcs over that on its incoming arcs: a
+boundary-related outcome in its own right, neither the region's
+internal cost nor a vehicle count.
+\begin{uproposition}[cut-consistency equivalence]\label{par:cutequiv}
+OD cut consistency holds exactly when every separating cut has one common
+signed value $\phi_j(U)=\beta_j$.
+\end{uproposition}
+Indeed, balance implies this identity. Conversely, comparing $\{s_j\}$
+with $\{s_j,v\}$ forces zero divergence at every interior node; the two
+endpoint entries are then opposite because incidence columns sum to zero.
+The three spatial summaries of one attribution --- the system-wide value
+$C_j=\sum_ec_{e,j}$, attribution $\sum_{e\in E_R}c_{e,j}$ on a road set
+$E_R$ specified before aggregation, and the boundary value $\phi_j(U)$
+--- answer the three questions of Figure~\ref{fig:pipeline}(a): how
+much, where on specified roads, and what signed aggregation on a
+specified boundary.
+
+The road partition is part of the attribution object: subdivision changes
+which crossing-link costs a boundary includes (Example~\ref{ex:subdivision}).
+
+Throughout, $\mathcal U_j^{\mathrm{all}}$ contains all sets separating
+$s_j$ from $t_j$; $\mathcal U_j^{\mathrm{conn}}$ restricts both induced sides
+to be connected in the underlying undirected network; and
+$\mathcal U_j^{\mathrm{geo}}$ is a specified finite family of straight
+screenline regions, filtered for two-sided connectivity.
+The unrestricted extrema below are closed-form exact values. Sioux Falls
+connected extrema use complete enumeration. Geometric extrema and Anaheim's
+selected connected-region ranges are exact only over their stated finite
+families, and do not determine extrema over all connected regions.
+
+\subsection{Boundary families, response classes, and explanation accuracy}\label{sec:levels}\label{sec:hierarchy}
+A common boundary value is a property of two objects at once: which
+boundaries are allowed, and which demand responses are quantified over.
+We therefore state the transferability questions along these two axes.
+\emph{Boundary families}: all separating regions
+$\mathcal U_j^{\mathrm{all}}$; two-sided connected regions
+$\mathcal U_j^{\mathrm{conn}}$; or a prescribed finite family such as a
+screenline set. \emph{Response classes}: every conservative response at
+fixed weights; the path-feasible response envelope of one assignment model;
+or a single realized attribution column. The graph-topological
+classification of Section~\ref{sec:classification} covers the first two
+families under all conservative responses; prescribed finite families
+admit an exact linear-algebraic test of the same universal kind
+(Proposition~\ref{prop:familycriterion} below), and model envelopes
+substitute for the conservative class inside any of them.
+Four levels result, ordered by what varies. The \emph{structural}
+level asks whether one value is guaranteed for all flow-conserving
+responses and is answered by the topological condition of
+Section~\ref{sec:classification}; the \emph{model-specific} level asks
+the same for the path-feasible response envelope of one assignment
+model and is answered by the linear-algebraic test of
+Proposition~\ref{prop:familycriterion}; the \emph{realized} level asks
+how much the boundaries of one attribution column differ and is
+answered by the exact range and profile of
+Section~\ref{sec:stability}; and the \emph{learned-reference} level
+quantifies the distance between two realized columns, reported
+separately from the consistency properties
+(Section~\ref{sec:boundarylearning}).
+
+\begin{proposition}[exact family criterion]\label{prop:familycriterion}
+Fix a query $j$, a nonempty boundary family
+$\mathcal F\subseteq\mathcal U_j^{\mathrm{all}}$, and an affine class of
+edge responses $x=x_j^{\mathrm{ref}}+\mathcal S$ with basis $N_{\mathcal S}$
+($\mathcal S=\ker B$ recovers all conservative responses). Let
+$A_{\mathcal F}=[-\mathbf 1_U^\top B]_{U\in\mathcal F}$ stack the oriented
+attribution functionals. All responses in the class give one common summary
+$\alpha_j$ on $\mathcal F$ --- that is,
+$-\mathbf 1_U^\top BDx=\alpha_j$ for every $U\in\mathcal F$ and every
+$x\in x_j^{\mathrm{ref}}+\mathcal S$ --- if and only if
+\begin{equation}
+A_{\mathcal F}DN_{\mathcal S}=0
+\qquad\text{and}\qquad
+A_{\mathcal F}Dx_j^{\mathrm{ref}}\in\operatorname{span}\{\mathbf 1\},
+\label{eq:familycriterion}
+\end{equation}
+in which case $\alpha_j$ is the common entry of $A_{\mathcal F}Dx_j^{\mathrm{ref}}$.
+\end{proposition}
+Substituting $x=x_j^{\mathrm{ref}}+N_{\mathcal S}z$ makes the attribution
+affine in $z$; the identity holds for every $z$ exactly when the
+$z$-coefficient block $A_{\mathcal F}DN_{\mathcal S}$ vanishes and the
+constant block has constant rows. On the full separating family the
+criterion reproduces the classification theorems, which characterize
+when \eqref{eq:familycriterion} holds for every weight profile without
+enumerating $\mathcal F$; on a prescribed screenline set it is the exact
+universal test, computable from one sparse product per family member.
+For a fixed assignment model, the envelope
+$x_j^{\mathrm{ref}}+\mathcal S$ collects the path-feasible responses
+that the fixed path sets can express; the tests are then sufficient
+for the actual assignment map, and necessity for a specified
+equilibrium map would require a separate attainability argument, which
+we do not claim. On Sioux Falls, whose full-background fixed-path
+model allows path exchanges spanning the complete circulation space
+($T_{\mathrm{swap}}=\Delta\ker A_{\mathrm{OD}}$ of dimension $m-n+1$),
+the path-exchange envelope coincides with the affine space of
+conservative responses: for this path-feasible response envelope, the
+model-specific criterion coincides with the unrestricted
+conservative-response criterion, so the universal condition is tight
+rather than conservative for that path structure; restricted path
+systems separate the two levels (Appendix~\ref{supp:networks},
+Table~\ref{tab:levelsdiag}).
+A realized attribution can balance without satisfying the universal
+conditions; pointwise balance along a demand path implies integrated
+balance, and the converse can fail through cancellation.
+Appendix~\ref{supp:criteria} collects these examples and the
+directionality conditions under which weaker balance notions coincide
+with the classified property.
+
+\section{Topological conditions for transferable spatial attribution}\label{sec:classification}
+Take the block-cut tree of the underlying undirected multigraph.
+Its non-bridge blocks, together with each bridge as a singleton,
+are the \emph{block atoms}. They are the classical graphic-matroid circuit
+classes, with each bridge retained separately. The \emph{OD block path}
+$\mathcal P(s,t)$ is the atom sequence on the unique block-cut-tree path
+between the OD endpoints. For several queries, merge all atoms traversed
+by each $\mathcal P_j=\mathcal P(s_j,t_j)$ and take the transitive closure.
+The resulting edge sets $\bar E_1,\ldots,\bar E_{K'}$ are the
+\emph{OD-compatibility classes}; atoms on no queried path remain separate.
+
+\begin{figure}[pos=t]
+\centering
+\includegraphics[width=0.74\linewidth]{../figures/fig1_block_cut_v108.pdf}
+\caption{(a)~A two-bridge network with its block-cut tree: non-bridge
+block atoms $A,B,C,D$ and bridge atoms $b_1,b_2$ joined at shared cut
+vertices; the queried OD path runs $s\to t$ and the pendant atom $D$
+hangs off the path. (b)~OD queries merge the atoms they traverse: the
+single query $(s,t)$ merges $A\cup b_1\cup B\cup b_2\cup C$ into one
+class while $D$ stays separate; two queries $(s,u)$ and $(u,t)$ sharing
+only atom $B$ merge the same full chain transitively. In the
+connected-region example below, atom $D$ carries heterogeneous weights
+$3,4,5$ --- invisible to the queried connected boundaries but violating
+unrestricted transferability; the unrestricted-family counterpart with
+uniform pendant weights appears as Example~B in
+Appendix~\ref{app:classificationproof}.}\label{fig:blockcut}
+\end{figure}
+
+\subsection{Main result: two-sided connected traffic regions}\label{sec:connectedmain}
+Traffic analysis typically aggregates on screenlines, cordons and regional
+boundaries whose two sides are each spatially connected. The main theorem
+shows that this restriction strictly localizes the condition for a
+common boundary attribution to the queried OD block path; the magnitude
+of the resulting freedom is topology- and query-dependent. Let
+\[
+\mathcal U^{\mathrm{conn}}_{st}=\{U\subset V:s\in U,\ t\notin U,
+\ \mathcal G[U]\text{ and }\mathcal G[V\setminus U]\text{ are connected}\},
+\]
+where connectivity uses the underlying undirected multigraph. These are
+separating bonds: both sides of the boundary form connected regions.
+
+\medskip
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+\textbf{Main implication.} For two-sided connected traffic regions,
+transferable OD boundary explanations require uniform marginal weighting
+only along the block atoms traversed by the queried OD paths.
+Heterogeneity elsewhere in the network is immaterial to this guarantee.}}
+\medskip
+
+\begin{theorem}[two-sided connected-region classification]\label{thm:connectedclassification}
+For a connected loopless multigraph, $\mu=e_t-e_s$, and
+$D=\operatorname{diag}(w)$, the property
+\begin{equation}
+\exists\alpha\in\R\quad\forall x\text{ with }Bx=\mu\quad
+\forall U\in\mathcal U^{\mathrm{conn}}_{st}:
+-\mathbf1_U^\top BDx=\alpha
+\label{eq:connectedclassification}
+\end{equation}
+holds if and only if every edge in the atoms of $\mathcal P(s,t)$ has
+one common weight $\alpha$. Weights of edges outside those atoms are
+arbitrary, even within an off-path block atom.
+\end{theorem}
+The proof in Appendix~\ref{app:connectedproof} uses connected prefix and
+suffix regions within each traversed atom. Each admissible boundary
+crosses edges in just one such atom, which explains why off-path
+heterogeneity is invisible to this region family. This is a universal
+fixed-weight statement; agreement for one realized response need not
+imply its conditions.
+
+\begin{corollary}[several queries on connected regions]\label{cor:connectedmulti}
+At one shared weight vector, Eq.~\eqref{eq:connectedclassification} holds
+for all queried ODs if and only if edges in each group of atoms joined
+by the queried block paths have one common weight. An atom on no queried
+path has no weight restriction, including no within-atom restriction.
+\end{corollary}
+Thus restricting attention to connected traffic regions permits additional
+outcome heterogeneity. It changes the compatibility classification,
+while the unrestricted extrema and error formulas of
+Section~\ref{sec:stability} retain their own stated boundary family.
+
+\subsection{Design implications}\label{sec:design}
+The theorem gives three design freedoms, each checkable before any model
+is fitted.
+\paragraph{Query design.}
+Only the atoms traversed by the queried OD paths enter the condition, and
+adding queries merges atoms transitively through shared blocks. On
+Figure~\ref{fig:blockcut} ($s=0$, $u=4$, $t=8$, linear outcome
+$T_w(F)=w^\top F$), the query $(s,u)$ joins $A,b_1,B$ while $b_2$, $C$
+and $D$ keep their own constants; adding $(u,t)$ joins the remaining
+chain through the shared atom $B$; adjusting only $b_2$ and $C$ then
+restores a common summary for both queries while the unrelated atom $D$
+keeps weight $3$. Appendix~\ref{app:classificationproof} tabulates the
+three stages with exact profile ranges.
+\input{connected_example_v112}
+\paragraph{Outcome design.}
+\begin{corollary}[linear outcome functionals]\label{cor:linear}
+Let $f\in C^1$ be exactly conservative on an open neighborhood of the
+attribution path, and let $T(F)=a^\top F$ be a linear functional of
+realized flows. Then $\nabla T\equiv a$, so structural cut consistency
+over the unrestricted separating family holds if and only if $a$ is
+constant on the compatibility classes, with common cut value
+$\beta_j=\Delta q_j\,a|_{\bigcup\mathcal{P}_j}$; over two-sided
+connected regions the weaker condition of
+Theorem~\ref{thm:connectedclassification} applies instead --- $a$
+constant on the block atoms traversed by the queried OD paths, with no
+constraint on off-path atoms. Both are conditions on the outcome
+definition alone, checkable by inspection before any model is trained,
+and the pointwise classification holds at every $\lambda$.
+\end{corollary}
+Nonlinear compatible outcomes also exist: if
+$T(F)=\Phi(\sum_{e\in\bar E_1}F_e,\ldots,\sum_{e\in\bar E_{K'}}F_e)$,
+its gradient is class-constant at every flow. More familiar traffic outcomes
+require equality of their actual marginal weights. The Beckmann potential
+has weights $t_e(F_e)$; total system travel time (TSTT) has weights
+$t_e(F_e)+F_et'_e(F_e)$; a separable index $\sum_e g_e(F_e)$ has
+weights $g'_e(F_e)$. Heterogeneous link parameters and congestion typically
+violate these equalities. A single-link outcome has a nonzero common boundary value
+only when the queried OD block path is precisely that singleton bridge.
+\paragraph{Region-family design.}
+The admissible family is part of the attribution question, and the theorem
+quantifies what each choice costs: the connected family ignores off-path
+heterogeneity, the unrestricted family does not, and a prescribed finite
+family such as a screenline set admits the exact universal test of
+Proposition~\ref{prop:familycriterion} in place of a graph-topological
+classification.
+On public road networks the size of that freedom is itself measurable
+from topology alone, and it is largest for corridor-type and
+articulation-adjacent queries and smaller in large biconnected cores.
+Across every positive-demand OD pair, the share of edges the connected
+condition constrains --- against $100\%$ for the unrestricted condition
+--- has median $100\%$ on Sioux Falls (one atom), $95.4\%$ on Anaheim,
+$95.3\%$ on Winnipeg and $89.1\%$ on Eastern-Massachusetts. The
+distribution is tightly concentrated on the first three networks
+(Anaheim $10$--$90\%$ quantiles $95.4$--$96.1\%$), whereas
+Eastern-Massachusetts carries a genuine peripheral tail: $2.2\%$ of OD
+pairs constrain fewer than $75\%$ of edges, down to $0.8\%$ for OD
+pairs localized in a single peripheral block (Appendix~\ref{supp:networks},
+Table~\ref{tab:topologydist}). Where the release is small, the
+realized summaries of Section~\ref{sec:stability}, not the structural
+classification, carry the reporting.
+
+\subsection{A stronger criterion for all separating sets}\label{sec:allsets}
+When every separating set --- regular or irregular --- must share one
+boundary value, the condition tightens and reaches beyond the queried paths.
+
+\Needspace{15\baselineskip}
+\begin{theorem}[single-OD classification, static form]\label{thm:t3cpmain}
+Let $\mathcal{G}$ be a connected multigraph with one OD pair $(s,t)$,
+\textbf{$s\neq t$}, let
+$w\in\R^m$, and let $D=\operatorname{diag}(w)$. The
+\emph{response-independent OD cut consistency property}
+\begin{equation}
+\exists\,\alpha\in\R:\qquad BDx=\alpha\,\mu
+\quad\text{for every }x\in\R^m\text{ with }Bx=\mu,
+\label{eq:t3prop}
+\end{equation}
+with the scale $\alpha$ independent of the response $x$, holds
+\textbf{if and only if}
+\begin{enumerate}[(i)]
+\item $w$ is constant within every non-bridge atom; and
+\item all atoms on the $s$--$t$ block path $\mathcal{P}(s,t)$ share
+one common value.
+\end{enumerate}
+In that case every conservative response induces the same boundary vector:
+$BDx=w^*\mu$ for every $x$ with $Bx=\mu$, where
+$w^*:=w|_{\bigcup\mathcal{P}(s,t)}$ is the common value of (ii) and
+$\alpha=w^*$ is the scale in \eqref{eq:t3prop}.
+\end{theorem}
+
+Condition (i) concerns every atom, including those off the OD path. Their
+constants may differ; only the traversed atoms must share the scale $w^*$.
+Off-path atoms are constrained because a signed circulation can
+be added to any conservative response, and heterogeneous weights can turn
+it into node divergence. Connected regions change this conclusion, as
+Theorem~\ref{thm:connectedclassification} shows. The proof adds a virtual
+edge from $t$ back to $s$
+(Appendix~\ref{app:classificationproof}): conservative OD responses then
+become circulations on the extended graph, so the boundary vector is
+response-independent exactly when diagonal weighting preserves the
+circulation space --- equivalently, when every weighted cycle has zero
+node divergence --- which forces equal weights within each block atom
+and one shared weight along the atoms the OD block path connects.
+
+\begin{theorem}[multi-OD classification, static form at a shared
+realized flow state]\label{thm:t3cm}
+Let $\mathcal{G}$ be connected, let each OD pair satisfy $s_j\ne t_j$,
+and let $w\in\R^m$, $D=\operatorname{diag}(w)$. The
+response-independent OD cut consistency property \eqref{eq:t3prop}
+--- for each queried $j$, some $\alpha_j\in\R$ with
+$BDx=\alpha_j\mu_j$ for every $x$ with $Bx=\mu_j$ --- holds
+simultaneously for the queried ODs \textbf{if and only if} $w$ is
+constant on each OD-compatibility class $\bar{E}_k$.
+\end{theorem}
+
+The classification concerns all signed responses compatible with vehicle
+conservation; an equilibrium model generally realizes only a subset of
+these responses (Appendix~\ref{app:membership}).
+All queries use the same realized weight vector. Queries with $\Delta q_j=0$
+have zero attribution columns and need not enter the closure. Requiring all
+ordered pairs of distinct vertices collapses the classes to one per
+connected component (Corollary~\ref{cor:allod}).
+
+\subsection{Pathwise attribution and certificates for learned assignment}\label{sec:pathwise}
+\begin{corollary}[path form: endpoint implication]\label{cor:path}
+Let $f\in C^1$ be conservative on an open set, $T\in C^1$,
+$\gamma(\lambda)=q^0+\lambda\Delta q$ the straight-line path with $\Delta q\ne0$, and
+$w(\lambda)=\nabla T(f(\gamma(\lambda)))$, $D_\lambda=\operatorname{diag}(w(\lambda))$, shared by
+all participating ODs. If the equivalent conditions of
+Theorems~\ref{thm:t3cpmain} and~\ref{thm:t3cm} hold at $w(\lambda)$ for
+every $\lambda\in[0,1]$, then, for every participating $j$
+simultaneously,
+\[
+Bc_j=\beta_j\,\mu_j
+\]
+holds with
+\[
+\beta_j=\Delta q_j\int_0^1 w^*_{k(j)}(\lambda)\,d\lambda,
+\]
+where $w^*_{k(j)}$
+is the common value on the compatibility class $k(j)$ containing the
+atoms of $\mathcal{P}_j$.
+\end{corollary}
+
+The specified edgewise outcome and the network representation are both
+part of the object. On two series links, an outcome whose marginal
+weights oscillate around unity can integrate to the same balanced column
+$(1,1)$ as the linear outcome on one demand segment, yet fail to balance
+on another (Example~\ref{ex:cancellation}); subdividing a link leaves
+the composite map unchanged but creates interior divergence and even
+halves the original cut value at the mixed split
+(Example~\ref{ex:subdivision}). Response independence concerns
+conservative responses on a fixed network; it does not make the attribution
+invariant to road subdivision.
+
+\begin{corollary}[conservative learned assignment]\label{cor:learned}
+Let $f^L$ be an exactly conservative learned assignment map on an open
+domain. Then its flow-valued integrated gradients inherit OD
+conservation, $Bg^L_j=\mu_j\Delta q_j$. Write
+$w(\lambda)=\nabla T(f^L(\gamma(\lambda)))$ along the attribution path.
+For each $\lambda$, structural cut consistency of the learned
+explanations is equivalent to the weight conditions of
+Theorems~\ref{thm:t3cpmain} and~\ref{thm:t3cm} at $w(\lambda)$ for the
+unrestricted separating family, and to those of
+Theorem~\ref{thm:connectedclassification} for two-sided connected
+regions. When the unrestricted-family conditions hold at every
+$\lambda$, the integrated explanations are realized cut consistent,
+$Bc^{L}_j=\beta_j\mu_j$
+(Corollary~\ref{cor:path}); when they fail at some $\lambda$, the node
+representation of Section~\ref{sec:stability} gives the exact spatial
+explanation range of the learned column over the unrestricted family
+and its exact maximum boundary disagreement from any reference
+assignment, with restricted families scanned through the same node
+sums.
+\end{corollary}
+\begin{proof}
+The conservation transfer is Eq.~\eqref{eq:anchorchain} applied to
+$f^L$. The pointwise equivalences are the two classification theorems
+applied to the fixed weight vector $w(\lambda)$; the integral claim is
+Corollary~\ref{cor:path} with
+$D_\lambda=\operatorname{diag}(w(\lambda))$; the general-profile bound is
+Corollary~\ref{cor:boundaryerror}.
+\end{proof}
+Conservation of predicted flows is thus the first step of a chain whose
+later steps are topological; Section~\ref{sec:pairresults} evaluates the
+whole chain empirically.
+
+\FloatBarrier
+\section{Adaptive spatial summaries and error guarantees}\label{sec:stability}\label{sec:algorithm}
+Procedure~\ref{alg:spatial} summarizes the full pipeline from an OD
+demand change to a reported explanation; the subsections that follow
+derive each step in turn.
+
+\subsection{Obtaining attribution columns}
+
+\begin{algo}[t]
+\caption{From an OD demand change to a reported spatial explanation}\label{alg:spatial}
+\small
+\textbf{Input:} incidence $B$, query $(s_j,t_j)$, edge attribution $c_j$,
+an ordered boundary family $\mathcal F$ with tolerance $\epsilon_j$,
+selected regions $U,W$, and optionally a reference column $c'_j$.\\
+0. For a single changing OD and separable outcome, obtain $c_j$ from the two endpoint states using Eq.~\eqref{eq:edgeidentity}; for joint changes, input the separately integrated column.\\
+1. Compute $b_j=Bc_j$; return its node distribution.\\
+2. Return $\phi_j(U)=-\mathbf1_U^\top b_j$ and
+$\phi_j(U)-\phi_j(W)=-(\mathbf1_U-\mathbf1_W)^\top b_j$: the
+boundary-attribution profile over $\mathcal F$.\\
+3. Scan interior nodes to return the extrema in Eq.~\eqref{eq:cutextrema}
+and the midpoint and half-range in Eq.~\eqref{eq:familycommon},
+and their sets $\{s_j\}\cup\{v\in V\setminus\{s_j,t_j\}:b_{jv}>0\}$ and
+$\{s_j\}\cup\{v\in V\setminus\{s_j,t_j\}:b_{jv}<0\}$.\\
+4. Summarize: if $\varepsilon_j^{\mathcal F}\le\epsilon_j$ return the common
+summary $\beta_j^{\mathcal F}$; otherwise apply
+Proposition~\ref{prop:segmented} and return the minimum-segment
+summary with each segment's position range, representative value and
+worst error ($\le\epsilon_j$ by construction).\\
+5. If $c'_j$ is supplied, return $\mathcal K_j(c_j-c'_j)$ as the exact
+maximum absolute error over unrestricted separating regions, the family
+scan over $\mathcal F$, and, when step 4 produced a summary, the total
+budget $\varepsilon^{\mathrm{sum}}_j+\delta_j$ of
+Eq.~\eqref{eq:totalbudget}.\\
+The incidence product and scan cost $O(|E|+|V|)$ per column; selected-region
+sums cost $O(|V|)$; the segmentation is one linear pass over the family.
+The same node representation serves all these tasks. The columns must already
+have been computed; their reference-attribution cost remains separate.
+\end{algo}
+For a separable outcome $T(F)=\sum_e g_e(F_e)$, a single changing OD gives
+\begin{equation}
+c_{e,j}=g_e(F_e^1)-g_e(F_e^0).
+\label{eq:edgeidentity}
+\end{equation}
+Along this demand path, $dF_e/d\lambda=\Delta q_j\partial_jf_e$; the fundamental theorem of calculus applies link by link, including endogenous background rerouting. Two endpoint assignments therefore recover the attribution column without sensitivity integration. The boundary attribution is $H_U(F^1)-H_U(F^0)$.
+For jointly changing ODs, endpoint differences determine only the sum of attribution columns. Sensitivity integration in Eq.~\eqref{eq:Cdef} separates the individual OD contributions. Both cases then use the same node representation and spatial aggregation (Procedure~\ref{alg:spatial}) below. After preprocessing, all boundary values for a prescribed screenline family are obtained from one incidence multiplication and a linear scan; numerical verification and same-task timings against endpoint and vectorized alternatives are collected in Appendix~\ref{supp:timing}.
+\subsection{Node representation and exact profile ranges}
+Once the classes are constructed, structural cut consistency over the
+unrestricted family of all separating regions is tested by
+\begin{equation}
+\eta_{\mathrm{all}}(\lambda)=\max_k\max_{e\in\bar E_k}|w_e(\lambda)-\bar w_k(\lambda)|,
+\qquad
+\bar w_k=|\bar E_k|^{-1}\sum_{e\in\bar E_k}w_e,
+\label{eq:etaall}
+\end{equation}
+and the joint condition of Theorem~\ref{thm:t3cm} is exactly
+$\eta_{\mathrm{all}}=0$. For two-sided connected regions, let
+$E_Q=\bigcup_j\bigcup_{A\in\mathcal P_j}A$ collect the edges of all queried
+block paths and define
+\begin{equation}
+\eta_{\mathrm{conn}}(\lambda)=
+\max_{k:\,\bar E_k\cap E_Q\neq\varnothing}\;
+\max_{e\in\bar E_k}|w_e(\lambda)-\bar w_k(\lambda)|,
+\label{eq:etaconn}
+\end{equation}
+which omits every class on no queried path. By
+Corollary~\ref{cor:connectedmulti}, $\eta_{\mathrm{conn}}=0$ is exactly the
+connected-region compatibility condition, and off-path atoms may remain
+internally heterogeneous, so $\eta_{\mathrm{conn}}=0$ does not imply
+$\eta_{\mathrm{all}}=0$. Class construction uses the
+block-cut tree and transitive merging; testing a weight vector then needs
+one edge scan. No fitted-model derivatives are required for a linear outcome.
+
+For a realized integrated attribution, define
+\begin{equation}
+d_j=(I-P_{\mu_j})Bc_j,\qquad
+P_{\mu_j}=\frac{\mu_j\mu_j^\top}{\norm{\mu_j}_2^2}.
+\label{eq:endpointd}
+\end{equation}
+Endpoint cut consistency over all separating regions holds precisely when
+$d_j=0$; only then does
+$\mu_j^\top Bc_j/\norm{\mu_j}_2^2$ represent a common cut
+value, whatever mechanism produced the balance
+(Section~\ref{sec:levels}). For a connected family or another prescribed
+finite family, $d_j=0$ is sufficient but not necessary; realized
+consistency is then read from the attribution range over that family.
+
+Without a connectivity restriction, each interior node can enter the
+separating set independently. Therefore Eq.~\eqref{eq:cutdiff} gives
+\begin{equation}
+S_j:=\max_U\phi_j(U)-\min_U\phi_j(U)
+=\sum_{v\notin\{s_j,t_j\}}|(Bc_j)_v|.
+\label{eq:cutspread}
+\end{equation}
+The extrema themselves have a closed form: writing $b_j=Bc_j$
+(Eq.~\eqref{eq:Cdef}), $(x)_+=\max(x,0)$, and summing over interior nodes
+$v\notin\{s_j,t_j\}$,
+\begin{equation}
+\phi_j^{\min}=\phi_j(\{s_j\})-\sum_v(b_{jv})_+,
+\qquad
+\phi_j^{\max}=\phi_j(\{s_j\})+\sum_v(-b_{jv})_+,
+\label{eq:cutextrema}
+\end{equation}
+since the minimizing set retains exactly the interior nodes with
+positive divergence. Subtracting gives, for $I_j=V\setminus\{s_j,t_j\}$,
+\begin{equation}
+\phi_j(U)-\phi_j^{\min}
+=\sum_{v\in I_j\setminus U}(b_{jv})_+
++\sum_{v\in I_j\cap U}(-b_{jv})_+
+\quad\text{and}\quad
+S_j\le\sqrt{n-2}\,\norm{d_j}_2,
+\label{eq:cutgap}
+\end{equation}
+the first identity being the exact gap to the unrestricted minimum ---
+the positive divergence the region omits plus the negative divergence
+it contains --- and the second the Cauchy--Schwarz bound (the
+projector of Eq.~\eqref{eq:endpointd} changes only the two endpoint
+entries). When
+$\phi_j(\{s_j\})>0$, the unrestricted family
+therefore contains a negative boundary value whenever the interior positive
+divergence $\sum_v(b_{jv})_+$ exceeds the origin-cut value: node
+imbalance, extremal location, and sign crossing are the same statement.
+$S_j=0$ is equivalent to $d_j=0$.
+For network regions whose induced subgraphs and complements are both
+connected, define $S_j^{\mathrm{conn}}$ by restricting the same extrema to
+that family. Then $S_j^{\mathrm{conn}}\le S_j$. We report both
+ranges as percentages of the absolute origin-cut value
+$|\phi_j(\{s_j\})|$, which remains explicit because the ratio depends
+on that denominator (absolute ranges when it is zero). Within each
+region family, the four levels above apply with
+their family-specific form: the unrestricted column uses
+$\eta_{\mathrm{all}}$ and $d_j$, connected families use
+$\eta_{\mathrm{conn}}$ and the family's profile range, and a
+prescribed finite family $\mathcal F$ uses the exact criterion of
+Proposition~\ref{prop:familycriterion}; for
+maximum model difference, $\mathcal K_j(e_j)$ is exact and family
+scans give the restricted value.
+
+\begin{corollary}[best common boundary value]\label{cor:approxinterchange}
+For the unrestricted family, the unique best constant in maximum absolute
+boundary error is
+\[
+\beta_j^\star=\frac{\phi_j^{\max}+\phi_j^{\min}}2
+=\frac{(b_j)_{t_j}-(b_j)_{s_j}}2,\qquad
+\min_{\beta\in\mathbb R}\max_{U\in\mathcal U_j^{\mathrm{all}}}
+|\phi_j(U)-\beta|=\frac{S_j}{2}.
+\]
+Hence all separating boundary values lie within a prescribed absolute tolerance
+$\varepsilon$ of some common value if and only if $S_j\le2\varepsilon$.
+\end{corollary}
+\begin{proof}
+For any constant, its largest error at the two attained extrema is at least
+half their difference; their midpoint attains this bound for every boundary value.
+Equation~\eqref{eq:cutextrema} and $\mathbf1^\top b_j=0$ give the midpoint formula.
+\end{proof}
+The coefficient agrees with the endpoint projection in
+Eq.~\eqref{eq:endpointd}. It approximates the original boundary values; it does
+not change their edge attribution or define a new system contribution.
+
+\subsection{Common values and minimum-segment summaries}\label{sec:segments}
+For any nonempty prescribed finite family $\mathcal F$, the same midpoint argument gives
+\begin{equation}
+\beta_j^{\mathcal F}=\frac{\phi_{j,\max}^{\mathcal F}+\phi_{j,\min}^{\mathcal F}}2,
+\qquad \varepsilon_j^{\mathcal F}=\frac{\phi_{j,\max}^{\mathcal F}-\phi_{j,\min}^{\mathcal F}}2,
+\qquad |\phi_j(U)-\beta_j^{\mathcal F}|\le\varepsilon_j^{\mathcal F}\quad(U\in\mathcal F).
+\label{eq:familycommon}
+\end{equation}
+Ordered families --- a corridor's nested screenlines, or the regions of
+one projection direction --- additionally support piecewise common
+summaries. The construction is stated for any ordered family.
+\begin{proposition}[minimal contiguous boundary summary]\label{prop:segmented}
+Fix an ordered family of boundary values $a_1,\ldots,a_N$ and a
+tolerance $\epsilon>0$. Among partitions into contiguous intervals
+whose every interval has range at most $2\epsilon$ and does not
+strictly mix signs, the longest-feasible-prefix procedure returns one
+with the minimum number of intervals. The rule is elementary and
+applies to any ordered sequence; its value here is the coupling to the
+boundary scan, the node-difference interpretation, and a stated
+tolerance --- a single interval reproduces the common summary of
+Eq.~\eqref{eq:familycommon}.
+\end{proposition}
+When a reported family consists of several ordered chains --- the
+36-direction geometric family used on Sioux Falls induces 22--35
+distinct chains per query --- the procedure is applied within each
+chain and the reported count is the sum over chains; the minimality
+guarantee is per chain.
+\begin{proof}
+No feasible first interval can extend past the longest feasible prefix,
+so every optimal partition starts with a prefix no longer than the
+greedy choice; replacing the first interval of an optimal partition by
+the full greedy prefix cannot make the remainder infeasible, and the
+same argument applies inductively to the remainder.
+\end{proof}
+The tolerance is a reporting choice, and the greedy minimality of
+Proposition~\ref{prop:segmented} extends from the constant tolerance
+to position-dependent tolerances, which control the relative error at
+small-magnitude positions.
+
+\begin{corollary}[position-dependent tolerances]\label{cor:mixedtol}
+Fix an ordered family $a_1,\ldots,a_N$ and tolerances $t_i\ge0$. Call
+an interval $I$ feasible when some representative $\hat a$ satisfies
+$|\hat a-a_i|\le t_i$ for all $i\in I$. Then $I$ is feasible if and
+only if
+\[
+\max_{i\in I}(a_i-t_i)\;\le\;\min_{i\in I}(a_i+t_i).
+\]
+If the no-mixing rule of Proposition~\ref{prop:segmented} is imposed
+as an additional reporting requirement, feasibility is inherited by
+subintervals, so the longest-feasible-prefix procedure again returns
+the minimum number of contiguous segments, and the segment
+representative may be taken as the midpoint of the feasibility
+intersection.
+\end{corollary}
+\begin{proof}
+The intersection $\bigcap_{i\in I}[a_i-t_i,\,a_i+t_i]$ is nonempty
+exactly under the displayed condition, and every subinterval of a
+feasible interval retains a nonempty intersection; the exchange
+argument of Proposition~\ref{prop:segmented} then applies verbatim.
+\end{proof}
+The two standard settings used throughout are instances of this
+corollary. The recommended \emph{mixed} setting is the mixed
+absolute--relative tolerance
+$t_i:=\epsilon_{\mathrm{abs}}+\tau|a_i|$ with
+$\epsilon_{\mathrm{abs}}$ at $1\%$ of the family maximum and
+$\tau=10\%$. The \emph{absolute} setting is the pure
+family-scale absolute rule $\epsilon_j=5\%\max_U|\phi_j(U)|$, which
+compresses further but permits large relative errors where the profile
+is small. On Anaheim, the mixed setting raises the median segment
+count only from $10$ to $12$ (per-query ranges $4$--$14$ absolute
+against $6$--$17$ mixed) while cutting the worst relative error at
+small-magnitude positions from $55\%$ to $28\%$ in the median over
+queries ($94\%$ to $45\%$ at worst; Appendix~\ref{supp:tolerance}
+reports the full sensitivity).
+Every query therefore receives a usable output under either setting,
+and both are reported in the summaries below (the learned-assignment
+experiments of Section~\ref{sec:pairresults} use the absolute setting).
+The reporting rule is stated once and organizes the numerical sections:
+
+\medskip
+\noindent\fbox{\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+\textbf{Adaptive reporting rule.} For a specified boundary family,
+report the minimax common value $\beta_j^{\mathcal F}$ when its exact
+error $\varepsilon_j^{\mathcal F}$ meets the chosen setting's
+tolerance; otherwise report the boundary attribution profile itself,
+or its minimum contiguous segmentation, in which every boundary value
+$a_i$ is reproduced within its tolerance $t_i$ (mixed:
+$t_i=\epsilon_{\mathrm{abs}}+\tau|a_i|$, representative from the
+per-segment feasibility intersection; absolute:
+$t_i\equiv\epsilon_j=5\%\max_U|\phi_j(U)|$, interval midpoint;
+Proposition~\ref{prop:segmented}).}}
+\medskip
+
+\noindent The absolute pair remains available regardless of the
+normalization, and each ordered boundary family is summarized at the
+coarsest resolution that meets the prescribed tolerance: the outcome is
+either an error-controlled common value or an error-controlled
+profile.
+
+\input{spatial_scan_v112}
+
+\subsection{Certificates and exact error budgets for learned assignment}\label{sec:boundarylearning}
+For a query $j$ and any edge vector $h$, define the seminorm
+\begin{equation}
+\mathcal K_j(h)=\frac12\left(\left|(Bh)_{t_j}-(Bh)_{s_j}\right|
++\sum_{v\notin\{s_j,t_j\}}|(Bh)_v|\right).
+\label{eq:boundaryseminorm}
+\end{equation}
+\begin{corollary}[exact maximum boundary error]\label{cor:boundaryerror}
+Let $e_j=c^L_j-c^S_j$ be the difference
+between learned and reference attribution columns. Then
+\begin{equation}
+\max_{U:s_j\in U,\ t_j\notin U}|\phi_j^L(U)-\phi_j^S(U)|
+=\mathcal K_j(e_j).\label{eq:exactboundaryerror}
+\end{equation}
+At a common demand $q$, write
+$h_j(q)=D^L(q)J_j^L(q)-D^S(q)J_j^S(q)$.
+For any subfamily $\mathcal U_j$ of separating boundaries,
+\begin{equation}
+\epsilon_j^{\mathcal U}:=\max_{U\in\mathcal U_j}|\phi_j^L(U)-\phi_j^S(U)|
+\le |\Delta q_j|\int_0^1\mathcal K_j(h_j(\gamma(\lambda)))\,d\lambda.
+\label{eq:localboundarybound}
+\end{equation}
+\end{corollary}
+The proof in Appendix~\ref{app:boundaryerror} applies
+Eq.~\eqref{eq:cutextrema} to the error column. Evaluation requires one
+incidence multiplication and node scan, without enumerating boundaries.
+Connected regions and straight screenlines inherit an upper bound; their
+restricted maxima need not equal $\mathcal K_j(e_j)$. The endpoint term
+must be retained: the two explanations may each be cut-consistent but
+have different common boundary values, which internal imbalance alone misses.
+
+The seminorm evaluates spatial explanation errors directly.
+Equation~\eqref{eq:localboundarybound} identifies the weighted response
+discrepancy $h_j(q)=D^L(q)J_j^L(q)-D^S(q)J_j^S(q)$ as the direct local
+driver of boundary error, and $\mathcal K_j$ defines the corresponding
+reference-matching losses, whose complete specifications are collected
+in Appendix~\ref{app:learning-objectives}. In the studied assignment
+setting the weight-shift component of $h_j$ is small relative to the
+response component (Section~\ref{sec:pairresults}), so the unweighted
+Jacobian loss is evaluated as a stable proxy for the weighted quantity;
+Section~\ref{sec:pairresults} also evaluates the bound chain of
+Eq.~\eqref{eq:localboundarybound} directly on the test paths.
+
+\subsection{Total error budget of learned summaries}\label{sec:totalbudget}
+Sections~\ref{sec:segments} and~\ref{sec:boundarylearning} control two
+errors separately: how far a summary is from the profile it compresses,
+and how far a learned profile is from its reference. A reader of a
+learned model's explanation uses both at once --- the minimum-segment
+summary of the learned boundary values. Write $a_j^L(U)$ and $a_j^S(U)$ for
+the learned and reference boundary values on a family $\mathcal F$,
+$\hat a_j^L$ for the learned summary constructed at tolerance
+$\varepsilon^{\mathrm{sum}}_j$, and
+$\delta_j=\max_{U\in\mathcal F}|a_j^L(U)-a_j^S(U)|$.
+\begin{corollary}[total explanation error]\label{cor:totalbudget}
+\begin{equation}
+\max_{U\in\mathcal F}\bigl|\hat a_j^L(U)-a_j^S(U)\bigr|
+\le\varepsilon^{\mathrm{sum}}_j+\delta_j,
+\qquad
+\delta_j\le\mathcal K_j(e_j)\le|\Delta q_j|\int_0^1\mathcal K_j(h_j(\gamma(\lambda)))\,d\lambda.
+\label{eq:totalbudget}
+\end{equation}
+\end{corollary}
+\begin{proof}
+Triangle inequality for the split
+$\hat a_j^L-a_j^S=(\hat a_j^L-a_j^L)+(a_j^L-a_j^S)$; the first term is
+bounded by construction ($\le\varepsilon^{\mathrm{sum}}_j$), the second by
+Eq.~\eqref{eq:exactboundaryerror} and Eq.~\eqref{eq:localboundarybound}.
+\end{proof}
+The budget combines the two outputs of the framework --- a
+compression and a learned profile --- into the error of the final
+reported artifact. It is a posteriori: the integral bound consumes
+reference-response information, so Eq.~\eqref{eq:totalbudget}
+characterizes the worst boundary error when reference derivatives are
+available, not a deployable guarantee computable from the learned model
+alone. Section~\ref{sec:pairresults} evaluates all three quantities on
+the test paths.
+
+\paragraph{Scope and interpretation.}\label{sec:noninheritance}
+The classification fixes four objects before any model is fitted: the
+road representation (subdivision changes which crossing-link costs a
+boundary includes, Example~\ref{ex:subdivision}); the outcome
+definition (its marginal weights are the classified object); the
+attribution path in demand space (with several ODs changing jointly,
+the per-query columns are path dependent; the total is not); and the
+admissible region family. The structural, model-specific, realized and
+learned-reference levels answer different questions and are reported
+separately (Section~\ref{sec:levels}).
+
+\paragraph{Approximate conservation.}
+For a model with residual $r(q)=Bf(q)-Mq-b$ and constant $b$, the
+corresponding flow-attribution residual is
+\begin{equation}
+R_j:=Bg_j-\mu_j\Delta q_j
+=\Delta q_j\int_0^1\partial_jr(\gamma(\lambda))\,d\lambda,
+\qquad \sum_jR_j=r(q^1)-r(q^0).
+\label{eq:residualidentity}
+\end{equation}
+Small endpoint residuals control the sum, but individual columns can cancel.
+Approximate output conservation controls attribution residuals only when
+derivative regularity is also available; Appendix~\ref{app:approx} gives
+the $C^{1,1}$ conditions, a local bound, sharpness examples and an
+extension to weighted attributions. The traffic experiments below use exactly
+conservative models, and Appendix~\ref{app:conservation} compares the
+exact parameterization against a conservation penalty and an output
+projection on identical supervision, showing that a small output
+residual need not imply a small attribution residual.
+
+\input{results_main_v112}
+\input{results_anaheim_v112}
+\input{results_variation_v112}
+\input{results_adequate_v112}
+
+\FloatBarrier
+\section{Response-supervised learning for accurate spatial explanations}\label{sec:pairresults}
+\paragraph{Hypothesis.}
+The boundary-error representation of
+Section~\ref{sec:boundarylearning} locates explanation error in the
+weighted demand-response discrepancy between the learned and reference
+maps. In the studied TSTT setting the weight-shift component of that
+discrepancy is small relative to the response component, leading to the
+testable hypothesis that supervising the flow Jacobian improves
+spatial explanations even when ordinary flow accuracy is already high.
+The experiments below compare flow supervision, response supervision
+and its weighted form under equal budgets and a common validation-only
+weight selection, examine stability when the training budget is
+tripled, and measure how many response labels the improvement requires;
+the full six-objective family, including the endpoint objectives, is
+reported in Appendix~\ref{app:legacy-learning}.
+
+\paragraph{Method and setup.}
+The learned map uses the conservative path-share parameterization
+\begin{equation}
+h_k(q)=q_k\,\operatorname{softmax}\bigl(z_\theta(q)\bigr|_{\Pi_k}\bigr),
+\qquad f_\theta(q)=\Delta h(q),
+\label{eq:consparam}
+\end{equation}
+where $\Pi_k$ are the fixed path sets of the assignment structure and
+$\Delta$ the path--link incidence: node balance holds identically, and
+only the shares are learned. The input is the six-dimensional study
+demand vector with background demands fixed at their published levels;
+the output covers every path of the structure, so background route
+choice responds endogenously. The reference model supplies equilibrium
+flows and sensitivity derivatives. Flow supervision fits predicted
+flows; response supervision adds the derivative objective
+\begin{equation}
+\mathcal L(\theta)=\mathcal L_{\mathrm{flow}}
++\lambda_J\,\E_{q,j}\frac{\norm{J_j^L(q)-J_j^S(q)}_2^2}{u_j^2},
+\label{eq:learningobjective}
+\end{equation}
+with $J_j$ the flow Jacobian column of query $j$ and $u_j$ its RMS
+training scale; optimizer, batches, validation selection and label
+costs appear in Appendix~\ref{app:pairs-v102}. Derivative supervision
+itself is established (Sobolev training;
+\citealp{czarnecki2017sobolev,yuan2022sobolev}); the target here is
+network-derived, and the question is what it contributes to spatial
+explanations.
+Why the unweighted objective of Eq.~\eqref{eq:learningobjective} acts
+on the weighted quantity of Eq.~\eqref{eq:localboundarybound} is
+answered by decomposing the weighted response discrepancy at a common
+demand state:
+\begin{equation}
+h_j(q)=\underbrace{\bigl(D^L-D^S\bigr)J_j^S}_{\text{weight shift}}
++\underbrace{D^L\bigl(J_j^L-J_j^S\bigr)}_{\text{response error}},
+\qquad h_j=D^LJ_j^L-D^SJ_j^S,
+\label{eq:coldecompmain}
+\end{equation}
+and integrating along the demand path yields the column error
+$e_j=\Delta q_j\int_0^1h_j(\gamma(\lambda))\,\mathrm{d}\lambda$. On the
+96 test paths the response term dominates overwhelmingly: the
+path--query median response and weight norms are $206.5$ and $3.5$
+under flow supervision and $147.6$ and $3.3$ under response
+supervision, with the response term larger on every path--query pair
+for both objectives (Eq.~\eqref{eq:coldecomp} in
+Appendix~\ref{app:legacy-learning} states the integrated form).
+Supervising the dominant term is therefore a
+practical proxy whose effect the boundary metrics measure directly.
+\paragraph{Evaluation protocol.}
+All objectives are evaluated on the same 96 test demand paths
+(Appendix~\ref{app:pairs-v102} states the composition); paths are
+the independent unit, metrics average active queries and seeds within
+each path, and seed variability is reported separately. Checkpoint and
+loss-weight selection use validation data only; the test paths enter
+the final report alone.
+\input{results_pairs_v112}
+\input{anaheim_learning_v112}
+
+\FloatBarrier
+\section{Conclusions}\label{sec:conclusions}
+An OD demand effect should be represented neither by one global scalar
+nor by an unstructured link map, but by the coarsest
+boundary-attribution profile whose physical and approximation errors
+are explicitly controlled. The three parts of the paper deliver that
+representation in sequence.
+
+Topology characterizes when one transferable value is guaranteed
+uniformly over all flow-conserving responses: for two-sided connected
+regions, precisely when the marginal outcome weights agree on the block
+atoms traversed by the queried OD paths. Multiple queries merge these
+atoms transitively, so the admissible explanation is a query-dependent
+structural property rather than a global network attribute, identified
+before any model is trained. For a learned assignment map this theorem
+is a structural certificate, checkable at every state along the
+attribution path.
+
+When one value is insufficient, node divergence determines what is
+reported: the exact attribution range, the minimax common summary and
+its error, minimum-segment summaries with explicit approximation
+errors, and the maximum disagreement between learned and reference
+explanations. The adaptive reporting rule allocates spatial resolution
+only where the network response requires it, and the reported summary
+carries a total error budget that separates model error from
+compression error. Structural compatibility and compression are
+certified from the learned model and the reported profile alone;
+learned-reference fidelity is an offline validation guarantee requiring
+reference assignments.
+
+For learned assignment, response supervision --- the training mechanism
+the error budget identifies --- improves the reported explanation at
+matched cost. At every segment count on the pre-specified tolerance
+grid the response-supervised final error is lower on both networks,
+with paired intervals excluding zero; on Sioux Falls the error that
+flow supervision cannot reach within the grid ($8.8\%$ at 233 segments)
+is attained by response supervision with 117 segments, and an $11\%$
+error needs $35$ fewer segments. The mechanism ablation shows the gains
+are structural rather than an artifact of the pretraining recipe: the
+exact path-share parameterization dominates direct conservation
+mechanisms under either pretraining loss, and derivative supervision
+improves every mechanism. The improvement extends beyond the labeled
+response domain on the high-load side; on the low-load side the
+advantage disappears, marking the boundary of the labeled regime.
+Accurate flow prediction is not sufficient for spatially trustworthy
+OD explanations; together, these results turn spatial attribution from
+an ad hoc boundary aggregation into a transport-specific,
+mathematically controlled and learnable explanation framework.
+
+\paragraph{Limitations.}
+The analysis fixes the road representation, outcome definition,
+attribution path, and admissible boundary family; subdividing roads
+changes which crossing-link costs a boundary includes. Per-query
+attributions under joint demand changes are path-specific, although
+their signs, summary-error levels, and mechanism rankings were stable
+across the twenty-two tested alternative orders
+(Section~\ref{subsec:pathrobust}). The numerical evidence concerns
+static fixed-path logit-SUE models on two benchmark networks; extending
+the framework to dynamic assignment and broader demand domains remains
+a direction for future work.
+
+\section*{Code and data availability}
+Code, configurations, processed result arrays, and scripts reproducing
+all tables and figures are available through an anonymized archival
+repository; its access link accompanies the submission. The archive
+records software versions, random seeds,
+TNTP checksums, and the generating script for each reported result;
+trained checkpoints are regenerated by the released scripts under the
+fixed seeds. Public access will be enabled upon acceptance.
+The Sioux Falls and Anaheim networks and demands are available from the public
+\href{https://github.com/bstabler/TransportationNetworks/tree/master/SiouxFalls}{Sioux Falls TNTP repository}
+and \href{https://github.com/bstabler/TransportationNetworks/tree/master/Anaheim}{Anaheim TNTP repository}
+\citep{tnfrc2024transportation}; training targets are synthetic fixed-path
+logit-SUE assignments.
+\section*{Declaration of competing interest}
+The authors declare that they have no known competing financial interests
+or personal relationships that could have appeared to influence the work
+reported in this paper.
+\FloatBarrier
+\bibliographystyle{cas-model2-names}
+\setlength{\bibsep}{0.8pt plus 0.2pt}
+\bibliography{references_v112}
+\appendix
+\counterwithin{theorem}{section}
+\counterwithin{rmk}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+\counterwithin{equation}{section}
+\input{appendix_proofs_v112}
+\input{proofs_connected_v112}
+\input{appendix_experiments_v112}
+\end{document}

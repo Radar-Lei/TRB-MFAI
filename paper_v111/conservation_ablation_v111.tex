@@ -1,0 +1,92 @@
+\subsection{Conservation mechanism ablation}\label{app:conservation}
+This experiment compares three ways of obtaining flow conservation on
+Sioux Falls under otherwise identical supervision, isolating what the
+conservative parameterization of Eq.~\eqref{eq:consparam} contributes
+beyond conservation itself:
+(i)~\emph{exact} --- the path-share parameterization;
+(ii)~\emph{penalty} --- a direct MLP on link flows with a squared
+node-balance penalty (weight $1$, normalized by the nodal-throughput
+RMS over the training states, floored at the network average);
+(iii)~\emph{projection} --- the same direct MLP whose output is
+projected each step onto $\{f:Bf=Mq+b\}$ by the differentiable
+least-norm map $f\mapsto f-B^{\!\top}(BB^{\!\top})^{\dagger}(Bf-Mq-b)$
+(Moore--Penrose inverse; $BB^{\!\top}$ is singular for a connected
+network). The direct-MLP width is solved from the parameter-count
+equation so that all three models have $714{,}979$ parameters against
+the exact model's $715{,}040$. The exact rows reuse the published
+five-seed models of Section~\ref{sec:pairresults}; the direct models
+are pretrained from scratch on the same data with the same schedule
+(Adam $3\times10^{-3}$, batch 256, at most 12{,}000 steps,
+best-validation checkpoint), except that their flow loss uses per-link
+scaling (necessary for the direct output head to converge), whereas
+the published exact models were pretrained on the unscaled loss ---
+the one recipe difference in the ablation. Continuation follows the
+protocol of Appendix~\ref{app:pairs-v102} unchanged (1{,}200 updates,
+shared labels and minibatch sequences, the uniform selection rule
+including the pre-trained initial model in the candidate pool), with
+flow-only and response supervision for each mechanism. The
+exact-mechanism rows reproduce the published medians exactly ($21.18\%$
+and $14.19\%$ column error), and the projection output satisfies
+$Bf=Mq+b$ to $2\times10^{-11}$.
+
+\begin{table}[pos=htbp]\centering\footnotesize
+\caption{Conservation mechanism ablation on the 96 Sioux Falls test
+paths (medians of path-level values; active queries and seeds averaged
+within path). Residuals are per-query maxima over the path states,
+maximized over queries: the node-balance residual
+$\max_q\|Bf(q)-Mq-b\|_\infty$ (veh/h); the derivative residual
+$\max_{q,j}\|\partial_j[Bf](q)-\mu_j\|_\infty/\|\mu_j\|_2$; the
+attribution residual $\max_j\|R_j\|_2/(|\Delta q_j|\|\mu_j\|_2)$
+with $R_j$ the integrated flow-attribution residual of
+Eq.~\eqref{eq:residualidentity}, computed by trapezoid quadrature of
+the learned Jacobian along each test path. Column: attribution column
+error; incremental: endpoint flow-change error.}\label{tab:conservation}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}llrrrrrr}
+\toprule
+Mechanism & Method & Flow (\%) & Incremental (\%) & Node resid. & Deriv.\ resid. & Attr.\ resid. & Column (\%)\\
+\midrule
+Exact & flow & 0.032 & 5.03 & $3\times10^{-11}$ & $9\times10^{-16}$ & $4\times10^{-16}$ & 21.18\\
+Exact & response & 0.029 & 3.52 & $3\times10^{-11}$ & $8\times10^{-16}$ & $3\times10^{-16}$ & 14.19\\
+\addlinespace
+Penalty & flow & 0.040 & 22.76 & 42.1 & 1.16 & 0.66 & 183.7\\
+Penalty & response & 0.039 & 22.24 & 42.1 & 1.17 & 0.65 & 177.9\\
+\addlinespace
+Projection & flow & 0.026 & 14.54 & $2\times10^{-11}$ & $2\times10^{-15}$ & $4\times10^{-15}$ & 104.1\\
+Projection & response & 0.026 & 14.42 & $2\times10^{-11}$ & $2\times10^{-15}$ & $4\times10^{-15}$ & 99.4\\
+\bottomrule\end{tabular*}\end{table}
+
+Table~\ref{tab:conservation} supports three readings. First, the
+penalty model achieves flow accuracy of the same order as the exact
+model ($0.040\%$) with a small output residual ($42$ veh/h against
+nodal throughputs in the thousands), yet its integrated attribution
+residual --- the quantity $R_j$ of Eq.~\eqref{eq:residualidentity}
+--- reaches $0.66$ in units of the demand-conservation scale
+$|\Delta q_j|\|\mu_j\|_2$, its derivative balance residual is
+$1.16$ in the same normalization, and the downstream outcome columns
+inherit the damage ($183.7\%$ column error, $323\%$ system
+contribution). The chain of Eq.~\eqref{eq:residualidentity} is
+exactly what fails: the penalty controls $r(q)$ but not
+$\partial_jr$, and the integrated residual $R_j$ --- not the output
+residual --- is what the attribution sees. Second, the projection
+enforces output conservation exactly and transfers it to derivatives
+and to the integrated residual ($4\times10^{-15}$), cutting the
+column error to $104.1\%$ --- conservation itself matters --- while
+remaining far above the exact parameterization, because projecting an
+unconstrained response field onto node balance does not reproduce the
+path-share structure that the assignment imposes. Third, response
+supervision improves every mechanism (penalty $183.7\to177.9$,
+projection $104.1\to99.4$, exact $21.18\to14.19$), with by far the
+largest effect inside the exact parameterization: the inductive
+benefit of conservation-by-construction and the statistical benefit
+of derivative supervision are complementary rather than substitutes.
+Because the direct models are pretrained with the per-link scaled
+loss while the published exact models use the unscaled loss (the one
+recipe difference, stated above), the exact-versus-direct gap should
+be read as the joint effect of the parameterization and its training
+recipe rather than a pure mechanism isolation; the within-mechanism
+comparisons --- the penalty's residual chain above all --- are
+unaffected. Under the total-error budget the ordering is unchanged
+(normalized $E_{\mathrm{total}}$: $148.8$ and $144.9$ for the penalty,
+$46.4$ and $45.6$ for the projection, $11.35$ and $8.68$ for the
+exact model).

@@ -1,0 +1,255 @@
+\section{Experimental methods}\label{supp:fields}\label{supp:metrics}
+\subsection{Network, path sets, and demand settings}\label{supp:networks}
+The public Sioux Falls network has $24$ nodes and $76$ directed arcs
+\citep{tnfrc2024transportation}. All arcs belong to one block atom, hence
+one compatibility class. The eight queries are the positive-demand OD pairs with the largest
+published demands, with ties broken by ascending origin then destination
+node ID. All happen to involve node $10$.
+The queries are
+$(10,16)$, $(16,10)$, $(10,11)$, $(10,15)$, $(15,10)$, $(10,17)$, $(11,10)$, $(17,10)$,
+with published demands
+$q_{\mathrm{base}}=(4400,4400,4000,4000,4000,3900,3900,3900)$ veh/h.
+The attribution path changes these demands from $0.2q_{\mathrm{base}}$ to
+$1.6q_{\mathrm{base}}$. Node IDs in the traffic experiments are one-based.
+Flows retain the benchmark's approximate-hourly convention; one time unit
+is $0.01$ h. A reported TSTT number is $\sum_e F_et_e(F_e)$ with $F_e$
+in veh/h and $t_e$ in these time units: multiplying by $0.01$ gives the
+hourly vehicle-hour total, without extrapolating to a day. All absolute
+attribution and boundary-account numbers use the same convention.
+
+For each OD we retain every loopless directed path if enumeration finishes
+within $200$ paths, otherwise the ten shortest by free-flow cost (Yen's
+algorithm, lexicographic edge-sequence tie breaking); no OD in this
+network has a fully enumerated set under the threshold. All eight query
+ODs use ten paths. The link--path incidence $\Delta$ and the matrix $A$
+summing paths within each OD stay fixed, so $B\Delta=MA$ with the
+appropriate full or study OD incidence matrix. The full-background
+ten-path set has $5{,}280$ paths (ten per OD; the expanded set
+$10{,}560$, twenty per OD); Appendix~\ref{supp:coverage} compares these
+candidate-path models.
+
+The path-exchange response space $T_{\mathrm{swap}}=\Delta\ker A$
+(Appendix~\ref{app:membership}) has dimension $32$ in A with ten
+paths for each study OD, and dimension $53$ in C with either ten or
+twenty paths for every OD, equal to the full circulation-space
+dimension $m-n+1=53$ (ranks computed from within-OD differences of
+link--path incidence columns, cross-checked against singular-value
+bases of $\Delta\ker A_{\mathrm{OD}}$). On Sioux Falls, full background
+therefore spans the complete circulation space through allowable path
+exchanges, while the eight-OD path model spans a proper subspace. On Anaheim, whose
+centroid-restricted ten-path sets cannot use nodes $2$--$38$ in
+transit, $T_{\mathrm{swap}}$ has dimension $404$ of a circulation-space
+dimension of $499$: a proper subspace, although still large enough
+that the model-specific weight tests fail decisively there
+($\rho_{\mathrm{swap}}=2.2$).
+
+The three demand settings share the same query endpoints. In the
+no-background setting, all other demands are zero. In the
+frozen-background setting, assign all positive
+background demands jointly with the study demands fixed at
+$q^0=0.2q_{\mathrm{base}}=(880,880,800,800,800,780,780,780)$ veh/h in
+the listed query order, freeze the resulting background link flows, and
+re-equilibrate only the eight query ODs. In the responsive-background assignment, the other $520$
+positive OD demands stay at published values while all $528$ ODs
+re-equilibrate jointly at every path point and perturbation. TSTT and
+its gradient use total link flows in the frozen- and responsive-background assignments; the latter is a
+full-background assignment with eight attribution queries, not an
+attribution evaluation of all $528$ ODs.
+
+\subsection{Equilibrium and its sensitivities}\label{supp:sue}
+Unless stated otherwise, the fixed-path logit stochastic user equilibrium
+(SUE) uses $\theta=1$ and BPR costs
+$t_e(F_e)=t_{0,e}[1+0.15(F_e/c_e)^4]$. With $\Pi_j$ the path set,
+\begin{equation}
+h_p=q_jp_p(F),\quad
+p_p(F)=\frac{\exp[-\theta(\Delta^\top t(F))_p]}
+{\sum_{r\in\Pi_j}\exp[-\theta(\Delta^\top t(F))_r]},\quad
+F=\Delta h.\label{eq:sueloading}
+\end{equation}
+This is the solution of
+\[
+\min_{h\ge0,\ Ah=q}\left\{
+\sum_e\int_0^{(\Delta h)_e}t_e(s)ds+
+\theta^{-1}\sum_p h_p(\log h_p-1)\right\}.
+\]
+For positive demands the feasible set is nonempty and compact, the
+objective strictly convex, and the minimizer positive: transferring
+mass to a zero path flow from a positive path of the same OD improves
+the objective, with entropy change
+$\theta^{-1}\epsilon\log\epsilon+O(\epsilon)<0$. Its Hessian and
+sensitivity equations are
+\begin{equation}
+H=\Delta^\top\operatorname{diag}(t'_e)\Delta+
+\theta^{-1}\operatorname{diag}(1/h_p)\succ0,\qquad
+\begin{bmatrix}H&A^\top\\A&0\end{bmatrix}
+\begin{bmatrix}\partial_jh\\\partial_j\nu\end{bmatrix}
+=\begin{bmatrix}0\\\mathbf e_j\end{bmatrix}.
+\label{eq:kkt_sensitivity}
+\end{equation}
+$A$ has full row rank, so the system is nonsingular and the implicit
+function theorem gives a $C^1$ demand-to-flow map.
+
+For the responsive-background assignment we solve the equivalent total-link-flow fixed
+point $F=L(F,q)=\Delta\{q_jp_{\Pi_j}(F)\}_j$ by Newton steps with residual
+line search. For the frozen-background setting the corresponding equation is
+$F=F_{\mathrm{bg}}^0+\Delta_{\mathrm{study}}
+\{q_jp_{\Pi_j}(F)\}_{j\in\mathrm{study}}$, where $F_{\mathrm{bg}}^0$
+is fixed at the joint $q^0$ equilibrium. Costs and gradients use this
+total $F$ in both equations. Every solution is checked against its path-loading
+equation, with maximum absolute path-flow gap below $10^{-7}$ veh/h.
+The $76$-dimensional implicit system avoids forming a dense path Hessian.
+For an OD group $R$, define
+\[
+S_R=\theta\sum_{k\in R}\Delta_k
+\left[\operatorname{diag}(h_k)-h_kh_k^\top/q_k\right]\Delta_k^\top,
+\quad W=\operatorname{diag}(t'_e(F_e)),\quad S=S_{\mathrm{all}}.
+\]
+Differentiating the logit probabilities gives
+$\partial_F L_R=-S_RW$. Consequently the total sensitivity satisfies
+\begin{equation}
+(I+SW)J_j=\Delta_jp_j,\qquad
+J_j^{\mathrm{study}}=\Delta_jp_j-S_{\mathrm{study}}WJ_j,\qquad
+J_j^{\mathrm{bg}}=-S_{\mathrm{bg}}WJ_j.
+\label{eq:bg_sensitivity}
+\end{equation}
+Here ``study'' includes all eight queried ODs and ``background'' the
+other $520$: $J_j=J_j^{\mathrm{study}}+J_j^{\mathrm{bg}}$,
+$BJ_j^{\mathrm{study}}=\mu_j$, $BJ_j^{\mathrm{bg}}=0$, the study
+term including responses of the other seven study ODs. The
+decomposition uses one joint equilibrium, rather than sensitivities
+at different congestion states.
+In the frozen-background setting the background flows have no
+derivative, so the same
+implicit system uses $S=S_{\mathrm{study}}$, with
+$J_j^{\mathrm{study}}=J_j$ and $J_j^{\mathrm{bg}}=0$.
+
+Central finite differences independently re-solve Eq.~\eqref{eq:sueloading}
+at $q\pm a_j\mathbf e_j$, $a_j=0.005q_{\mathrm{base},j}$ and
+$a_j/2$; both steps are checked at every $\theta=1$ ten-path
+responsive-background integration point, the path-set and $\theta$ variations
+add half-step checks for all eight columns at the path midpoint, and
+the link Newton solver is compared against the successive-averages
+background equilibria at their common eleven quadrature points.
+
+\subsection{Conservative learned surrogate}\label{supp:protocol}
+The zero-background surrogate parameterizes
+$h_j=q_j\operatorname{softmax}(z(q)|_{\Pi_j})$, $f=\Delta h$.
+The three hidden layers each have $128$ tanh units; the final layer is
+linear. The logit head uses training-standardized demands while the raw
+$q_j$ multiplies the shares, preserving nonnegative flow and exact
+conservation. Computations use double precision.
+Training targets are fixed-path logit-SUE assignments ($\theta=1$,
+path fixed-point tolerance $10^{-6}$). The $2500/857/857$
+training/validation/test split uses seed $20260820$, with demands
+$q_j=q_{\mathrm{base},j}s_j$ and independent $s_j$ drawn from
+LogNormal$(0,0.5^2)$ clipped to $[0.2,2]$.
+Adam uses learning rate $0.003$, full-batch link-flow MSE, at most
+$12{,}000$ steps, and validation every $50$ steps. The
+minimum-validation-error state of each seed $0,\ldots,4$ supplies
+the reported results, with automatic differentiation supplying their
+Jacobians; the test split is used only for final reporting.
+
+\subsection{Integration grids, connected boundaries, and cancellation diagnostics}\label{supp:quadrature}
+All numerical integrations use composite trapezoids. The principal
+learned zero-background results use $201$ quadrature points; direct
+zero-background SUE and both background settings use $41$ in the main
+table. The frozen-background setting compares $11$ with $41$ points;
+the responsive-background setting
+compares $11$, $21$, and $41$ nested points; the two near-balanced
+queries add $81$ and $161$ nested points; the learned-versus-SUE
+sensitivity comparison uses identical $41$-point grids, kept separate
+from the $201$-point learned results (Appendix~\ref{supp:accuracy}).
+
+Connected boundaries require both $G[U]$ and $G[V\setminus U]$ to be
+connected on the underlying undirected graph, with $s_j\in U$, $t_j\notin U$.
+Exact enumeration yields $10{,}270$--$13{,}253$ admissible sets for each
+of the eight main study ODs, and $4{,}621$--$16{,}943$ for the six
+additional queries of Appendix~\ref{supp:newod}.
+Extrema of $-\mathbf1_U^\top B\widetilde C_j$ are evaluated by exact
+enumeration, cross-checked against independent subset enumeration on
+restricted neighborhoods; attaining sets are verified for membership
+with values recomputed by direct summation.
+
+For cancellation diagnostics define
+$A_j=|\Delta q_j|\int_0^1\sum_{v\notin\{s_j,t_j\}}|(BD_\lambda J_j)_v|d\lambda$
+and $\kappa_j=1-S_j/A_j$ when $A_j>0$. The triangle inequality gives
+$0\le S_j\le A_j$. Both quantities use the specified $201$-point learned
+grid and are summarized over the five seeds; checks on additional
+path-set or dispersion models sample the demand-path midpoint and
+endpoints.
+
+\subsection{Six pre-specified queries away from node 10}\label{supp:newod}
+The selection rule uses only published demands and free-flow
+shortest-path times. Candidates are the positive-demand ODs whose origin
+and destination both differ from node $10$; ranking them by demand and
+splitting into three equal-count terciles, the minimum- and
+maximum-free-flow-shortest-path OD within each tercile is selected, with
+ties broken by ascending (origin, destination). The six queries are
+$(7,18)$, $(1,19)$, $(4,5)$, $(1,15)$, $(6,8)$, and $(7,12)$, with
+published demands $(200,300,500,500,800,700)$ veh/h and free-flow
+shortest-path times $(2,22,2,23,2,19)$ time units; the joint
+protocol, sensitivities, and boundary enumeration are as in
+Section~\ref{subsec:newod}, with conservation checks at responsive-background
+floating-point levels (maximum path fixed-point residual
+$1.6\times10^{-10}$ veh/h, midpoint implicit-versus-finite-difference
+column error $2.6\times10^{-8}$, completeness $4.3\times10^{-7}$).
+
+For the single-OD checks, let $\bar q=q^{\mathrm{base}}$ be the full
+published demand vector over all $528$ positive-demand ODs. For each
+focal query $j\in\{(1,19),(1,15),(7,12),(6,8)\}$, define
+\begin{equation}
+q^{(a)}=\bar q+(a q_j^{\mathrm{base}}-\bar q_j)e_j,
+\qquad
+q^{(b)}=\bar q+(b q_j^{\mathrm{base}}-\bar q_j)e_j,
+\qquad
+(a,b)\in\{(0.2,1.6),(0.9,1.1),(0.8,1.2)\},
+\label{eq:singleodstates}
+\end{equation}
+where $e_j$ is the coordinate unit vector. All other $527$ demands,
+including the other five selected queries, remain at their published
+values $\bar q_{-j}$ along the segment. Direct equilibria and the learned
+small-band checks use these same reference states. The responsive-background solver,
+path sets, and boundary definitions are unchanged; checks and interval
+results are in Appendix~\ref{supp:newodaccuracy}. For each interval,
+Eq.~\eqref{eq:edgeidentity} gives the attribution column from the two
+endpoint equilibria alone.
+
+\subsection{Same-task computation timings}\label{supp:timing}
+Timings here describe the same fixed tasks and the same computational
+environment that produced the reported accounts
+(Section~\ref{sec:stability}).
+
+For the separable single-OD task on query $(1,19)$ (only its demand
+changes, with endogenous rerouting; shared path set, solver tolerance
+and $152$-region family; medians of three uncached runs), the endpoint
+identity computes the attribution column in $0.088$ s against $0.510$,
+$0.948$ and $1.813$ s for $21$-, $41$- and $81$-state sensitivity
+integration, whose account columns then agree with the endpoint values
+to $6.6\times10^{-5}$, $1.6\times10^{-5}$ and
+$4.1\times10^{-6}$ in maximum absolute geometric-account error. The
+endpoint identity therefore eliminates sensitivity integration for
+separable single-OD tasks; it does not separate OD columns when
+several demands change jointly.
+
+For spatial aggregation of a fixed region family once reference
+columns are available, all three methods of
+Section~\ref{sec:scan} agree to $2.2\times10^{-11}$ TSTT units on the
+$1{,}642$ oriented Sioux Falls regions: the prefix scan takes
+$4.16$ ms per six columns ($87.92$ ms per 120), the vectorized
+one-sparse-product $A_{\mathcal F}C$ takes $0.24$ ms per six
+($3.46$ ms per 120) after a one-time $69.5$ ms matrix build --- so it
+repays its construction once repeated queries amortize it --- and
+direct crossing-edge summation is slowest ($28.51$ ms per six;
+$1{,}176.15$ ms per 120). On the $910$ Anaheim query--region accounts
+the same ordering holds ($0.10$/$0.30$/$13.31$ ms), with agreement
+to $5.9\times10^{-12}$ against node sums; the $21$-state reference
+construction, including paths and sensitivities, took $1{,}278.7$ s.
+
+\input{anaheim_settings_v108}
+\input{theory_pair_v109}
+\input{learning_protocol_v109}
+\input{results_appendix_v109}
+\input{hierarchy_diag_v109}
+\input{learning_legacy_results_v109}
+\input{coverage_appendix_v109}
+\input{anaheim_learning_protocol_v109}

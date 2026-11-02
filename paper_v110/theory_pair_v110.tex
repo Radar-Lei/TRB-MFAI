@@ -1,0 +1,76 @@
+\subsection{Learning objectives and exact endpoint targets}\label{app:learning-objectives}
+Equation~\eqref{eq:localboundarybound} suggests learning the reference's weighted demand response
+where it affects spatial accounts. With training-only positive scales
+$a_j$, the boundary term is
+\begin{equation}
+\mathcal L=\mathcal L_{\mathrm{flow}}+\lambda_J\mathcal L_{\mathrm{response}}
++\lambda_{\mathrm{cut}}\mathcal L_{\mathrm{boundary}},\qquad
+\mathcal L_{\mathrm{boundary}}
+=\frac1{NK}\sum_{q,j}\left[\frac{\mathcal K_j(h_j(q))}{a_j}\right]^2.
+\label{eq:trainingobjective}
+\end{equation}
+The reference Jacobian is obtained from the existing implicit SUE
+sensitivity system (Appendix~\ref{supp:sue}). The empirical study
+compares six objectives under a shared continuation protocol
+(Appendix~\ref{app:pairs-v102}): flow only; the unweighted response
+$\|J_j^L-J_j^S\|$; the weighted response $\|D^LJ_j^L-D^SJ_j^S\|$ of
+Eq.~\eqref{eq:coldecompmain}; the pointwise boundary seminorm
+$\mathcal K_j(D^LJ_j^L-D^SJ_j^S)$ of Eq.~\eqref{eq:trainingobjective};
+and the two endpoint objectives below.
+Derivative supervision itself is established in Sobolev training
+\citep{czarnecki2017sobolev}, including finite-difference derivative targets
+\citep{yuan2022sobolev}; the network-derived target here selects the
+part of weighted response error that changes boundary accounts.
+A circulation in $\ker B$ is invisible to $\mathcal K_j$, so flow and
+response losses remain necessary for the other attribution objectives.
+The target matches the reference's actual response; it does not force
+its true internal attribution divergence to zero or replace TSTT weights
+with uniform weights. Equation~\eqref{eq:localboundarybound} is a path
+inequality; finite training-point losses alone do not certify an entire
+demand domain.
+
+
+For the following finite-change statement, the outcome is explicitly separable:
+\[
+g(F)=(g_e(F_e))_{e\in E},\qquad T(F)=\sum_{e\in E}g_e(F_e).
+\]
+\begin{proposition}[exact finite-change boundary target]\label{prop:pairboundary}
+Let $f^L,f^S$ and the edgewise outcome $g$ be continuously differentiable
+on an open demand domain, and let $q^\pm=q\pm h e_j$ with their entire
+segment in that domain. Put
+\[
+z_j^r=g(f^r(q^+))-g(f^r(q^-)),\qquad r\in\{L,S\}.
+\]
+For the attribution of this single-OD change,
+\begin{equation}
+\max_{U:s_j\in U,\ t_j\notin U}|\phi_j^L(U)-\phi_j^S(U)|
+=\mathcal K_j(z_j^L-z_j^S).\label{eq:pairboundaryexact}
+\end{equation}
+If all sufficiently small single-coordinate changes have matching
+accounts on every separating boundary at every point of the domain,
+then $BD^LJ_j^L=BD^SJ_j^S$ throughout the domain. Integrating yields
+matching boundary attribution columns for any joint demand path in that
+domain (with the same columnwise path convention).
+\end{proposition}
+Appendix~\ref{app:pairproof} proves both statements. The first is an
+exact finite-change target, whereas the pointwise response objective
+optimizes the upper bound in Eq.~\eqref{eq:localboundarybound}; integrating
+before taking $\mathcal K_j$ can retain cancellations. The second statement
+requires a domain-wide local premise and is not a guarantee from finite
+training data. With several ODs changing, the endpoint outcome difference
+only identifies the sum of their attribution columns.
+
+For sampled single-OD endpoint pairs, a direct training objective is
+\begin{equation}
+\mathcal L_{\mathrm{pair}}=\mathcal L_{\mathrm{flow}}
++\lambda_{\mathrm{edge}}\frac1N\sum_{(q,h,j)}
+\frac{\|z_j^L-z_j^S\|_2^2}{b_j^2}
++\lambda_{\mathrm{cut}}\frac1N\sum_{(q,h,j)}
+\left[\frac{\mathcal K_j(z_j^L-z_j^S)}{a_j}\right]^2,
+\label{eq:pairobjective}
+\end{equation}
+with positive training-only scales $a_j,b_j$. The edge term controls
+changes invisible to the boundary seminorm, whose kernel is $\ker B$.
+Two reference endpoint equilibria supply $z_j^S$; training uses ordinary
+parameter backpropagation through two predictions, without reference
+Jacobian labels or input-Jacobian differentiation.

@@ -1,0 +1,46 @@
+\subsection{Numerical diagnosis of the transferability hierarchy}\label{supp:levelsdiag}
+The universal structural condition quantifies over all conservative
+responses; Section~\ref{sec:levels} introduced the model-specific level
+that reasons on the responses an assignment model can actually realize.
+Table~\ref{tab:levelsdiag} evaluates the hierarchy numerically. On the
+Figure-1 network with its published post-merge weights, the universal
+condition fails because the off-path pendant atom is heterogeneous, yet
+the model-specific tests hold exactly for the all-simple-paths
+structure: every rerouting that model can make preserves the common
+account, so restricting attention to realizable responses restores
+transferability that the universal condition denies. On Sioux Falls the
+two levels coincide --- the full-background fixed-path model spans the
+complete circulation space through path exchanges, so its response
+envelope contains every conservative response
+(Appendix~\ref{supp:networks}) --- and both fail at realistic TSTT
+weights, leaving the realized summaries of Table~\ref{tab:newod} as the
+operative output. The diagnosis is stable across load levels: the
+normalized universal violation stays within $2.08$--$2.21$ from the
+$0.7$ to the $1.3$ baseline while $\rho_{\mathrm{swap}}$ falls from
+$1.12$ to $0.80$ as congestion grows. On Anaheim the universal test
+fails more decisively (normalized violation $10.08$) and the
+model-specific test fails with it ($\rho_{\mathrm{swap}}=2.18$ over the
+$404$-dimensional exchange space), so there too the realized layer
+carries the reporting.
+
+\begin{table}[t]\centering\footnotesize
+\caption{Numerical diagnosis of the transferability hierarchy of
+Table~\ref{tab:threequestions}. $\eta_{\mathrm{all}}$ and
+$\eta_{\mathrm{conn}}$: weight spread within all atoms / within the
+queried atoms, normalized by the mean weight. $\rho_{\mathrm{swap}}$:
+weighted-divergence leakage of unit rerouting directions relative to a
+unit reference response; $\rho_{\mathrm{swap}}=0$ certifies
+$BDN=0$, and together with zero off-span residuals
+$\rho_{\mathrm{ref},j}$ it certifies both conditions of the
+model-specific level. On Sioux Falls (level $1.0$) three of the six
+queries have $\rho_{\mathrm{ref},j}=0$; the other three lie in
+$0.83$--$0.97$. Realized: median
+normalized geometric common-summary error of the responsive-background six
+queries. Synthetic: published post-merge weights; Sioux Falls: TSTT
+weights at the level-$1.0$ equilibrium, where the path-exchange space
+attains the full circulation dimension $53$.}\label{tab:levelsdiag}
+\begin{tabular}{lrrrr}\toprule
+Network & $\eta_{\mathrm{all}}$ & $\eta_{\mathrm{conn}}$ & $\rho_{\mathrm{swap}}$ & Realized (\%)\\\midrule
+Figure-1 synthetic & $0.61$ & $0$ & $0$ & $0$ (model responses)\\
+Sioux Falls & $2.08$ & $=$ & $0.88$ & $32.3$\\
+\bottomrule\end{tabular}\end{table}

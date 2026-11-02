@@ -1,0 +1,31 @@
+\begin{table}[t]\centering\footnotesize
+\caption{Incremental computation costs (seconds) under the shared
+continuation protocol. Training-label and common-validation costs are
+measured separately on the same CPU protocol; training times are
+archived continuation medians over the weight grid and seeds, and
+explanation times are sequential medians for the selected models over
+the 24-path timing subset defined below (totals for that subset).}
+\label{tab:learning-costs}
+\begin{tabular}{lrrrr}\toprule Labels & Training labels & Common validation & Continuation & Explanation\\\midrule
+Flow only & 0.00 & 6.45 & 246.0 & 7.34\\
+Response family & 16.12 & 6.45 & 155--425 & 7.13\\
+Endpoint (edge, cut) & 25.75 & 6.45 & 441--497 & 7.27--7.59\\
+\bottomrule\end{tabular}\end{table}
+Training labels comprise 768 endpoint states for either endpoint
+objective, or 384 center states and their sensitivities for the three
+response-family objectives (unweighted, weighted, boundary-seminorm),
+which share one label set. Every method additionally uses the same 192
+endpoint states for validation; unused center-validation derivatives
+are excluded. Existing flow data, pretrained models and the common test
+reference are excluded from these incremental costs. The 984 test
+states and sensitivities took 74.4\,s in the archived reference run.
+Explanation timing covers a 24-path timing subset of the 96 test paths
+(the seed-102112 paths, six per active-query group; forward
+evaluation, six directional derivatives per state, quadrature and node
+aggregation, excluding model loading): the table entries are totals
+over that subset, about $0.3$\,s per path, not the full 96-path
+evaluation. Archived continuation times include
+initialization, validation and saving under concurrent jobs, pooled
+across the original run and the renormalized-weight re-run under
+lighter load; they describe the actual training expense and do not
+establish a method speed advantage.

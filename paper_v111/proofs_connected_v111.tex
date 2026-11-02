@@ -1,0 +1,165 @@
+\subsection{Connected-region classification}\label{app:connectedproof}
+We retain the loopless multigraph conventions of
+Appendix~\ref{app:notation}; reciprocal arcs are distinct undirected
+edges when defining atoms and connectivity.
+
+\begin{lemma}[localization of a separating bond]\label{lem:bondlocal}
+If $\mathcal G[U]$ and $\mathcal G[V\setminus U]$ are connected, all edges of
+$\delta(U)$ lie in one block atom (or its singleton bridge).
+If $s\in U$ and $t\notin U$, that atom lies on $\mathcal P(s,t)$.
+\end{lemma}
+\begin{pf}
+For two distinct crossing edges, connect their endpoints by a simple
+path inside $U$ and by another inside its complement. The two paths
+have disjoint vertex sets; together with the crossing edges they form
+a simple cycle, including the possible two-edge cycle. Hence all
+crossing edges share a circuit class. A singleton crossing edge is a
+bridge. A simple $s$--$t$ path crosses this boundary, so it meets its
+atom; every atom met by such a path lies on $\mathcal P(s,t)$.
+\end{pf}
+
+\begin{lemma}[connected prefixes in an atom]\label{lem:prefixatom}
+Let $A$ be a non-bridge atom and let $a\ne b$ be two of its vertices.
+Its vertices admit an ordering $v_1=a,\ldots,v_k=b$ such that every
+proper nonempty prefix and its suffix induce connected subgraphs.
+The assertion includes two-vertex parallel-edge atoms.
+\end{lemma}
+\begin{pf}
+For two vertices the assertion is immediate. Otherwise add an $a$--$b$
+edge temporarily if needed. The connected-prefix property is the classical
+$st$-numbering property \citep{even1976st}; we give a construction here.
+A biconnected graph with this edge admits
+an open-ear construction starting from a cycle containing that edge.
+For completeness, this construction follows directly from vertex
+connectivity. If vertices remain outside the current subgraph, any
+component of those vertices has at least two distinct attachment
+vertices in the current subgraph: a unique attachment would be an
+articulation of the original graph. A path through the component
+between two attachments supplies the next ear. Repeat until all
+vertices have entered. Edges left over are irrelevant to the ordering.
+The initial cycle exists because the added edge is not a bridge.
+
+Order the other arc of the initial cycle from $a$ to $b$. For each
+subsequent ear, let $u$ precede $v$ among its two attachment vertices;
+insert its internal vertices, in their order from $u$ to $v$,
+immediately after $u$. Every new internal vertex has an earlier and a
+later neighbor. Existing vertices keep these neighbors. The first and
+last vertices remain $a,b$. Every vertex except $a$ therefore has an
+earlier neighbor and every vertex except $b$ a later neighbor. Repeated
+steps along these neighbors connect every prefix to $a$ and every
+suffix to $b$. Removing the temporary edge does not affect this
+argument: it is never internal to a proper prefix or suffix.
+\end{pf}
+
+\begin{lemma}[external components of a traversed atom]\label{lem:atomcomponents}
+Let $A$ be an atom of a connected loopless multigraph. Delete all
+edges of $A$ while keeping its vertices. The remaining graph has
+exactly one connected component $T_v$ for each $v\in V(A)$, containing
+$v$ and no other vertex of $A$, and these components partition $V$.
+This holds with parallel edges and reciprocal arcs; for a bridge atom
+$\{e\}$, deleting $e$ leaves exactly the two connected components of
+$G-e$, one containing each endpoint of $e$.
+\end{lemma}
+\begin{pf}
+No two distinct vertices $u,v\in V(A)$ are joined by a path that
+avoids the edges of $A$. Suppose such a path $P$ existed. For a bridge
+atom $\{e\}$, the path $P$ together with $e$ would contain a simple
+cycle through the bridge $e$, but a bridge lies on no cycle. For a
+non-bridge atom (a block), pick any $u$--$v$ path $Q$ inside $A$; it
+uses only edges of $A$, possibly the single edge, or the two-edge
+cycle formed by parallel or reciprocal arcs. Walking along $P$ from $u$ until
+its first vertex $w$ that lies on $Q$ and returning to $u$ along $Q$
+exhibits a simple cycle containing at least one edge of $Q\subseteq A$
+and at least one edge of $P$ outside $A$. Every simple cycle is
+contained in one block, so this cycle's block would contain edges of
+$A$ and edges outside $A$, contradicting that a block's edge set is
+exactly the non-bridge atom $A$. Hence each $v\in V(A)$ reaches no
+other vertex of $A$ without using $A$'s edges, so the components
+$\{T_v\}_{v\in V(A)}$ are pairwise distinct; vertices outside $A$
+attach to exactly one of them, again because any path from such a
+vertex into $A$ ends at a first vertex of $A$, and two different
+endpoints would contradict the claim just proved. The $T_v$ therefore
+partition $V$.
+\end{pf}
+
+\begin{pf}[Theorem~\ref{thm:connectedclassification}]
+For sufficiency, Lemma~\ref{lem:bondlocal} places every crossing edge
+in one traversed atom. Its weight is $\alpha$, so
+$-\mathbf1_U^\top BDx=-\alpha\mathbf1_U^\top Bx
+=-\alpha\mathbf1_U^\top(e_t-e_s)=\alpha$.
+No other edge enters this boundary sum.
+
+For necessity, fix a traversed atom $A$, delete its edges, and form
+the components $T_v$ of Lemma~\ref{lem:atomcomponents}. There are
+distinct vertices $a,b$ with $s\in T_a$ and $t\in T_b$; these are the
+entry and exit of the OD block path in $A$.
+For a bridge atom, take the cut consisting of its $s$-side component.
+Since its unit conservative crossing response is fixed, the assumed
+account immediately gives that bridge's weight $\alpha$.
+
+For a non-bridge atom, choose the ordering of
+Lemma~\ref{lem:prefixatom}. Set
+$U_i=\bigcup_{\ell\le i}T_{v_\ell}$ for $1\le i<k$.
+The bags and the prefix/suffix connectivity show
+$U_i\in\mathcal U^{\mathrm{conn}}_{st}$. Its crossing edges are exactly
+those of the corresponding prefix in $A$.
+Now choose any signed local response $y$ with
+$B_Ay=e_b-e_a$, where $B_A$ is the incidence matrix on $A$.
+Extend it by a signed unit path from $s$ to $a$ inside $T_a$ and from
+$b$ to $t$ inside $T_b$, with zero on other edges. The result satisfies
+$Bx=\mu$. Thus the assumption gives
+\[
+-\sum_{\ell\le i}(B_AD_Ay)_{v_\ell}=\alpha
+\quad(1\le i<k).
+\]
+The first prefix gives $(B_AD_Ay)_a=-\alpha$, differences of consecutive
+prefixes give zero at every interior vertex, and zero total incidence
+sum gives $(B_AD_Ay)_b=\alpha$. Consequently
+$B_AD_Ay=\alpha(e_b-e_a)$ for every local conservative $y$.
+The single-OD classification (Theorem~\ref{thm:t3cpmain}), applied to the
+one-atom graph $A$, forces every edge in $A$ to have weight $\alpha$.
+This holds for every traversed atom. The sufficiency argument already
+shows that no off-path weight is constrained.
+\end{pf}
+
+\begin{pf}[Corollary~\ref{cor:connectedmulti}]
+Apply Theorem~\ref{thm:connectedclassification} at the common $w$ to
+each query. Each queried path requires one weight on all its edges;
+intersecting paths propagate equality transitively. Conversely these
+transitive equalities satisfy every single-query condition. Atoms not
+on any queried path enter none of these equalities.
+\end{pf}
+
+\subsection{Finite-change supervision and joint-path implication}\label{app:pairproof}
+\begin{pf}[Proposition~\ref{prop:pairboundary}]
+Write $r\in\{L,S\}$ and $\kappa^r(q)=g(f^r(q))$ componentwise. Along a
+single-coordinate segment $q(u)=q^-+u(q^+-q^-)$, the chain rule gives
+\[
+\frac{d}{du}\kappa^r(q(u))=(q_j^+-q_j^-)
+D^r(q(u))J_j^r(q(u)).
+\]
+Integration gives the attribution column (Eq.~\eqref{eq:Cdef}) exactly
+as $c_j^r=\kappa^r(q^+)-\kappa^r(q^-)=z_j^r$.
+Corollary~\ref{cor:boundaryerror} applied to their difference proves
+the stated maximum-error identity. No reference input derivative is
+needed to obtain this label.
+
+For the local-to-joint implication set
+$A(q)=B[\kappa^L(q)-\kappa^S(q)]$. Equality of every separating boundary
+account of a sufficiently small single-coordinate change implies
+$\mathcal K_j(\kappa^L(q+\epsilon e_j)-\kappa^L(q)
+-\kappa^S(q+\epsilon e_j)+\kappa^S(q))=0$.
+The seminorm's kernel is $\ker B$: its expression forces all internal
+entries of $Bh$ to vanish and its two endpoint entries to agree; their
+zero total then forces both to vanish. Hence
+$A(q+\epsilon e_j)=A(q)$. Differentiability and division by $\epsilon$
+yield
+\[
+\partial_j A(q)=B[D^L(q)J_j^L(q)-D^S(q)J_j^S(q)]=0.
+\]
+On any valid joint attribution path, integration of this identity gives
+zero divergence of the corresponding attribution-column error, and
+therefore matching accounts on every separating boundary. This needs
+the local matching premise throughout the domain containing the path;
+a finite training sample supplies no such premise.
+\end{pf}

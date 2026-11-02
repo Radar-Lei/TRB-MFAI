@@ -1,0 +1,95 @@
+\subsection{Conservation mechanism ablation}\label{app:conservation}
+This experiment compares ways of obtaining flow conservation on
+Sioux Falls under otherwise identical supervision, asking what the
+conservative parameterization of Eq.~\eqref{eq:consparam} contributes
+beyond conservation itself:
+(i)~\emph{exact} --- the path-share parameterization, pretrained on the
+unscaled flow loss (the published five-seed models of
+Section~\ref{sec:pairresults});
+(ii)~\emph{exact (scaled)} --- the same architecture pretrained on the
+per-link scaled loss, the one recipe difference of the earlier
+three-way comparison, removed by training the exact parameterization
+on the direct models' objective;
+(iii)~\emph{penalty} --- a direct MLP on link flows with a squared
+node-balance penalty (weight $1$, normalized by the nodal-throughput
+RMS over the training states, floored at the network average);
+(iv)~\emph{projection} --- the same direct MLP whose output is
+projected each step onto $\{f:Bf=Mq+b\}$ by the differentiable
+least-norm map $f\mapsto f-B^{\!\top}(BB^{\!\top})^{\dagger}(Bf-Mq-b)$
+(Moore--Penrose inverse; $BB^{\!\top}$ is singular for a connected
+network). The direct-MLP width is solved from the parameter-count
+equation so that all four models have $714{,}979$ parameters against
+the exact model's $715{,}040$. Pretraining shares the data, optimizer
+(Adam $3\times10^{-3}$, batch 256, at most 12{,}000 steps) and the
+min-validation checkpoint rule (validation metric: unscaled relative
+L2 flow error) across all architectures; the loss differs only as
+stated. Continuation follows the protocol of
+Appendix~\ref{app:pairs-v102} unchanged (1{,}200 updates, shared
+labels and minibatch sequences, the uniform selection rule including
+the pre-trained initial model in the candidate pool), with flow-only
+and response supervision for each mechanism. The exact rows reproduce
+the published five-seed medians exactly ($21.18\%$ and $14.19\%$
+column error), and every projection output satisfies $Bf=Mq+b$ to
+$2\times10^{-11}$; the path-share construction holds node balance to
+the same scale under both pretraining losses.
+
+\begin{table}[pos=htbp]\centering\footnotesize
+\caption{Conservation mechanism ablation on the 96 Sioux Falls test
+paths (medians of path-level values; active queries and seeds averaged
+within path). Mechanisms: path-share parameterization under the two
+pretraining losses, and the two direct mechanisms under the scaled
+loss. Residuals are per-query maxima over the path states, maximized
+over queries: the node-balance residual $\max_q\|Bf(q)-Mq-b\|_\infty$
+(veh/h); the derivative residual
+$\max_{q,j}\|\partial_j[Bf](q)-\mu_j\|_\infty/\|\mu_j\|_2$. Column:
+attribution column error; incremental: endpoint flow-change error;
+$E_{\mathrm{total}}$: normalized end-to-end summary error.}\label{tab:conservation}
+\setlength{\tabcolsep}{3.6pt}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}llrrrrrr}
+\toprule
+Mechanism & Method & Flow (\%) & Incremental (\%) & Node resid. & Deriv.\ resid. & Column (\%) & $E_{\mathrm{total}}$\\
+\midrule
+Exact & flow & 0.032 & 5.03 & $3\times10^{-11}$ & $9\times10^{-16}$ & 21.18 & 11.35\\
+Exact & response & 0.029 & 3.52 & $3\times10^{-11}$ & $8\times10^{-16}$ & 14.19 & 8.68\\
+\addlinespace
+Exact (scaled) & flow & 0.033 & 5.53 & $3\times10^{-11}$ & $8\times10^{-16}$ & 21.60 & 10.33\\
+Exact (scaled) & response & 0.032 & 3.81 & $3\times10^{-11}$ & $8\times10^{-16}$ & 14.35 & 8.19\\
+\addlinespace
+Penalty & flow & 0.040 & 22.76 & 42.1 & 1.16 & 183.7 & 148.8\\
+Penalty & response & 0.039 & 22.24 & 42.1 & 1.17 & 177.9 & 144.9\\
+\addlinespace
+Projection & flow & 0.026 & 14.54 & $2\times10^{-11}$ & $2\times10^{-15}$ & 104.1 & 46.4\\
+Projection & response & 0.026 & 14.42 & $2\times10^{-11}$ & $2\times10^{-15}$ & 99.4 & 45.6\\
+\bottomrule\end{tabular*}\end{table}
+
+Table~\ref{tab:conservation} supports three readings. First, the
+pretraining loss is not what separates the exact parameterization from
+the direct mechanisms: under the same scaled loss the exact
+architecture attains $21.60\%$ and $14.35\%$ column error against the
+projection's $104.1\%$ and $99.4\%$, and training the exact
+architecture on the scaled loss leaves its column errors within half a
+percentage point of the published unscaled values ($21.18\%$,
+$14.19\%$) while slightly lowering its end-to-end summary error. The
+exact-versus-direct gap is therefore a property of the
+parameterization, not of its training recipe. Second, conservation
+itself still matters: the penalty model matches the flow accuracy of
+the exact model ($0.040\%$) with a small output residual ($42$ veh/h
+against nodal throughputs in the thousands), yet its integrated
+attribution residual --- the quantity $R_j$ of
+Eq.~\eqref{eq:residualidentity} --- reaches $0.66$ in units of the
+demand-conservation scale $|\Delta q_j|\|\mu_j\|_2$, its derivative
+balance residual is $1.16$ in the same normalization, and the
+downstream outcome columns inherit the damage; the chain of
+Eq.~\eqref{eq:residualidentity} is exactly what fails, because the
+penalty controls $r(q)$ but not $\partial_jr$. The projection enforces
+output conservation exactly and transfers it to derivatives and to the
+integrated residual, cutting the column error to $104.1\%$ while
+remaining far above the exact parameterization, because projecting an
+unconstrained response field onto node balance does not reproduce the
+path-share structure that the assignment imposes. Third, response
+supervision improves every mechanism (penalty $183.7\to177.9$,
+projection $104.1\to99.4$, exact $21.18\to14.19$ and
+$21.60\to14.35$), with by far the largest effect inside the exact
+parameterization: the inductive benefit of
+conservation-by-construction and the statistical benefit of derivative
+supervision are complementary rather than substitutes.

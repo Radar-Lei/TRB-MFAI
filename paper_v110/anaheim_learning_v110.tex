@@ -1,0 +1,63 @@
+\paragraph{Second network: Anaheim.}
+We repeat the comparison on Anaheim by training independently on the
+second network, using the same conservative parameterization,
+objective set and evaluation principles, with the network-specific
+training and validation settings stated in
+Appendix~\ref{app:anaheimlearning} (the six largest published OD
+demands are the study queries; all remaining positive demands stay
+fixed with endogenous route choice over the same ten-path
+centroid-restricted structure as Section~\ref{sec:anaheim}; the model
+outputs all $14{,}060$ path flows; forty-eight test demand paths ---
+twelve per active-query group, same generation rule, fresh seed ---
+are solved at a 21-state quadrature with reference sensitivities).
+Table~\ref{tab:anaheimlearning} reports the
+outcome. Anaheim's attribution columns are easier to learn than Sioux
+Falls' --- the free-flow-weighted response dominates the column and
+both objectives reach column errors near $1.5\%$ --- but the ordering
+is the same and is consistent across seeds: response supervision
+lowers the median column error from $1.64\%$ to $1.31\%$ and the
+family-boundary error from $0.94\%$ to $0.78\%$, improves $46$--$48$
+of $48$ paths in column error and $44$--$47$ of $48$ in
+family-boundary error across the five seeds, and does so while flow
+accuracy is again indistinguishable ($0.024\%$ and $0.019\%$).
+Path-level paired bootstrap quantifies the uncertainty of the smaller
+Anaheim margins (10,000 resamples, paths as resampling unit, seeds
+averaged within path): the median paired column-error difference is
+$-0.29$ percentage points with a $95\%$ interval of $[-0.33,-0.21]$,
+improving all $48$ paths, and the paired geometric difference is
+$-0.17$ with interval $[-0.19,-0.10]$, improving $47$ of $48$; both
+intervals exclude zero, and each of the five seeds shows the same
+direction with its interval excluding zero. The
+delivered summaries inherit the same budget structure as Sioux Falls
+(absolute path medians: model term $17.0\to13.1$, summary term at the
+tolerance, $99.7$ and $99.3$ vehicle-minutes per hour; normalized
+cross-network comparison in Table~\ref{tab:totalerror}); the total
+stays within the budget on every path, and the paired total error
+improves on $73.3\%$ of path--seed units. At the selected $5\%$
+tolerance Anaheim's total error is compression-dominated --- the model
+term is below one percent of the family scale --- so further reduction
+of the delivered summaries must come primarily from a tighter
+tolerance, with model improvement raising the ceiling once the
+tolerance tightens (Figure~\ref{fig:v110resolution} traces both
+levers). The direction of every
+conclusion --- better explanations from response supervision, and a
+dominant response term --- therefore does not depend on the network;
+which term dominates the total error does: at the working tolerance
+the Anaheim budget is compression-dominated while the Sioux Falls
+budget carries the larger model term, as the error budget makes
+explicit.
+\begin{table}[t]\centering\footnotesize
+\caption{Anaheim learned assignment on the 48 test demand paths, same
+protocol as Table~\ref{tab:pathtable} with a 21-state quadrature.
+Column/Family boundary/Flow as in Table~\ref{tab:pathtable} (the
+boundary family is Anaheim's ordered distance family); the
+total-error budget entries appear in Table~\ref{tab:totalerror}.}
+\label{tab:anaheimlearning}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\tblwidth}{@{\extracolsep{\fill}}lccc}
+\toprule
+Method & Flow pred.\ (\%) & Column (\%) & Family boundary (\%)\\
+\midrule
+Flow & 0.024 & 1.64 & 0.94\\
+Response & 0.019 & 1.31 & 0.78\\
+\bottomrule\end{tabular*}\end{table}
